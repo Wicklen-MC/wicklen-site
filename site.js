@@ -35,7 +35,7 @@
   const modById = new Map(D.mods.map(m => [m.id, m]));
   const categoryByKey = new Map(D.categories.map(c => [c.key, c]));
   const byKind = kind => (D.downloads || []).find(d => d.kind === kind);
-  const downloadUrl = d => `downloads/${encodeURIComponent(d.file)}`;
+  const downloadUrl = d => new URL(d.file, D.downloadBase).href;
   const mainMods = (D.manifestMods || []).filter(m => !m.optional);
   const modal = $('#detail-dialog');
   let modalTrigger = null;
@@ -132,9 +132,9 @@
         const match = line.match(/^[a-f\d]{64}\s+\*?(.+)$/i);
         return match && listedFiles.has(match[1]);
       }).join('\n');
-      showDialog({ title: 'Проверка файлов', subtitle: 'SHA-256 файлов, доступных на сайте', body: `<p>Сравните SHA-256 скачанного файла с соответствующей строкой. Совпадение подтверждает, что файл скачался целиком.</p><pre>${esc(sums)}</pre>`, footer: '<a href="downloads/SHA256SUMS.txt" download>Скачать полный файл сумм</a>' }, button);
+      showDialog({ title: 'Проверка файлов', subtitle: 'SHA-256 файлов, доступных на сайте', body: `<p>Сравните SHA-256 скачанного файла с соответствующей строкой. Совпадение подтверждает, что файл скачался целиком.</p><pre>${esc(sums)}</pre>`, footer: `<a href="${esc(downloadUrl(byKind('checksums')))}" download>Скачать полный файл сумм</a>` }, button);
     } else {
-      showDialog({ title: 'Основной архив', subtitle: `${mainMods.length} обязательных клиентских модов`, body: `<p>Состав основного ZIP. Необязательные оптимизаторы и графические дополнения скачиваются отдельно.</p><table><thead><tr><th scope="col">Мод</th><th scope="col">Версия</th></tr></thead><tbody>${mainMods.map(m => `<tr><td>${esc(m.name)}</td><td>${esc(m.version)}</td></tr>`).join('')}</tbody></table>`, footer: '<a href="downloads/manifest.json" download>Скачать манифест всех наборов</a><a href="mods.html">Открыть каталог модов</a>' }, button);
+      showDialog({ title: 'Основной архив', subtitle: `${mainMods.length} обязательных клиентских модов`, body: `<p>Обязательный клиентский состав Wicklen ${esc(D.version)}.</p><table><thead><tr><th scope="col">Мод</th><th scope="col">Версия</th></tr></thead><tbody>${mainMods.map(m => `<tr><td>${esc(m.name)}</td><td>${esc(m.version)}</td></tr>`).join('')}</tbody></table>`, footer: `<a href="${esc(downloadUrl(byKind('manifest')))}" download>Скачать манифест</a><a href="mods.html">Открыть каталог модов</a>` }, button);
     }
   }));
 
@@ -225,7 +225,8 @@
     const m = modById.get(id);
     if (!m) return;
     const subtitle = [categoryByKey.get(m.category)?.label, m.version, m.optional ? 'Необязательный мод' : null].filter(Boolean).join(' · ');
-    showDialog({ title: m.name, subtitle, image: m.icon ? `icons/${m.id}.webp` : '', body: `<p>${esc(m.description)}</p><ul>${(m.points || []).map(point => `<li>${esc(point)}</li>`).join('')}</ul>`, footer: `<a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer">Страница мода на Modrinth ↗</a>` }, trigger);
+    const sourceLabel = m.sourceKind === 'build' ? 'Исходники на GitHub' : 'Страница мода на Modrinth';
+    showDialog({ title: m.name, subtitle, image: m.icon ? `icons/${m.id}.webp` : '', body: `<p>${esc(m.description)}</p><ul>${(m.points || []).map(point => `<li>${esc(point)}</li>`).join('')}</ul>`, footer: `<a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer">${sourceLabel} ↗</a>` }, trigger);
     modHashOpen = true;
     if (syncHash) history.replaceState(null, '', location.pathname + location.search + `#mod-${encodeURIComponent(id)}`);
   }
