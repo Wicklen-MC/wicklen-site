@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Wicklen — свой маленький большой мир</title>
+  <desc id="desc">Тёплая закатная палитра, горы, свет фонаря и название Wicklen. Minecraft 26.3, Fabric.</desc>
+  <rect width="1200" height="630" fill="#fff1e8"/>
+  <rect x="28" y="28" width="1144" height="574" rx="26" fill="none" stroke="#dec5c2" stroke-width="2" stroke-dasharray="5 8"/>
+  <circle cx="980" cy="223" r="190" fill="#ffe4b8" opacity=".28"/>
+  <path d="M696 496 872 305 958 408 1050 319 1200 480V630H696Z" fill="#d4b6ca"/>
+  <path d="M672 553 824 411 957 509 1093 402 1200 497V630H672Z" fill="#b29bb7"/>
+  <path d="M0 577Q190 523 410 570T824 559Q1050 513 1200 559V630H0Z" fill="#e5c9c1"/>
+  <path d="M0 608Q269 557 480 595T892 579Q1060 560 1200 594V630H0Z" fill="#c9abb9"/>
+  <text x="88" y="124" fill="#947582" font-family="Georgia, serif" font-size="23">A WORLD TO CALL YOUR OWN</text>
+  <text x="80" y="280" fill="#b77786" font-family="Georgia, serif" font-size="140">Wicklen</text>
+  <text x="88" y="343" fill="#785969" font-family="Georgia, serif" font-size="31">Днём — обживаемся.</text>
+  <text x="88" y="387" fill="#785969" font-family="Georgia, serif" font-size="31">Ночью — держимся вместе.</text>
+  <rect x="88" y="444" width="372" height="49" rx="12" fill="#fff9f1" stroke="#e6cbc2"/>
+  <text x="109" y="476" fill="#986b7c" font-family="Georgia, serif" font-size="23">Minecraft 26.3 · Fabric · Java 25</text>
+  <g transform="translate(970 196)" stroke="#a16f61" stroke-width="6" stroke-linejoin="round">
+    <path d="M-23-36v-20a23 23 0 0 1 46 0v20" fill="none"/>
+    <path d="M-43-32H43L32-11H-32Z" fill="#c58d72"/>
+    <path d="M-32-11H32L39 73H-39Z" fill="#fff1c9"/>
+    <path d="M-44 73H44L35 89H-35Z" fill="#c58d72"/>
+    <path d="M-22-6-28 72M22-6 28 72" fill="none" stroke-width="4"/>
+    <path d="M0 17C21 41 14 59 0 60-16 56-18 44 0 17Z" fill="#e9af63" stroke="none"/>
+  </g>
+  <g fill="#b190ad"><path d="m851 148 5 12 12 5-12 5-5 12-5-12-12-5 12-5Z"/><path d="m1072 105 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z"/></g>
+</svg>

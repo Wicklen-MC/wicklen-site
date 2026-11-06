@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" role="img" aria-labelledby="title desc">
+  <title id="title">Дом на холме на закате</title><desc id="desc">Иллюстрация: маленький дом с тёплыми окнами среди елей, за ним горы и заходящее солнце.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e9c5b4"/><stop offset=".65" stop-color="#f7e3c4"/><stop offset="1" stop-color="#eee6cf"/></linearGradient>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#98a17f"/><stop offset="1" stop-color="#657d65"/></linearGradient>
+    <pattern id="grain" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".45" fill="#4b4b39" opacity=".1"/></pattern>
+    <g id="tree"><path d="M-5 0V-69H5V0" fill="#5e5741"/><path d="M0-142-36-74H-22L-47-32H47L22-74H36Z" fill="#3e604d"/><path d="M0-142V-32H47L22-74H36Z" fill="#34503f"/></g>
+    <g id="smalltree"><path d="M-3 0V-45H3V0" fill="#605a42"/><path d="M0-99-27-49H-16L-34-19H34L16-49H27Z" fill="#5b7758"/></g>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h600v520H0z"/>
+  <circle cx="420" cy="139" r="61" fill="#f9edcd" opacity=".9"/>
+  <path d="M18 111h54v-5h41v8h28v8H18zm173-35h52v-7h49v10h35v8H191zm262 151h47v-5h58v8h29v7H453z" fill="#fff2dc" opacity=".6"/>
+  <path d="M0 277 54 239 89 239 154 167 185 167 247 228 283 228 345 181 370 181 447 263 493 215 522 215 600 265V420H0Z" fill="#b3a0b4"/>
+  <path d="M106 221 154 167H185L226 208 189 192 175 205 152 195Z" fill="#e6cfd4"/>
+  <path d="M0 294 81 294 81 279 144 279 144 260 214 260 214 284 290 284 290 261 334 261 334 280 382 280 382 266 439 266 439 292 515 292 515 278 600 278V460H0Z" fill="#aaa2a1"/>
+  <path d="M0 358 65 358 65 337 132 337 132 321 226 321 226 304 346 304 346 326 424 326 424 338 512 338 512 321 600 321V520H0Z" fill="#8b9b7a"/>
+  <path d="M0 438 57 438 57 408 149 408 149 378 229 378 229 355 366 355 366 378 429 378 429 400 516 400 516 427 600 427V520H0Z" fill="url(#ground)"/>
+  <path d="M247 390h51v18h-19v20h-30v22h-37v24h-46v23h-39v23H64v-20h66v-26h45v-26h33v-25h39z" fill="#c3b595"/>
+  <path d="M252 376h74v20h-74z" fill="#58664b" opacity=".45"/>
+  <path d="M234 308h104v78H234z" fill="#b9966a"/><path d="M338 308h49v78h-49z" fill="#a78059"/>
+  <path d="m217 310 69-63 69 63z" fill="#936477"/><path d="m286 247 66 0 52 63h-49z" fill="#79566e"/>
+  <path d="m233 298 53-48 53 48" fill="none" stroke="#b17c8c" stroke-width="5"/>
+  <path d="M358 265v-28h13v44" fill="#9a7f66"/>
+  <path d="M361 224h12v-13h-8v-13h-12v-12" stroke="#eee3d0" stroke-width="9" fill="none" opacity=".65"/>
+  <path d="M249 325h25v28h-25zm63 0h15v28h-15zm42 0h18v28h-18z" fill="#f5d891"/>
+  <path d="M261 325v28m-12-14h25m86-14v28m-6-14h18" stroke="#a78458" stroke-width="3"/>
+  <path d="M282 345h23v41h-23z" fill="#705b42"/><path d="M286 349h15v25h-15z" fill="#d9ad68"/><circle cx="300" cy="378" r="1.5" fill="#e9d8a4"/>
+  <path d="M234 368h42m31 0h31m-104 10h42m31 0h31m0-32h49m-49 22h49" stroke="#a9855a" stroke-width="2" opacity=".8"/>
+  <use href="#smalltree" transform="translate(176 339) scale(.75)"/><use href="#smalltree" transform="translate(481 350) scale(.9)"/>
+  <use href="#tree" transform="translate(112 401) scale(.95)"/><use href="#tree" transform="translate(66 424) scale(1.25)"/>
+  <use href="#tree" transform="translate(467 413) scale(1.1)"/><use href="#tree" transform="translate(539 451) scale(1.42)"/>
+  <path d="M346 401v-18m13 18v-18m13 18v-18m13 18v-18m-40 6h42" stroke="#a69977" stroke-width="4"/>
+  <g fill="#d4c181"><path d="M167 400h4v4h-4zm255 35h4v4h-4zm-204 58h4v4h-4zm148-29h4v4h-4z"/></g>
+  <g fill="#d2ac96"><path d="M181 405h4v4h-4zm214 22h4v4h-4zm-33 62h4v4h-4z"/></g>
+  <g stroke="#90a07d" stroke-width="2"><path d="m27 470 3-10 3 10m278-26 3-10 3 10m112 50 3-10 3 10m-174-27 3-10 3 10m119-34 3-10 3 10"/></g>
+  <path fill="url(#grain)" d="M0 0h600v520H0z"/>
+</svg>
