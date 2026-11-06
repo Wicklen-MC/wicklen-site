@@ -24,7 +24,11 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 The build checks local assets, IDs and page anchors, then copies an explicit
 public allowlist into `dist/` and writes its SHA-256 manifest. It excludes
 repository documentation, CI, Python tools, provenance records and private files.
-The `Check site` workflow validates changes; it does not deploy them.
+The `Website` workflow validates pull requests and automatically deploys checked
+`main` commits to the VPS. Deployments use an immutable artifact, a dedicated
+restricted SSH identity, atomic site switching and HTTPS checks with rollback.
+Manual runs can select an earlier reviewed main-branch commit. Delayed automatic
+runs skip deployment when main already contains a newer commit.
 
 ## Pages and content
 
@@ -72,8 +76,13 @@ in the infrastructure repository. Deploy only `dist/`. Keep absolute download UR
 disabled. The gallery accepts only the configured HTTPS download origin for
 release link enhancement.
 
-Host configuration and rollout belong in
-[wicklen-deployments](https://github.com/redz-projects/wicklen-deployments).
+The workflow needs repository secrets `WICKLEN_SITE_DEPLOY_HOST`,
+`WICKLEN_SITE_DEPLOY_KEY` and `WICKLEN_SITE_KNOWN_HOSTS`. They are provisioned
+separately; no root key or game credentials enter this repository.
+The host receiver and its bootstrap are maintained in
+[wicklen-deployments](https://github.com/redz-projects/wicklen-deployments/blob/master/docs/SITE_DEPLOY.md).
+`deployment.json` and the published checksum manifest identify the active site
+revision. Site deployment does not publish pack archives or update Minecraft.
 The pack and its technical documents live in
 [wicklen-server](https://github.com/Wicklen-MC/wicklen-server);
 the mod source lives in

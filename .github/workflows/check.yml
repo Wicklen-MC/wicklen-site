@@ -1,22 +1,100 @@
-name: Check site
+name: Website
 on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+    inputs:
+      target_ref:
+        description: Main-branch commit to deploy; use a previous verified commit for rollback
+        default: main
+        type: string
 permissions:
   contents: read
+concurrency:
+  group: website-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
+  cancel-in-progress: false
 jobs:
   validate:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.workflow_sha }}
+          path: automation
+          persist-credentials: false
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.target_ref || github.sha }}
+          path: site
+          fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: '3.14'
-      - run: python scripts/build.py
+      - name: Validate the selected revision
+        if: github.event_name != 'pull_request'
+        working-directory: site
+        run: git merge-base --is-ancestor HEAD origin/main
+      - run: python -m unittest discover -s automation/scripts -p 'test_*.py'
+      - run: python site/scripts/build.py
       - name: Validate JavaScript syntax
         run: |
-          for script in *.js; do
+          for script in site/*.js; do
             node --check "$script"
           done
+      - name: Package the checked public files
+        run: |
+          revision=$(git -C site rev-parse HEAD)
+          python automation/scripts/package.py --dist site/dist --revision "$revision" --output bundle
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: website-${{ github.run_id }}
+          path: bundle/
+          if-no-files-found: error
+          overwrite: true
+          compression-level: 0
+          retention-days: 14
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.workflow_sha }}
+          path: automation
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.14'
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          name: website-${{ github.run_id }}
+          path: bundle
+      - name: Skip an obsolete automatic deployment
+        id: current
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, subprocess
+          revision = json.loads(pathlib.Path('bundle/package.json').read_text())['revision']
+          deploy = True
+          if os.environ['GITHUB_EVENT_NAME'] == 'push':
+              repository = os.environ['GITHUB_REPOSITORY']
+              head = json.loads(subprocess.check_output(['gh', 'api', f'repos/{repository}/git/ref/heads/main']))['object']['sha']
+              deploy = head == revision
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('deploy=' + str(deploy).lower() + '\n')
+          print('Deploying checked revision' if deploy else 'Skipped: main already contains a newer commit')
+          PY
+      - name: Deploy and verify HTTPS; restore the previous revision on failure
+        if: steps.current.outputs.deploy == 'true'
+        env:
+          WICKLEN_SITE_DEPLOY_HOST: ${{ secrets.WICKLEN_SITE_DEPLOY_HOST }}
+          WICKLEN_SITE_DEPLOY_KEY: ${{ secrets.WICKLEN_SITE_DEPLOY_KEY }}
+          WICKLEN_SITE_KNOWN_HOSTS: ${{ secrets.WICKLEN_SITE_KNOWN_HOSTS }}
+        run: python automation/scripts/deploy.py --bundle bundle
