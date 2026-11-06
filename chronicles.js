@@ -72,18 +72,18 @@
     if (typeof value !== 'string' || !/^https:\/\/downloads\.wicklen\.link\/releases\/[a-zA-Z0-9._/-]+$/.test(value)) return false;
     return !value.split('/').includes('..');
   };
-  if (release && release.version === '0.4.2') {
+  if (release && release.version === '0.4.3' && release.chroniclesVersion === '0.4.2' && release.updateFrom === '0.4.2') {
     for (const link of document.querySelectorAll('[data-chron-release]')) {
       const file = release[link.dataset.chronRelease];
       if (!file || !publicPath(file.href)) continue;
       link.href = file.href;
       link.download = '';
       const size = formatSize(file.size);
-      if (link.dataset.chronRelease === 'update') link.textContent = `Обновление 0.4.1 → 0.4.2${size ? ` · ${size}` : ''}`;
-      if (link.dataset.chronRelease === 'full') link.textContent = `Сборка Wicklen 0.4.2${size ? ` · ${size}` : ''}`;
+      if (link.dataset.chronRelease === 'update') link.textContent = `Обновление ${release.updateFrom} → ${release.version}${size ? ` · ${size}` : ''}`;
+      if (link.dataset.chronRelease === 'full') link.textContent = `Сборка Wicklen ${release.version}${size ? ` · ${size}` : ''}`;
     }
     if (publicPath(release.full?.href) && publicPath(release.update?.href)) {
-      document.querySelector('[data-chron-release-note]').textContent = 'В полной сборке — 121 мод, публичные настройки и русский перевод. В обновлении — только Chronicles 0.4.2, перевод и памятка. API-ключ игрокам не нужен.';
+      document.querySelector('[data-chron-release-note]').textContent = 'В полной сборке — 121 мод, публичные настройки и русский перевод. Обновление с 0.4.2 меняет только ресурспак и манифест; мод Chronicles остаётся на версии 0.4.2. API-ключ игрокам не нужен.';
     }
   }
 })();

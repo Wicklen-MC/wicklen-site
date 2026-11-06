@@ -38,14 +38,14 @@ runs skip deployment when main already contains a newer commit.
 - `site.css` / `site.js`: shared styling and catalog behavior.
 - `chronicles.css` / `chronicles.js`: the mod page and keyboard-accessible gallery.
 - `experiences.js`: gameplay examples for the landing page.
-- `data.js`: a self-contained snapshot of **pack 0.4.2**, recovered from
-  `wicklen-server/releases/0.4.2/pack.lock.json`: **177 distinct mandatory mods**,
+- `data.js`: a self-contained snapshot of **pack 0.4.3**, pinned to
+  `wicklen-server/pack/releases/0.4.3/pack.lock.json`: **177 distinct mandatory mods**,
   including **165 server / 121 client JARs**. It records exact filenames,
   versions, install sides, SHA-512 hashes and upstream version/source identities.
   Optional preview additions are excluded. `catalogSource` pins the source lock's
   path and SHA-256; `manifestMods` contains the published 121-mod client inventory.
   Download metadata, checksums and instructions describe the same public release.
-- `chronicles-release.js`: public filenames, URLs, sizes and checksums for 0.4.2.
+- `chronicles-release.js`: public filenames, URLs, sizes and checksums for pack 0.4.3; `chroniclesVersion` stays 0.4.2 and `updateFrom` is 0.4.2.
 - `deployment.js`: the public game address, `play.wicklen.link`, without credentials.
 - `images/chronicles`: native client screenshots, capture provenance and source hashes.
 
@@ -61,8 +61,8 @@ mutable preview profile.
 
 ## Hosting and downloads
 
-The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.4.2/`, including the full client,
-the patch from 0.4.1, instructions, manifest and checksums. These are the five
+The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.4.3/`, including the full client,
+the patch from 0.4.2, instructions, manifest and checksums. These are the five
 published files listed by `data.js`; no optional performance/graphics archive is
 advertised by this catalog. ZIP files belong on the game VPS, outside this
 repository and the site's `dist/`.
@@ -96,3 +96,12 @@ Archived design templates, server documentation, local deployment overrides and
 downloaded archives were intentionally excluded from this standalone source.
 Screenshot PNGs were copied without image editing; their original capture records
 remain under `images/chronicles/`.
+
+## Pack 0.4.3 metadata
+
+The pack and mod versions are distinct: pack **0.4.3** still includes Chronicles
+**0.4.2**. The 0.4.2 → 0.4.3 client delta updates `resourcepacks/ru-mods.zip`, its
+manifest and update instructions; it contains no changed JARs or client configs.
+The resource pack adds 26 OreGrowth translations (8,877 keys across 76 namespaces).
+Public filenames, sizes and hashes are copied from the reviewed 0.4.3 artifacts.
+Static HTML download links and JavaScript metadata must be updated together.

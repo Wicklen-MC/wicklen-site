@@ -1,10 +1,10 @@
-// Public mandatory catalog pinned to Wicklen pack 0.4.2; source identity is in catalogSource.
+// Public mandatory catalog pinned to Wicklen pack 0.4.3; Chronicles remains 0.4.2.
 window.MODS = {
-  "generated": "2026-11-06",
+  "generated": "2026-11-07",
   "name": "Wicklen",
   "nameRu": "Виклен",
-  "version": "0.4.2",
-  "profile": "existing-world",
+  "version": "0.4.3",
+  "profile": "production",
   "minecraft": "26.3",
   "loader": "Fabric 0.20.1",
   "java": 25,
@@ -4925,62 +4925,61 @@ window.MODS = {
   ],
   "downloads": [
     {
-      "file": "wicklen-live-0.4.2-players.zip",
+      "file": "wicklen-0.4.3-players.zip",
       "kind": "main",
       "label": "Основная сборка",
-      "href": "https://downloads.wicklen.link/releases/0.4.2/wicklen-live-0.4.2-players.zip",
-      "size": 449758055,
-      "sizeHuman": "449.8 МБ",
-      "sha256": "ebe4c3d91857a47f60da887ca065d94b35464c90f48cae9372056b0fa25f977b"
+      "href": "https://downloads.wicklen.link/releases/0.4.3/wicklen-0.4.3-players.zip",
+      "size": 449756730,
+      "sha256": "e6adc96f9c505b3757538fcf7f92185556ed08bfd1feca864a7ff7bffdbcf2e8",
+      "sizeHuman": "449.8 МБ"
     },
     {
-      "file": "wicklen-0.4.1-to-0.4.2-update.zip",
+      "file": "wicklen-0.4.2-to-0.4.3-update.zip",
       "kind": "update",
-      "label": "Обновление с 0.4.1",
-      "href": "https://downloads.wicklen.link/releases/0.4.2/wicklen-0.4.1-to-0.4.2-update.zip",
-      "size": 1016476,
-      "sizeHuman": "1.0 МБ",
-      "sha256": "cea50eb3ec9b28ba7857512ec2003570007b8c2de13d867d33ab7c1253415f6c"
+      "label": "Обновление с 0.4.2",
+      "href": "https://downloads.wicklen.link/releases/0.4.3/wicklen-0.4.2-to-0.4.3-update.zip",
+      "size": 1328227,
+      "sha256": "fab7e152d5374416de772bd8bf3d9144adb22680707705e7be7835a43b47ab13",
+      "sizeHuman": "1.33 МБ"
     },
     {
-      "file": "manifest-0.4.2.json",
+      "file": "manifest-0.4.3.json",
       "kind": "manifest",
       "label": "Точные версии модов",
-      "href": "https://downloads.wicklen.link/releases/0.4.2/manifest-0.4.2.json",
-      "size": 43310,
-      "sizeHuman": "43.3 КБ",
-      "sha256": "e4a78c716c3b61e1d1634e81190fcacf850631ec55449466212023f54c54c0bf"
+      "href": "https://downloads.wicklen.link/releases/0.4.3/manifest-0.4.3.json",
+      "size": 42052,
+      "sha256": "d63a3822c7e80aa98de57929d79bb701dd3eccdbccebce7bac6e7e5fcccc4265",
+      "sizeHuman": "42.1 КБ"
     },
     {
-      "file": "PLAYER-INSTRUCTIONS-0.4.2.md",
+      "file": "PLAYER-INSTRUCTIONS-0.4.3.md",
       "kind": "instructions",
       "label": "Инструкция (текст)",
-      "href": "https://downloads.wicklen.link/releases/0.4.2/PLAYER-INSTRUCTIONS-0.4.2.md",
-      "size": 2731,
-      "sizeHuman": "2.7 КБ",
-      "sha256": "bb194a828f23b80184ba58e567b00e0572d195b9e4deea11d13cd31b4bebae34"
+      "href": "https://downloads.wicklen.link/releases/0.4.3/PLAYER-INSTRUCTIONS-0.4.3.md",
+      "size": 608,
+      "sha256": "d3ff99c9c4543aabe4984759435a985ee697028ea68005d04ff8b3055cc6e97d",
+      "sizeHuman": "608 Б"
     },
     {
-      "file": "SHA256SUMS-0.4.2.txt",
+      "file": "SHA256SUMS-0.4.3.txt",
       "kind": "checksums",
       "label": "Суммы SHA-256",
-      "href": "https://downloads.wicklen.link/releases/0.4.2/SHA256SUMS-0.4.2.txt",
-      "size": 378,
-      "sizeHuman": "378 Б",
-      "sha256": "a77ab481e95d885b7b0bcad36d54f4dda485f87b73d3defd99a8b0b1456ad9ca"
+      "href": "https://downloads.wicklen.link/releases/0.4.3/SHA256SUMS-0.4.3.txt",
+      "size": 716,
+      "sha256": "4af83d851196edc4fc0695bf1bc29613551bc6e2ea89391b1f7680c2aa9632c6",
+      "sizeHuman": "716 Б"
     }
   ],
   "changelog": {
-    "date": "06.11.2026",
+    "date": "07.11.2026",
     "entries": [
-      "Chronicles 0.4.2: настройка масштаба дневника и реплик духа, прозрачности и частоты сообщений; карту можно двигать мышью и масштабировать колесом.",
-      "Каталог соответствует опубликованному составу: 165 серверных и 121 обязательный клиентский JAR. OreGrowth сохранён для существующего мира.",
-      "Испытания используют Gateway of Doom; поведение мобов настраивается через SIHYWTCAMD. Hostile Mobs Improve Over Time удалён.",
-      "Русский ресурспак входит в полный клиентский архив; в игре его можно включить по желанию."
+      "Сборка Wicklen 0.4.3: в русском ресурспаке добавлены 26 переводов OreGrowth. Мод Wicklen: Chronicles остаётся на версии 0.4.2.",
+      "Обновление с 0.4.2 заменяет только resourcepacks/ru-mods.zip и обновляет манифест комплекта. Моды и клиентские конфиги сохраняются.",
+      "Состав прежний: 165 серверных и 121 обязательный клиентский JAR, включая OreGrowth. Для первого входа нужен полный комплект."
     ]
   },
-  "instructionsText": "Wicklen 0.4.2 — комплект для существующего сервера\n\nMinecraft 26.3 · Fabric Loader 0.20.1 · Java 25.\nАдрес сервера — прежний адрес Wicklen. Этот комплект используется ПОСЛЕ его обновления администратором.\n\n1. Сделай отдельный профиль Minecraft 26.3/Fabric (или копию старого профиля Wicklen).\n2. В его папке .minecraft замени папку mods ЦЕЛИКОМ папкой mods из архива. Старые JAR не добавляй поверх новых.\n3. Скопируй config из архива в этот профиль. Сохранения одиночной игры и options.txt менять не нужно.\n4. При желании скопируй resourcepacks/ru-mods.zip и включи русский ресурспак в игре.\n5. Запусти игру и зайди на прежний сервер.\n\nОбязательных модов: 121. OreGrowth оставлен для сохранности блоков существующего мира.\nAI работает на сервере: API-ключ друзьям не требуется и в архив не включён.\nG — дневник. Карта → выбери записанное место → «Путь»; «Убрать» отключает ориентир.\nОбычная подзорная труба записывает существ и видимые части зарегистрированных построек.\nВ записях доступны личное имя и заметка. Дух учитывает их, выбранный путь и результаты походов.\n«Поручения → Путевые огни» — история «Первый огонь» после записи станции.\n\nПроверка архива: SHA256SUMS.txt рядом с раздачей.\n\nНастройки интерфейса: G → значок ползунков в правом верхнем углу дневника. Размер дневника и реплик по умолчанию — 85%; доступны размер, непрозрачность, скрытие и частота автоматических реплик (2–30 минут, по умолчанию 10). Карта перетаскивается левой кнопкой мыши и масштабируется колесом вокруг указателя. Личные настройки интерфейса создаются в вашем профиле; чужие настройки и API-ключи не включены.\n",
-  "sumsText": "cea50eb3ec9b28ba7857512ec2003570007b8c2de13d867d33ab7c1253415f6c  wicklen-0.4.1-to-0.4.2-update.zip\nebe4c3d91857a47f60da887ca065d94b35464c90f48cae9372056b0fa25f977b  wicklen-live-0.4.2-players.zip\ne4a78c716c3b61e1d1634e81190fcacf850631ec55449466212023f54c54c0bf  manifest-0.4.2.json\nbb194a828f23b80184ba58e567b00e0572d195b9e4deea11d13cd31b4bebae34  PLAYER-INSTRUCTIONS-0.4.2.md\n",
+  "instructionsText": "# Wicklen pack 0.4.3\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n",
+  "sumsText": "d3ff99c9c4543aabe4984759435a985ee697028ea68005d04ff8b3055cc6e97d  PLAYER-INSTRUCTIONS-0.4.3.md\ne2166874c59c25dd62666380bd23eb45645993ea6cd820ad88a5676f83644c38  UPDATE.json\nd63a3822c7e80aa98de57929d79bb701dd3eccdbccebce7bac6e7e5fcccc4265  manifest-0.4.3.json\ncd499423a7b51636668fa21942aa652cb014d110778fcd9579e7fc8c46c248fe  pack.lock.json\nab538bc74ddafbd93216eb7049a90e22c56f844297bcf8cfe27dff8f8fe36d85  server-manifest-0.4.3.json\nfab7e152d5374416de772bd8bf3d9144adb22680707705e7be7835a43b47ab13  wicklen-0.4.2-to-0.4.3-update.zip\ne6adc96f9c505b3757538fcf7f92185556ed08bfd1feca864a7ff7bffdbcf2e8  wicklen-0.4.3-players.zip\ne4cf18afa1bf17bce1005bee547086d2d773f224b4c8739c83be09b61568fb39  wicklen-0.4.3-server.zip\n",
   "manifestMods": [
     {
       "name": "AmbientSounds",
@@ -5947,15 +5946,16 @@ window.MODS = {
       "file": "oregrowth-1.2.0-fabric-mc26.3.jar",
       "version": "1.2.0",
       "sha512": "3ba8830a023835ace619cd4f634cf3509b43e2438449f578b4cff6b0016614ca9df5dc295ff3e25e865e176ea2c8718b8d390d152f598b38f8805641ba858ade",
-      "side": "both"
+      "side": "both",
+      "optional": false
     }
   ],
   "catalogSource": {
     "repository": "https://github.com/Wicklen-MC/wicklen-server",
-    "path": "releases/0.4.2/pack.lock.json",
-    "sha256": "7cb2c67ada91ce6eaf19dde2cc40e090da851cf6ee4fcbf71ce696f450a18003",
-    "packVersion": "0.4.2",
-    "distribution": "existing-world",
+    "path": "pack/releases/0.4.3/pack.lock.json",
+    "sha256": "cd499423a7b51636668fa21942aa652cb014d110778fcd9579e7fc8c46c248fe",
+    "packVersion": "0.4.3",
+    "distribution": "production",
     "mandatoryOnly": true,
     "counts": {
       "client": 121,
@@ -5964,5 +5964,5 @@ window.MODS = {
     },
     "optionalAddonsIncluded": false
   },
-  "downloadBase": "https://downloads.wicklen.link/releases/0.4.2/"
+  "downloadBase": "https://downloads.wicklen.link/releases/0.4.3/"
 };
