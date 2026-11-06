@@ -69,8 +69,8 @@ repository and the site's `dist/`.
 
 Production HTTPS was verified on 2026-11-06: public Let’s Encrypt certificates,
 HTTP redirects, all three pages, five release files and full-ZIP byte-range
-downloads. The deployed site content is revision `92a3725`; certificates are
-managed by the existing shared Caddy. Host configuration is maintained separately
+downloads. The first deployment used revision `92a3725`; the active revision is
+now exposed by `deployment.json`. Certificates are managed by the existing shared Caddy. Host configuration is maintained separately
 in the infrastructure repository. Deploy only `dist/`. Keep absolute download URLs in HTML, `data.js` and
 `chronicles-release.js` aligned; static links must also work with JavaScript
 disabled. The gallery accepts only the configured HTTPS download origin for
