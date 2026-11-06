@@ -57,17 +57,17 @@ mutable preview profile.
 
 ## Hosting and downloads
 
-The intended public website domain is `wicklen.link`. Archive links are prepared
-for `https://downloads.wicklen.link/releases/0.4.2/`, including the full client,
+The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.4.2/`, including the full client,
 the patch from 0.4.1, instructions, manifest and checksums. These are the five
 published files listed by `data.js`; no optional performance/graphics archive is
 advertised by this catalog. ZIP files belong on the game VPS, outside this
 repository and the site's `dist/`.
 
-DNS, certificates, archive upload and hosting are configured separately in the
-infrastructure repository. The catalog refresh itself does not deploy or certify
-that a public endpoint is reachable. Deploy only `dist/` through the existing
-shared Caddy setup. Keep absolute download URLs in HTML, `data.js` and
+Production HTTPS was verified on 2026-11-06: public Let’s Encrypt certificates,
+HTTP redirects, all three pages, five release files and full-ZIP byte-range
+downloads. The deployed site content is revision `92a3725`; certificates are
+managed by the existing shared Caddy. Host configuration is maintained separately
+in the infrastructure repository. Deploy only `dist/`. Keep absolute download URLs in HTML, `data.js` and
 `chronicles-release.js` aligned; static links must also work with JavaScript
 disabled. The gallery accepts only the configured HTTPS download origin for
 release link enhancement.
