@@ -52,7 +52,7 @@ runs skip deployment when main already contains a newer commit.
   and 24-second native recording; [source provenance](images/wanderer/README.md).
 - `spirit-media.js`: homepage SVG play/pause, visibility and reduced-motion controls.
 
-## Spirit illustration and development preview
+## Spirit illustration and native footage
 
 The homepage hero uses an inline SVG in `index.html#hero-spirit-art`: a cloth hood,
 warm eyes, teal patches and two ribbons. CSS animates hovering, cloth, blinking and
@@ -65,9 +65,10 @@ until the visitor explicitly chooses animation.
 `chronicles.html#spirit-preview` has a separate native video and four zoomable
 screenshots of **development mod 0.4.3-SNAPSHOT**. The video has ordinary controls,
 no autoplay and `preload="none"`; it also works without JavaScript. Existing
-keyboard gallery navigation includes the new frames. Published downloads still
-contain **Chronicles 0.4.2**: both the hero and the new section identify the new
-appearance as work for the next update. Screenshot WebP conversion is lossless;
+keyboard gallery navigation includes the new frames. The page announces the published
+**Chronicles 0.4.3** release. Recommended live-server downloads still contain
+**Chronicles 0.4.2** until server adoption; the standalone release is linked separately.
+Screenshot WebP conversion is lossless;
 the original MP4 is preserved unchanged.
 
 The public build checks video sources and posters and explicitly permits MP4/WebM
