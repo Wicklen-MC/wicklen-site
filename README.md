@@ -48,6 +48,33 @@ runs skip deployment when main already contains a newer commit.
 - `chronicles-release.js`: public filenames, URLs, sizes and checksums for pack 0.4.3; `chroniclesVersion` stays 0.4.2 and `updateFrom` is 0.4.2.
 - `deployment.js`: the public game address, `play.wicklen.link`, without credentials.
 - `images/chronicles`: native client screenshots, capture provenance and source hashes.
+- `images/wanderer` / `videos/chronicles`: the upcoming cloth-wanderer screenshots
+  and 24-second native recording; [source provenance](images/wanderer/README.md).
+- `spirit-media.js`: homepage SVG play/pause, visibility and reduced-motion controls.
+
+## Spirit illustration and development preview
+
+The homepage hero uses an inline SVG in `index.html#hero-spirit-art`: a cloth hood,
+warm eyes, teal patches and two ribbons. CSS animates hovering, cloth, blinking and
+small background sparks. It needs no video, canvas, renderer library or CDN.
+The static SVG is already meaningful without JavaScript. Enhancement starts motion
+only while visible, pauses it outside the viewport or in a hidden tab, provides a
+manual pause, and respects `prefers-reduced-motion`. Data-saving mode starts static
+until the visitor explicitly chooses animation.
+
+`chronicles.html#spirit-preview` has a separate native video and four zoomable
+screenshots of **development mod 0.4.3-SNAPSHOT**. The video has ordinary controls,
+no autoplay and `preload="none"`; it also works without JavaScript. Existing
+keyboard gallery navigation includes the new frames. Published downloads still
+contain **Chronicles 0.4.2**: both the hero and the new section identify the new
+appearance as work for the next update. Screenshot WebP conversion is lossless;
+the original MP4 is preserved unchanged.
+
+The public build checks video sources and posters and explicitly permits MP4/WebM
+media under `videos/`. Provenance and repository documentation remain excluded.
+Browser QA covers 1440, 390 and 320-pixel widths, SVG motion/pause/offscreen pause,
+reduced-motion changes, native video playback, gallery keyboard controls and
+JavaScript-disabled presentation. Local QA captures stay under ignored `preview/`.
 
 The standalone checkout does not require the modpack or mod source repositories.
 Update public catalog/release metadata from a reviewed pack release; do not copy

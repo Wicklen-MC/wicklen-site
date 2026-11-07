@@ -80,3 +80,38 @@ dialog{width:min(640px,100% - 32px);max-height:85vh;border:1px solid #e6cbd3;bor
 .catalog-sidebar,.catalog-main{min-width:0}
 @media(max-width:1000px) and (min-width:741px){.header-inner{gap:18px}.nav{gap:18px}.brand small{display:none}}
 @media(max-width:740px){.chronicles-invite-grid{grid-template-columns:1fr;gap:28px}.chronicles-invite-image{transform:none}.chronicles-invite h2{font-size:34px}.chronicles-invite p{font-size:14px}.current-addons{grid-template-columns:1fr}.nav{gap:13px}}
+
+/* Code-native SVG companion; motion starts only after progressive enhancement. */
+.hero-spirit-stage{position:relative;overflow:hidden;border-radius:78px 78px 14px 14px;background:#fbf2e8}
+.hero-spirit-illustration{display:block;width:100%;height:auto;aspect-ratio:15/13}
+.hero-spirit-illustration *{animation-play-state:paused!important}
+.hero-spirit-illustration.is-animated *{animation-play-state:running!important}
+.spirit-float{transform-origin:300px 280px;animation:spirit-hover 6s ease-in-out infinite}
+.spirit-ribbon-long{transform-origin:350px 166px;animation:spirit-long-ribbon 4.7s ease-in-out infinite}
+.spirit-ribbon-short{transform-origin:355px 203px;animation:spirit-short-ribbon 4.1s ease-in-out infinite}
+.spirit-hood{transform-origin:300px 255px;animation:spirit-hood-tilt 7s ease-in-out infinite}
+.spirit-drape-left{transform-origin:265px 255px;animation:spirit-left-drape 5s ease-in-out infinite}
+.spirit-drape-right{transform-origin:337px 255px;animation:spirit-right-drape 5s ease-in-out infinite}
+.spirit-eyes{transform-origin:290px 199px;animation:spirit-blink 6.4s ease-in-out infinite}
+.spirit-shadow{transform-origin:295px 449px;animation:spirit-shadow-breathe 6s ease-in-out infinite}
+.spirit-spark-one{transform-origin:130px 207px;animation:spirit-spark-breathe 4s ease-in-out infinite}
+.spirit-spark-two{transform-origin:464px 276px;animation:spirit-spark-breathe 4s ease-in-out 1.5s infinite}
+@keyframes spirit-hover{0%,100%{transform:translateY(3px) rotate(-1deg)}50%{transform:translateY(-12px) rotate(1deg)}}
+@keyframes spirit-long-ribbon{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(5deg) translateY(-3px)}}
+@keyframes spirit-short-ribbon{0%,100%{transform:rotate(3deg)}50%{transform:rotate(-5deg) translateY(2px)}}
+@keyframes spirit-hood-tilt{0%,100%{transform:rotate(-1.5deg)}50%{transform:rotate(1.5deg)}}
+@keyframes spirit-left-drape{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(2deg)}}
+@keyframes spirit-right-drape{0%,100%{transform:rotate(1deg)}50%{transform:rotate(-2deg)}}
+@keyframes spirit-blink{0%,42%,46%,100%{transform:scaleY(1)}44%{transform:scaleY(.08)}}
+@keyframes spirit-shadow-breathe{0%,100%{transform:scaleX(1);opacity:.19}50%{transform:scaleX(.85);opacity:.13}}
+@keyframes spirit-spark-breathe{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:.75;transform:scale(1)}}
+.hero-spirit-badge{position:absolute;top:18px;left:20px;max-width:calc(100% - 40px);padding:5px 11px;border:1px solid #ecd5bc;border-radius:20px;background:#fff9eddf;color:#85665f;font-size:11px;font-weight:600;line-height:1.6}
+.hero-spirit-toggle{position:absolute;right:14px;bottom:14px;min-height:36px;padding:6px 12px;border:1px solid #e4cbb4;border-radius:8px;background:#fff7eded;color:#60474d;font-size:12px;box-shadow:0 2px 9px #30293412}
+.hero-spirit-toggle:hover{background:#fff7ed}
+.hero-spirit .art-caption{flex-wrap:wrap;gap:4px 12px}
+.hero-spirit .art-caption a{color:var(--brand-dark);text-decoration:none}
+.hero-spirit .art-caption a:hover{text-decoration:underline}
+@media(max-width:950px){.hero-spirit-stage{border-radius:60px 60px 13px 13px}}
+@media(max-width:740px){.hero-spirit-stage{border-radius:57px 57px 12px 12px}.hero-spirit-badge{top:14px;left:16px;max-width:calc(100% - 32px)}}
+@media(max-width:480px){.hero-spirit-badge{font-size:10px}.hero-spirit .art-caption{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.hero-spirit-illustration *{animation:none!important}}

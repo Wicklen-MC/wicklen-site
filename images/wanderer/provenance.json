@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-07",
+  "source_repository": "Wicklen-MC/wicklen-chronicles",
+  "source_revision": "a460aad04e36f10f903975efb6c02df11c3febf6",
+  "source_manifest": "docs/development/wanderer/captures.json",
+  "development_mod_version": "0.4.3-SNAPSHOT",
+  "published_download_mod_version": "0.4.2",
+  "hero": "Inline code-native SVG in index.html#hero-spirit-art; CSS animation, not game footage",
+  "images": [
+    {
+      "file": "images/wanderer/front-day.webp",
+      "source_file": "docs/development/wanderer/images/front-day.png",
+      "source_sha256": "49213e4711a0cc8d6f589933415f1fb1aff2e8ac1cbb977400f2040088f9102a",
+      "sha256": "065e6086ecfbf2339c47d9676d6e7eb93e51463bafc0a5be29e15e4efb656c9e",
+      "rgba_sha256": "d128a411470d2637f8ef0713cfca26e9f351819fcf77a8b7e50408d15048623a",
+      "processing": "Lossless PNG-to-WebP format conversion; decoded RGBA pixels identical",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "file": "images/wanderer/side-day.webp",
+      "source_file": "docs/development/wanderer/images/side-day.png",
+      "source_sha256": "4dc26c0c8a95f661893d03a4c7579281378477582749994e084187d4624a125b",
+      "sha256": "f3b64ea1a4241158fd93ffe3694d9dcdb89c3d81ecc6d1b9d829729139908fa5",
+      "rgba_sha256": "44f9c518a8cd06b218dbf0682b46998bdc27f5d630be8665b79b536fbf5b5329",
+      "processing": "Lossless PNG-to-WebP format conversion; decoded RGBA pixels identical",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "file": "images/wanderer/back-day.webp",
+      "source_file": "docs/development/wanderer/images/back-day.png",
+      "source_sha256": "3e386c0095e286cad90d7db8bc6ad7094b19e1a2cde43b9d076ba58c452dd144",
+      "sha256": "6ae60aa4fed5e3783ba600594689c256287738e7413b218369342f301329377f",
+      "rgba_sha256": "ef5466a2dfcfb4778c1f42a56fe5b553716c33498e8d34f80b61f9ca89817a92",
+      "processing": "Lossless PNG-to-WebP format conversion; decoded RGBA pixels identical",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "file": "images/wanderer/front-night.webp",
+      "source_file": "docs/development/wanderer/images/front-night.png",
+      "source_sha256": "0ade4d3664ae7f01e1626b9f4dc889bb23a8ac17ffee608dc904c15b8ab07305",
+      "sha256": "baa678187c19aae305b5f723ca17b221ab6d6369ecb480357e5365297be2c483",
+      "rgba_sha256": "bb314a4605b632ce5323ca9136829abddaee84a29776aad03371ad222ffcd537",
+      "processing": "Lossless PNG-to-WebP format conversion; decoded RGBA pixels identical",
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "video": {
+    "file": "videos/chronicles/spirit-wanderer.mp4",
+    "sha256": "ef7824f0bcbc5b3f02ae628cb96bb0833cdc3107cf8d195cf3ddd646416b5454",
+    "bytes": 1608211,
+    "duration_seconds": 24,
+    "fps": 20,
+    "width": 1280,
+    "height": 800,
+    "processing": "Original native MP4 copied unchanged",
+    "scene": "Isolated Minecraft test world, controlled rotation, manual demonstration speech"
+  }
+}

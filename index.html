@@ -20,6 +20,7 @@
 <script src="deployment.js" defer></script>
 <script src="experiences.js" defer></script>
 <script src="site.js" defer></script>
+<script src="spirit-media.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">К содержимому</a>
@@ -38,7 +39,50 @@
 <p class="hero-meta">Minecraft 26.3 · Fabric 0.20.1 · Java 25</p>
 <button class="server-copy" type="button" data-copy-server disabled aria-describedby="hero-copy-feedback" aria-label="Адрес сервера появится здесь"><span data-icon="copy"></span><span>Наш сервер <strong data-server-value>Адрес сервера появится здесь</strong></span></button><span class="copy-feedback" id="hero-copy-feedback" role="status"></span>
 </div>
-<div class="hero-art"><img class="landscape" src="landscape.svg" width="600" height="520" alt="Иллюстрация: дом с тёплыми окнами среди елей на закате"><div class="art-caption"><span>У каждого — свой маршрут</span><span>Вместе интереснее</span></div></div>
+<div class="hero-art hero-spirit">
+  <div class="hero-spirit-stage">
+    <svg id="hero-spirit-art" class="hero-spirit-illustration" data-spirit-scene viewBox="0 0 600 520" role="img" aria-labelledby="hero-spirit-title hero-spirit-description">
+      <title id="hero-spirit-title">Маленький спутник Wicklen</title>
+      <desc id="hero-spirit-description">Иллюстрация парящего духа в светлом тканевом капюшоне. Тёплые глаза, бирюзовые заплаты и две развевающиеся ленты.</desc>
+      <defs>
+        <radialGradient id="spirit-backdrop"><stop stop-color="#efe4ed"/><stop offset="1" stop-color="#f8eee5"/></radialGradient>
+        <linearGradient id="spirit-cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff7e7"/><stop offset="1" stop-color="#ded0b4"/></linearGradient>
+        <linearGradient id="spirit-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#292633"/><stop offset="1" stop-color="#4e3b46"/></linearGradient>
+        <linearGradient id="spirit-teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8ab3af"/><stop offset="1" stop-color="#63918e"/></linearGradient>
+      </defs>
+      <ellipse cx="304" cy="269" rx="235" ry="213" fill="url(#spirit-backdrop)"/>
+      <path d="M87 325c55-156 276-213 414-88" fill="none" stroke="#d9becf" stroke-width="1.5" stroke-dasharray="3 10"/>
+      <path d="M104 340c83 94 257 117 377 14" fill="none" stroke="#d9becf" stroke-width="1.5" stroke-dasharray="3 10"/>
+      <g class="spirit-spark spirit-spark-one" fill="#d7aa78"><path d="m126 203 4-12 4 12 12 4-12 4-4 12-4-12-12-4z"/><rect x="156" y="151" width="5" height="5"/></g>
+      <g class="spirit-spark spirit-spark-two" fill="#ae8aa9"><path d="m460 272 4-12 4 12 12 4-12 4-4 12-4-12-12-4z"/><rect x="420" y="354" width="5" height="5"/></g>
+      <ellipse class="spirit-shadow" cx="295" cy="449" rx="83" ry="12" fill="#b3a1b6" opacity=".19"/>
+      <g class="spirit-float">
+        <g class="spirit-ribbon spirit-ribbon-long"><path d="M344 153c45 5 55-50 96-44l28 13-13 19-16-10c-29-9-41 46-87 45z" fill="url(#spirit-teal)"/><path d="m440 109 6 23 9 9 13-19z" fill="#9ac0b9"/></g>
+        <g class="spirit-ribbon spirit-ribbon-short"><path d="M354 192c39 4 61-24 99-11l21 24-18 14-13-19c-24-12-51 21-90 14z" fill="#e4d6ba"/><path d="m453 181 3 38 18-14z" fill="#f5e9cf"/></g>
+        <path d="m237 246 110 0 31 114-28 20-29-14-35 28-28-20-32 12-16-35z" fill="#bfb6a2"/>
+        <g class="spirit-drape spirit-drape-left"><path d="m237 245 48 18-20 107-40 12-13-31z" fill="url(#spirit-cloth)"/><path d="m225 354 20 3-3 24-17 1z" fill="#87aaa3"/></g>
+        <g class="spirit-drape spirit-drape-right"><path d="m327 255 21-9 33 104-25 22-32-11z" fill="#e5d8bb"/><path d="m348 246 33 104-11 10-32-89z" fill="#f6ead1"/></g>
+        <path d="m278 256 45-3 15 118-22-3-10 27-25-11-3-21-20 7z" fill="#f6ecd5"/>
+        <path d="m315 338 15 3 4 26-17-1z" fill="url(#spirit-teal)"/>
+        <path d="m292 281 5 66m-15-54 22-2m-20 20 22-2m-20 20 22-2" fill="none" stroke="#98755b" stroke-width="3" stroke-linecap="square"/>
+        <g class="spirit-hood">
+          <path d="m228 132 65-20 70 28 12 94-26 30-114-6-23-29 2-65z" fill="url(#spirit-cloth)"/>
+          <path d="m363 140 12 94-26 30-4-26 7-78z" fill="#ccbea2"/>
+          <path d="m240 163 54-16 53 21-2 63-44 15-63-18z" fill="url(#spirit-face)"/>
+          <path d="m214 164 14-32 65-20 70 28-11 20-58-21-55 21-4 79-23-10z" fill="#f9efda"/>
+          <path d="m228 132 65-20 70 28-11 8-58-20-60 18z" fill="#fff8eb"/>
+          <path d="m347 151 16-11 6 47-19 6z" fill="url(#spirit-teal)"/>
+          <path d="m343 155 12-3m-10 15 12-3m-10 15 12-3" fill="none" stroke="#9b7459" stroke-width="3"/>
+          <g class="spirit-eyes" fill="#f4ce83"><rect x="261" y="183" width="12" height="27" rx="1"/><rect x="307" y="186" width="12" height="27" rx="1"/><path d="M263 185h4v12h-4zm46 3h4v12h-4z" fill="#fff1bc"/></g>
+          <path d="m235 239 66 18 48-19v26l-50 9-64-15z" fill="#e8d9bd"/>
+        </g>
+      </g>
+    </svg>
+    <span class="hero-spirit-badge">Новый облик · в разработке</span>
+    <button class="hero-spirit-toggle" type="button" data-spirit-toggle="hero-spirit-art" aria-controls="hero-spirit-art" aria-pressed="false" hidden>▷ Анимация</button>
+  </div>
+  <div class="art-caption" id="hero-spirit-caption"><span>Маленький спутник большого пути</span><a href="chronicles.html#spirit-preview">Познакомиться ↗</a></div>
+</div>
 </div></section>
 <div class="wrap intro-strip"><div><span data-icon="compass"></span><div><strong>Мир для долгих вылазок</strong><span>Новые биомы, руины и поселения</span></div></div><div><span data-icon="home"></span><div><strong>База, которую хочется строить</strong><span>Мебель, кухня и своё производство</span></div></div><div><span data-icon="spark"></span><div><strong>Своя роль в приключении</strong><span>Заклинания, классы и навыки</span></div></div></div>
 <section class="section" id="play"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Выберите своё занятие</div><h2>Что вас ждёт<br>по ту сторону спавна</h2></div><p>Сборка складывается из разных занятий. Вот как они работают, какие моды за них отвечают и с чего можно начать.</p></div>

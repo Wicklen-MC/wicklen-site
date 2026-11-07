@@ -11,7 +11,7 @@ OUTPUT = ROOT / "dist"
 PUBLIC_FILES = (
     "index.html", "mods.html", "chronicles.html", "site.css", "site.js",
     "experiences.js", "data.js", "chronicles.css", "chronicles.js",
-    "chronicles-release.js", "deployment.js", "favicon.svg", "landscape.svg",
+    "chronicles-release.js", "deployment.js", "spirit-media.js", "favicon.svg", "landscape.svg",
     "og-image.png", "og-image.svg",
 )
 
@@ -29,7 +29,7 @@ class Page(HTMLParser):
             if identifier in self.ids:
                 raise ValueError(f"Duplicate element ID: {identifier}")
             self.ids.add(identifier)
-        for attribute in ("src", "href"):
+        for attribute in ("src", "href", "poster"):
             if values.get(attribute):
                 self.links.append(values[attribute])
 
@@ -40,6 +40,9 @@ def main():
         for path in (ROOT / folder).rglob("*"):
             if path.is_file() and path.suffix.lower() in {".png", ".webp", ".svg", ".jpg", ".jpeg"}:
                 files.add(path.relative_to(ROOT))
+    for path in (ROOT / "videos").rglob("*"):
+        if path.is_file() and path.suffix.lower() in {".mp4", ".webm", ".vtt"}:
+            files.add(path.relative_to(ROOT))
     for path in files:
         source = ROOT / path
         if not source.is_file() or source.is_symlink():
