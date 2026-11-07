@@ -72,7 +72,7 @@
     if (typeof value !== 'string' || !/^https:\/\/downloads\.wicklen\.link\/releases\/[a-zA-Z0-9._/-]+$/.test(value)) return false;
     return !value.split('/').includes('..');
   };
-  if (release && release.version === '0.4.3' && release.chroniclesVersion === '0.4.2' && release.updateFrom === '0.4.2') {
+  if (release && release.version === '0.4.4' && release.chroniclesVersion === '0.4.3' && release.updateFrom === '0.4.3') {
     for (const link of document.querySelectorAll('[data-chron-release]')) {
       const file = release[link.dataset.chronRelease];
       if (!file || !publicPath(file.href)) continue;
@@ -83,7 +83,7 @@
       if (link.dataset.chronRelease === 'full') link.textContent = `Сборка Wicklen ${release.version}${size ? ` · ${size}` : ''}`;
     }
     if (publicPath(release.full?.href) && publicPath(release.update?.href)) {
-      document.querySelector('[data-chron-release-note]').textContent = 'В полной сборке — 121 мод, публичные настройки и русский перевод. Обновление с 0.4.2 меняет только ресурспак и манифест; мод Chronicles остаётся на версии 0.4.2. API-ключ игрокам не нужен.';
+      document.querySelector('[data-chron-release-note]').textContent = 'В полной сборке — 121 мод, публичные настройки и русский перевод. Обновление с 0.4.3 заменяет только Chronicles 0.4.2 на 0.4.3. Старый JAR нужно удалить; конфиги и личные настройки сохраняются. API-ключ игрокам не нужен.';
     }
   }
 })();

@@ -1,9 +1,9 @@
-// Public mandatory catalog pinned to Wicklen pack 0.4.3; Chronicles remains 0.4.2.
+// Public mandatory catalog pinned to Wicklen pack 0.4.4; Chronicles 0.4.3.
 window.MODS = {
   "generated": "2026-11-07",
   "name": "Wicklen",
   "nameRu": "Виклен",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "profile": "production",
   "minecraft": "26.3",
   "loader": "Fabric 0.20.1",
@@ -77,15 +77,16 @@ window.MODS = {
       "points": [
         "Рассматривайте существ и видимые части построек обычной подзорной трубой; сохраняйте личные названия и заметки.",
         "Выбирайте записанное место на карте и следуйте направлению Путевых огней.",
-        "В дневнике доступны поручения, испытания и настройки интерфейса; реплики духа появляются на экране."
+        "В дневнике доступны поручения, испытания и настройки размера, прозрачности и положения реплик духа.",
+        "Спрашивайте духа о ванильных механиках: справка и доступные рецепты текущего сервера помогают объяснить следующий шаг."
       ],
       "icon": false,
       "name": "Wicklen: Chronicles",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "side": "both",
       "optional": false,
-      "file": "wicklen-chronicles-0.4.2.jar",
-      "sha512": "eddcd0fea97e40685d4ca1bca350cd80955c42bc08d087bf3f0c96e264ad1ed1461d3f38155621db692f5d734abe95e06f4a7ddeece6bb469e628bbe81646805",
+      "file": "wicklen-chronicles-0.4.3.jar",
+      "sha512": "0f888806e64d07d9c312c6a76c1661b541b02c0b93c5151554675ca26b8bcc871b8d6bc795f4ef7ee0ff37cb58cf82d565ebd70b4c7f54389450f09b163c896d",
       "install": [
         "client",
         "server"
@@ -94,7 +95,8 @@ window.MODS = {
       "versionId": null,
       "sourceKind": "build",
       "url": "https://github.com/Wicklen-MC/wicklen-chronicles",
-      "sourceCommit": "33a5ec99982b87c3995d333803d892c36ac2f256"
+      "sourceCommit": "e02aa7b467ca1047f9177853454793ea4a8d9c35",
+      "artifactUrl": "https://downloads.wicklen.link/releases/components/wicklen-chronicles/0.4.3/wicklen-chronicles-0.4.3.jar"
     },
     {
       "id": "Z7xAH01M",
@@ -4925,61 +4927,61 @@ window.MODS = {
   ],
   "downloads": [
     {
-      "file": "wicklen-0.4.3-players.zip",
+      "file": "wicklen-0.4.4-players.zip",
       "kind": "main",
       "label": "Основная сборка",
-      "href": "https://downloads.wicklen.link/releases/0.4.3/wicklen-0.4.3-players.zip",
-      "size": 449756730,
-      "sha256": "e6adc96f9c505b3757538fcf7f92185556ed08bfd1feca864a7ff7bffdbcf2e8",
-      "sizeHuman": "449.8 МБ"
+      "href": "https://downloads.wicklen.link/releases/0.4.4/wicklen-0.4.4-players.zip",
+      "size": 449773521,
+      "sha256": "2e55b5c608215b6bb61bd2471f27dd4c7e777b4d66f34cb5c5c64a238271b871",
+      "sizeHuman": "449,8 МБ"
     },
     {
-      "file": "wicklen-0.4.2-to-0.4.3-update.zip",
+      "file": "wicklen-0.4.3-to-0.4.4-update.zip",
       "kind": "update",
-      "label": "Обновление с 0.4.2",
-      "href": "https://downloads.wicklen.link/releases/0.4.3/wicklen-0.4.2-to-0.4.3-update.zip",
-      "size": 1328227,
-      "sha256": "fab7e152d5374416de772bd8bf3d9144adb22680707705e7be7835a43b47ab13",
-      "sizeHuman": "1.33 МБ"
+      "label": "Обновление с 0.4.3",
+      "href": "https://downloads.wicklen.link/releases/0.4.4/wicklen-0.4.3-to-0.4.4-update.zip",
+      "size": 875535,
+      "sha256": "e856347a3f539c6f125f6145e51a9d71c95aefa3d8c3ff40ac0eb94f3feb511e",
+      "sizeHuman": "875,5 КБ"
     },
     {
-      "file": "manifest-0.4.3.json",
+      "file": "manifest-0.4.4.json",
       "kind": "manifest",
       "label": "Точные версии модов",
-      "href": "https://downloads.wicklen.link/releases/0.4.3/manifest-0.4.3.json",
+      "href": "https://downloads.wicklen.link/releases/0.4.4/manifest-0.4.4.json",
       "size": 42052,
-      "sha256": "d63a3822c7e80aa98de57929d79bb701dd3eccdbccebce7bac6e7e5fcccc4265",
-      "sizeHuman": "42.1 КБ"
+      "sha256": "1a005c413c203f1ed3711d829eaf2925cad80101ac6f8806850ca1aa69b72459",
+      "sizeHuman": "42,1 КБ"
     },
     {
-      "file": "PLAYER-INSTRUCTIONS-0.4.3.md",
+      "file": "PLAYER-INSTRUCTIONS-0.4.4.md",
       "kind": "instructions",
       "label": "Инструкция (текст)",
-      "href": "https://downloads.wicklen.link/releases/0.4.3/PLAYER-INSTRUCTIONS-0.4.3.md",
+      "href": "https://downloads.wicklen.link/releases/0.4.4/PLAYER-INSTRUCTIONS-0.4.4.md",
       "size": 608,
-      "sha256": "d3ff99c9c4543aabe4984759435a985ee697028ea68005d04ff8b3055cc6e97d",
+      "sha256": "4ac1445a2d5bf746635fd578b9ae6ffa4a6b1b151629304e26a8298c52459d35",
       "sizeHuman": "608 Б"
     },
     {
-      "file": "SHA256SUMS-0.4.3.txt",
+      "file": "SHA256SUMS-0.4.4.txt",
       "kind": "checksums",
       "label": "Суммы SHA-256",
-      "href": "https://downloads.wicklen.link/releases/0.4.3/SHA256SUMS-0.4.3.txt",
+      "href": "https://downloads.wicklen.link/releases/0.4.4/SHA256SUMS-0.4.4.txt",
       "size": 716,
-      "sha256": "4af83d851196edc4fc0695bf1bc29613551bc6e2ea89391b1f7680c2aa9632c6",
+      "sha256": "908c21c81aa0043c462054869e54a65da71407c31392c816d7320182c76ff44d",
       "sizeHuman": "716 Б"
     }
   ],
   "changelog": {
     "date": "07.11.2026",
     "entries": [
-      "Сборка Wicklen 0.4.3: в русском ресурспаке добавлены 26 переводов OreGrowth. Мод Wicklen: Chronicles остаётся на версии 0.4.2.",
-      "Обновление с 0.4.2 заменяет только resourcepacks/ru-mods.zip и обновляет манифест комплекта. Моды и клиентские конфиги сохраняются.",
-      "Состав прежний: 165 серверных и 121 обязательный клиентский JAR, включая OreGrowth. Для первого входа нужен полный комплект."
+      "Сборка Wicklen 0.4.4: Chronicles 0.4.3 — тканевый дух, ванильная справка и ползунки положения реплик.",
+      "Обновление с 0.4.3 заменяет только JAR Chronicles. Удалите wicklen-chronicles-0.4.2.jar, затем скопируйте файлы патча.",
+      "Состав прежний: 165 серверных и 121 обязательный клиентский JAR, включая OreGrowth. Конфиги, русский ресурспак, миры и личные настройки сохраняются."
     ]
   },
-  "instructionsText": "# Wicklen pack 0.4.3\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n",
-  "sumsText": "d3ff99c9c4543aabe4984759435a985ee697028ea68005d04ff8b3055cc6e97d  PLAYER-INSTRUCTIONS-0.4.3.md\ne2166874c59c25dd62666380bd23eb45645993ea6cd820ad88a5676f83644c38  UPDATE.json\nd63a3822c7e80aa98de57929d79bb701dd3eccdbccebce7bac6e7e5fcccc4265  manifest-0.4.3.json\ncd499423a7b51636668fa21942aa652cb014d110778fcd9579e7fc8c46c248fe  pack.lock.json\nab538bc74ddafbd93216eb7049a90e22c56f844297bcf8cfe27dff8f8fe36d85  server-manifest-0.4.3.json\nfab7e152d5374416de772bd8bf3d9144adb22680707705e7be7835a43b47ab13  wicklen-0.4.2-to-0.4.3-update.zip\ne6adc96f9c505b3757538fcf7f92185556ed08bfd1feca864a7ff7bffdbcf2e8  wicklen-0.4.3-players.zip\ne4cf18afa1bf17bce1005bee547086d2d773f224b4c8739c83be09b61568fb39  wicklen-0.4.3-server.zip\n",
+  "instructionsText": "# Wicklen pack 0.4.4\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n",
+  "sumsText": "4ac1445a2d5bf746635fd578b9ae6ffa4a6b1b151629304e26a8298c52459d35  PLAYER-INSTRUCTIONS-0.4.4.md\ndd726c3a904d439d4cf08dd6354442abb3996111cd40aae0d664599196de9e45  UPDATE.json\n1a005c413c203f1ed3711d829eaf2925cad80101ac6f8806850ca1aa69b72459  manifest-0.4.4.json\n786f162a6da9f209601061c7817128a45f199b66004ff6ef3fc244fc80317f69  pack.lock.json\n15b30c926843dd47519e5ccec1cb72e4f1aecc1c97529d1bb1aa977f56dfd252  server-manifest-0.4.4.json\ne856347a3f539c6f125f6145e51a9d71c95aefa3d8c3ff40ac0eb94f3feb511e  wicklen-0.4.3-to-0.4.4-update.zip\n2e55b5c608215b6bb61bd2471f27dd4c7e777b4d66f34cb5c5c64a238271b871  wicklen-0.4.4-players.zip\n23dbe9532d9610193a6792c36ad65c2da78ecaf6a9f1c3bc5d4136510aa867e0  wicklen-0.4.4-server.zip\n",
   "manifestMods": [
     {
       "name": "AmbientSounds",
@@ -5911,9 +5913,9 @@ window.MODS = {
     },
     {
       "name": "Wicklen: Chronicles",
-      "file": "wicklen-chronicles-0.4.2.jar",
-      "version": "0.4.2",
-      "sha512": "eddcd0fea97e40685d4ca1bca350cd80955c42bc08d087bf3f0c96e264ad1ed1461d3f38155621db692f5d734abe95e06f4a7ddeece6bb469e628bbe81646805",
+      "file": "wicklen-chronicles-0.4.3.jar",
+      "version": "0.4.3",
+      "sha512": "0f888806e64d07d9c312c6a76c1661b541b02c0b93c5151554675ca26b8bcc871b8d6bc795f4ef7ee0ff37cb58cf82d565ebd70b4c7f54389450f09b163c896d",
       "side": "both",
       "optional": false
     },
@@ -5952,9 +5954,9 @@ window.MODS = {
   ],
   "catalogSource": {
     "repository": "https://github.com/Wicklen-MC/wicklen-server",
-    "path": "pack/releases/0.4.3/pack.lock.json",
-    "sha256": "cd499423a7b51636668fa21942aa652cb014d110778fcd9579e7fc8c46c248fe",
-    "packVersion": "0.4.3",
+    "path": "pack/releases/0.4.4/pack.lock.json",
+    "sha256": "786f162a6da9f209601061c7817128a45f199b66004ff6ef3fc244fc80317f69",
+    "packVersion": "0.4.4",
     "distribution": "production",
     "mandatoryOnly": true,
     "counts": {
@@ -5964,5 +5966,5 @@ window.MODS = {
     },
     "optionalAddonsIncluded": false
   },
-  "downloadBase": "https://downloads.wicklen.link/releases/0.4.3/"
+  "downloadBase": "https://downloads.wicklen.link/releases/0.4.4/"
 };
