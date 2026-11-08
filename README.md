@@ -47,7 +47,8 @@ runs skip deployment when main already contains a newer commit.
   Download metadata, checksums and instructions describe the same public release.
 - `chronicles-release.js`: public filenames, URLs, sizes and checksums for pack 0.4.4; `chroniclesVersion` is 0.4.3 and `updateFrom` is 0.4.3.
 - `deployment.js`: the public game address, `play.wicklen.link`, without credentials.
-- `images/chronicles`: native client screenshots, capture provenance and source hashes.
+- `images/chronicles/en`: current native English-interface 0.4.3 screenshots, capture provenance and source hashes.
+- `images/chronicles`: original Russian 0.4.2 captures retained for historical references.
 - `images/wanderer` / `videos/chronicles`: the upcoming cloth-wanderer screenshots
   and 24-second native recording; [source provenance](images/wanderer/README.md).
 - `spirit-media.js`: homepage SVG play/pause, visibility and reduced-motion controls.
