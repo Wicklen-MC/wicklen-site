@@ -37,7 +37,9 @@ runs skip deployment when main already contains a newer commit.
 - `chronicles.html`: the current mod's player guide, settings and screenshot gallery,
   with a small block linking to the separate compatibility adapter.
 - `compat.html` / `compat.css`: Wicklen Pack Compat, its published 0.1.0 download,
-  installation sides and supported mods. Unpublished 0.1.1 changes are labelled.
+  installation sides and supported mods. The visible shoulder-damage protection
+  section is explicitly labelled as unpublished 0.1.1; the 0.1.0 download excludes it.
+  A visible Compat link appears in every page header, including mobile layouts.
 - `site.css` / `site.js`: shared styling and catalog behavior.
 - `chronicles.css` / `chronicles.js`: the mod page and keyboard-accessible gallery.
 - `experiences.js`: gameplay examples for the landing page.

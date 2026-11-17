@@ -115,3 +115,7 @@ dialog{width:min(640px,100% - 32px);max-height:85vh;border:1px solid #e6cbd3;bor
 @media(max-width:740px){.hero-spirit-stage{border-radius:57px 57px 12px 12px}.hero-spirit-badge{top:14px;left:16px;max-width:calc(100% - 32px)}}
 @media(max-width:480px){.hero-spirit-badge{font-size:10px}.hero-spirit .art-caption{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.hero-spirit-illustration *{animation:none!important}}
+
+/* Keep the compatibility adapter visible beside Chronicles, including on phones. */
+.nav .nav-compat{color:var(--brand-dark);font-weight:650}
+@media(max-width:440px){html{scroll-padding-top:120px}.site-header .header-inner{height:auto;min-height:64px;flex-wrap:wrap;gap:8px;padding-block:10px}.nav{width:100%;margin-left:0;justify-content:space-between;gap:12px}#download,#downloads{scroll-margin-top:120px}}
