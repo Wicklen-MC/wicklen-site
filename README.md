@@ -11,8 +11,8 @@ needed to serve the site.
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8765/`. The four pages are `index.html`, `mods.html`, `chronicles.html`
-and `chronicles-download.html`; they also work when opened directly from disk.
+Open `http://127.0.0.1:8765/`. The four pages are `index.html`, `mods.html`,
+`chronicles.html` and `compat.html`; they also work when opened directly from disk.
 
 Build the deployable directory with Python 3.11 or later:
 
@@ -34,10 +34,10 @@ runs skip deployment when main already contains a newer commit.
 
 - `index.html`: gameplay directions, introduction to Chronicles and installation.
 - `mods.html`: searchable mandatory pack catalog, filters and mod details.
-- `chronicles.html`: the current mod's player guide, settings and screenshot gallery.
-- `chronicles-download.html` / `chronicles-download.css`: compact standalone mod
-  page with the verified direct JAR, requirements, installation and optional
-  integrations. The shared “Our mod” navigation opens this page.
+- `chronicles.html`: the current mod's player guide, settings and screenshot gallery,
+  with a small block linking to the separate compatibility adapter.
+- `compat.html` / `compat.css`: Wicklen Pack Compat, its published 0.1.0 download,
+  installation sides and supported mods. Unpublished 0.1.1 changes are labelled.
 - `site.css` / `site.js`: shared styling and catalog behavior.
 - `chronicles.css` / `chronicles.js`: the mod page and keyboard-accessible gallery.
 - `experiences.js`: gameplay examples for the landing page.

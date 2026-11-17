@@ -1,0 +1,18 @@
+.compat-sheet{max-width:860px;padding-block:40px 60px}
+.compat-page .header-inner{gap:12px}
+.compat-back{display:inline-block;font-size:12px;color:var(--muted);margin-bottom:30px;text-decoration:none}
+.compat-sheet h1{font-size:clamp(44px,6vw,68px);margin-bottom:20px}
+.compat-lead{font:26px/1.35 var(--serif);color:#78566e}
+.compat-sheet p{color:#796370;font-size:14px;line-height:1.85}
+.compat-section{margin-top:32px}.compat-sheet h2{font-size:30px;margin-bottom:16px}
+.compat-download{padding:28px;border:1px solid #dfc7d2;border-radius:16px;background:#f1e4e9;margin-top:30px;scroll-margin-top:95px}
+.compat-sheet .compat-small{font-size:12px;margin:14px 0}
+.compat-download details{font-size:11px;color:var(--muted)}
+.compat-hash{display:block;overflow-wrap:anywhere;margin-top:10px}
+.compat-list{margin:0}.compat-list>div{padding:14px 0;border-bottom:1px solid var(--line)}
+.compat-list dt{font-size:14px;font-weight:650;margin-bottom:5px}.compat-list dd{margin:0;font-size:13px;color:#796370}
+.compat-next{margin-top:20px;font-size:13px;color:var(--muted)}.compat-next p{font-size:13px;margin-top:10px}
+.compat-source{border-top:1px dashed #d8bfca;margin:30px 0 0;padding-top:20px;font-size:12px!important}
+.compat-page summary{cursor:pointer}
+@media(max-width:740px){.compat-sheet{padding-top:28px}.compat-download{padding:22px}.compat-sheet h2{font-size:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
