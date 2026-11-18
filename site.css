@@ -119,3 +119,8 @@ dialog{width:min(640px,100% - 32px);max-height:85vh;border:1px solid #e6cbd3;bor
 /* Keep the compatibility adapter visible beside Chronicles, including on phones. */
 .nav .nav-compat{color:var(--brand-dark);font-weight:650}
 @media(max-width:440px){html{scroll-padding-top:120px}.site-header .header-inner{height:auto;min-height:64px;flex-wrap:wrap;gap:8px;padding-block:10px}.nav{width:100%;margin-left:0;justify-content:space-between;gap:12px}#download,#downloads{scroll-margin-top:120px}}
+
+/* Guides to candidate mods stay separate from the published pack catalog. */
+.catalog-guide-callout{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:0;margin-bottom:32px;padding:22px 26px;border:1px solid #d7dccb;border-radius:16px;background:#eef0e3}.catalog-guide-callout strong{font-size:18px}.catalog-guide-callout p{margin:7px 0 0;font-size:14px;line-height:1.6}.catalog-guide-callout>a{flex-shrink:0;font-weight:700;color:#355c45}.catalog-guide-callout div{min-width:0}@media(max-width:600px){.catalog-guide-callout{flex-direction:column;align-items:flex-start;padding:20px;gap:15px}}
+
+.footer-links{flex-wrap:wrap}

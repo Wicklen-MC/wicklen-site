@@ -1,0 +1,24 @@
+[
+  {
+    "file": "herbcraft-codex-en.png",
+    "source": "Native Minecraft 26.3 Fabric client connected to isolated full Wicklen 0.4.5 + four candidate mods dedicated server",
+    "date": "2026-11-18",
+    "language": "en_us",
+    "width": 1280,
+    "height": 800,
+    "sha256": "4d776d007fc2da4a8bd0f5f4d067bc9b3692cac871f19b31e083de46613cd549",
+    "changes": "Original screenshot bytes; no image edits",
+    "fixture": "Synthetic local world and research player; no production player data"
+  },
+  {
+    "file": "arcana-guide-en.png",
+    "source": "Native Minecraft 26.3 Fabric client connected to isolated full Wicklen 0.4.5 + four candidate mods dedicated server",
+    "date": "2026-11-18",
+    "language": "en_us",
+    "width": 1280,
+    "height": 800,
+    "sha256": "3670a8f7bc1dbe13b3fe5b39dd3dff5793f8f2a251e14be4bf94d57e1524154e",
+    "changes": "Original screenshot bytes; no image edits",
+    "fixture": "Synthetic local world and research player; no production player data"
+  }
+]

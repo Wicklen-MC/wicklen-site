@@ -11,8 +11,8 @@ needed to serve the site.
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8765/`. The four pages are `index.html`, `mods.html`,
-`chronicles.html` and `compat.html`; they also work when opened directly from disk.
+Open `http://127.0.0.1:8765/`. The five pages are `index.html`, `mods.html`,
+`chronicles.html`, `compat.html` and `guides.html`; they also work when opened directly from disk.
 
 Build the deployable directory with Python 3.11 or later:
 
@@ -31,6 +31,13 @@ Manual runs can select an earlier reviewed main-branch commit. Delayed automatic
 runs skip deployment when main already contains a newer commit.
 
 ## Pages and content
+
+- `guides.html` / `guides.css`: four candidate-mod player guides (Herbcraft Core,
+  Alchemy, Cuisine, Arcana Novum) for Fabric 26.3. These mods are not part of
+  released pack 0.4.5. Exact version links, first recipes, local test boundaries
+  and the unresolved REI brewing-display gap are stated explicitly.
+  `images/guides/` contains genuine English native test captures; provenance JSON
+  is excluded from the public build. The main catalog inventory remains unchanged.
 
 - `index.html`: gameplay directions, introduction to Chronicles and installation.
 - `mods.html`: searchable mandatory pack catalog, filters and mod details.

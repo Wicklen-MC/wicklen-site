@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "dist"
 PUBLIC_FILES = (
-    "index.html", "mods.html", "chronicles.html", "compat.html", "compat.css", "site.css", "site.js",
+    "index.html", "mods.html", "chronicles.html", "compat.html", "guides.html", "guides.css", "compat.css", "site.css", "site.js",
     "experiences.js", "data.js", "chronicles.css", "chronicles.js",
     "chronicles-release.js", "deployment.js", "spirit-media.js", "favicon.svg", "landscape.svg",
     "og-image.png", "og-image.svg",
