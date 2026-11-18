@@ -1,9 +1,9 @@
-// Public mandatory catalog pinned to Wicklen pack 0.4.4; Chronicles 0.4.3.
+// Public mandatory catalog pinned to Wicklen pack 0.4.5; Chronicles 0.4.4 and Compat 0.1.1.
 window.MODS = {
-  "generated": "2026-11-07",
+  "generated": "2026-11-18",
   "name": "Wicklen",
   "nameRu": "Виклен",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "profile": "production",
   "minecraft": "26.3",
   "loader": "Fabric 0.20.1",
@@ -82,11 +82,11 @@ window.MODS = {
       ],
       "icon": false,
       "name": "Wicklen: Chronicles",
-      "version": "0.4.3",
+      "version": "0.4.4",
       "side": "both",
       "optional": false,
-      "file": "wicklen-chronicles-0.4.3.jar",
-      "sha512": "0f888806e64d07d9c312c6a76c1661b541b02c0b93c5151554675ca26b8bcc871b8d6bc795f4ef7ee0ff37cb58cf82d565ebd70b4c7f54389450f09b163c896d",
+      "file": "wicklen-chronicles-0.4.4.jar",
+      "sha512": "6903ea1b4bc3803515b1913949746ee0dbf5c7da634c5dce8aca6822b9c522290140adf98fafa2531919d18ae82e0542446b0fd88eb82071eb847e9192dfa898",
       "install": [
         "client",
         "server"
@@ -95,8 +95,8 @@ window.MODS = {
       "versionId": null,
       "sourceKind": "build",
       "url": "https://github.com/Wicklen-MC/wicklen-chronicles",
-      "sourceCommit": "e02aa7b467ca1047f9177853454793ea4a8d9c35",
-      "artifactUrl": "https://downloads.wicklen.link/releases/components/wicklen-chronicles/0.4.3/wicklen-chronicles-0.4.3.jar"
+      "sourceCommit": "c8f3cd790dd6e1d106b1034ff52e00edcb18926c",
+      "artifactUrl": "https://downloads.wicklen.link/releases/components/wicklen-chronicles/0.4.4/wicklen-chronicles-0.4.4.jar"
     },
     {
       "id": "Z7xAH01M",
@@ -186,19 +186,19 @@ window.MODS = {
       "category": "library",
       "group": "own",
       "highlight": false,
-      "description": "Небольшой патч совместимости для проверки места появления Mochi Pets во время генерации мира.",
+      "description": "Защищает Mochi на плече от случайных ударов владельца, помогает копать сквозь переносимого питомца и исправляет проверку генерации мира.",
       "points": [
-        "Отклоняет небезопасную проверку соседней области на краю генерируемого чанка.",
-        "Не меняет обычное поведение питомцев и не требует пересоздавать мир.",
-        "В клиентском комплекте поддерживает также генерацию мира одиночной игры."
+        "На сервере блокирует урон владельца по Mochi на плече, сохраняя здоровье и настроение.",
+        "На клиенте питомец на плече не перехватывает прицел при копании и взаимодействии с блоками.",
+        "Нужен на клиенте и сервере для обоих исправлений; пересоздавать мир не нужно."
       ],
       "icon": false,
       "name": "Wicklen Pack Compatibility",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "side": "both",
       "optional": false,
-      "file": "wicklen-pack-compat-0.1.0.jar",
-      "sha512": "af00bcd3bca660f9a1ceae89d87fe3a31bcdf9de221f8d5cd971836518840053ab8bb6d804437bdabee35ce4c2d09d40ff7df9b4913705509a2d3dfc8beab59f",
+      "file": "wicklen-pack-compat-0.1.1.jar",
+      "sha512": "4c3f72c8faa405a4748ed061af36eb91c688a750f7212aa200cbf24108ffb7c4f7ad71c9afc0031ef1139b461bb400c71bef1a759462fdf0b58da7dcda9e7f08",
       "install": [
         "client",
         "server"
@@ -206,8 +206,9 @@ window.MODS = {
       "projectId": null,
       "versionId": null,
       "sourceKind": "build",
-      "url": "https://github.com/Wicklen-MC/wicklen-server",
-      "sourceCommit": "3141d4b378514f3a1477a6ebd6045bae5dce3d58"
+      "url": "https://github.com/Wicklen-MC/wicklen-server/tree/master/pack/compat/wicklen-pack-compat",
+      "sourceCommit": "0e3030e68b332b5bf01f754f4c56dd590e4d942c",
+      "artifactUrl": "https://downloads.wicklen.link/releases/components/wicklen-pack-compat/0.1.1/wicklen-pack-compat-0.1.1.jar"
     },
     {
       "id": "tpehi7ww",
@@ -4927,61 +4928,61 @@ window.MODS = {
   ],
   "downloads": [
     {
-      "file": "wicklen-0.4.4-players.zip",
+      "file": "wicklen-0.4.5-players.zip",
       "kind": "main",
       "label": "Основная сборка",
-      "href": "https://downloads.wicklen.link/releases/0.4.4/wicklen-0.4.4-players.zip",
-      "size": 449773521,
-      "sha256": "2e55b5c608215b6bb61bd2471f27dd4c7e777b4d66f34cb5c5c64a238271b871",
+      "href": "https://downloads.wicklen.link/releases/0.4.5/wicklen-0.4.5-players.zip",
+      "size": 449776390,
+      "sha256": "cc715a6d8aea1e1ceb8a4c88aa670afeff362c7e9aadaeeb97f44581e07b35b4",
       "sizeHuman": "449,8 МБ"
     },
     {
-      "file": "wicklen-0.4.3-to-0.4.4-update.zip",
+      "file": "wicklen-0.4.4-to-0.4.5-update.zip",
       "kind": "update",
-      "label": "Обновление с 0.4.3",
-      "href": "https://downloads.wicklen.link/releases/0.4.4/wicklen-0.4.3-to-0.4.4-update.zip",
-      "size": 875535,
-      "sha256": "e856347a3f539c6f125f6145e51a9d71c95aefa3d8c3ff40ac0eb94f3feb511e",
-      "sizeHuman": "875,5 КБ"
+      "label": "Обновление с 0.4.4",
+      "href": "https://downloads.wicklen.link/releases/0.4.5/wicklen-0.4.4-to-0.4.5-update.zip",
+      "size": 881942,
+      "sha256": "1577d4164ff94b02cdcb8d18314d10e0e77cfdfa8776de2c0dd591d8b08a30ec",
+      "sizeHuman": "881,9 КБ"
     },
     {
-      "file": "manifest-0.4.4.json",
+      "file": "manifest-0.4.5.json",
       "kind": "manifest",
       "label": "Точные версии модов",
-      "href": "https://downloads.wicklen.link/releases/0.4.4/manifest-0.4.4.json",
+      "href": "https://downloads.wicklen.link/releases/0.4.5/manifest-0.4.5.json",
       "size": 42052,
-      "sha256": "1a005c413c203f1ed3711d829eaf2925cad80101ac6f8806850ca1aa69b72459",
+      "sha256": "4b6285918565fb8fc84a76f54c9eba92805e1132c3a3b59ccb9fbe3fcfe5388e",
       "sizeHuman": "42,1 КБ"
     },
     {
-      "file": "PLAYER-INSTRUCTIONS-0.4.4.md",
+      "file": "PLAYER-INSTRUCTIONS-0.4.5.md",
       "kind": "instructions",
       "label": "Инструкция (текст)",
-      "href": "https://downloads.wicklen.link/releases/0.4.4/PLAYER-INSTRUCTIONS-0.4.4.md",
+      "href": "https://downloads.wicklen.link/releases/0.4.5/PLAYER-INSTRUCTIONS-0.4.5.md",
       "size": 608,
-      "sha256": "4ac1445a2d5bf746635fd578b9ae6ffa4a6b1b151629304e26a8298c52459d35",
+      "sha256": "bbfee840e72e7a47aef69dca61d4be8a04fbb2f1dffbf60049262ceaf6bb4f80",
       "sizeHuman": "608 Б"
     },
     {
-      "file": "SHA256SUMS-0.4.4.txt",
+      "file": "SHA256SUMS-0.4.5.txt",
       "kind": "checksums",
       "label": "Суммы SHA-256",
-      "href": "https://downloads.wicklen.link/releases/0.4.4/SHA256SUMS-0.4.4.txt",
+      "href": "https://downloads.wicklen.link/releases/0.4.5/SHA256SUMS-0.4.5.txt",
       "size": 716,
-      "sha256": "908c21c81aa0043c462054869e54a65da71407c31392c816d7320182c76ff44d",
+      "sha256": "d686acd65040eb18123b41df68d4f57230a87865837ee111a3baaad42230099a",
       "sizeHuman": "716 Б"
     }
   ],
   "changelog": {
-    "date": "07.11.2026",
+    "date": "18.11.2026",
     "entries": [
-      "Сборка Wicklen 0.4.4: Chronicles 0.4.3 — тканевый дух, ванильная справка и ползунки положения реплик.",
-      "Обновление с 0.4.3 заменяет только JAR Chronicles. Удалите wicklen-chronicles-0.4.2.jar, затем скопируйте файлы патча.",
-      "Состав прежний: 165 серверных и 121 обязательный клиентский JAR, включая OreGrowth. Конфиги, русский ресурспак, миры и личные настройки сохраняются."
+      "Сборка Wicklen 0.4.5: Compat 0.1.1 защищает Mochi на плече от урона владельца и не даёт питомцу мешать прицелу.",
+      "Chronicles 0.4.4 отключает шаги парящего духа с Presence Footsteps.",
+      "Обновление с 0.4.4 заменяет только два JAR: Chronicles 0.4.3 и Compat 0.1.0. Остальные моды, конфиги, ресурспак и личные файлы сохраняются."
     ]
   },
-  "instructionsText": "# Wicklen pack 0.4.4\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n",
-  "sumsText": "4ac1445a2d5bf746635fd578b9ae6ffa4a6b1b151629304e26a8298c52459d35  PLAYER-INSTRUCTIONS-0.4.4.md\ndd726c3a904d439d4cf08dd6354442abb3996111cd40aae0d664599196de9e45  UPDATE.json\n1a005c413c203f1ed3711d829eaf2925cad80101ac6f8806850ca1aa69b72459  manifest-0.4.4.json\n786f162a6da9f209601061c7817128a45f199b66004ff6ef3fc244fc80317f69  pack.lock.json\n15b30c926843dd47519e5ccec1cb72e4f1aecc1c97529d1bb1aa977f56dfd252  server-manifest-0.4.4.json\ne856347a3f539c6f125f6145e51a9d71c95aefa3d8c3ff40ac0eb94f3feb511e  wicklen-0.4.3-to-0.4.4-update.zip\n2e55b5c608215b6bb61bd2471f27dd4c7e777b4d66f34cb5c5c64a238271b871  wicklen-0.4.4-players.zip\n23dbe9532d9610193a6792c36ad65c2da78ecaf6a9f1c3bc5d4136510aa867e0  wicklen-0.4.4-server.zip\n",
+  "instructionsText": "# Wicklen pack 0.4.5\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n",
+  "sumsText": "bbfee840e72e7a47aef69dca61d4be8a04fbb2f1dffbf60049262ceaf6bb4f80  PLAYER-INSTRUCTIONS-0.4.5.md\n1faa8bf481722373b19319b105ff2eb1da685bf46c2d8b84d1d4ff55494a162a  UPDATE.json\n4b6285918565fb8fc84a76f54c9eba92805e1132c3a3b59ccb9fbe3fcfe5388e  manifest-0.4.5.json\n3579e2d88e83a2a397f7ea3ea07b4e4a8d6dac7c08e8c1356708d567467a0fde  pack.lock.json\nc41de30aca10cf22df6ede3fe2786c80dd742c02e6bb338e48fc2f3c629c873f  server-manifest-0.4.5.json\n1577d4164ff94b02cdcb8d18314d10e0e77cfdfa8776de2c0dd591d8b08a30ec  wicklen-0.4.4-to-0.4.5-update.zip\ncc715a6d8aea1e1ceb8a4c88aa670afeff362c7e9aadaeeb97f44581e07b35b4  wicklen-0.4.5-players.zip\n6e5c860757c4ed166c6f128fa05782a0edf17d82bddb7e058f29062b7560b1d0  wicklen-0.4.5-server.zip\n",
   "manifestMods": [
     {
       "name": "AmbientSounds",
@@ -5913,9 +5914,9 @@ window.MODS = {
     },
     {
       "name": "Wicklen: Chronicles",
-      "file": "wicklen-chronicles-0.4.3.jar",
-      "version": "0.4.3",
-      "sha512": "0f888806e64d07d9c312c6a76c1661b541b02c0b93c5151554675ca26b8bcc871b8d6bc795f4ef7ee0ff37cb58cf82d565ebd70b4c7f54389450f09b163c896d",
+      "file": "wicklen-chronicles-0.4.4.jar",
+      "version": "0.4.4",
+      "sha512": "6903ea1b4bc3803515b1913949746ee0dbf5c7da634c5dce8aca6822b9c522290140adf98fafa2531919d18ae82e0542446b0fd88eb82071eb847e9192dfa898",
       "side": "both",
       "optional": false
     },
@@ -5937,9 +5938,9 @@ window.MODS = {
     },
     {
       "name": "Wicklen Pack Compatibility",
-      "file": "wicklen-pack-compat-0.1.0.jar",
-      "version": "0.1.0",
-      "sha512": "af00bcd3bca660f9a1ceae89d87fe3a31bcdf9de221f8d5cd971836518840053ab8bb6d804437bdabee35ce4c2d09d40ff7df9b4913705509a2d3dfc8beab59f",
+      "file": "wicklen-pack-compat-0.1.1.jar",
+      "version": "0.1.1",
+      "sha512": "4c3f72c8faa405a4748ed061af36eb91c688a750f7212aa200cbf24108ffb7c4f7ad71c9afc0031ef1139b461bb400c71bef1a759462fdf0b58da7dcda9e7f08",
       "side": "both",
       "optional": false
     },
@@ -5954,9 +5955,9 @@ window.MODS = {
   ],
   "catalogSource": {
     "repository": "https://github.com/Wicklen-MC/wicklen-server",
-    "path": "pack/releases/0.4.4/pack.lock.json",
-    "sha256": "786f162a6da9f209601061c7817128a45f199b66004ff6ef3fc244fc80317f69",
-    "packVersion": "0.4.4",
+    "path": "pack/releases/0.4.5/pack.lock.json",
+    "sha256": "3579e2d88e83a2a397f7ea3ea07b4e4a8d6dac7c08e8c1356708d567467a0fde",
+    "packVersion": "0.4.5",
     "distribution": "production",
     "mandatoryOnly": true,
     "counts": {
@@ -5966,5 +5967,5 @@ window.MODS = {
     },
     "optionalAddonsIncluded": false
   },
-  "downloadBase": "https://downloads.wicklen.link/releases/0.4.4/"
+  "downloadBase": "https://downloads.wicklen.link/releases/0.4.5/"
 };

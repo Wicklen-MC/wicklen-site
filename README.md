@@ -36,21 +36,21 @@ runs skip deployment when main already contains a newer commit.
 - `mods.html`: searchable mandatory pack catalog, filters and mod details.
 - `chronicles.html`: the current mod's player guide, settings and screenshot gallery,
   with a small block linking to the separate compatibility adapter.
-- `compat.html` / `compat.css`: Wicklen Pack Compat, its published 0.1.0 download,
+- `compat.html` / `compat.css`: Wicklen Pack Compat, its published 0.1.1 download,
   installation sides and supported mods. The visible shoulder-damage protection
-  section is explicitly labelled as unpublished 0.1.1; the 0.1.0 download excludes it.
+  section explains why 0.1.1 is needed on both client and server.
   A visible Compat link appears in every page header, including mobile layouts.
 - `site.css` / `site.js`: shared styling and catalog behavior.
 - `chronicles.css` / `chronicles.js`: the mod page and keyboard-accessible gallery.
 - `experiences.js`: gameplay examples for the landing page.
-- `data.js`: a self-contained snapshot of **pack 0.4.4**, pinned to
-  `wicklen-server/pack/releases/0.4.4/pack.lock.json`: **177 distinct mandatory mods**,
+- `data.js`: a self-contained snapshot of **pack 0.4.5**, pinned to
+  `wicklen-server/pack/releases/0.4.5/pack.lock.json`: **177 distinct mandatory mods**,
   including **165 server / 121 client JARs**. It records exact filenames,
   versions, install sides, SHA-512 hashes and upstream version/source identities.
   Optional preview additions are excluded. `catalogSource` pins the source lock's
   path and SHA-256; `manifestMods` contains the published 121-mod client inventory.
   Download metadata, checksums and instructions describe the same public release.
-- `chronicles-release.js`: public filenames, URLs, sizes and checksums for pack 0.4.4; `chroniclesVersion` is 0.4.3 and `updateFrom` is 0.4.3.
+- `chronicles-release.js`: public filenames, URLs, sizes and checksums for pack 0.4.5; `chroniclesVersion` is 0.4.4 and `updateFrom` is 0.4.4.
 - `deployment.js`: the public game address, `play.wicklen.link`, without credentials.
 - `images/chronicles/en`: current native English-interface 0.4.3 screenshots, capture provenance and source hashes.
 - `images/chronicles`: original Russian 0.4.2 captures retained for historical references.
@@ -72,8 +72,8 @@ until the visitor explicitly chooses animation.
 screenshots of **development mod 0.4.3-SNAPSHOT**. The video has ordinary controls,
 no autoplay and `preload="none"`; it also works without JavaScript. Existing
 keyboard gallery navigation includes the new frames. The page announces the published
-**Chronicles 0.4.3** release. Recommended live-server downloads use
-**pack 0.4.4 / Chronicles 0.4.3** after server adoption; the standalone release is linked separately.
+**Chronicles 0.4.4** release. Recommended live-server downloads use
+**pack 0.4.5 / Chronicles 0.4.4 / Compat 0.1.1** after server adoption; the standalone release is linked separately.
 Screenshot WebP conversion is lossless;
 the original MP4 is preserved unchanged.
 
@@ -95,8 +95,8 @@ mutable preview profile.
 
 ## Hosting and downloads
 
-The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.4.4/`, including the full client,
-the patch from 0.4.3, instructions, manifest and checksums. These are the five
+The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.4.5/`, including the full client,
+the patch from 0.4.4, instructions, manifest and checksums. These are the five
 published files listed by `data.js`; no optional performance/graphics archive is
 advertised by this catalog. ZIP files belong on the game VPS, outside this
 repository and the site's `dist/`.
@@ -131,11 +131,12 @@ downloaded archives were intentionally excluded from this standalone source.
 Screenshot PNGs were copied without image editing; their original capture records
 remain under `images/chronicles/`.
 
-## Pack 0.4.4 metadata
+## Pack 0.4.5 metadata
 
-Pack **0.4.4** includes Chronicles **0.4.3**. The 0.4.3 → 0.4.4 client delta
-contains one new JAR and metadata; UPDATE.json lists the exact old Chronicles JAR
-to remove. Other mod JARs, public configs, resource packs and private preferences
-are retained. Public filenames, sizes and hashes come from the immutable
-publication.json and pack.lock.json. Static HTML links and both JavaScript
-metadata sources must move together after successful server adoption.
+Pack **0.4.5** includes Chronicles **0.4.4** and Compat **0.1.1**. The
+0.4.4 → 0.4.5 client delta replaces exactly these two JARs and updates release
+metadata. UPDATE.json lists Chronicles 0.4.3 and Compat 0.1.0 for removal. Other
+mods, public configurations, the resource pack and private preferences are
+retained. Public filenames, sizes and hashes come from the immutable publication
+and release lock. Static HTML and both JavaScript metadata sources move together
+after successful server adoption.

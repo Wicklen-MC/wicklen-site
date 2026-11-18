@@ -27,29 +27,29 @@
   <section class="compat-section" aria-labelledby="fix-title">
     <h2 id="fix-title">Что исправляет</h2>
     <h3 id="mochi-carry">Mochi на плече: защита от случайных ударов</h3>
-    <p><strong>Добавлено в исходники Compat 0.1.1 — эта версия ещё не опубликована.</strong></p>
-    <p>Когда Mochi сидит у вас на плече, ваши удары не должны ранить питомца, портить ему настроение или вызывать звук боли и отбрасывание. Можно копать и взаимодействовать с блоками: переносимый питомец не перехватывает ваш прицел.</p>
+    <p><strong>Доступно в Compat 0.1.1 · входит в сборку Wicklen 0.4.5.</strong></p>
+    <p>Когда Mochi сидит у вас на плече, ваши удары не ранят питомца, не портят ему настроение и не вызывают звук боли и отбрасывание. Можно копать и взаимодействовать с блоками: переносимый питомец не перехватывает ваш прицел.</p>
     <p>Защита действует только для владельца, пока Mochi находится на плече. На земле, от других игроков и других источников урона сохраняются обычные правила.</p>
     <p>Для полного исправления Compat 0.1.1 нужен на клиенте и сервере. Только на сервере он защитит от урона, но питомец всё ещё может попадать под прицел клиента.</p>
     <h3>Генерация мира с Mochi Pets</h3>
-    <p><strong>Уже доступно в Compat 0.1.0.</strong></p>
+    <p><strong>Исправление генерации сохранено в Compat 0.1.1.</strong></p>
     <p>В Adorable Mochi Pets 0.23.0+26.3 проверка места появления питомца иногда обращается к соседнему чанку, который ещё нельзя читать. Compat пропускает такое место у края чанка, чтобы эта проверка не вызывала предупреждение о небезопасном чтении мира.</p>
     <p>Исправление относится к генерации новых участков мира. Поведение уже появившихся питомцев сохраняется; пересоздавать мир не нужно.</p>
   </section>
 
   <section class="compat-download" id="download" aria-labelledby="download-title">
-    <h2 id="download-title">Скачать Compat 0.1.0</h2>
+    <h2 id="download-title">Скачать Compat 0.1.1</h2>
     <p>Minecraft <strong>26.3</strong> · Fabric Loader <strong>0.20.1+</strong> · Java <strong>25</strong></p>
-    <a class="button" href="https://downloads.wicklen.link/releases/components/wicklen-pack-compat/0.1.0/wicklen-pack-compat-0.1.0.jar" download>Скачать JAR · 3,3 КБ ↓</a>
-    <p class="compat-small"><strong>В этой загрузке только исправление генерации мира. Защита Mochi на плече от урона в 0.1.0 не входит.</strong></p>
-    <p class="compat-small">Входит в сборку Wicklen 0.4.4. Если вы уже установили её целиком, отдельная установка не нужна.</p>
-    <details><summary>Контрольная сумма SHA-256</summary><code class="compat-hash">6a420e318f89740e64a592ee1714323df7dfc4a8cb7109ed261e75c528b580a7</code></details>
+    <a class="button" href="https://downloads.wicklen.link/releases/components/wicklen-pack-compat/0.1.1/wicklen-pack-compat-0.1.1.jar" download>Скачать JAR · 5,6 КБ ↓</a>
+    <p class="compat-small"><strong>В этой версии есть защита Mochi на плече от урона владельца, исправление прицела и проверок генерации мира.</strong></p>
+    <p class="compat-small">Входит в сборку Wicklen 0.4.5. Если вы уже установили её целиком, отдельная установка не нужна.</p>
+    <details><summary>Контрольная сумма SHA-256</summary><code class="compat-hash">0c97eddfdf070f429f1ee766edef7599f393409fd842a32bed68b0a9fa758a05</code></details>
   </section>
 
   <section class="compat-section" aria-labelledby="install-title">
     <h2 id="install-title">Как установить</h2>
     <p>Положите JAR в папку <code>mods</code> вашего Fabric-сервера. В одиночной игре — в папку <code>mods</code> игрового клиента: там мир создаёт встроенный сервер. Удалите старую копию Compat, если она уже есть.</p>
-    <p>Для подключения к отдельному серверу версия 0.1.0 не нужна на клиенте. Если Mochi Pets у вас нет, это исправление не потребуется.</p>
+    <p>Для защиты от урона Compat должен стоять на сервере. Чтобы Mochi не мешал прицелу, поставьте его и на клиент. Полный клиентский набор Wicklen 0.4.5 уже содержит нужную версию.</p>
   </section>
 
   <section class="compat-section" aria-labelledby="compat-title">
