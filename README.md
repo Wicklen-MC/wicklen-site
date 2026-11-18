@@ -32,48 +32,31 @@ runs skip deployment when main already contains a newer commit.
 
 ## Pages and content
 
-- `updates.html` / `updates-data.js` / `updates.js`: pack history 0.4.2–0.5.0,
-  component releases, exact changed JAR/resource/config/data-pack downloads,
-  full/server/delta ZIPs and their pinned checksums. Pack 0.5.0 is published
-  separately from live-server adoption; 0.4.5 remains the active download.
-- `handbook.html` / `handbook-data.js` / `handbook.js`: searchable reference for
-  all 181 mods of 0.5.0, including Compat as a player-facing entry. The existing
-  0.4.5 catalog is retained and overlaid with the four additions and Compat 0.1.2.
-  Query links use `?q=`; deep links open the selected mod. Shared `reference.css`
-  also provides the visible six-link navigation, including mobile layouts.
+- `index.html`: gameplay directions, Chronicles and installation of the live pack 0.5.0.
+- `mods.html` / `handbook.js`: unified searchable catalog, capabilities and guide links.
+  All 181 mandatory mods are described; libraries can be shown separately.
+  `handbook.html` retains old bookmarks through a query/anchor-preserving redirect.
+- `guides.html`: five detailed guides for Herbcraft Core, Alchemy, Cuisine,
+  Arcana Novum and Compat. The four additions are installed on the server.
+- `updates.html`: pack history 0.4.2–0.5.0, exact changed files and checksums.
+- `chronicles.html`: Chronicles 0.4.4, settings and genuine native screenshot gallery.
+- `compat.html`: Compat 0.1.2, REI fixes, Mochi protection and install instructions.
+- `journal-preview.html`: three explicitly labelled HTML interface concepts.
+- `data.js`: live pack 0.5.0 inventory from its immutable release lock:
+  181 unique mods, 169 server / 124 client JARs. Source IDs, membership, filenames
+  and SHA-512 values match the lock. Existing descriptions and local icons persist.
+- `handbook-data.js`: guide links and the source lock digest. Additions/overrides
+  are empty because the new release has been adopted into the live catalog.
+- `chronicles-release.js`: pack 0.5.0 downloads; mod version remains 0.4.4.
+  The delta starts from pack 0.4.5. Exact sizes and SHA-256 come from publication.json.
+- `deployment.js`: public game address without credentials.
+- `images/guides/`, `images/chronicles/en`, `images/wanderer`, `videos/chronicles`:
+  genuine native captures with their original provenance, separate from HTML concepts.
+- `site.css`, `reference.css`, `site.js`, `experiences.js`: shared styling and content.
 
-
-- `guides.html` / `guides.css`: five player guides (Herbcraft Core,
-  Alchemy, Cuisine, Arcana Novum and Wicklen Pack Compat) for Fabric 26.3. These mods were released in pack 0.5.0; the live server remains on 0.4.5. Exact version links, first recipes, local test boundaries
-  and Arcana language limitations are stated explicitly; Compat 0.1.2 fixes the brewing-display gap.
-  `images/guides/` contains genuine English native test captures; provenance JSON
-  is excluded from the public build. The main catalog inventory remains unchanged.
-
-- `index.html`: gameplay directions, introduction to Chronicles and installation.
-- `mods.html`: searchable mandatory pack catalog, filters and mod details.
-- `chronicles.html`: the current mod's player guide, settings and screenshot gallery,
-  with a small block linking to the separate compatibility adapter.
-- `compat.html` / `compat.css`: Wicklen Pack Compat, its published 0.1.2 download,
-  installation sides and supported mods. REI/Farmer’s Delight fixes and shoulder-damage protection
-  explain why the adapter is needed on both client and server.
-  Compat is a guide section and handbook entry; the primary navigation links to Guides rather than the individual adapter.
-- `site.css` / `site.js`: shared styling and catalog behavior.
-- `chronicles.css` / `chronicles.js`: the mod page and keyboard-accessible gallery.
-- `experiences.js`: gameplay examples for the landing page.
-- `data.js`: a self-contained snapshot of **pack 0.4.5**, pinned to
-  `wicklen-server/pack/releases/0.4.5/pack.lock.json`: **177 distinct mandatory mods**,
-  including **165 server / 121 client JARs**. It records exact filenames,
-  versions, install sides, SHA-512 hashes and upstream version/source identities.
-  Optional preview additions are excluded. `catalogSource` pins the source lock's
-  path and SHA-256; `manifestMods` contains the published 121-mod client inventory.
-  Download metadata, checksums and instructions describe the same public release.
-- `chronicles-release.js`: public filenames, URLs, sizes and checksums for pack 0.4.5; `chroniclesVersion` is 0.4.4 and `updateFrom` is 0.4.4.
-- `deployment.js`: the public game address, `play.wicklen.link`, without credentials.
-- `images/chronicles/en`: current native English-interface 0.4.3 screenshots, capture provenance and source hashes.
-- `images/chronicles`: original Russian 0.4.2 captures retained for historical references.
-- `images/wanderer` / `videos/chronicles`: the upcoming cloth-wanderer screenshots
-  and 24-second native recording; [source provenance](images/wanderer/README.md).
-- `spirit-media.js`: homepage SVG play/pause, visibility and reduced-motion controls.
+Primary navigation has one combined “Моды и гайды” destination. The game update
+was separately authorized and verified through the restricted updater; website
+publication does not itself update Minecraft.
 
 ## Spirit illustration and native footage
 
@@ -112,7 +95,7 @@ mutable preview profile.
 
 ## Hosting and downloads
 
-The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.4.5/`, including the full client,
+The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.5.0/`, including the full client,
 the patch from 0.4.4, instructions, manifest and checksums. These are the five
 published files listed by `data.js`; no optional performance/graphics archive is
 advertised by this catalog. ZIP files belong on the game VPS, outside this
@@ -148,7 +131,7 @@ downloaded archives were intentionally excluded from this standalone source.
 Screenshot PNGs were copied without image editing; their original capture records
 remain under `images/chronicles/`.
 
-## Pack 0.4.5 metadata
+## Historical pack 0.4.5 metadata
 
 Pack **0.4.5** includes Chronicles **0.4.4** and Compat **0.1.1**. The
 0.4.4 → 0.4.5 client delta replaces exactly these two JARs and updates release

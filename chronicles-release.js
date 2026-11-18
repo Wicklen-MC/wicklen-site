@@ -1,31 +1,31 @@
-// Public pack metadata; version is the pack version, chroniclesVersion is the mod version.
+// Pack version and mod version are independent.
 window.WICKLEN_CHRONICLES_RELEASE = {
-  "version": "0.4.5",
+  "version": "0.5.0",
   "chroniclesVersion": "0.4.4",
-  "updateFrom": "0.4.4",
+  "updateFrom": "0.4.5",
   "full": {
-    "href": "https://downloads.wicklen.link/releases/0.4.5/wicklen-0.4.5-players.zip",
-    "size": 449776390,
-    "sha256": "cc715a6d8aea1e1ceb8a4c88aa670afeff362c7e9aadaeeb97f44581e07b35b4"
+    "href": "https://downloads.wicklen.link/releases/0.5.0/wicklen-0.5.0-players.zip",
+    "size": 463110806,
+    "sha256": "28c8444b58ee29676b0f71b085339bcac3da45c1e21cef232c24e6dd105db752"
   },
   "update": {
-    "href": "https://downloads.wicklen.link/releases/0.4.5/wicklen-0.4.4-to-0.4.5-update.zip",
-    "size": 881942,
-    "sha256": "1577d4164ff94b02cdcb8d18314d10e0e77cfdfa8776de2c0dd591d8b08a30ec"
+    "href": "https://downloads.wicklen.link/releases/0.5.0/wicklen-0.4.5-to-0.5.0-update.zip",
+    "size": 14668501,
+    "sha256": "99a7bbd7f7d93586aed7a740947bd4924c1b01921982efea1309298b1bf5164d"
   },
   "manifest": {
-    "href": "https://downloads.wicklen.link/releases/0.4.5/manifest-0.4.5.json",
-    "size": 42052,
-    "sha256": "4b6285918565fb8fc84a76f54c9eba92805e1132c3a3b59ccb9fbe3fcfe5388e"
+    "href": "https://downloads.wicklen.link/releases/0.5.0/manifest-0.5.0.json",
+    "size": 43433,
+    "sha256": "ed748c96bf9bf6057823354a0a83ff8fde51c87770cc2c76b8b58be88bbf2228"
   },
   "instructions": {
-    "href": "https://downloads.wicklen.link/releases/0.4.5/PLAYER-INSTRUCTIONS-0.4.5.md",
-    "size": 608,
-    "sha256": "bbfee840e72e7a47aef69dca61d4be8a04fbb2f1dffbf60049262ceaf6bb4f80"
+    "href": "https://downloads.wicklen.link/releases/0.5.0/PLAYER-INSTRUCTIONS-0.5.0.md",
+    "size": 771,
+    "sha256": "5bf03dec512508a2ece87e9ca4959c6b6044ff51a68158320467750d7b985324"
   },
   "checksums": {
-    "href": "https://downloads.wicklen.link/releases/0.4.5/SHA256SUMS-0.4.5.txt",
+    "href": "https://downloads.wicklen.link/releases/0.5.0/SHA256SUMS-0.5.0.txt",
     "size": 716,
-    "sha256": "d686acd65040eb18123b41df68d4f57230a87865837ee111a3baaad42230099a"
+    "sha256": "1e2e25de1954573411aa7d62c84c33e41a58b72cfa2b788c9f37e124c07efc68"
   }
 };

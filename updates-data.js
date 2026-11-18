@@ -1,5 +1,5 @@
 window.WICKLEN_UPDATES = {
-  "liveVersion": "0.4.5",
+  "liveVersion": "0.5.0",
   "latestVersion": "0.5.0",
   "sourceLocks": {
     "0.4.2": "7cb2c67ada91ce6eaf19dde2cc40e090da851cf6ee4fcbf71ce696f450a18003",
@@ -15,7 +15,7 @@ window.WICKLEN_UPDATES = {
       "date": "18.11.2026",
       "title": "Wicklen 0.5.0",
       "description": "Minecraft 26.3 · Fabric 0.20.1 · Java 25 · 124 клиентских / 169 серверных JAR.",
-      "notice": "Новый выпуск. На игровом сервере ещё не установлен.",
+      "notice": "Установлено на игровом сервере. Для входа используйте клиент 0.5.0.",
       "notes": [
         "Добавлены Herbcraft Core 1.1.4, Alchemy 1.1.4, Cuisine 1.1.3 и серверный Arcana Novum 4.0.12+26.3.",
         "Compat 0.1.2 возвращает карточки варки REI, пельмени и голубцы Farmer’s Delight.",
@@ -322,7 +322,7 @@ window.WICKLEN_UPDATES = {
       "date": "18.11.2026",
       "title": "Wicklen 0.4.5",
       "description": "Minecraft 26.3 · Fabric 0.20.1 · Java 25 · 121 клиентских / 165 серверных JAR.",
-      "notice": "Эта версия сейчас установлена на play.wicklen.link.",
+      "notice": "Предыдущая сборка. Для текущего сервера используйте 0.5.0.",
       "notes": [
         "Compat обновлён до 0.1.1: защита Mochi на плече от урона владельца и перехвата прицела.",
         "Chronicles 0.4.4 сохраняет бесшумность духа с Presence Footsteps."

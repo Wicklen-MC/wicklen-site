@@ -1,15 +1,15 @@
-// Public mandatory catalog pinned to Wicklen pack 0.4.5; Chronicles 0.4.4 and Compat 0.1.1.
+// Public catalog pinned to the installed Wicklen pack 0.5.0.
 window.MODS = {
   "generated": "2026-11-18",
   "name": "Wicklen",
   "nameRu": "Виклен",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "profile": "production",
   "minecraft": "26.3",
   "loader": "Fabric 0.20.1",
   "java": 25,
   "server": "",
-  "total": 177,
+  "total": 181,
   "categories": [
     {
       "key": "adventure",
@@ -183,22 +183,23 @@ window.MODS = {
     },
     {
       "id": "wicklen-pack-compat",
-      "category": "library",
+      "category": "comfort",
       "group": "own",
       "highlight": false,
-      "description": "Защищает Mochi на плече от случайных ударов владельца, помогает копать сквозь переносимого питомца и исправляет проверку генерации мира.",
+      "description": "Исправляет отображение рецептов REI и защищает Mochi на плече от случайных ударов владельца.",
       "points": [
-        "На сервере блокирует урон владельца по Mochi на плече, сохраняя здоровье и настроение.",
-        "На клиенте питомец на плече не перехватывает прицел при копании и взаимодействии с блоками.",
-        "Нужен на клиенте и сервере для обоих исправлений; пересоздавать мир не нужно."
+        "Возвращает карточки варки ванильных и модовых зелий на выделенном сервере, включая начальный рецепт зелья одуванчика.",
+        "Исправляет отображение пельменей и голубцов Farmer’s Delight в REI.",
+        "Сохраняет здоровье и настроение Mochi на плече владельца; питомец не перехватывает прицел при копании.",
+        "Для всех исправлений устанавливается на клиент и сервер. Другие моды остаются необязательными."
       ],
       "icon": false,
       "name": "Wicklen Pack Compatibility",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "side": "both",
       "optional": false,
-      "file": "wicklen-pack-compat-0.1.1.jar",
-      "sha512": "4c3f72c8faa405a4748ed061af36eb91c688a750f7212aa200cbf24108ffb7c4f7ad71c9afc0031ef1139b461bb400c71bef1a759462fdf0b58da7dcda9e7f08",
+      "file": "wicklen-pack-compat-0.1.2.jar",
+      "sha512": "7f613cc2e03e8cdf4a878b1ebcde0a4f0cb9fd97d4cd03a75885e0367b8d6c55426fc445e5b746ae1ad267c5b5a154b5ff8caa6dca5ea824b406d8b07d9c1bdf",
       "install": [
         "client",
         "server"
@@ -206,9 +207,10 @@ window.MODS = {
       "projectId": null,
       "versionId": null,
       "sourceKind": "build",
-      "url": "https://github.com/Wicklen-MC/wicklen-server/tree/master/pack/compat/wicklen-pack-compat",
-      "sourceCommit": "0e3030e68b332b5bf01f754f4c56dd590e4d942c",
-      "artifactUrl": "https://downloads.wicklen.link/releases/components/wicklen-pack-compat/0.1.1/wicklen-pack-compat-0.1.1.jar"
+      "url": "https://github.com/Wicklen-MC/wicklen-releases/releases/tag/compat-v0.1.2",
+      "sourceCommit": "36208a449eee3f2f19e5576f70a98ff65cbdfffd",
+      "artifactUrl": "https://downloads.wicklen.link/releases/components/wicklen-pack-compat/0.1.2/wicklen-pack-compat-0.1.2.jar",
+      "aliases": "компат совместимость урон мочи rei пельмени голубцы"
     },
     {
       "id": "tpehi7ww",
@@ -4924,1048 +4926,1180 @@ window.MODS = {
       "versionId": "s9SjoFu1",
       "sourceKind": "modrinth",
       "artifactUrl": "https://cdn.modrinth.com/data/1eAoo2KR/versions/s9SjoFu1/yet_another_config_lib_v3-3.9.7%2B26.3-fabric.jar"
+    },
+    {
+      "id": "5cNyEJH1",
+      "name": "Herbcraft-BCKS|百草可食",
+      "version": "1.1.4",
+      "side": "both",
+      "category": "farming",
+      "group": "new",
+      "description": "Травы становятся едой и сырьём для ремесла. Травник объясняет свойства растений, вкусы и сочетания.",
+      "points": [
+        "Скрафтите травник из книги и одуванчика.",
+        "Читайте записи о растениях и пробуйте небольшие порции: некоторые сочетания вредят.",
+        "Справочник, подсказки и достижения переведены русским паком Wicklen."
+      ],
+      "url": "https://modrinth.com/mod/5cNyEJH1",
+      "icon": false,
+      "aliases": "травы травник свойства растений гербкрафт",
+      "file": "herbcraft-1.1.4.jar",
+      "sha512": "32d048d4bb89f68a207816516ca711293ce56cc6781611eb3364776917be5e32c1edad6f95bf6a86d7a6bf99820480bbd69c256ea3875b98ce031fdbc93e858b",
+      "install": [
+        "client",
+        "server"
+      ],
+      "optional": false,
+      "projectId": "5cNyEJH1",
+      "versionId": "9xQKD2h4",
+      "sourceKind": "modrinth"
+    },
+    {
+      "id": "xDJt8YY2",
+      "name": "Herbcraft_Alchemy|百草可食：炼金分册",
+      "version": "1.1.4",
+      "side": "both",
+      "category": "rpg",
+      "group": "new",
+      "description": "Эссенции растений, новые зелья, перегонка и покрытия для оружия.",
+      "points": [
+        "Восемь одуванчиков и бутылочка дают эссенцию одуванчика.",
+        "Сварите мутное зелье с эссенцией; REI показывает начальный рецепт с Compat 0.1.2.",
+        "Наносите подходящие покрытия через кузнечный стол; подробности и следующие этапы есть в гайде."
+      ],
+      "url": "https://modrinth.com/mod/xDJt8YY2",
+      "icon": false,
+      "aliases": "алхимия эссенции зелья покрытия",
+      "file": "herbcraft-alchemy-1.1.4.jar",
+      "sha512": "eea57efb7044deefc8f7ee67fec49b7e338be831f49704e17784a89f110cab4eaa2050230c65f446a840121ef0b4a26e3b1ffa84c9a2efbd6bfd0066e37a68bd",
+      "install": [
+        "client",
+        "server"
+      ],
+      "optional": false,
+      "projectId": "xDJt8YY2",
+      "versionId": "nUfUfDJR",
+      "sourceKind": "modrinth"
+    },
+    {
+      "id": "59p3worY",
+      "name": "Herbcraft_Cuisine|百草可食：膳房分册",
+      "version": "1.1.3",
+      "side": "both",
+      "category": "farming",
+      "group": "new",
+      "description": "Кухня из трав, салаты, лечебные блюда и сочетания пищи.",
+      "points": [
+        "Начните с салата: миска и два одуванчика.",
+        "Лечебные блюда могут снимать конкретные эффекты; читайте свойства и ограничения.",
+        "Дополнение использует общий травник Herbcraft и его знания о продуктах."
+      ],
+      "url": "https://modrinth.com/mod/59p3worY",
+      "icon": false,
+      "aliases": "кухня блюда салаты питание лечебная еда",
+      "file": "herbcraft-cuisine-1.1.3.jar",
+      "sha512": "b7731c1f803382ba91ddb4c2db12cf12565d6c1dc3c6321228212cec6b4e394f532a9b65505e021bfc5117574c0077ff3062fd5de64a426981f80ac6d7993410",
+      "install": [
+        "client",
+        "server"
+      ],
+      "optional": false,
+      "projectId": "59p3worY",
+      "versionId": "bR6EURJj",
+      "sourceKind": "modrinth"
+    },
+    {
+      "id": "9J7sCd3t",
+      "name": "Arcana Novum",
+      "version": "4.0.12+26.3",
+      "side": "server",
+      "category": "rpg",
+      "group": "new",
+      "description": "Отдельный путь магических исследований: том, кузница звёздного света, улучшения и артефакты.",
+      "points": [
+        "Откройте /arcana guide и найдите путь к первому тому.",
+        "Задания исследования открывают новые предметы; концентрация ограничивает число используемых артефактов.",
+        "В сетевой игре JAR нужен только серверу. На клиенте включите ресурспак моделей Wicklen Polymer.",
+        "Языковые строки переведены, но встроенная книга и большая часть лора остаются английскими."
+      ],
+      "url": "https://modrinth.com/mod/9J7sCd3t",
+      "icon": false,
+      "aliases": "аркана магия исследования артефакты кузница",
+      "file": "arcananovum-4.0.12+26.3.jar",
+      "sha512": "f6061c140cf676a17647e60de00ca6095f395a570e02b2a328d2a5cb5500e2537b1798f56c2cfdab6a0cb82ee59005081c2c6d89a021200468fec884ecbe547a",
+      "install": [
+        "server"
+      ],
+      "optional": false,
+      "projectId": "9J7sCd3t",
+      "versionId": "ytSaQglZ",
+      "sourceKind": "modrinth"
     }
   ],
   "downloads": [
     {
-      "file": "wicklen-0.4.5-players.zip",
+      "file": "wicklen-0.5.0-players.zip",
       "kind": "main",
       "label": "Основная сборка",
-      "href": "https://downloads.wicklen.link/releases/0.4.5/wicklen-0.4.5-players.zip",
-      "size": 449776390,
-      "sha256": "cc715a6d8aea1e1ceb8a4c88aa670afeff362c7e9aadaeeb97f44581e07b35b4",
-      "sizeHuman": "449,8 МБ"
+      "href": "https://downloads.wicklen.link/releases/0.5.0/wicklen-0.5.0-players.zip",
+      "size": 463110806,
+      "sha256": "28c8444b58ee29676b0f71b085339bcac3da45c1e21cef232c24e6dd105db752",
+      "sizeHuman": "463,1 МБ"
     },
     {
-      "file": "wicklen-0.4.4-to-0.4.5-update.zip",
+      "file": "wicklen-0.4.5-to-0.5.0-update.zip",
       "kind": "update",
-      "label": "Обновление с 0.4.4",
-      "href": "https://downloads.wicklen.link/releases/0.4.5/wicklen-0.4.4-to-0.4.5-update.zip",
-      "size": 881942,
-      "sha256": "1577d4164ff94b02cdcb8d18314d10e0e77cfdfa8776de2c0dd591d8b08a30ec",
-      "sizeHuman": "881,9 КБ"
+      "label": "Обновление с 0.4.5",
+      "href": "https://downloads.wicklen.link/releases/0.5.0/wicklen-0.4.5-to-0.5.0-update.zip",
+      "size": 14668501,
+      "sha256": "99a7bbd7f7d93586aed7a740947bd4924c1b01921982efea1309298b1bf5164d",
+      "sizeHuman": "14,7 МБ"
     },
     {
-      "file": "manifest-0.4.5.json",
+      "file": "manifest-0.5.0.json",
       "kind": "manifest",
       "label": "Точные версии модов",
-      "href": "https://downloads.wicklen.link/releases/0.4.5/manifest-0.4.5.json",
-      "size": 42052,
-      "sha256": "4b6285918565fb8fc84a76f54c9eba92805e1132c3a3b59ccb9fbe3fcfe5388e",
-      "sizeHuman": "42,1 КБ"
+      "href": "https://downloads.wicklen.link/releases/0.5.0/manifest-0.5.0.json",
+      "size": 43433,
+      "sha256": "ed748c96bf9bf6057823354a0a83ff8fde51c87770cc2c76b8b58be88bbf2228",
+      "sizeHuman": "43,4 КБ"
     },
     {
-      "file": "PLAYER-INSTRUCTIONS-0.4.5.md",
+      "file": "PLAYER-INSTRUCTIONS-0.5.0.md",
       "kind": "instructions",
       "label": "Инструкция (текст)",
-      "href": "https://downloads.wicklen.link/releases/0.4.5/PLAYER-INSTRUCTIONS-0.4.5.md",
-      "size": 608,
-      "sha256": "bbfee840e72e7a47aef69dca61d4be8a04fbb2f1dffbf60049262ceaf6bb4f80",
-      "sizeHuman": "608 Б"
+      "href": "https://downloads.wicklen.link/releases/0.5.0/PLAYER-INSTRUCTIONS-0.5.0.md",
+      "size": 771,
+      "sha256": "5bf03dec512508a2ece87e9ca4959c6b6044ff51a68158320467750d7b985324",
+      "sizeHuman": "771 Б"
     },
     {
-      "file": "SHA256SUMS-0.4.5.txt",
+      "file": "SHA256SUMS-0.5.0.txt",
       "kind": "checksums",
       "label": "Суммы SHA-256",
-      "href": "https://downloads.wicklen.link/releases/0.4.5/SHA256SUMS-0.4.5.txt",
+      "href": "https://downloads.wicklen.link/releases/0.5.0/SHA256SUMS-0.5.0.txt",
       "size": 716,
-      "sha256": "d686acd65040eb18123b41df68d4f57230a87865837ee111a3baaad42230099a",
+      "sha256": "1e2e25de1954573411aa7d62c84c33e41a58b72cfa2b788c9f37e124c07efc68",
       "sizeHuman": "716 Б"
     }
   ],
   "changelog": {
     "date": "18.11.2026",
     "entries": [
-      "Сборка Wicklen 0.4.5: Compat 0.1.1 защищает Mochi на плече от урона владельца и не даёт питомцу мешать прицелу.",
-      "Chronicles 0.4.4 отключает шаги парящего духа с Presence Footsteps.",
-      "Обновление с 0.4.4 заменяет только два JAR: Chronicles 0.4.3 и Compat 0.1.0. Остальные моды, конфиги, ресурспак и личные файлы сохраняются."
+      "На сервер установлена сборка 0.5.0: Herbcraft Core, Alchemy, Cuisine и Arcana Novum.",
+      "Compat 0.1.2 исправляет карточки варки и блюд в REI. Chronicles остаётся 0.4.4.",
+      "Обновлены русский ресурспак и модели Polymer. Лимит трёх точек home сохранён."
     ]
   },
-  "instructionsText": "# Wicklen pack 0.4.5\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n",
-  "sumsText": "bbfee840e72e7a47aef69dca61d4be8a04fbb2f1dffbf60049262ceaf6bb4f80  PLAYER-INSTRUCTIONS-0.4.5.md\n1faa8bf481722373b19319b105ff2eb1da685bf46c2d8b84d1d4ff55494a162a  UPDATE.json\n4b6285918565fb8fc84a76f54c9eba92805e1132c3a3b59ccb9fbe3fcfe5388e  manifest-0.4.5.json\n3579e2d88e83a2a397f7ea3ea07b4e4a8d6dac7c08e8c1356708d567467a0fde  pack.lock.json\nc41de30aca10cf22df6ede3fe2786c80dd742c02e6bb338e48fc2f3c629c873f  server-manifest-0.4.5.json\n1577d4164ff94b02cdcb8d18314d10e0e77cfdfa8776de2c0dd591d8b08a30ec  wicklen-0.4.4-to-0.4.5-update.zip\ncc715a6d8aea1e1ceb8a4c88aa670afeff362c7e9aadaeeb97f44581e07b35b4  wicklen-0.4.5-players.zip\n6e5c860757c4ed166c6f128fa05782a0edf17d82bddb7e058f29062b7560b1d0  wicklen-0.4.5-server.zip\n",
+  "instructionsText": "# Wicklen pack 0.5.0\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n\nEnable the included Wicklen Polymer resource pack for server item models/textures. For Russian, enable ru-mods above it. Arcana Novum does not need a client JAR.\n",
+  "sumsText": "5bf03dec512508a2ece87e9ca4959c6b6044ff51a68158320467750d7b985324  PLAYER-INSTRUCTIONS-0.5.0.md\n7fc362925ac1006cd2c1792c98216d076d9444729af3f5ce0b0e0982bdcbc3f5  UPDATE.json\ned748c96bf9bf6057823354a0a83ff8fde51c87770cc2c76b8b58be88bbf2228  manifest-0.5.0.json\nf87d11782b46267e5b41898b254417cfe1acbd6f3afe02913566f4a485d24051  pack.lock.json\n54ef958153f0673604c22bc3eba17e89fcf69b3162d038459cee49f7b68b7086  server-manifest-0.5.0.json\n99a7bbd7f7d93586aed7a740947bd4924c1b01921982efea1309298b1bf5164d  wicklen-0.4.5-to-0.5.0-update.zip\n28c8444b58ee29676b0f71b085339bcac3da45c1e21cef232c24e6dd105db752  wicklen-0.5.0-players.zip\n13bef9473efe6307f97001f78655c27cd3dd143d469a4ba68f85760d09b4868f  wicklen-0.5.0-server.zip\n",
   "manifestMods": [
-    {
-      "name": "AmbientSounds",
-      "file": "AmbientSounds_FABRIC_v6.3.11_mc26.3.jar",
-      "version": "6.3.11",
-      "sha512": "bd042fec99c1178f5521166f4a0284a2d5d9780e43a20404b62933f3870bfa957ec30c038173df14ce615b095e73b5a78484a416d8b02c8aeadf2973f53426d0",
-      "side": "client",
-      "optional": false
-    },
-    {
-      "name": "Particle Rain",
-      "file": "particlerain-4.0.2+26.3-fabric.jar",
-      "version": "v4.0.2+26.3-fabric",
-      "sha512": "b87684651246c05d0985c88cc0e05ba0e5bdf04d6e5c3ec90962d4342d9f70bc13a4ca86a4276022d71afdcfd69709596e070f3cfe1ae0ee3484dc2924121f19",
-      "side": "client",
-      "optional": false
-    },
-    {
-      "name": "Presence Footsteps",
-      "file": "PresenceFootsteps-1.14.0+26.3.jar",
-      "version": "1.14.0+26.3",
-      "sha512": "70525da0c631f50608b67ecdfe62fd9410fdec7bc95510946716a6465cc109fe6b93be7c75022c47a0036f9954ff5912567a393e1356a75940e9b1da5580698b",
-      "side": "client",
-      "optional": false
-    },
-    {
-      "name": "Visuality",
-      "file": "visuality-0.7.15+26.3.jar",
-      "version": "0.7.15+26.3",
-      "sha512": "90145cad547d329d5134eabbf45c7f35b1d0ce3ff2bcef8a1b187dc33723121b1a235c0cc259043588835b0cb7b31cba4aa84d738be810f0ea073308bec2eb4a",
-      "side": "client",
-      "optional": false
-    },
     {
       "name": "Accelerated Decay",
       "file": "accelerated-decay-fabric-26.3.0.1.jar",
       "version": "26.3.0.1",
-      "sha512": "1ea1785b70411c99e98c462e79474862b3822d11ebb2dc537667cd615575c010d09a141cc940d1698e8be9db9570ef5cafc90d2bb92f9fa23dacd85c82c8de80",
       "side": "both",
+      "sha512": "1ea1785b70411c99e98c462e79474862b3822d11ebb2dc537667cd615575c010d09a141cc940d1698e8be9db9570ef5cafc90d2bb92f9fa23dacd85c82c8de80",
       "optional": false
     },
     {
-      "name": "Adorable Mochi Pets",
-      "file": "mochipets-0.23.0+26.3.jar",
-      "version": "0.23.0+26.3",
-      "sha512": "b2e69e252ac679b9a5ab419b8f60c01020656431bb0b5dfa193d5e1f0fd24afb34310ea9a5315b1ed826b38456044dd5806d9fed62132748951f73616d1f3417",
-      "side": "both",
+      "name": "AmbientSounds",
+      "file": "AmbientSounds_FABRIC_v6.3.11_mc26.3.jar",
+      "version": "6.3.11",
+      "side": "client",
+      "sha512": "bd042fec99c1178f5521166f4a0284a2d5d9780e43a20404b62933f3870bfa957ec30c038173df14ce615b095e73b5a78484a416d8b02c8aeadf2973f53426d0",
       "optional": false
     },
     {
       "name": "AppleSkin",
       "file": "appleskin-fabric-mc26.3-3.0.10.jar",
       "version": "3.0.10+mc26.3",
+      "side": "both",
       "sha512": "17d257af419b7530aa8617c2e8c0e4bbfabcf888f26655790e0188e7957e0bcd931f85f9a4c69fd27e889dee5082cf7b2b8741a14a6ed4425e9ef4bfe13a8b8c",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Architectury API",
-      "file": "architectury-fabric-22.0.5.jar",
-      "version": "22.0.5+fabric",
-      "sha512": "14c61af2088b80b465f06edd3b3005038fa5be1c95a2161ce712c8da408a358038b7cd7ae4acf3198f6d47c693e4fdf65d646dac7e124f7cdd7f32bbc0dcd0ce",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Balm",
-      "file": "balm-fabric-26.3-26.3.0.3.jar",
-      "version": "26.3.0.3+fabric-26.3",
-      "sha512": "aaf07f5b94f7015c87df7b242f3f45f0729fb3f72d887745ad5c5ceb31eb071e425254009158774101676d6480f31c832dd60860d79da5b661cc10b84241c319",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Beautify: Refabricated",
-      "file": "beautify-3.6.0-fabric+26.3.jar",
-      "version": "3.6.0-fabric+26.3",
-      "sha512": "00ff0f3213064fd9a166571e1007e8b5242f939982f7e85eb99539d01d802f21d1df53ea9a51fa07a91977ff7a686fcb4d7f92045e62a67b28b6e4adf011dbac",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Better Archeology",
-      "file": "betterarcheology-fabric-26.3-1.3.9.jar",
-      "version": "26.3.x-1.3.9",
-      "sha512": "f3a6db197d3eed9dbfded7cf49c34d2f9fa5cb27807fc4cf6acb0a8d5aa0fe9efddd301cbb50207870930cc7f42b9bc688271c9bc73392846418c20d5b81b76a",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Biomes O' Plenty",
-      "file": "BiomesOPlenty-fabric-26.3-26.3.0.0.7.jar",
-      "version": "26.3.0.0.7",
-      "sha512": "521eb6608bafbf7b331b49118cf273d84179241c4ccdf9d3c6d30b23c7c0c4f4c202d5728222785f2e47e1c5a0f8ae5a38ee67fa8eaaaf12e98679d9717b8a2e",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Cardinal Components API",
-      "file": "cardinal-components-api-8.1.0.jar",
-      "version": "8.1.0",
-      "sha512": "8507faea758d820ebddedb2ff087510ac52f262b14fba7b2d2fee2fbb731bee819e253cdaaefcb580f281f2d14b081dc06f2fdb9b78e73664f3a42065be7459c",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Carry On",
-      "file": "carryon-fabric-26.3-2.12.0.jar",
-      "version": "2.12.0",
-      "sha512": "92302e1815fe8b4d41517f001f667a348d4f1e5d0a07d9495b263076cd7a9a30183a0174d4f1a4d6b447161d9d68b08a649f48633583b5955dacd7736d5decc9",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Cloth Config API",
-      "file": "cloth-config-fabric-26.3.159.jar",
-      "version": "26.3.159+fabric",
-      "sha512": "8924e19d41845096724fa10f3717bc51964a0edbbbcad0ff1e6c6187a398b08f356e49579a657c2dc44a7f92e3850771f3ca70bf8c1f654de60425163b91dbb1",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Collective",
-      "file": "collective-26.3.0-8.73.jar",
-      "version": "26.3.0-8.73-fabric+forge+neo",
-      "sha512": "cb214086985fb9fa108b0795cc6f52f4f8b454152f179c2114bdbf57bc43e9ccc8bcb9416b8d9d13e390bca2883a72de30a5b566fc4adad739fe3e8051393ec3",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Construction Wand (Fabric)",
-      "file": "constructionwand-2.1.3+26.3.jar",
-      "version": "2.1.3+26.3",
-      "sha512": "c0a1cd62ffe13c8a7b6a87103ef198b83f38ff8e02cb3efaca5466a06d3b44001c24acf085389c7b279b9bee870e3e2ffb4fab640748806501338afeedd517e6",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Cooking for Blockheads",
-      "file": "cookingforblockheads-fabric-26.3-26.3.0.2.jar",
-      "version": "26.3.0.2+fabric-26.3",
-      "sha512": "427935a13093a05e25bf1d2ff16ebd26cc4ce1a7e89b35420951bf6bf36c81f1ab9fbbf3ca899bd02f66ebbbb01a56d41d29b83cfc9c1dddeef968c6ca935289",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "CreativeCore",
-      "file": "CreativeCore_FABRIC_v2.14.24_mc26.3.jar",
-      "version": "2.14.24",
-      "sha512": "d05bbab192eaff9e66496bc0ba7b2bce67c1d23d99132ec7241dd2c4c07c5199983bd60ad83246b0ad78609a2724358510fa189530c19b0590f5de494bbd19e5",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Data Anchor",
-      "file": "dataanchor-fabric-26.3-6.0.0.2.jar",
-      "version": "6.0.0.2-fabric",
-      "sha512": "81c181cd117caf9dca93df9b6dd5c7051abd33a3ddd6da68eb61b11c7cf2f04415e0ae9847c020507ba6fd8fffedc8e86e2bd2bc3b068df9faa7e08f1bfbc652",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Debugify",
-      "file": "debugify-26.3.0.0.jar",
-      "version": "26.3.0.0",
-      "sha512": "921a2f31531990df93af4099cd7bece26886b7fc38021642ae32032e435b8686a0ee208dba4eb1ed0057e6e0b3332f990fb77778781afccfe0e52d28dfb07c26",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Diggus Maximus Reborn",
-      "file": "diggus-maximus-fabric-1.8.1+mc26.3.jar",
-      "version": "1.8.1+mc26.3",
-      "sha512": "6ff46eafef898efd014ff3b406af2cf9b9409d776fbbc3d3f85f9f8f3f58bc76efd3919b1a73202e2b7e5ec0249b0fac3e73497254dea1b2ace1a03f761eed1a",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Distant Horizons",
-      "file": "DistantHorizons-3.3.4-26.3-fabric-neoforge.jar",
-      "version": "3.3.4-26.3",
-      "sha512": "0b90b1b08d99974bfc3c8e86b2ceb252e2f91715ed66b925004c28335fb44e1bddbbb6b8043e4d4d53c87ed247789cd1788b1ba4e3f4394efe154e0c59cff236",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Enchanting Infuser",
-      "file": "enchantinginfuser-v26.3.0-mc26.3.x+fabric.jar",
-      "version": "26.3.0",
-      "sha512": "e68e6a98a75358a0bff8bcd4978016d1fceeabe4c4f530625e6f3a5f434bbcf2e148c8ebe5d67d85f47900e76366c240ee4cedaf6e22620cd31479ec61921064",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Enhanced Celestials 2: Core",
-      "file": "Enhanced-Celestials-2-Core-Fabric-26.3-5.0.0.0.jar",
-      "version": "5.0.0.0-fabric",
-      "sha512": "6968618a2197324a28ae67527076f109c9ed788fdc5a616ea64f4e14f3dffee4f336af3b02854b07cf922cfc68f7971d8ace97c8745d413f24aa5334b819b2b6",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Enhanced Celestials 2: Default Lunar Events",
-      "file": "Enhanced-Celestials-2-Default-Lunar-Events-Fabric-26.3-5.0.0.0.jar",
-      "version": "5.0.0.0-fabric",
-      "sha512": "0a6d95559c5064d6b75fdeb3c32a1db445b47177c4807c7a4c1e119951da3aa2f3202c9eb00a33a8c7f3416bba91cd6f44444fd966ba1c58dc2154c384b25204",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Fabric API",
-      "file": "fabric-api-0.165.0+26.3.jar",
-      "version": "0.165.0+26.3",
-      "sha512": "0a4b8a14e847b71567b557b43d906c2167fa263eeeef37454a821ba286996e3da1616dc2d9647736d28a250d5ecf400541cae808359b29a62324a8a6f2ad5e30",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "FancyMenu",
-      "file": "fancymenu_fabric_3.9.14_MC_26.3.jar",
-      "version": "3.9.14-26.3-fabric",
-      "sha512": "98d1cfb0e39d25a7e0e80b5f0d6511de192c79b917c728236a2723ed6f488d0d66a2310bcb7a4216003a9b818fb986b5c2f1f4824e279074b49e802ef8f18fc6",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Farmer's Delight Refabricated",
-      "file": "FarmersDelight-26.3-3.6.30+refabricated.jar",
-      "version": "26.3-3.6.30",
-      "sha512": "099f724599022ac9232f265d62907fdde6ad48a73b246d45930d938a7f850be6a8b520244ffa218a59fdef96b0170fc0c04f00ff91f108b5a02bbc4cb2a013bc",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "FerriteCore",
-      "file": "ferritecore-9.0.0-fabric.jar",
-      "version": "9.0.0-fabric",
-      "sha512": "d81fa97e11784c19d42f89c2f433831d007603dd7193cee45fa177e4a6a9c52b384b198586e04a0f7f63cd996fed713322578bde9a8db57e1188854ae5cbe584",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Field Guide",
-      "file": "fieldguide-1.23.0+26.3-fabric.jar",
-      "version": "1.23.0+26.3-fabric",
-      "sha512": "72d3729d324884c975a6c922a3acea8103b1d62628aecb4aea9188997e59f08f0082ee765679aa914fe6b255833d2bc161a5578404dd7018bfda546da7cb7653",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Forge Config API Port",
-      "file": "ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar",
-      "version": "26.3.1",
-      "sha512": "b9339c21e14beec2eae0ca215317284bcaacef72e1d1dee8b3dfbe2de0eefaa758a172446df85419b6534557c479abe972d7d21f4ec194f2d436f9ed4329cb9f",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Fox Friend Remastered",
-      "file": "fox-friend-remastered-5.1.10.2-26.3+.jar",
-      "version": "5.1.10.2",
-      "sha512": "24096afadef19b9c0fa306287bcec7714249d82c400b063f9d4c2628bda07d0344953104df6ee92cf79684b366b76571ac0cd8afebc4d3b636a65e225407db6f",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Friends&Foes (Fabric/Quilt)",
-      "file": "friendsandfoes-fabric-5.0.4+mc26.3.jar",
-      "version": "fabric-5.0.4+mc26.3",
-      "sha512": "3fcfb9b3d52d0d5fe2f41e4e9f4eb4ef3943ae83d211757e0ee3871dcea4e8d0a75357ebae252ba62deb648c4b38c8569df7d0b1837c5eaee35cf672e21a0a2b",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Geckolib",
-      "file": "geckolib-fabric-26.3-5.5.7.jar",
-      "version": "5.5.7",
-      "sha512": "c7c89bd6c5f2801ef1575e2e1212202f5a3eff480d73503beff12b1d60dfb751112fccf36e36c243b26b6b492261cef12d8b2c1a92a734bb0b621daa8c158fc5",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "GlitchCore",
-      "file": "GlitchCore-fabric-26.3-26.3.0.0.5.jar",
-      "version": "26.3.0.0.5",
-      "sha512": "f975535e561285898163e7512008fe61ffaac66b6fc60a4e4763d0f2279617f75900d7a2ab2708d8dc348337119df61d2783aa101a9f1a24020f99888aa0d457",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Immersive Overlays",
-      "file": "immersiveoverlays-1.8.6+26.3-fabric.jar",
-      "version": "1.8.6+26.3-fabric",
-      "sha512": "c4250d65d68985d5aacd05355599fbbef61fa87e5680f94a90a5f045aea2f2e38fe211adc2f5d26246490ff0c5a916507a86d6c801d2d5ef03db85de3d232bcd",
-      "side": "client",
-      "optional": false
-    },
-    {
-      "name": "Item Descriptions",
-      "file": "item_descriptions-2.8.5+26.2-fabric.jar",
-      "version": "2.8.5+26.2-fabric",
-      "sha512": "c919c86016fa32a34b2160203fb5b2fbe697d54656a5a0f771dbc85ac78d946dd65906554199a86fb79fd44a159a3b3161aa5d401a81305167d167ff08947a44",
-      "side": "client",
-      "optional": false
-    },
-    {
-      "name": "Jade 🔍",
-      "file": "Jade-mc26.3-Fabric-26.3.5.jar",
-      "version": "26.3.5+fabric",
-      "sha512": "2e7331e62eb6658268ae92dc42de8b469f50dd6c6a9d2546a6f649bae97c2cdfd8d4c1560948cf46269175d2c79c6c47a36a02685e39d476768d18fbb2a28703",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Konkrete",
-      "file": "konkrete_fabric_1.11.1_MC_26.3.jar",
-      "version": "1.11.1-26.3-fabric",
-      "sha512": "ef6b12dbf3f616ba4089e706f27d76c543987f4a20509bf3def711ddb9279b94170c67228b9e44a2e2c189a80a7c9a5cd4c7e079281b7ac1cb0ec7d9c46b9aa8",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Lithium",
-      "file": "lithium-fabric-0.26.3+mc26.3.jar",
-      "version": "mc26.3-0.26.3-fabric",
-      "sha512": "2ca92fb530135d2baddf0ba4cc4f93976234876a38c4aa02b487b2552400f005afcfbeebf5373fb4396fe2020537a42d7597b8da5a52b904355ef51d5fef07ad",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Lootr",
-      "file": "lootr-fabric-26.3-1.25.42.124.jar",
-      "version": "1.25.42.124",
-      "sha512": "290786fd4af4011c4f09c425d262bacc80f6ef47e23fbf6424193c719b6045a70cae70308c95d30c5ab78bf1f5a3d089cc3b01db8cc4dacc1a74c0f2d70c245d",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Macaw's Furniture",
-      "file": "mcw-furniture-3.4.2-mc26.3fabric.jar",
-      "version": "3.4.2",
-      "sha512": "90030a9f642c254ea954588b66c78ae4c65246a8c14148b23cde144d031d24dff09f4e14271ca9de78af9210165536d51b306144f442d75c2efa27517a083e0e",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Melody",
-      "file": "melody_fabric_1.0.17_MC_26.3.jar",
-      "version": "1.0.17-26.3-fabric",
-      "sha512": "f0ac30c3a0eb0908d05824a9a43e44c614a95dc99b4cba9abeea750406430fde21d6e26bae5a1e5c63b63359e49d4bc96ced32400717fc72064c50826e11b9ca",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Mob Champions",
-      "file": "mobchampions-26.3-fabric-1.0.2.1-FABRIC.jar",
-      "version": "26.3-1.0.2.1-FABRIC",
-      "sha512": "69ea8048a4337e96c60ff45f705030dc6c5d1e211a81f9dfb81811a53565678e217fee717e16c8f77526cb772d5c6760fd8bfc7e7ccfed1224045cf230355ad3",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Mutant Monsters",
-      "file": "mutantmonsters-v26.3.1-mc26.3.x+fabric.jar",
-      "version": "26.3.1",
-      "sha512": "76c4ddd2a1b659270d0013ca758b0d64000a3b9fed44230b2a56e1b636cda83ec8661a76f39e1a7cf6e43af9ba04c358f9cfea02533c4f512e9cbd80d50e33c9",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Naturalist",
-      "file": "naturalist-2.0.7-fabric-26.3.jar",
-      "version": "2.0.7+26.3-fabric",
-      "sha512": "69ab0b21eddb4ca33e082be27803ddaff6f9241a1f33d05e6b0579dd62b1c90955e0d12cb855d05e8769bc46cb866a6f1c57951c01962def31505fda0217820c",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "OverpoweredMending",
-      "file": "OverpoweredMending-26.3-25.jar",
-      "version": "26.3-26.3.0.2",
-      "sha512": "f8692f729087996bdba3573f2d31d16861c69d2f726cab6a7fe93dea18d404c1e634922bcd77a17a1800c12e2211d804054349644b03c1ad93cb7b48267361f9",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Pufferfish's Attributes",
-      "file": "puffish_attributes-0.8.3-26.3-fabric.jar",
-      "version": "0.8.3",
-      "sha512": "09c066e1c60d8edd3929a5dd26550fb8dee803f04e39b945dc755752c6ee98b2b33b0dd70325d807a5fbe7eeeec8d9879676942f5142a8372f9609ad2c5d40a4",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Pufferfish's Skills",
-      "file": "puffish_skills-0.19.2-26.3-fabric.jar",
-      "version": "0.19.2",
-      "sha512": "828b77af1b5752ebc1972a5a6501beb3f1f4b197b7b1264924de1c562503bb6888d6c546e25705853c00b5be06d97fd400d310ade9e6d5b2a992b9a3863fecab",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Puzzles Lib",
-      "file": "puzzleslib-v26.3.17-mc26.3.x+fabric.jar",
-      "version": "26.3.17",
-      "sha512": "6366724a2eb5320b02feacb0983fdd66bf8615c17d7a44426264434222acbc7462ab0c0b81756ae3a11aa82e32a584fae774fccd0f4abfd0db5535747ff74c40",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Reborn Core",
-      "file": "RebornCore-6.2.1.jar",
-      "version": "6.2.1",
-      "sha512": "677d684836f84227d1114112641608bf6e720317dc1241a49aef0c3824a525ba05e9e9f87408261166525ad66cca0a0527d50db34a8b9b3ca027c432a640ddc1",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Relics & Artifacts",
-      "file": "relics_artifacts-fabric-1.0.6+mc26.3.jar",
-      "version": "1.0.6+mc26.3",
-      "sha512": "b4cbd81b9d54d56f412f4c12acbbb12cd23a5fb55ecd7e22a4d3fa746f04c5fe5c9b87da02baf484f96be97a74251b9c7b288962fc3c0fdfff269b1530e228b5",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Resourceful Config",
-      "file": "ResourcefulConfig-6.0.2.jar",
-      "version": "6.0.2",
-      "sha512": "916bafc4df592d15f269db169c16d604d2c7e726fb3c4230caeff0fc5c53ef1bfd30e80dce34ffcc32cdc210544333c121351f5da50a27bf0e9c794e58575025",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Resourceful Lib",
-      "file": "ResourcefulLib-6.0.1.jar",
-      "version": "6.0.1",
-      "sha512": "9850f92d59beb89e8c3e8ca55e56aacdd42500c4e6f560607e29549e3998f6c912e08bc6ec5350764751ced6a9d7821c4e6c545fb6194e8a0d0ac111c218cd87",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Roughly Enough Items (REI)",
-      "file": "RoughlyEnoughItems-26.3.824.jar",
-      "version": "26.3.824+fabric",
-      "sha512": "7724d8e8dc50248641686c878b6b60736572c49e0cd8c71640c1c57fe85aed9941cad8ff7806b923903253da3540ff3df9bf619d701f50b904990fa7cdd59ee9",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Serene Seasons",
-      "file": "SereneSeasons-fabric-26.3-26.1.2.0.7.jar",
-      "version": "26.1.2.0.7",
-      "sha512": "f0ef802ab4a7d95df76855100656f3c0f65c7954b52330d7e3c224a0900359d8e8db8953dde3aca52231a5a90428e9925cac99ca01b22485d4af37640620069c",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Shogi",
-      "file": "shogi-fabric-26.3-26.3.0.3.jar",
-      "version": "26.3.0.3+fabric-26.3",
-      "sha512": "f050b6360b188a82ca7e3fbb0d00eff4c02b9b39bc991fbddcf4a3588f594887d15f6421e50d5a7452a53ec35d44ec9b325d7826f77393af9543fe3383cb142d",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Storage Delight",
-      "file": "storagedelight-26.10.05-26.3-fabric.jar",
-      "version": "26.10.05-26.3-fabric",
-      "sha512": "47a79d3361bbf54b420b4af0fe702cad8219af4b99ea6d08f395dc343d83cc5225c11652f0a39926ca4c32d03850bad2b4a97a53aea1212f6510cdb1d1cfeddc",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "SuperMartijn642's Config Lib",
-      "file": "supermartijn642configlib-1.1.8a-fabric-mc26.3.jar",
-      "version": "1.1.8a-fabric-mc26.3",
-      "sha512": "bb60c29d409ed2749f7a4a08b2c6b95c110191914828a54aed7ed4be779362b5a8ba13f871b72b6dbb21059ae397ab1561db8e83aa988173eb63ae00d369bf03",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "SuperMartijn642's Core Lib",
-      "file": "supermartijn642corelib-1.1.26c-fabric-mc26.3.jar",
-      "version": "1.1.26c-fabric-mc26.3",
-      "sha512": "02a4599755e00454151148fcc9f0a09408d72793ee2e1ab28a20770f0ea2c603b11c0902b6ee689ffa32da698b0db4b9ecd74a1b9ff301e0ee97522f62c49c39",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Tax Free Levels",
-      "file": "TaxFreeLevels-1.5.4-fabric-26.1.jar",
-      "version": "1.5.4",
-      "sha512": "1a0e0e646862dd5afa1c5168c34e6597cbc532e9da24640d061946b0085dc7c9483d772f77d42efc94e4813cac71a58e49b9b6de569ba5179b3c44b3646fc719",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Tech Reborn",
-      "file": "TechReborn-6.2.1.jar",
-      "version": "6.2.1",
-      "sha512": "e75737557d87e800d19b85178fb99e8c1fe1bfb443055ed0d85e0c27974e0163c6a568d7ab4dda8635f14a757c768dcda8ead0fabbe17b2421cd8a9daad42a38",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "TerraBlender",
-      "file": "TerraBlender-fabric-26.3-26.3.0.0.9.jar",
-      "version": "26.3.0.0.9",
-      "sha512": "183f809fe992aaaaf4d84c594730b95b392338caf17b690debbb14434b23b46f5923cfcc5aecb81368ea06a299503a3738dcf942b7f179abd000f1312cf2cbdb",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "The Graveyard (Fabric/Neoforge)",
-      "file": "graveyard-FABRIC-4.0.0+mc26.3.jar",
-      "version": "4.0.0+mc26.3-fabric",
-      "sha512": "2dd4fdf0111843803d5ce78e2f175e596fffcafc2196297062cce60f6f5cf366b6ad70e8ed94c0927f71d7659bffcd58dae9988cb9e48311c9e88b8dcf43d489",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Trading Post",
-      "file": "tradingpost-v26.3.0-mc26.3.x+fabric.jar",
-      "version": "26.3.0",
-      "sha512": "ed0befb5498146c7b7cc5ba7642db0752a2ef1bf091f03e3166a40def36b45a8f4f990db0d96470208c8b8707eada1bdeacb4f515f3cea72485ab2a81a7fa698",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Traveler's Backpack",
-      "file": "travelersbackpack-fabric-26.3-11.4.2.jar",
-      "version": "26.3-11.4.2",
-      "sha512": "caa7065e2821a7650a7aaaad379b6af646e755d13d1e0b9332b33f997a758f1a11a8fa6fc8369fb3f22298e1d18eb17d31ffa44262bcd776390242825e4ada0f",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Trinkets Updated",
-      "file": "trinkets-4.2.1+26.3.jar",
-      "version": "4.2.1+26.3",
-      "sha512": "d4038e93b95462cff05075dad5b97669871f62212c0228ec6483782e22476d0354d1869f0e523fdb23b2a233fa0f15ff01d497fd2c8a5292ab20838dc464d15a",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Underground Villages",
-      "file": "UndergroundVillages-fabric-26.3-13.0.1.jar",
-      "version": "13.0.1",
-      "sha512": "1435a022a5e8b07fb944bbed41287260ea0ca5f85f575729674a9dd7792506fe093b4408686c5a3e7b04949a5ca49a5ab8337259c59fae878c46d4daec575732",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "VillagersTradingPlus",
-      "file": "villagertradingplus-fabric-mc26.3-1.1.0.jar",
-      "version": "1.1.0+mc26.3-fabric",
-      "sha512": "297a33a1fbb28ad7dc588d877f12cd2952a33f90305f33ab3f1ce20c7ffa3671eacaf25e10ab705dfa2542817bb8d7452a780764b96be221a7f89e25a4aa9771",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Visual Workbench",
-      "file": "visualworkbench-v26.3.0-mc26.3.x+fabric.jar",
-      "version": "26.3.0",
-      "sha512": "52006eaa57053a2f6cba75a0032a81d179f1a47cc4982e391ea5a380179b9b7aaf349afcd5ac3344dcd05e1b0e224f91cf6b1a1135698a7685f1321470966ad0",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Waddles",
-      "file": "Waddles-fabric-26.3-0.15.0.jar",
-      "version": "0.15.0",
-      "sha512": "82fe51db5ea58147155ade59ad50c624df10254b6478ea41979e2d71465ef3c1ac64f30b90e20eca09e69c0ac6700813528d07d4123dd086c2eba35bd3bb0353",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Waystones",
-      "file": "waystones-fabric-26.3-26.3.0.1.jar",
-      "version": "26.3.0.1+fabric-26.3",
-      "sha512": "b9c09872b60f78dd6a37baa32a866821b84cd7386e2ea2eed641acdc31fd2635a70a22be8006c3f9ee5de495f563cb1915a2a1b6864bbaecb86c907c5b4c6ae2",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Waystones pets addon",
-      "file": "waystonespetsaddon-fabric-0.1.1-26.3.jar",
-      "version": "0.1.1",
-      "sha512": "39a6a6acb564cce084f9eebdec04855ea2b8524593656142ec97b5fb0236071a05318a60693999dbb5fbec3bf98b296981d8cf819f56c5e2361b90732c4bd599",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "WorldEdit",
-      "file": "worldedit-mod-7.4.6.jar",
-      "version": "7.4.6",
-      "sha512": "3bc4fbf2ee36746f54dc036283b3ded3f17fd91991eaa1ead76b0861aa902cd7ffbc0962db0065d8690e46d1c4890847ebe97ee0b4e36a979b41168c30586ee4",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Xaero's Minimap",
-      "file": "xaerominimap-fabric-26.3-26.6.2.jar",
-      "version": "fabric-26.3-26.6.2",
-      "sha512": "edf57b80cfe0e0fe229728a6babc3b25c364c07a0406bcdb3a21f73fc225b98954c68ff456c7b1af3182c48512f29d47238ddc501dbfd5eaca0a4609fddcc280",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Xaero's World Map",
-      "file": "xaeroworldmap-fabric-26.3-1.47.2.jar",
-      "version": "fabric-26.3-1.47.2",
-      "sha512": "cac3c0fb3121ddebc7f073571dcbce5f1811ca001ea94ef03c1da667e8a3413144f570c4b593f632358eff98fa138631ed7907fd1bd5da7d43c037ea782125fb",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Macaw's Bridges",
-      "file": "mcw-bridges-3.1.2-mc26.3fabric.jar",
-      "version": "3.1.2",
-      "sha512": "bd7cb8b1c5651b0431717cb7c981fa9de574dcb60b05f675e04ead81d16854009f97cb96d714894a1c2974a4502fbad67f4c6494ade62431d32256387b5fecca",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Macaw's Doors",
-      "file": "mcw-doors-1.1.5-mc26.3fabric.jar",
-      "version": "1.1.5",
-      "sha512": "fec014859a250042914190053b29b0c8c6eae86187dd90160ffb2a036898720de2500c424178972fccc7c62edeca838805feb836d18d6c0ef34c7c6b1b329d53",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Macaw's Lights and Lamps",
-      "file": "mcw-lights-1.1.5-mc26.3fabric.jar",
-      "version": "1.1.5",
-      "sha512": "ca8d0cc9841d5071abec7286e590aaad8af9326378702a3f44dfab27f15148509f3d7c8544a610085fc4e5f3ad8f3dcf3d8a9524751589503d8cec271598c8a4",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Macaw's Paths and Pavings",
-      "file": "mcw-paths-1.1.1-mc26.3fabric.jar",
-      "version": "1.1.1",
-      "sha512": "2656c023464d4db33550f7c5ed1ce05cea63a3d10eb70e93a9efb586343db0dc835eeff5dccb81eb2f7a76affe363c9f979693ba12c4a15d2c7c0d737bafa336",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Macaw's Roofs",
-      "file": "mcw-roofs-2.3.3-mc26.3fabric.jar",
-      "version": "2.3.2",
-      "sha512": "016ccba9220017b6051d6b203892adba717c9cf62ea5bb0bb201f6e3fa499036edd022701b1e5636fb96edf66bf27e6951dc9697b086833f9906c2b4078d4a82",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Macaw's Windows",
-      "file": "mcw-windows-2.4.2-mc26.3fabric.jar",
-      "version": "2.4.2",
-      "sha512": "ef0c41a83cb57bc3b4cc04147f64a4b0e9646d409bfd8094be770dbe4b57571f37b00450835d4f8dfdcfca976be0ffdc0ccd66e4a7d6d9e87a6d31656fcc90f7",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Undead Nights - Zombie Horde Nights / Hordes",
-      "file": "UndeadNights-2.2.6-Fabric-mc26.3.jar",
-      "version": "2.2.6-Fabric-mc26.3",
-      "sha512": "319b21d44b036b1798ab0cd81c78d3eb07c9b53d1818819cc8e019b24dd3ce13477c8d93e6d70a6299c5e6382a9c86ab8db097bc81b9a40926a75c6d5e7acfcb",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Easy NPC",
-      "file": "easy_npc_bundle-fabric-26.3-7.17.1.jar",
-      "version": "7.17.1",
-      "sha512": "be705f4fec7880bb432501595f97c3bd433285d4b1ec1ebd98a06a759e336b3655ceccf809c4e4955597ca799e113e7cd01e05be8a2e2daf369216bfddcf3c29",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Easy NPC: Config UI",
-      "file": "easy_npc_config_ui-fabric-26.3-7.17.1.jar",
-      "version": "7.17.1",
-      "sha512": "adc4379cc3373fefdb9cabf50a498cbcf07a5335360b837c185fa06f852944d0f9d7b6fd2f8d69c2dbe374ecd9965c7381f7d589345dedff168c91236045f734",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Easy NPC: Core",
-      "file": "easy_npc-fabric-26.3-7.17.1.jar",
-      "version": "7.17.1",
-      "sha512": "c878b21810b7cf8c7a57b147e2471495630c3176eaa7edb15b1c971bcde4790f00dba1466fc3ef812d30b2343b0ed13589d681ec1ed1810e20013808a75e2dfc",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Iceberg",
-      "file": "Iceberg-26.3-fabric-1.4.3.1.jar",
-      "version": "1.4.3.1",
-      "sha512": "22ab9c3394a289b16463c00116c44013e421bfca16f5370b92f32a193675322a9f47be47b21058721ecb2ce9ba534723bb1f39fd83e0c17dd0573d228a44ad4f",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Legendary Tooltips",
-      "file": "LegendaryTooltips-26.3-fabric-1.6.3.jar",
-      "version": "1.6.3",
-      "sha512": "1c11ae09fed974b61d0e4ff915625fcb6f7992f196cd87fb48bcef58355932e68b19d319a8373660afa565ef2c2ab0157ad03c50b22552d1ed1c3eb7884cccb1",
-      "side": "client",
-      "optional": false
-    },
-    {
-      "name": "Prism",
-      "file": "Prism-26.3-fabric-1.1.3.jar",
-      "version": "1.1.3",
-      "sha512": "fe6c9760c85ca6157e3219b1d61004ab8b2190a5ae9ccd1475a4ed2eec121dcf6c02883bb7575b4a31667c4f2d477d92081656c582f5274ee85a262fa9fb874f",
-      "side": "client",
-      "optional": false
-    },
-    {
-      "name": "Better Combat",
-      "file": "bettercombat-fabric-3.2.2+26.3.jar",
-      "version": "3.2.2+26.3-fabric",
-      "sha512": "bfa8af89795747de669e396e74bd8473ff991c2bddd52549a5a45d7c8efb56bf29a78e41232a996e865fa3b0746ec3502eb8bc27287e10fbfbb96bb4bf23a384",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Boss Checklist",
-      "file": "boss_checklist-5.3.1.jar",
-      "version": "5.3.1",
-      "sha512": "a8e0023fd00c3afb63e309e9ec4a6319b4952fe6ee29272bb8c4ad910c935029829941a688b65dcbb669ecefd6dc6f004a3903572c16406dff8f123c81770717",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Combat Roll",
-      "file": "combat_roll-fabric-3.0.1+26.3.jar",
-      "version": "3.0.1+26.3-fabric",
-      "sha512": "36741c073ba51c6e2a70f91a605eef86fc8003742046f3dca966f3227ff0a157f77f2c305a66f7331b6ff91779874683af33163e119d9d02a85fae093aad2f76",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Cosy Critters & Creepy Crawlies",
-      "file": "cosycritters-0.3.3+26.2-fabric.jar",
-      "version": "v0.3.3+26.2-fabric",
-      "sha512": "20d78f5f4acf60eea1cb5b16cb5f6fa828f19a51881d7a776578fd6270ea7e925e1e2d0c8b46ef06d52697b82afd5a1414cae8bac07f378d0d8b36d109fe95af",
-      "side": "client",
-      "optional": false
-    },
-    {
-      "name": "End Remastered",
-      "file": "endrem-fabric-26.3-6.2.2.jar",
-      "version": "6.2.2",
-      "sha512": "a6f8f57a27f345419cb90b819b77c84f3b37c44507f4adcfaad45509c6b5a7c71cfa864a1fabc706acd96ab462ca1f3aefa3c53019c6040f3bfa147c06b59446",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Explorer's Compass",
-      "file": "ExplorersCompass-26.3-2.5.2-fabric.jar",
-      "version": "26.3-2.5.2-fabric",
-      "sha512": "83e7b4217fee0eda42bf91ced65ea66135846a03e6cfc353067ccbbfab279e967d3c59887de286c90742d3ed95946398e4362d506092a34d0d99b39b502b6428",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Player Animation Library",
-      "file": "PlayerAnimationLibMerged-1.2.8+mc.26.3.jar",
-      "version": "1.2.8",
-      "sha512": "d6870759e2f5f83c6a74b2d02aeabab937d6d8da8c46245566646bc6e8efaeeb06c978edc43a50b57a0de2d015b341c284382bc5d4ae2e450d1b6aa5f8e2e97e",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Village Quest",
-      "file": "village-quest-2.6.3-mc26.3.jar",
-      "version": "2.6.3",
-      "sha512": "135bb721d964f8372d780fc8e993c712b74f51edf0edc166f88f0754950f1b404ad1b53be674406f6ab1c74016542d87b28dc695991ccbc1a4b2cb9d8071ab7a",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "GrowableOres",
-      "file": "GrowableOres-3.8.0-26.3-Fabric.jar",
-      "version": "3.8.0-26.3-Fabric",
-      "sha512": "7a2aca93fe6ad7dbaf6c0ec5d47f2bb709ac419d9fccbc8c77b707c68c8ce1c78d14b8a9ec302b88ce0026335fef3417ad9c1d9fcc525fcc90430911bed1a12e",
-      "side": "both",
       "optional": false
     },
     {
       "name": "Archers (RPG Series)",
       "file": "archers-fabric-3.1.4+26.3.jar",
       "version": "3.1.4+26.3-fabric",
-      "sha512": "afda3614fe6391d12c1b276b58e499dcaf913a4665080db7d1b589da2a6f71d2132d8e2a85a365956a64e0a62628d634d9a4f60c08b60855bd14476084a8c79d",
       "side": "both",
+      "sha512": "afda3614fe6391d12c1b276b58e499dcaf913a4665080db7d1b589da2a6f71d2132d8e2a85a365956a64e0a62628d634d9a4f60c08b60855bd14476084a8c79d",
+      "optional": false
+    },
+    {
+      "name": "Architectury API",
+      "file": "architectury-fabric-22.0.5.jar",
+      "version": "22.0.5+fabric",
+      "side": "both",
+      "sha512": "14c61af2088b80b465f06edd3b3005038fa5be1c95a2161ce712c8da408a358038b7cd7ae4acf3198f6d47c693e4fdf65d646dac7e124f7cdd7f32bbc0dcd0ce",
       "optional": false
     },
     {
       "name": "Armor Model API",
       "file": "armor_model_api-fabric-1.1.2+26.3.jar",
       "version": "1.1.2+26.3-fabric",
-      "sha512": "ed2f56f08979b16928ec86cf9fc58d027b1bb5a8e62cba8fb0b8a459d4feae70f29a39087822ce1ea00b6a665b44d62d5388d9860ea2f679aa29e03fc48cf5a3",
       "side": "both",
+      "sha512": "ed2f56f08979b16928ec86cf9fc58d027b1bb5a8e62cba8fb0b8a459d4feae70f29a39087822ce1ea00b6a665b44d62d5388d9860ea2f679aa29e03fc48cf5a3",
+      "optional": false
+    },
+    {
+      "name": "Balm",
+      "file": "balm-fabric-26.3-26.3.0.3.jar",
+      "version": "26.3.0.3+fabric-26.3",
+      "side": "both",
+      "sha512": "aaf07f5b94f7015c87df7b242f3f45f0729fb3f72d887745ad5c5ceb31eb071e425254009158774101676d6480f31c832dd60860d79da5b661cc10b84241c319",
+      "optional": false
+    },
+    {
+      "name": "Beautify: Refabricated",
+      "file": "beautify-3.6.0-fabric+26.3.jar",
+      "version": "3.6.0-fabric+26.3",
+      "side": "both",
+      "sha512": "00ff0f3213064fd9a166571e1007e8b5242f939982f7e85eb99539d01d802f21d1df53ea9a51fa07a91977ff7a686fcb4d7f92045e62a67b28b6e4adf011dbac",
+      "optional": false
+    },
+    {
+      "name": "Better Archeology",
+      "file": "betterarcheology-fabric-26.3-1.3.9.jar",
+      "version": "26.3.x-1.3.9",
+      "side": "both",
+      "sha512": "f3a6db197d3eed9dbfded7cf49c34d2f9fa5cb27807fc4cf6acb0a8d5aa0fe9efddd301cbb50207870930cc7f42b9bc688271c9bc73392846418c20d5b81b76a",
+      "optional": false
+    },
+    {
+      "name": "Better Combat",
+      "file": "bettercombat-fabric-3.2.2+26.3.jar",
+      "version": "3.2.2+26.3-fabric",
+      "side": "both",
+      "sha512": "bfa8af89795747de669e396e74bd8473ff991c2bddd52549a5a45d7c8efb56bf29a78e41232a996e865fa3b0746ec3502eb8bc27287e10fbfbb96bb4bf23a384",
+      "optional": false
+    },
+    {
+      "name": "Biomes O' Plenty",
+      "file": "BiomesOPlenty-fabric-26.3-26.3.0.0.7.jar",
+      "version": "26.3.0.0.7",
+      "side": "both",
+      "sha512": "521eb6608bafbf7b331b49118cf273d84179241c4ccdf9d3c6d30b23c7c0c4f4c202d5728222785f2e47e1c5a0f8ae5a38ee67fa8eaaaf12e98679d9717b8a2e",
+      "optional": false
+    },
+    {
+      "name": "Boss Checklist",
+      "file": "boss_checklist-5.3.1.jar",
+      "version": "5.3.1",
+      "side": "both",
+      "sha512": "a8e0023fd00c3afb63e309e9ec4a6319b4952fe6ee29272bb8c4ad910c935029829941a688b65dcbb669ecefd6dc6f004a3903572c16406dff8f123c81770717",
       "optional": false
     },
     {
       "name": "Bundle API",
       "file": "bundle-api-fabric-5.0.0+26.3.jar",
       "version": "5.0.0+26.3-fabric",
+      "side": "both",
       "sha512": "de58f657b581222a74c91e62bda6b180a902dab535a73590fc159acca6342770de7ccccd526f82cbad03ae1942ff5c46cee2ad287d20fdd8152d6c2f63121ae7",
-      "side": "both",
       "optional": false
     },
     {
-      "name": "Jewelry (RPG Series)",
-      "file": "jewelry-fabric-2.5.1+26.3.jar",
-      "version": "2.5.1+26.3-fabric",
-      "sha512": "34d176524f3873124c6024ecca5b428c585d603b7de89cfe018f808d3d1b6a4aa6915d24f6e8d74c33922373acc7d162812613ca4d054126a40940d1b48b86ee",
+      "name": "Cardinal Components API",
+      "file": "cardinal-components-api-8.1.0.jar",
+      "version": "8.1.0",
       "side": "both",
+      "sha512": "8507faea758d820ebddedb2ff087510ac52f262b14fba7b2d2fee2fbb731bee819e253cdaaefcb580f281f2d14b081dc06f2fdb9b78e73664f3a42065be7459c",
       "optional": false
     },
     {
-      "name": "Paladins & Priests (RPG Series)",
-      "file": "paladins-fabric-3.1.4.1+26.3.jar",
-      "version": "3.1.4.1+26.3-fabric",
-      "sha512": "89e326d1d37823344b51af051d4011176f0d76d02f5ac0626ab5720cf94b4823873a7d9aeebe66e7ca6c2a63a095f525caca1f78456b0d1f1709a4b7fba707fe",
+      "name": "Carry On",
+      "file": "carryon-fabric-26.3-2.12.0.jar",
+      "version": "2.12.0",
       "side": "both",
+      "sha512": "92302e1815fe8b4d41517f001f667a348d4f1e5d0a07d9495b263076cd7a9a30183a0174d4f1a4d6b447161d9d68b08a649f48633583b5955dacd7736d5decc9",
       "optional": false
     },
     {
-      "name": "Runes",
-      "file": "runes-fabric-1.3.2+26.3.jar",
-      "version": "1.3.2+26.3-fabric",
-      "sha512": "a2b3d1af9a2eaf918a34b56f8ea07c2c72c3e9cc418f1aa7628cc5d9ed6bbbae17d4865d52a66f14afa19ef16981759f0627244cae66ae0ae8225dada9de7f4c",
+      "name": "Cloth Config API",
+      "file": "cloth-config-fabric-26.3.159.jar",
+      "version": "26.3.159+fabric",
       "side": "both",
+      "sha512": "8924e19d41845096724fa10f3717bc51964a0edbbbcad0ff1e6c6187a398b08f356e49579a657c2dc44a7f92e3850771f3ca70bf8c1f654de60425163b91dbb1",
       "optional": false
     },
     {
-      "name": "Structure Pool API",
-      "file": "structure_pool_api-fabric-1.3.0+26.3.jar",
-      "version": "1.3.0+26.3-fabric",
-      "sha512": "3848879b5cdbc78d9be10fb94b98b65db24868560a96464f21247649d5688bd41f1f1ca34b4fa63d77d807aae0c2fcc7c3721454b6f5082a43f83a6b1d178561",
+      "name": "Collective",
+      "file": "collective-26.3.0-8.73.jar",
+      "version": "26.3.0-8.73-fabric+forge+neo",
       "side": "both",
+      "sha512": "cb214086985fb9fa108b0795cc6f52f4f8b454152f179c2114bdbf57bc43e9ccc8bcb9416b8d9d13e390bca2883a72de30a5b566fc4adad739fe3e8051393ec3",
       "optional": false
     },
     {
-      "name": "Wizards (RPG Series)",
-      "file": "wizards-fabric-3.1.4+26.3.jar",
-      "version": "3.1.4+26.3-fabric",
-      "sha512": "c93d1034a348c9ec29316b5e6a80fe4f29b35868ed7f27090c6c809ac4f2a018a87baa602c31071b6a3adba4cecec22925c9e5df0eed0461bf9f9f972f602e71",
+      "name": "Combat Roll",
+      "file": "combat_roll-fabric-3.0.1+26.3.jar",
+      "version": "3.0.1+26.3-fabric",
       "side": "both",
+      "sha512": "36741c073ba51c6e2a70f91a605eef86fc8003742046f3dca966f3227ff0a157f77f2c305a66f7331b6ff91779874683af33163e119d9d02a85fae093aad2f76",
       "optional": false
     },
     {
-      "name": "Ranged Weapon API",
-      "file": "ranged_weapon_api-fabric-4.0.0+26.3.jar",
-      "version": "4.0.0+26.3-fabric",
-      "sha512": "16b32dbb748d74e110f13d0b7189ed961878647268de282d7a60fb20936763df45a2df8a51a77eb04de6d091aa9faae674efaf06b75a4042614f09082c1555bd",
+      "name": "Construction Wand (Fabric)",
+      "file": "constructionwand-2.1.3+26.3.jar",
+      "version": "2.1.3+26.3",
       "side": "both",
+      "sha512": "c0a1cd62ffe13c8a7b6a87103ef198b83f38ff8e02cb3efaca5466a06d3b44001c24acf085389c7b279b9bee870e3e2ffb4fab640748806501338afeedd517e6",
       "optional": false
     },
     {
-      "name": "Relics (RPG Series)",
-      "file": "relics-fabric-1.4.1+26.3.jar",
-      "version": "1.4.1+26.3-fabric",
-      "sha512": "854f7209a446fa7dde1fc4ce303797d9fe6ef710949eddf1f23e3a41e93f6db65b75dbdb9cf7b7224d11bd35b02d80b73eafc1650bb5bcff2af58157e007ca63",
+      "name": "Cooking for Blockheads",
+      "file": "cookingforblockheads-fabric-26.3-26.3.0.2.jar",
+      "version": "26.3.0.2+fabric-26.3",
       "side": "both",
+      "sha512": "427935a13093a05e25bf1d2ff16ebd26cc4ce1a7e89b35420951bf6bf36c81f1ab9fbbf3ca899bd02f66ebbbb01a56d41d29b83cfc9c1dddeef968c6ca935289",
       "optional": false
     },
     {
-      "name": "Spell Engine",
-      "file": "spell_engine-fabric-1.10.9+26.3.jar",
-      "version": "1.10.9+26.3-fabric",
-      "sha512": "b6e9e1b0e6b5e2b51912385d0a0af79eab911bedd97a5ec1b9174110736385f9d386e3f3715fb9b32ac95fb94476d0793831b48eca8ff82d0a1a3076d0c27dba",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Spell Power Attributes",
-      "file": "spell_power-fabric-1.6.2+26.3.jar",
-      "version": "1.6.2+26.3-fabric",
-      "sha512": "26fbf824391fd4acf3a2e91d660705c745c6bf144d76eddf5a74e05f87fa3d0fc16e3f616b972e00657a93c590ecc85d822895133eb3cfc34882d28cab5e9be4",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "FrozenLib",
-      "file": "FrozenLib-3.0.3-mc26.3-fabric.jar",
-      "version": "3.0.3-mc26.3-fabric",
-      "sha512": "267808f3cedaa9d6491853f0b6440291ac0e925927e73f5bf4d39b698e46f8f51b3d6a62e31da3a9f2cf0a686e0472a13a41effad92296824d0eb7758543dd4b",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Wilder Wild",
-      "file": "WilderWild-4.3.3-mc26.3-fabric.jar",
-      "version": "4.3.3-mc26.3-fabric",
-      "sha512": "2ec863502bcafac28f885e84dadd9ef7f2299f9325edd87ba2a6a44164faef5f8174dc7ad4a4614bbcc9e64b2afeccbbbd739798b908417438c2be354f89266b",
-      "side": "both",
-      "optional": false
-    },
-    {
-      "name": "Inventory Profiles Next",
-      "file": "InventoryProfilesNext-fabric-26.3-2.3.8.jar",
-      "version": "fabric-26.3-2.3.8",
-      "sha512": "dbd7d0eeb71108f5d784dfe7aad6f0e774893491a8b571f9886df9fbed01803abbb63c1ea88765aa08a838044885cc1aef85c5d85a94c8945120f2f973c0ecad",
+      "name": "Cosy Critters & Creepy Crawlies",
+      "file": "cosycritters-0.3.3+26.2-fabric.jar",
+      "version": "v0.3.3+26.2-fabric",
       "side": "client",
+      "sha512": "20d78f5f4acf60eea1cb5b16cb5f6fa828f19a51881d7a776578fd6270ea7e925e1e2d0c8b46ef06d52697b82afd5a1414cae8bac07f378d0d8b36d109fe95af",
       "optional": false
     },
     {
-      "name": "libIPN",
-      "file": "libIPN-fabric-26.3-6.9.0.jar",
-      "version": "fabric-26.3-6.9.0",
-      "sha512": "a580af93344e21f985c34e5bfe74361767a4ba49ced96d50c917d5008d9eb32e797e0ff68c010319c6116b6859fa5fb39544f4f78dd9f7892554340d86420abd",
-      "side": "client",
+      "name": "CreativeCore",
+      "file": "CreativeCore_FABRIC_v2.14.24_mc26.3.jar",
+      "version": "2.14.24",
+      "side": "both",
+      "sha512": "d05bbab192eaff9e66496bc0ba7b2bce67c1d23d99132ec7241dd2c4c07c5199983bd60ad83246b0ad78609a2724358510fa189530c19b0590f5de494bbd19e5",
+      "optional": false
+    },
+    {
+      "name": "Data Anchor",
+      "file": "dataanchor-fabric-26.3-6.0.0.2.jar",
+      "version": "6.0.0.2-fabric",
+      "side": "both",
+      "sha512": "81c181cd117caf9dca93df9b6dd5c7051abd33a3ddd6da68eb61b11c7cf2f04415e0ae9847c020507ba6fd8fffedc8e86e2bd2bc3b068df9faa7e08f1bfbc652",
+      "optional": false
+    },
+    {
+      "name": "Debugify",
+      "file": "debugify-26.3.0.0.jar",
+      "version": "26.3.0.0",
+      "side": "both",
+      "sha512": "921a2f31531990df93af4099cd7bece26886b7fc38021642ae32032e435b8686a0ee208dba4eb1ed0057e6e0b3332f990fb77778781afccfe0e52d28dfb07c26",
+      "optional": false
+    },
+    {
+      "name": "Diggus Maximus Reborn",
+      "file": "diggus-maximus-fabric-1.8.1+mc26.3.jar",
+      "version": "1.8.1+mc26.3",
+      "side": "both",
+      "sha512": "6ff46eafef898efd014ff3b406af2cf9b9409d776fbbc3d3f85f9f8f3f58bc76efd3919b1a73202e2b7e5ec0249b0fac3e73497254dea1b2ace1a03f761eed1a",
+      "optional": false
+    },
+    {
+      "name": "Distant Horizons",
+      "file": "DistantHorizons-3.3.4-26.3-fabric-neoforge.jar",
+      "version": "3.3.4-26.3",
+      "side": "both",
+      "sha512": "0b90b1b08d99974bfc3c8e86b2ceb252e2f91715ed66b925004c28335fb44e1bddbbb6b8043e4d4d53c87ed247789cd1788b1ba4e3f4394efe154e0c59cff236",
+      "optional": false
+    },
+    {
+      "name": "Easy NPC: Core",
+      "file": "easy_npc-fabric-26.3-7.17.1.jar",
+      "version": "7.17.1",
+      "side": "both",
+      "sha512": "c878b21810b7cf8c7a57b147e2471495630c3176eaa7edb15b1c971bcde4790f00dba1466fc3ef812d30b2343b0ed13589d681ec1ed1810e20013808a75e2dfc",
+      "optional": false
+    },
+    {
+      "name": "Easy NPC",
+      "file": "easy_npc_bundle-fabric-26.3-7.17.1.jar",
+      "version": "7.17.1",
+      "side": "both",
+      "sha512": "be705f4fec7880bb432501595f97c3bd433285d4b1ec1ebd98a06a759e336b3655ceccf809c4e4955597ca799e113e7cd01e05be8a2e2daf369216bfddcf3c29",
+      "optional": false
+    },
+    {
+      "name": "Easy NPC: Config UI",
+      "file": "easy_npc_config_ui-fabric-26.3-7.17.1.jar",
+      "version": "7.17.1",
+      "side": "both",
+      "sha512": "adc4379cc3373fefdb9cabf50a498cbcf07a5335360b837c185fa06f852944d0f9d7b6fd2f8d69c2dbe374ecd9965c7381f7d589345dedff168c91236045f734",
+      "optional": false
+    },
+    {
+      "name": "Enchanting Infuser",
+      "file": "enchantinginfuser-v26.3.0-mc26.3.x+fabric.jar",
+      "version": "26.3.0",
+      "side": "both",
+      "sha512": "e68e6a98a75358a0bff8bcd4978016d1fceeabe4c4f530625e6f3a5f434bbcf2e148c8ebe5d67d85f47900e76366c240ee4cedaf6e22620cd31479ec61921064",
+      "optional": false
+    },
+    {
+      "name": "End Remastered",
+      "file": "endrem-fabric-26.3-6.2.2.jar",
+      "version": "6.2.2",
+      "side": "both",
+      "sha512": "a6f8f57a27f345419cb90b819b77c84f3b37c44507f4adcfaad45509c6b5a7c71cfa864a1fabc706acd96ab462ca1f3aefa3c53019c6040f3bfa147c06b59446",
+      "optional": false
+    },
+    {
+      "name": "Enhanced Celestials 2: Core",
+      "file": "Enhanced-Celestials-2-Core-Fabric-26.3-5.0.0.0.jar",
+      "version": "5.0.0.0-fabric",
+      "side": "both",
+      "sha512": "6968618a2197324a28ae67527076f109c9ed788fdc5a616ea64f4e14f3dffee4f336af3b02854b07cf922cfc68f7971d8ace97c8745d413f24aa5334b819b2b6",
+      "optional": false
+    },
+    {
+      "name": "Enhanced Celestials 2: Default Lunar Events",
+      "file": "Enhanced-Celestials-2-Default-Lunar-Events-Fabric-26.3-5.0.0.0.jar",
+      "version": "5.0.0.0-fabric",
+      "side": "both",
+      "sha512": "0a6d95559c5064d6b75fdeb3c32a1db445b47177c4807c7a4c1e119951da3aa2f3202c9eb00a33a8c7f3416bba91cd6f44444fd966ba1c58dc2154c384b25204",
+      "optional": false
+    },
+    {
+      "name": "Explorer's Compass",
+      "file": "ExplorersCompass-26.3-2.5.2-fabric.jar",
+      "version": "26.3-2.5.2-fabric",
+      "side": "both",
+      "sha512": "83e7b4217fee0eda42bf91ced65ea66135846a03e6cfc353067ccbbfab279e967d3c59887de286c90742d3ed95946398e4362d506092a34d0d99b39b502b6428",
+      "optional": false
+    },
+    {
+      "name": "Fabric API",
+      "file": "fabric-api-0.165.0+26.3.jar",
+      "version": "0.165.0+26.3",
+      "side": "both",
+      "sha512": "0a4b8a14e847b71567b557b43d906c2167fa263eeeef37454a821ba286996e3da1616dc2d9647736d28a250d5ecf400541cae808359b29a62324a8a6f2ad5e30",
       "optional": false
     },
     {
       "name": "Fabric Language Kotlin",
       "file": "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar",
       "version": "1.14.2+kotlin.2.4.21",
-      "sha512": "7fb475c4a7e7bdf8d0aca4b5798a58a354c51443d5b1fbde3e8cf34dfbf7191ef4238b5f07d08ec9490ec180b371624523326c3ad45d4ed2b2be541de9407e5d",
       "side": "client",
+      "sha512": "7fb475c4a7e7bdf8d0aca4b5798a58a354c51443d5b1fbde3e8cf34dfbf7191ef4238b5f07d08ec9490ec180b371624523326c3ad45d4ed2b2be541de9407e5d",
       "optional": false
     },
     {
-      "name": "Wicklen: Chronicles",
-      "file": "wicklen-chronicles-0.4.4.jar",
-      "version": "0.4.4",
-      "sha512": "6903ea1b4bc3803515b1913949746ee0dbf5c7da634c5dce8aca6822b9c522290140adf98fafa2531919d18ae82e0542446b0fd88eb82071eb847e9192dfa898",
+      "name": "FancyMenu",
+      "file": "fancymenu_fabric_3.9.14_MC_26.3.jar",
+      "version": "3.9.14-26.3-fabric",
       "side": "both",
+      "sha512": "98d1cfb0e39d25a7e0e80b5f0d6511de192c79b917c728236a2723ed6f488d0d66a2310bcb7a4216003a9b818fb986b5c2f1f4824e279074b49e802ef8f18fc6",
+      "optional": false
+    },
+    {
+      "name": "Farmer's Delight Refabricated",
+      "file": "FarmersDelight-26.3-3.6.30+refabricated.jar",
+      "version": "26.3-3.6.30",
+      "side": "both",
+      "sha512": "099f724599022ac9232f265d62907fdde6ad48a73b246d45930d938a7f850be6a8b520244ffa218a59fdef96b0170fc0c04f00ff91f108b5a02bbc4cb2a013bc",
+      "optional": false
+    },
+    {
+      "name": "FerriteCore",
+      "file": "ferritecore-9.0.0-fabric.jar",
+      "version": "9.0.0-fabric",
+      "side": "both",
+      "sha512": "d81fa97e11784c19d42f89c2f433831d007603dd7193cee45fa177e4a6a9c52b384b198586e04a0f7f63cd996fed713322578bde9a8db57e1188854ae5cbe584",
+      "optional": false
+    },
+    {
+      "name": "Field Guide",
+      "file": "fieldguide-1.23.0+26.3-fabric.jar",
+      "version": "1.23.0+26.3-fabric",
+      "side": "both",
+      "sha512": "72d3729d324884c975a6c922a3acea8103b1d62628aecb4aea9188997e59f08f0082ee765679aa914fe6b255833d2bc161a5578404dd7018bfda546da7cb7653",
+      "optional": false
+    },
+    {
+      "name": "Forge Config API Port",
+      "file": "ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar",
+      "version": "26.3.1",
+      "side": "both",
+      "sha512": "b9339c21e14beec2eae0ca215317284bcaacef72e1d1dee8b3dfbe2de0eefaa758a172446df85419b6534557c479abe972d7d21f4ec194f2d436f9ed4329cb9f",
+      "optional": false
+    },
+    {
+      "name": "Fox Friend Remastered",
+      "file": "fox-friend-remastered-5.1.10.2-26.3+.jar",
+      "version": "5.1.10.2",
+      "side": "both",
+      "sha512": "24096afadef19b9c0fa306287bcec7714249d82c400b063f9d4c2628bda07d0344953104df6ee92cf79684b366b76571ac0cd8afebc4d3b636a65e225407db6f",
+      "optional": false
+    },
+    {
+      "name": "Friends&Foes (Fabric/Quilt)",
+      "file": "friendsandfoes-fabric-5.0.4+mc26.3.jar",
+      "version": "fabric-5.0.4+mc26.3",
+      "side": "both",
+      "sha512": "3fcfb9b3d52d0d5fe2f41e4e9f4eb4ef3943ae83d211757e0ee3871dcea4e8d0a75357ebae252ba62deb648c4b38c8569df7d0b1837c5eaee35cf672e21a0a2b",
+      "optional": false
+    },
+    {
+      "name": "FrozenLib",
+      "file": "FrozenLib-3.0.3-mc26.3-fabric.jar",
+      "version": "3.0.3-mc26.3-fabric",
+      "side": "both",
+      "sha512": "267808f3cedaa9d6491853f0b6440291ac0e925927e73f5bf4d39b698e46f8f51b3d6a62e31da3a9f2cf0a686e0472a13a41effad92296824d0eb7758543dd4b",
       "optional": false
     },
     {
       "name": "Gateway of Doom",
       "file": "gatewayofdoom-fabric-26.3-2.3.6.jar",
       "version": "2.3.6",
+      "side": "both",
       "sha512": "d814f38da6f49000b0854c129ab62b9db096fcb7212bec42d20aa6e31a6eec31f07a562a0a8bfaa5375c54858a23f596aded6a187b7c6a1d692a2f32dbee89c5",
-      "side": "both",
       "optional": false
     },
     {
-      "name": "SIHYWTCAMD",
-      "file": "sihywtcamd-1.11.2+26.3.jar",
-      "version": "1.11.2+26.3",
-      "sha512": "aa41cfbc6d301e8d16f4f48eaaac3f7cc8b93b3017d867fd54282636f08e77f0ea7be86427e48abc9aa5476f5d4a4f1715b33e5f22a2360bac3bf43be75a2e76",
+      "name": "Geckolib",
+      "file": "geckolib-fabric-26.3-5.5.7.jar",
+      "version": "5.5.7",
       "side": "both",
+      "sha512": "c7c89bd6c5f2801ef1575e2e1212202f5a3eff480d73503beff12b1d60dfb751112fccf36e36c243b26b6b492261cef12d8b2c1a92a734bb0b621daa8c158fc5",
       "optional": false
     },
     {
-      "name": "Wicklen Pack Compatibility",
-      "file": "wicklen-pack-compat-0.1.1.jar",
-      "version": "0.1.1",
-      "sha512": "4c3f72c8faa405a4748ed061af36eb91c688a750f7212aa200cbf24108ffb7c4f7ad71c9afc0031ef1139b461bb400c71bef1a759462fdf0b58da7dcda9e7f08",
+      "name": "GlitchCore",
+      "file": "GlitchCore-fabric-26.3-26.3.0.0.5.jar",
+      "version": "26.3.0.0.5",
       "side": "both",
+      "sha512": "f975535e561285898163e7512008fe61ffaac66b6fc60a4e4763d0f2279617f75900d7a2ab2708d8dc348337119df61d2783aa101a9f1a24020f99888aa0d457",
+      "optional": false
+    },
+    {
+      "name": "The Graveyard (Fabric/Neoforge)",
+      "file": "graveyard-FABRIC-4.0.0+mc26.3.jar",
+      "version": "4.0.0+mc26.3-fabric",
+      "side": "both",
+      "sha512": "2dd4fdf0111843803d5ce78e2f175e596fffcafc2196297062cce60f6f5cf366b6ad70e8ed94c0927f71d7659bffcd58dae9988cb9e48311c9e88b8dcf43d489",
+      "optional": false
+    },
+    {
+      "name": "GrowableOres",
+      "file": "GrowableOres-3.8.0-26.3-Fabric.jar",
+      "version": "3.8.0-26.3-Fabric",
+      "side": "both",
+      "sha512": "7a2aca93fe6ad7dbaf6c0ec5d47f2bb709ac419d9fccbc8c77b707c68c8ce1c78d14b8a9ec302b88ce0026335fef3417ad9c1d9fcc525fcc90430911bed1a12e",
+      "optional": false
+    },
+    {
+      "name": "Iceberg",
+      "file": "Iceberg-26.3-fabric-1.4.3.1.jar",
+      "version": "1.4.3.1",
+      "side": "both",
+      "sha512": "22ab9c3394a289b16463c00116c44013e421bfca16f5370b92f32a193675322a9f47be47b21058721ecb2ce9ba534723bb1f39fd83e0c17dd0573d228a44ad4f",
+      "optional": false
+    },
+    {
+      "name": "Immersive Overlays",
+      "file": "immersiveoverlays-1.8.6+26.3-fabric.jar",
+      "version": "1.8.6+26.3-fabric",
+      "side": "client",
+      "sha512": "c4250d65d68985d5aacd05355599fbbef61fa87e5680f94a90a5f045aea2f2e38fe211adc2f5d26246490ff0c5a916507a86d6c801d2d5ef03db85de3d232bcd",
+      "optional": false
+    },
+    {
+      "name": "Inventory Profiles Next",
+      "file": "InventoryProfilesNext-fabric-26.3-2.3.8.jar",
+      "version": "fabric-26.3-2.3.8",
+      "side": "client",
+      "sha512": "dbd7d0eeb71108f5d784dfe7aad6f0e774893491a8b571f9886df9fbed01803abbb63c1ea88765aa08a838044885cc1aef85c5d85a94c8945120f2f973c0ecad",
+      "optional": false
+    },
+    {
+      "name": "Item Descriptions",
+      "file": "item_descriptions-2.8.5+26.2-fabric.jar",
+      "version": "2.8.5+26.2-fabric",
+      "side": "client",
+      "sha512": "c919c86016fa32a34b2160203fb5b2fbe697d54656a5a0f771dbc85ac78d946dd65906554199a86fb79fd44a159a3b3161aa5d401a81305167d167ff08947a44",
+      "optional": false
+    },
+    {
+      "name": "Jade 🔍",
+      "file": "Jade-mc26.3-Fabric-26.3.5.jar",
+      "version": "26.3.5+fabric",
+      "side": "both",
+      "sha512": "2e7331e62eb6658268ae92dc42de8b469f50dd6c6a9d2546a6f649bae97c2cdfd8d4c1560948cf46269175d2c79c6c47a36a02685e39d476768d18fbb2a28703",
+      "optional": false
+    },
+    {
+      "name": "Jewelry (RPG Series)",
+      "file": "jewelry-fabric-2.5.1+26.3.jar",
+      "version": "2.5.1+26.3-fabric",
+      "side": "both",
+      "sha512": "34d176524f3873124c6024ecca5b428c585d603b7de89cfe018f808d3d1b6a4aa6915d24f6e8d74c33922373acc7d162812613ca4d054126a40940d1b48b86ee",
+      "optional": false
+    },
+    {
+      "name": "Konkrete",
+      "file": "konkrete_fabric_1.11.1_MC_26.3.jar",
+      "version": "1.11.1-26.3-fabric",
+      "side": "both",
+      "sha512": "ef6b12dbf3f616ba4089e706f27d76c543987f4a20509bf3def711ddb9279b94170c67228b9e44a2e2c189a80a7c9a5cd4c7e079281b7ac1cb0ec7d9c46b9aa8",
+      "optional": false
+    },
+    {
+      "name": "Legendary Tooltips",
+      "file": "LegendaryTooltips-26.3-fabric-1.6.3.jar",
+      "version": "1.6.3",
+      "side": "client",
+      "sha512": "1c11ae09fed974b61d0e4ff915625fcb6f7992f196cd87fb48bcef58355932e68b19d319a8373660afa565ef2c2ab0157ad03c50b22552d1ed1c3eb7884cccb1",
+      "optional": false
+    },
+    {
+      "name": "libIPN",
+      "file": "libIPN-fabric-26.3-6.9.0.jar",
+      "version": "fabric-26.3-6.9.0",
+      "side": "client",
+      "sha512": "a580af93344e21f985c34e5bfe74361767a4ba49ced96d50c917d5008d9eb32e797e0ff68c010319c6116b6859fa5fb39544f4f78dd9f7892554340d86420abd",
+      "optional": false
+    },
+    {
+      "name": "Lithium",
+      "file": "lithium-fabric-0.26.3+mc26.3.jar",
+      "version": "mc26.3-0.26.3-fabric",
+      "side": "both",
+      "sha512": "2ca92fb530135d2baddf0ba4cc4f93976234876a38c4aa02b487b2552400f005afcfbeebf5373fb4396fe2020537a42d7597b8da5a52b904355ef51d5fef07ad",
+      "optional": false
+    },
+    {
+      "name": "Lootr",
+      "file": "lootr-fabric-26.3-1.25.42.124.jar",
+      "version": "1.25.42.124",
+      "side": "both",
+      "sha512": "290786fd4af4011c4f09c425d262bacc80f6ef47e23fbf6424193c719b6045a70cae70308c95d30c5ab78bf1f5a3d089cc3b01db8cc4dacc1a74c0f2d70c245d",
+      "optional": false
+    },
+    {
+      "name": "Macaw's Bridges",
+      "file": "mcw-bridges-3.1.2-mc26.3fabric.jar",
+      "version": "3.1.2",
+      "side": "both",
+      "sha512": "bd7cb8b1c5651b0431717cb7c981fa9de574dcb60b05f675e04ead81d16854009f97cb96d714894a1c2974a4502fbad67f4c6494ade62431d32256387b5fecca",
+      "optional": false
+    },
+    {
+      "name": "Macaw's Doors",
+      "file": "mcw-doors-1.1.5-mc26.3fabric.jar",
+      "version": "1.1.5",
+      "side": "both",
+      "sha512": "fec014859a250042914190053b29b0c8c6eae86187dd90160ffb2a036898720de2500c424178972fccc7c62edeca838805feb836d18d6c0ef34c7c6b1b329d53",
+      "optional": false
+    },
+    {
+      "name": "Macaw's Furniture",
+      "file": "mcw-furniture-3.4.2-mc26.3fabric.jar",
+      "version": "3.4.2",
+      "side": "both",
+      "sha512": "90030a9f642c254ea954588b66c78ae4c65246a8c14148b23cde144d031d24dff09f4e14271ca9de78af9210165536d51b306144f442d75c2efa27517a083e0e",
+      "optional": false
+    },
+    {
+      "name": "Macaw's Lights and Lamps",
+      "file": "mcw-lights-1.1.5-mc26.3fabric.jar",
+      "version": "1.1.5",
+      "side": "both",
+      "sha512": "ca8d0cc9841d5071abec7286e590aaad8af9326378702a3f44dfab27f15148509f3d7c8544a610085fc4e5f3ad8f3dcf3d8a9524751589503d8cec271598c8a4",
+      "optional": false
+    },
+    {
+      "name": "Macaw's Paths and Pavings",
+      "file": "mcw-paths-1.1.1-mc26.3fabric.jar",
+      "version": "1.1.1",
+      "side": "both",
+      "sha512": "2656c023464d4db33550f7c5ed1ce05cea63a3d10eb70e93a9efb586343db0dc835eeff5dccb81eb2f7a76affe363c9f979693ba12c4a15d2c7c0d737bafa336",
+      "optional": false
+    },
+    {
+      "name": "Macaw's Roofs",
+      "file": "mcw-roofs-2.3.3-mc26.3fabric.jar",
+      "version": "2.3.2",
+      "side": "both",
+      "sha512": "016ccba9220017b6051d6b203892adba717c9cf62ea5bb0bb201f6e3fa499036edd022701b1e5636fb96edf66bf27e6951dc9697b086833f9906c2b4078d4a82",
+      "optional": false
+    },
+    {
+      "name": "Macaw's Windows",
+      "file": "mcw-windows-2.4.2-mc26.3fabric.jar",
+      "version": "2.4.2",
+      "side": "both",
+      "sha512": "ef0c41a83cb57bc3b4cc04147f64a4b0e9646d409bfd8094be770dbe4b57571f37b00450835d4f8dfdcfca976be0ffdc0ccd66e4a7d6d9e87a6d31656fcc90f7",
+      "optional": false
+    },
+    {
+      "name": "Melody",
+      "file": "melody_fabric_1.0.17_MC_26.3.jar",
+      "version": "1.0.17-26.3-fabric",
+      "side": "both",
+      "sha512": "f0ac30c3a0eb0908d05824a9a43e44c614a95dc99b4cba9abeea750406430fde21d6e26bae5a1e5c63b63359e49d4bc96ced32400717fc72064c50826e11b9ca",
+      "optional": false
+    },
+    {
+      "name": "Mob Champions",
+      "file": "mobchampions-26.3-fabric-1.0.2.1-FABRIC.jar",
+      "version": "26.3-1.0.2.1-FABRIC",
+      "side": "both",
+      "sha512": "69ea8048a4337e96c60ff45f705030dc6c5d1e211a81f9dfb81811a53565678e217fee717e16c8f77526cb772d5c6760fd8bfc7e7ccfed1224045cf230355ad3",
+      "optional": false
+    },
+    {
+      "name": "Adorable Mochi Pets",
+      "file": "mochipets-0.23.0+26.3.jar",
+      "version": "0.23.0+26.3",
+      "side": "both",
+      "sha512": "b2e69e252ac679b9a5ab419b8f60c01020656431bb0b5dfa193d5e1f0fd24afb34310ea9a5315b1ed826b38456044dd5806d9fed62132748951f73616d1f3417",
+      "optional": false
+    },
+    {
+      "name": "Mutant Monsters",
+      "file": "mutantmonsters-v26.3.1-mc26.3.x+fabric.jar",
+      "version": "26.3.1",
+      "side": "both",
+      "sha512": "76c4ddd2a1b659270d0013ca758b0d64000a3b9fed44230b2a56e1b636cda83ec8661a76f39e1a7cf6e43af9ba04c358f9cfea02533c4f512e9cbd80d50e33c9",
+      "optional": false
+    },
+    {
+      "name": "Naturalist",
+      "file": "naturalist-2.0.7-fabric-26.3.jar",
+      "version": "2.0.7+26.3-fabric",
+      "side": "both",
+      "sha512": "69ab0b21eddb4ca33e082be27803ddaff6f9241a1f33d05e6b0579dd62b1c90955e0d12cb855d05e8769bc46cb866a6f1c57951c01962def31505fda0217820c",
       "optional": false
     },
     {
       "name": "OreGrowth (existing world compatibility)",
       "file": "oregrowth-1.2.0-fabric-mc26.3.jar",
       "version": "1.2.0",
-      "sha512": "3ba8830a023835ace619cd4f634cf3509b43e2438449f578b4cff6b0016614ca9df5dc295ff3e25e865e176ea2c8718b8d390d152f598b38f8805641ba858ade",
       "side": "both",
+      "sha512": "3ba8830a023835ace619cd4f634cf3509b43e2438449f578b4cff6b0016614ca9df5dc295ff3e25e865e176ea2c8718b8d390d152f598b38f8805641ba858ade",
+      "optional": false
+    },
+    {
+      "name": "OverpoweredMending",
+      "file": "OverpoweredMending-26.3-25.jar",
+      "version": "26.3-26.3.0.2",
+      "side": "both",
+      "sha512": "f8692f729087996bdba3573f2d31d16861c69d2f726cab6a7fe93dea18d404c1e634922bcd77a17a1800c12e2211d804054349644b03c1ad93cb7b48267361f9",
+      "optional": false
+    },
+    {
+      "name": "Paladins & Priests (RPG Series)",
+      "file": "paladins-fabric-3.1.4.1+26.3.jar",
+      "version": "3.1.4.1+26.3-fabric",
+      "side": "both",
+      "sha512": "89e326d1d37823344b51af051d4011176f0d76d02f5ac0626ab5720cf94b4823873a7d9aeebe66e7ca6c2a63a095f525caca1f78456b0d1f1709a4b7fba707fe",
+      "optional": false
+    },
+    {
+      "name": "Particle Rain",
+      "file": "particlerain-4.0.2+26.3-fabric.jar",
+      "version": "v4.0.2+26.3-fabric",
+      "side": "client",
+      "sha512": "b87684651246c05d0985c88cc0e05ba0e5bdf04d6e5c3ec90962d4342d9f70bc13a4ca86a4276022d71afdcfd69709596e070f3cfe1ae0ee3484dc2924121f19",
+      "optional": false
+    },
+    {
+      "name": "Player Animation Library",
+      "file": "PlayerAnimationLibMerged-1.2.8+mc.26.3.jar",
+      "version": "1.2.8",
+      "side": "both",
+      "sha512": "d6870759e2f5f83c6a74b2d02aeabab937d6d8da8c46245566646bc6e8efaeeb06c978edc43a50b57a0de2d015b341c284382bc5d4ae2e450d1b6aa5f8e2e97e",
+      "optional": false
+    },
+    {
+      "name": "Presence Footsteps",
+      "file": "PresenceFootsteps-1.14.0+26.3.jar",
+      "version": "1.14.0+26.3",
+      "side": "client",
+      "sha512": "70525da0c631f50608b67ecdfe62fd9410fdec7bc95510946716a6465cc109fe6b93be7c75022c47a0036f9954ff5912567a393e1356a75940e9b1da5580698b",
+      "optional": false
+    },
+    {
+      "name": "Prism",
+      "file": "Prism-26.3-fabric-1.1.3.jar",
+      "version": "1.1.3",
+      "side": "client",
+      "sha512": "fe6c9760c85ca6157e3219b1d61004ab8b2190a5ae9ccd1475a4ed2eec121dcf6c02883bb7575b4a31667c4f2d477d92081656c582f5274ee85a262fa9fb874f",
+      "optional": false
+    },
+    {
+      "name": "Pufferfish's Attributes",
+      "file": "puffish_attributes-0.8.3-26.3-fabric.jar",
+      "version": "0.8.3",
+      "side": "both",
+      "sha512": "09c066e1c60d8edd3929a5dd26550fb8dee803f04e39b945dc755752c6ee98b2b33b0dd70325d807a5fbe7eeeec8d9879676942f5142a8372f9609ad2c5d40a4",
+      "optional": false
+    },
+    {
+      "name": "Pufferfish's Skills",
+      "file": "puffish_skills-0.19.2-26.3-fabric.jar",
+      "version": "0.19.2",
+      "side": "both",
+      "sha512": "828b77af1b5752ebc1972a5a6501beb3f1f4b197b7b1264924de1c562503bb6888d6c546e25705853c00b5be06d97fd400d310ade9e6d5b2a992b9a3863fecab",
+      "optional": false
+    },
+    {
+      "name": "Puzzles Lib",
+      "file": "puzzleslib-v26.3.17-mc26.3.x+fabric.jar",
+      "version": "26.3.17",
+      "side": "both",
+      "sha512": "6366724a2eb5320b02feacb0983fdd66bf8615c17d7a44426264434222acbc7462ab0c0b81756ae3a11aa82e32a584fae774fccd0f4abfd0db5535747ff74c40",
+      "optional": false
+    },
+    {
+      "name": "Ranged Weapon API",
+      "file": "ranged_weapon_api-fabric-4.0.0+26.3.jar",
+      "version": "4.0.0+26.3-fabric",
+      "side": "both",
+      "sha512": "16b32dbb748d74e110f13d0b7189ed961878647268de282d7a60fb20936763df45a2df8a51a77eb04de6d091aa9faae674efaf06b75a4042614f09082c1555bd",
+      "optional": false
+    },
+    {
+      "name": "Reborn Core",
+      "file": "RebornCore-6.2.1.jar",
+      "version": "6.2.1",
+      "side": "both",
+      "sha512": "677d684836f84227d1114112641608bf6e720317dc1241a49aef0c3824a525ba05e9e9f87408261166525ad66cca0a0527d50db34a8b9b3ca027c432a640ddc1",
+      "optional": false
+    },
+    {
+      "name": "Relics (RPG Series)",
+      "file": "relics-fabric-1.4.1+26.3.jar",
+      "version": "1.4.1+26.3-fabric",
+      "side": "both",
+      "sha512": "854f7209a446fa7dde1fc4ce303797d9fe6ef710949eddf1f23e3a41e93f6db65b75dbdb9cf7b7224d11bd35b02d80b73eafc1650bb5bcff2af58157e007ca63",
+      "optional": false
+    },
+    {
+      "name": "Relics & Artifacts",
+      "file": "relics_artifacts-fabric-1.0.6+mc26.3.jar",
+      "version": "1.0.6+mc26.3",
+      "side": "both",
+      "sha512": "b4cbd81b9d54d56f412f4c12acbbb12cd23a5fb55ecd7e22a4d3fa746f04c5fe5c9b87da02baf484f96be97a74251b9c7b288962fc3c0fdfff269b1530e228b5",
+      "optional": false
+    },
+    {
+      "name": "Resourceful Config",
+      "file": "ResourcefulConfig-6.0.2.jar",
+      "version": "6.0.2",
+      "side": "both",
+      "sha512": "916bafc4df592d15f269db169c16d604d2c7e726fb3c4230caeff0fc5c53ef1bfd30e80dce34ffcc32cdc210544333c121351f5da50a27bf0e9c794e58575025",
+      "optional": false
+    },
+    {
+      "name": "Resourceful Lib",
+      "file": "ResourcefulLib-6.0.1.jar",
+      "version": "6.0.1",
+      "side": "both",
+      "sha512": "9850f92d59beb89e8c3e8ca55e56aacdd42500c4e6f560607e29549e3998f6c912e08bc6ec5350764751ced6a9d7821c4e6c545fb6194e8a0d0ac111c218cd87",
+      "optional": false
+    },
+    {
+      "name": "Roughly Enough Items (REI)",
+      "file": "RoughlyEnoughItems-26.3.824.jar",
+      "version": "26.3.824+fabric",
+      "side": "both",
+      "sha512": "7724d8e8dc50248641686c878b6b60736572c49e0cd8c71640c1c57fe85aed9941cad8ff7806b923903253da3540ff3df9bf619d701f50b904990fa7cdd59ee9",
+      "optional": false
+    },
+    {
+      "name": "Runes",
+      "file": "runes-fabric-1.3.2+26.3.jar",
+      "version": "1.3.2+26.3-fabric",
+      "side": "both",
+      "sha512": "a2b3d1af9a2eaf918a34b56f8ea07c2c72c3e9cc418f1aa7628cc5d9ed6bbbae17d4865d52a66f14afa19ef16981759f0627244cae66ae0ae8225dada9de7f4c",
+      "optional": false
+    },
+    {
+      "name": "Serene Seasons",
+      "file": "SereneSeasons-fabric-26.3-26.1.2.0.7.jar",
+      "version": "26.1.2.0.7",
+      "side": "both",
+      "sha512": "f0ef802ab4a7d95df76855100656f3c0f65c7954b52330d7e3c224a0900359d8e8db8953dde3aca52231a5a90428e9925cac99ca01b22485d4af37640620069c",
+      "optional": false
+    },
+    {
+      "name": "Shogi",
+      "file": "shogi-fabric-26.3-26.3.0.3.jar",
+      "version": "26.3.0.3+fabric-26.3",
+      "side": "both",
+      "sha512": "f050b6360b188a82ca7e3fbb0d00eff4c02b9b39bc991fbddcf4a3588f594887d15f6421e50d5a7452a53ec35d44ec9b325d7826f77393af9543fe3383cb142d",
+      "optional": false
+    },
+    {
+      "name": "SIHYWTCAMD",
+      "file": "sihywtcamd-1.11.2+26.3.jar",
+      "version": "1.11.2+26.3",
+      "side": "both",
+      "sha512": "aa41cfbc6d301e8d16f4f48eaaac3f7cc8b93b3017d867fd54282636f08e77f0ea7be86427e48abc9aa5476f5d4a4f1715b33e5f22a2360bac3bf43be75a2e76",
+      "optional": false
+    },
+    {
+      "name": "Spell Engine",
+      "file": "spell_engine-fabric-1.10.9+26.3.jar",
+      "version": "1.10.9+26.3-fabric",
+      "side": "both",
+      "sha512": "b6e9e1b0e6b5e2b51912385d0a0af79eab911bedd97a5ec1b9174110736385f9d386e3f3715fb9b32ac95fb94476d0793831b48eca8ff82d0a1a3076d0c27dba",
+      "optional": false
+    },
+    {
+      "name": "Spell Power Attributes",
+      "file": "spell_power-fabric-1.6.2+26.3.jar",
+      "version": "1.6.2+26.3-fabric",
+      "side": "both",
+      "sha512": "26fbf824391fd4acf3a2e91d660705c745c6bf144d76eddf5a74e05f87fa3d0fc16e3f616b972e00657a93c590ecc85d822895133eb3cfc34882d28cab5e9be4",
+      "optional": false
+    },
+    {
+      "name": "Storage Delight",
+      "file": "storagedelight-26.10.05-26.3-fabric.jar",
+      "version": "26.10.05-26.3-fabric",
+      "side": "both",
+      "sha512": "47a79d3361bbf54b420b4af0fe702cad8219af4b99ea6d08f395dc343d83cc5225c11652f0a39926ca4c32d03850bad2b4a97a53aea1212f6510cdb1d1cfeddc",
+      "optional": false
+    },
+    {
+      "name": "Structure Pool API",
+      "file": "structure_pool_api-fabric-1.3.0+26.3.jar",
+      "version": "1.3.0+26.3-fabric",
+      "side": "both",
+      "sha512": "3848879b5cdbc78d9be10fb94b98b65db24868560a96464f21247649d5688bd41f1f1ca34b4fa63d77d807aae0c2fcc7c3721454b6f5082a43f83a6b1d178561",
+      "optional": false
+    },
+    {
+      "name": "SuperMartijn642's Config Lib",
+      "file": "supermartijn642configlib-1.1.8a-fabric-mc26.3.jar",
+      "version": "1.1.8a-fabric-mc26.3",
+      "side": "both",
+      "sha512": "bb60c29d409ed2749f7a4a08b2c6b95c110191914828a54aed7ed4be779362b5a8ba13f871b72b6dbb21059ae397ab1561db8e83aa988173eb63ae00d369bf03",
+      "optional": false
+    },
+    {
+      "name": "SuperMartijn642's Core Lib",
+      "file": "supermartijn642corelib-1.1.26c-fabric-mc26.3.jar",
+      "version": "1.1.26c-fabric-mc26.3",
+      "side": "both",
+      "sha512": "02a4599755e00454151148fcc9f0a09408d72793ee2e1ab28a20770f0ea2c603b11c0902b6ee689ffa32da698b0db4b9ecd74a1b9ff301e0ee97522f62c49c39",
+      "optional": false
+    },
+    {
+      "name": "Tax Free Levels",
+      "file": "TaxFreeLevels-1.5.4-fabric-26.1.jar",
+      "version": "1.5.4",
+      "side": "both",
+      "sha512": "1a0e0e646862dd5afa1c5168c34e6597cbc532e9da24640d061946b0085dc7c9483d772f77d42efc94e4813cac71a58e49b9b6de569ba5179b3c44b3646fc719",
+      "optional": false
+    },
+    {
+      "name": "Tech Reborn",
+      "file": "TechReborn-6.2.1.jar",
+      "version": "6.2.1",
+      "side": "both",
+      "sha512": "e75737557d87e800d19b85178fb99e8c1fe1bfb443055ed0d85e0c27974e0163c6a568d7ab4dda8635f14a757c768dcda8ead0fabbe17b2421cd8a9daad42a38",
+      "optional": false
+    },
+    {
+      "name": "TerraBlender",
+      "file": "TerraBlender-fabric-26.3-26.3.0.0.9.jar",
+      "version": "26.3.0.0.9",
+      "side": "both",
+      "sha512": "183f809fe992aaaaf4d84c594730b95b392338caf17b690debbb14434b23b46f5923cfcc5aecb81368ea06a299503a3738dcf942b7f179abd000f1312cf2cbdb",
+      "optional": false
+    },
+    {
+      "name": "Trading Post",
+      "file": "tradingpost-v26.3.0-mc26.3.x+fabric.jar",
+      "version": "26.3.0",
+      "side": "both",
+      "sha512": "ed0befb5498146c7b7cc5ba7642db0752a2ef1bf091f03e3166a40def36b45a8f4f990db0d96470208c8b8707eada1bdeacb4f515f3cea72485ab2a81a7fa698",
+      "optional": false
+    },
+    {
+      "name": "Traveler's Backpack",
+      "file": "travelersbackpack-fabric-26.3-11.4.2.jar",
+      "version": "26.3-11.4.2",
+      "side": "both",
+      "sha512": "caa7065e2821a7650a7aaaad379b6af646e755d13d1e0b9332b33f997a758f1a11a8fa6fc8369fb3f22298e1d18eb17d31ffa44262bcd776390242825e4ada0f",
+      "optional": false
+    },
+    {
+      "name": "Trinkets Updated",
+      "file": "trinkets-4.2.1+26.3.jar",
+      "version": "4.2.1+26.3",
+      "side": "both",
+      "sha512": "d4038e93b95462cff05075dad5b97669871f62212c0228ec6483782e22476d0354d1869f0e523fdb23b2a233fa0f15ff01d497fd2c8a5292ab20838dc464d15a",
+      "optional": false
+    },
+    {
+      "name": "Undead Nights - Zombie Horde Nights / Hordes",
+      "file": "UndeadNights-2.2.6-Fabric-mc26.3.jar",
+      "version": "2.2.6-Fabric-mc26.3",
+      "side": "both",
+      "sha512": "319b21d44b036b1798ab0cd81c78d3eb07c9b53d1818819cc8e019b24dd3ce13477c8d93e6d70a6299c5e6382a9c86ab8db097bc81b9a40926a75c6d5e7acfcb",
+      "optional": false
+    },
+    {
+      "name": "Underground Villages",
+      "file": "UndergroundVillages-fabric-26.3-13.0.1.jar",
+      "version": "13.0.1",
+      "side": "both",
+      "sha512": "1435a022a5e8b07fb944bbed41287260ea0ca5f85f575729674a9dd7792506fe093b4408686c5a3e7b04949a5ca49a5ab8337259c59fae878c46d4daec575732",
+      "optional": false
+    },
+    {
+      "name": "Village Quest",
+      "file": "village-quest-2.6.3-mc26.3.jar",
+      "version": "2.6.3",
+      "side": "both",
+      "sha512": "135bb721d964f8372d780fc8e993c712b74f51edf0edc166f88f0754950f1b404ad1b53be674406f6ab1c74016542d87b28dc695991ccbc1a4b2cb9d8071ab7a",
+      "optional": false
+    },
+    {
+      "name": "VillagersTradingPlus",
+      "file": "villagertradingplus-fabric-mc26.3-1.1.0.jar",
+      "version": "1.1.0+mc26.3-fabric",
+      "side": "both",
+      "sha512": "297a33a1fbb28ad7dc588d877f12cd2952a33f90305f33ab3f1ce20c7ffa3671eacaf25e10ab705dfa2542817bb8d7452a780764b96be221a7f89e25a4aa9771",
+      "optional": false
+    },
+    {
+      "name": "Visuality",
+      "file": "visuality-0.7.15+26.3.jar",
+      "version": "0.7.15+26.3",
+      "side": "client",
+      "sha512": "90145cad547d329d5134eabbf45c7f35b1d0ce3ff2bcef8a1b187dc33723121b1a235c0cc259043588835b0cb7b31cba4aa84d738be810f0ea073308bec2eb4a",
+      "optional": false
+    },
+    {
+      "name": "Visual Workbench",
+      "file": "visualworkbench-v26.3.0-mc26.3.x+fabric.jar",
+      "version": "26.3.0",
+      "side": "both",
+      "sha512": "52006eaa57053a2f6cba75a0032a81d179f1a47cc4982e391ea5a380179b9b7aaf349afcd5ac3344dcd05e1b0e224f91cf6b1a1135698a7685f1321470966ad0",
+      "optional": false
+    },
+    {
+      "name": "Waddles",
+      "file": "Waddles-fabric-26.3-0.15.0.jar",
+      "version": "0.15.0",
+      "side": "both",
+      "sha512": "82fe51db5ea58147155ade59ad50c624df10254b6478ea41979e2d71465ef3c1ac64f30b90e20eca09e69c0ac6700813528d07d4123dd086c2eba35bd3bb0353",
+      "optional": false
+    },
+    {
+      "name": "Waystones",
+      "file": "waystones-fabric-26.3-26.3.0.1.jar",
+      "version": "26.3.0.1+fabric-26.3",
+      "side": "both",
+      "sha512": "b9c09872b60f78dd6a37baa32a866821b84cd7386e2ea2eed641acdc31fd2635a70a22be8006c3f9ee5de495f563cb1915a2a1b6864bbaecb86c907c5b4c6ae2",
+      "optional": false
+    },
+    {
+      "name": "Waystones pets addon",
+      "file": "waystonespetsaddon-fabric-0.1.1-26.3.jar",
+      "version": "0.1.1",
+      "side": "both",
+      "sha512": "39a6a6acb564cce084f9eebdec04855ea2b8524593656142ec97b5fb0236071a05318a60693999dbb5fbec3bf98b296981d8cf819f56c5e2361b90732c4bd599",
+      "optional": false
+    },
+    {
+      "name": "Wicklen: Chronicles",
+      "file": "wicklen-chronicles-0.4.4.jar",
+      "version": "0.4.4",
+      "side": "both",
+      "sha512": "6903ea1b4bc3803515b1913949746ee0dbf5c7da634c5dce8aca6822b9c522290140adf98fafa2531919d18ae82e0542446b0fd88eb82071eb847e9192dfa898",
+      "optional": false
+    },
+    {
+      "name": "Wicklen Pack Compatibility",
+      "file": "wicklen-pack-compat-0.1.2.jar",
+      "version": "0.1.2",
+      "side": "both",
+      "sha512": "7f613cc2e03e8cdf4a878b1ebcde0a4f0cb9fd97d4cd03a75885e0367b8d6c55426fc445e5b746ae1ad267c5b5a154b5ff8caa6dca5ea824b406d8b07d9c1bdf",
+      "optional": false
+    },
+    {
+      "name": "Wilder Wild",
+      "file": "WilderWild-4.3.3-mc26.3-fabric.jar",
+      "version": "4.3.3-mc26.3-fabric",
+      "side": "both",
+      "sha512": "2ec863502bcafac28f885e84dadd9ef7f2299f9325edd87ba2a6a44164faef5f8174dc7ad4a4614bbcc9e64b2afeccbbbd739798b908417438c2be354f89266b",
+      "optional": false
+    },
+    {
+      "name": "Wizards (RPG Series)",
+      "file": "wizards-fabric-3.1.4+26.3.jar",
+      "version": "3.1.4+26.3-fabric",
+      "side": "both",
+      "sha512": "c93d1034a348c9ec29316b5e6a80fe4f29b35868ed7f27090c6c809ac4f2a018a87baa602c31071b6a3adba4cecec22925c9e5df0eed0461bf9f9f972f602e71",
+      "optional": false
+    },
+    {
+      "name": "WorldEdit",
+      "file": "worldedit-mod-7.4.6.jar",
+      "version": "7.4.6",
+      "side": "both",
+      "sha512": "3bc4fbf2ee36746f54dc036283b3ded3f17fd91991eaa1ead76b0861aa902cd7ffbc0962db0065d8690e46d1c4890847ebe97ee0b4e36a979b41168c30586ee4",
+      "optional": false
+    },
+    {
+      "name": "Xaero's Minimap",
+      "file": "xaerominimap-fabric-26.3-26.6.2.jar",
+      "version": "fabric-26.3-26.6.2",
+      "side": "both",
+      "sha512": "edf57b80cfe0e0fe229728a6babc3b25c364c07a0406bcdb3a21f73fc225b98954c68ff456c7b1af3182c48512f29d47238ddc501dbfd5eaca0a4609fddcc280",
+      "optional": false
+    },
+    {
+      "name": "Xaero's World Map",
+      "file": "xaeroworldmap-fabric-26.3-1.47.2.jar",
+      "version": "fabric-26.3-1.47.2",
+      "side": "both",
+      "sha512": "cac3c0fb3121ddebc7f073571dcbce5f1811ca001ea94ef03c1da667e8a3413144f570c4b593f632358eff98fa138631ed7907fd1bd5da7d43c037ea782125fb",
+      "optional": false
+    },
+    {
+      "name": "Herbcraft-BCKS|百草可食",
+      "file": "herbcraft-1.1.4.jar",
+      "version": "1.1.4",
+      "side": "both",
+      "sha512": "32d048d4bb89f68a207816516ca711293ce56cc6781611eb3364776917be5e32c1edad6f95bf6a86d7a6bf99820480bbd69c256ea3875b98ce031fdbc93e858b",
+      "optional": false
+    },
+    {
+      "name": "Herbcraft_Alchemy|百草可食：炼金分册",
+      "file": "herbcraft-alchemy-1.1.4.jar",
+      "version": "1.1.4",
+      "side": "both",
+      "sha512": "eea57efb7044deefc8f7ee67fec49b7e338be831f49704e17784a89f110cab4eaa2050230c65f446a840121ef0b4a26e3b1ffa84c9a2efbd6bfd0066e37a68bd",
+      "optional": false
+    },
+    {
+      "name": "Herbcraft_Cuisine|百草可食：膳房分册",
+      "file": "herbcraft-cuisine-1.1.3.jar",
+      "version": "1.1.3",
+      "side": "both",
+      "sha512": "b7731c1f803382ba91ddb4c2db12cf12565d6c1dc3c6321228212cec6b4e394f532a9b65505e021bfc5117574c0077ff3062fd5de64a426981f80ac6d7993410",
       "optional": false
     }
   ],
   "catalogSource": {
     "repository": "https://github.com/Wicklen-MC/wicklen-server",
-    "path": "pack/releases/0.4.5/pack.lock.json",
-    "sha256": "3579e2d88e83a2a397f7ea3ea07b4e4a8d6dac7c08e8c1356708d567467a0fde",
-    "packVersion": "0.4.5",
+    "path": "pack/releases/0.5.0/pack.lock.json",
+    "sha256": "f87d11782b46267e5b41898b254417cfe1acbd6f3afe02913566f4a485d24051",
+    "packVersion": "0.5.0",
     "distribution": "production",
     "mandatoryOnly": true,
     "counts": {
-      "client": 121,
-      "server": 165,
-      "unique_mod_files": 177
+      "client": 124,
+      "server": 169,
+      "unique_mod_files": 181
     },
     "optionalAddonsIncluded": false
   },
-  "downloadBase": "https://downloads.wicklen.link/releases/0.4.5/"
+  "downloadBase": "https://downloads.wicklen.link/releases/0.5.0/"
 };

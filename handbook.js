@@ -37,11 +37,11 @@
     history.replaceState(null, '', url);
   }
   function render() {
-    const latest = version.value === extra.version;
+    const latest = version.value === extra.version && extra.version !== source.version;
     const mods = source.mods.map(mod => ({...mod, ...(latest ? extra.overrides[mod.id] || {} : {}), ...(mod.id === 'wicklen-pack-compat' ? {category:'comfort'} : {})}));
     if (latest) mods.push(...extra.additions);
     grid.replaceChildren();
-    document.querySelector('#version-status').textContent = latest ? 'Выпуск доступен для скачивания. На игровом сервере пока 0.4.5; новые Herbcraft и Arcana появятся там после обновления.' : 'Этот состав установлен на игровом сервере. Ссылки на скачивание ведут на совместимую сборку 0.4.5.';
+    document.querySelector('#version-status').textContent = latest ? 'Выпуск доступен для скачивания. На игровом сервере пока 0.4.5; новые Herbcraft и Arcana появятся там после обновления.' : `Этот состав установлен на игровом сервере. Для входа скачайте совместимую сборку ${source.version}.`;
     records = mods.sort((a,b) => (b.group === 'own') - (a.group === 'own') || a.name.localeCompare(b.name, 'ru')).map(mod => {
       const element = document.createElement('details');
       element.id = `mod-${mod.id}`;
