@@ -155,3 +155,28 @@ They make no AI requests and do not implement or release native mod features.
 All existing journal sections remain represented, with a new mod guide section.
 The guide lists gameplay mods from the published catalog; four Herbcraft/Arcana
 entries demonstrate short starting paths. Progress remains in page memory.
+
+## Journal UX concepts, round two
+
+`journal-lab.html?concept=atlas|camp|trail` adds concepts 04–06 next to the
+original three. The first is a connected index of personal discoveries, the
+second helps choose a starting activity using an illustrative inventory, and
+the third prioritizes one tracked goal and its next step. Four primary sections
+group all existing journal areas: Path (current/quests/trials), World
+(connections/map/records/collections), Pack (activities/mod library), and Spirit
+(conversation/settings).
+
+Shared interactions include explicit single-goal pin/unpin, a HUD after closing
+the journal, G/Esc shortcuts that respect text input, recipe reference dialogs,
+search/category/library filters, scroll-aware back navigation, notes and settings.
+Progress is in page memory, has no game effect and survives concept switches.
+Contextual spirit help is user-invoked. Dialogue is scripted and sends no requests.
+Unknown personal locations stay unnamed; catalog capabilities stay available.
+The six goal examples include four verified Herbcraft/Arcana starts, a Chronicles
+expedition and an explicitly incomplete technology outline. The page links the
+Outer Wilds designer interview, Capcom manual, Nintendo page and Stardew Valley
+bundle reference behind its UX explanation. Artwork is original SVG.
+
+These remain browser prototypes, with no new mod JAR, game update or live player
+progress. Native REI integration, automatic objective checks, keyboard/controller
+navigation and full settings parity require implementation and testing in the mod.
