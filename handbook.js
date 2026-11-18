@@ -18,7 +18,7 @@
     const element = document.createElement('details');
     element.id = `mod-${mod.id}`;
     const guide = extra.guideLinks[mod.id];
-    element.innerHTML = `<summary>${mod.icon ? `<img src="icons/${escape(mod.id)}.png" alt="" loading="lazy" onerror="this.hidden=true">` : ''}<span><strong>${escape(mod.name)}</strong><small>${escape(mod.version)} · ${side(mod)}</small></span></summary><div class="reference-body"><p>${escape(mod.description)}</p>${mod.points?.length ? `<ul>${mod.points.map(point => `<li>${escape(point)}</li>`).join('')}</ul>` : ''}<p class="compat-small">${escape(categoryNames[mod.category] || 'Дополнение')} · Minecraft 26.3 / Fabric</p><div class="reference-links">${guide ? `<a href="${escape(guide)}">Подробный гайд →</a>` : ''}<a href="${escape(mod.url)}" target="_blank" rel="noopener">Страница автора ↗</a></div></div>`;
+    element.innerHTML = `<summary>${mod.icon ? `<img src="icons/${escape(mod.id)}.webp" alt="" loading="lazy" onerror="this.hidden=true">` : ''}<span><strong>${escape(mod.name)}</strong><small>${escape(mod.version)} · ${side(mod)}</small></span></summary><div class="reference-body"><p>${escape(mod.description)}</p>${mod.points?.length ? `<ul>${mod.points.map(point => `<li>${escape(point)}</li>`).join('')}</ul>` : ''}<p class="compat-small">${escape(categoryNames[mod.category] || 'Дополнение')} · Minecraft 26.3 / Fabric</p><div class="reference-links">${guide ? `<a href="${escape(guide)}">Подробный гайд →</a>` : ''}<a href="${escape(mod.url)}" target="_blank" rel="noopener">Страница автора ↗</a></div></div>`;
     grid.append(element);
     return {mod, element, text: `${mod.name} ${mod.description} ${(mod.points || []).join(' ')} ${mod.aliases || ''}`.toLocaleLowerCase('ru')};
   });
