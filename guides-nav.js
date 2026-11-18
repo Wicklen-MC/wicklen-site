@@ -4,7 +4,8 @@
   let scheduled = false;
   const update = () => {
     scheduled = false;
-    const offset = document.querySelector('.nav-shell').getBoundingClientRect().height + 32;
+    const padding = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+    const offset = Math.max(padding, document.querySelector('.nav-shell').getBoundingClientRect().height) + 8;
     let current = sections[0];
     for (const item of sections) if (item.section.getBoundingClientRect().top <= offset) current = item;
     for (const item of sections) {
