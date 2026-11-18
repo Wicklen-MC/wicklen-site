@@ -22,6 +22,12 @@ class PackageChecks(unittest.TestCase):
         (self.dist / 'SHA256SUMS.txt').write_text(digest + '  index.html\n')
         self.revision = 'a' * 40
 
+    def test_public_allowlist_excludes_local_journal_prototypes(self):
+        spec = importlib.util.spec_from_file_location('site_build', Path(__file__).with_name('build.py'))
+        build = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(build)
+        self.assertFalse(any(name.startswith('journal-') for name in build.PUBLIC_FILES))
+
     def test_verified_package_includes_revision_and_only_manifest_files(self):
         metadata = MODULE.package(self.dist, self.revision, self.root / 'bundle')
         with tarfile.open(self.root / 'bundle/site.tar') as archive:

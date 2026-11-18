@@ -41,7 +41,6 @@ runs skip deployment when main already contains a newer commit.
 - `updates.html`: pack history 0.4.2–0.5.0, exact changed files and checksums.
 - `chronicles.html`: Chronicles 0.4.4, settings and genuine native screenshot gallery.
 - `compat.html`: Compat 0.1.2, REI fixes, Mochi protection and install instructions.
-- `journal-preview.html`: three explicitly labelled HTML interface concepts.
 - `data.js`: live pack 0.5.0 inventory from its immutable release lock:
   181 unique mods, 169 server / 124 client JARs. Source IDs, membership, filenames
   and SHA-512 values match the lock. Existing descriptions and local icons persist.
@@ -148,35 +147,8 @@ from `data.js`; selecting the published pack applies `handbook-data.js` overlays
 The download metadata stays aligned with the live server. Old `handbook.html`
 bookmarks redirect to the new catalog, preserving queries and anchors.
 
-`journal-preview.html` contains three interactive design concepts for Chronicles:
-`?layout=journey`, `?layout=journal` and `?layout=companion`. These are explicitly
-labelled HTML prototypes, with illustrative progress/map and scripted dialogue.
-They make no AI requests and do not implement or release native mod features.
-All existing journal sections remain represented, with a new mod guide section.
-The guide lists gameplay mods from the published catalog; four Herbcraft/Arcana
-entries demonstrate short starting paths. Progress remains in page memory.
-
-## Journal UX concepts, round two
-
-`journal-lab.html?concept=atlas|camp|trail` adds concepts 04–06 next to the
-original three. The first is a connected index of personal discoveries, the
-second helps choose a starting activity using an illustrative inventory, and
-the third prioritizes one tracked goal and its next step. Four primary sections
-group all existing journal areas: Path (current/quests/trials), World
-(connections/map/records/collections), Pack (activities/mod library), and Spirit
-(conversation/settings).
-
-Shared interactions include explicit single-goal pin/unpin, a HUD after closing
-the journal, G/Esc shortcuts that respect text input, recipe reference dialogs,
-search/category/library filters, scroll-aware back navigation, notes and settings.
-Progress is in page memory, has no game effect and survives concept switches.
-Contextual spirit help is user-invoked. Dialogue is scripted and sends no requests.
-Unknown personal locations stay unnamed; catalog capabilities stay available.
-The six goal examples include four verified Herbcraft/Arcana starts, a Chronicles
-expedition and an explicitly incomplete technology outline. The page links the
-Outer Wilds designer interview, Capcom manual, Nintendo page and Stardew Valley
-bundle reference behind its UX explanation. Artwork is original SVG.
-
-These remain browser prototypes, with no new mod JAR, game update or live player
-progress. Native REI integration, automatic objective checks, keyboard/controller
-navigation and full settings parity require implementation and testing in the mod.
+Journal interface prototypes are local-only. They are preserved in the common
+workspace under `workspace/prototypes/chronicles-journal/`, outside this public
+repository and the build allowlist. Serve that directory on 127.0.0.1 for review.
+Do not publish prototype pages or add them to site navigation without an explicit
+request to publish them. Website changes and prototype review are separate tasks.

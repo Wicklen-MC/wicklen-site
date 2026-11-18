@@ -4,6 +4,10 @@ Work here for the static website. Read README.md; build with python3 scripts/bui
 and check packaging with python3 -m unittest discover -s scripts -p 'test_*.py'.
 Pushes to main automatically publish the checked static site. Show unreleased mod features
 as previews; download metadata must describe published artifacts.
+Interface mockups and prototypes are local-only unless the user explicitly asks to
+publish them. Keep them in the ignored workspace/prototypes/ directory, outside
+this public repository and the build allowlist. A request to generate or review
+HTML mockups does not authorize website publication.
 
 ## Workspace context
 
