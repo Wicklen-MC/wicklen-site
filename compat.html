@@ -4,57 +4,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wicklen Pack Compat — исправления совместимости модов</title>
-  <meta name="description" content="Wicklen Pack Compat: исправление генерации Mochi Pets и защита питомца на плече от урона владельца. Версии, установка и скачивание для Minecraft 26.3 и Fabric.">
+  <meta name="description" content="Wicklen Pack Compat: исправления рецептов REI и Farmer’s Delight, генерации Mochi Pets и защиты питомца на плече. Версии, установка и скачивание для Minecraft 26.3 и Fabric.">
   <meta name="theme-color" content="#fff7f0">
   <link rel="canonical" href="https://wicklen.link/compat.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="compat.css">
+<link rel="stylesheet" href="reference.css">
 </head>
 <body class="compat-page">
 <a class="skip" href="#main">К содержимому</a>
 <header class="site-header"><div class="wrap header-inner">
   <a class="brand" href="index.html" aria-label="Wicklen — на главную"><svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="#f4d6b8"/><path d="M1 18h5v-5h6v6h6v-3h9v6H1z" fill="#b990b9"/><path d="M1 23h6v-4h7v4h7v-3h6v7H1z" fill="#846b91"/><path d="M18 5h5v5h-5z" fill="#e88461"/></svg>Wicklen<small>Minecraft для своих</small></a>
-  <nav class="nav" aria-label="Основная навигация"><a class="desktop-link" href="index.html#play">Что вас ждёт</a><a class="desktop-link" href="mods.html">Все моды</a><a class="desktop-link" href="guides.html">Гайды</a><a href="chronicles.html">Наш мод</a><a class="nav-compat" href="compat.html" aria-current="page">Compat</a><a class="nav-download" href="#download">Скачать ↓</a></nav>
+  <nav class="nav section-tabs" aria-label="Разделы сайта"><a href="mods.html">Все моды</a><a href="handbook.html">Справочник</a><a href="guides.html">Гайды</a><a href="updates.html">Обновления</a><a href="chronicles.html">Наш мод</a><a href="index.html#download" class="nav-download">Скачать ↓</a></nav>
 </div></header>
 <main id="main" class="wrap compat-sheet">
   <a class="compat-back" href="chronicles.html">← К Wicklen: Chronicles</a>
   <div class="eyebrow">Наш небольшой мод совместимости</div>
   <h1>Wicklen<br><em>Pack Compat</em></h1>
   <p class="compat-lead">Чтобы моды лучше уживались вместе.</p>
-  <p>Compat исправляет конкретные проблемы в сочетаниях модов нашей сборки. Это отдельный мод: он не добавляет духа, дневник или задания и не требует Chronicles.</p>
+  <p class="reference-note"><strong>Выпущен Compat 0.1.2, включён в сборку 0.5.0.</strong> На игровом сервере пока сборка 0.4.5 с Compat 0.1.1. <a href="updates.html#compat-0-1-2">Все файлы и изменения →</a></p><p>Compat исправляет конкретные проблемы в сочетаниях модов нашей сборки. Это отдельный мод: он не добавляет духа, дневник или задания и не требует Chronicles.</p>
 
   <section class="compat-section" aria-labelledby="fix-title">
-    <h2 id="fix-title">Что исправляет</h2>
+    <h2 id="fix-title">Что исправляет</h2><h3 id="rei-brewing">Рецепты зелий в REI</h3><p>В REI 26.3.824 карточки варки не создавались на выделенном сервере. Compat 0.1.2 возвращает их: по <strong>R</strong> можно увидеть начальный рецепт зелья, а по <strong>U</strong> — применение ингредиентов. Проверены 913 рецептов варки, включая Herbcraft и ванильные зелья.</p><h3>Пельмени и голубцы Farmer’s Delight</h3><p>Эти блюда не требуют посуды, но их интеграция с REI ошибочно ожидала её наличия. Compat исправляет отображение обеих карточек; сами рецепты приготовления сохраняются.</p>
     <h3 id="mochi-carry">Mochi на плече: защита от случайных ударов</h3>
-    <p><strong>Доступно в Compat 0.1.1 · входит в сборку Wicklen 0.4.5.</strong></p>
+    <p><strong>Доступно в Compat 0.1.2 · входит в сборку Wicklen 0.5.0.</strong></p>
     <p>Когда Mochi сидит у вас на плече, ваши удары не ранят питомца, не портят ему настроение и не вызывают звук боли и отбрасывание. Можно копать и взаимодействовать с блоками: переносимый питомец не перехватывает ваш прицел.</p>
     <p>Защита действует только для владельца, пока Mochi находится на плече. На земле, от других игроков и других источников урона сохраняются обычные правила.</p>
-    <p>Для полного исправления Compat 0.1.1 нужен на клиенте и сервере. Только на сервере он защитит от урона, но питомец всё ещё может попадать под прицел клиента.</p>
+    <p>Для полного исправления Compat 0.1.2 нужен на клиенте и сервере. Только на сервере он защитит от урона, но питомец всё ещё может попадать под прицел клиента.</p>
     <h3>Генерация мира с Mochi Pets</h3>
-    <p><strong>Исправление генерации сохранено в Compat 0.1.1.</strong></p>
+    <p><strong>Исправление генерации сохранено в Compat 0.1.2.</strong></p>
     <p>В Adorable Mochi Pets 0.23.0+26.3 проверка места появления питомца иногда обращается к соседнему чанку, который ещё нельзя читать. Compat пропускает такое место у края чанка, чтобы эта проверка не вызывала предупреждение о небезопасном чтении мира.</p>
     <p>Исправление относится к генерации новых участков мира. Поведение уже появившихся питомцев сохраняется; пересоздавать мир не нужно.</p>
   </section>
 
   <section class="compat-download" id="download" aria-labelledby="download-title">
-    <h2 id="download-title">Скачать Compat 0.1.1</h2>
+    <h2 id="download-title">Скачать Compat 0.1.2</h2>
     <p>Minecraft <strong>26.3</strong> · Fabric Loader <strong>0.20.1+</strong> · Java <strong>25</strong></p>
-    <a class="button" href="https://downloads.wicklen.link/releases/components/wicklen-pack-compat/0.1.1/wicklen-pack-compat-0.1.1.jar" download>Скачать JAR · 5,6 КБ ↓</a>
-    <p class="compat-small"><strong>В этой версии есть защита Mochi на плече от урона владельца, исправление прицела и проверок генерации мира.</strong></p>
-    <p class="compat-small">Входит в сборку Wicklen 0.4.5. Если вы уже установили её целиком, отдельная установка не нужна.</p>
-    <details><summary>Контрольная сумма SHA-256</summary><code class="compat-hash">0c97eddfdf070f429f1ee766edef7599f393409fd842a32bed68b0a9fa758a05</code></details>
+    <a class="button" href="https://downloads.wicklen.link/releases/components/wicklen-pack-compat/0.1.2/wicklen-pack-compat-0.1.2.jar" download>Скачать JAR · 7,5 КБ ↓</a>
+    <p class="compat-small"><strong>В этой версии есть исправления REI, защита Mochi на плече, исправление прицела и проверок генерации мира.</strong></p>
+    <p class="compat-small">Входит в сборку Wicklen 0.5.0. Если вы уже установили её целиком, отдельная установка не нужна.</p>
+    <details><summary>Контрольная сумма SHA-256</summary><code class="compat-hash">39869d5ac1cadd782fa43b3acd180a3919edb688a9393bf7d6842f6f51fe462b</code></details>
   </section>
 
   <section class="compat-section" aria-labelledby="install-title">
     <h2 id="install-title">Как установить</h2>
     <p>Положите JAR в папку <code>mods</code> вашего Fabric-сервера. В одиночной игре — в папку <code>mods</code> игрового клиента: там мир создаёт встроенный сервер. Удалите старую копию Compat, если она уже есть.</p>
-    <p>Для защиты от урона Compat должен стоять на сервере. Чтобы Mochi не мешал прицелу, поставьте его и на клиент. Полный клиентский набор Wicklen 0.4.5 уже содержит нужную версию.</p>
+    <p>Для защиты от урона Compat должен стоять на сервере. Чтобы Mochi не мешал прицелу, поставьте его и на клиент. Полный клиентский набор Wicklen 0.5.0 уже содержит нужную версию.</p>
   </section>
 
   <section class="compat-section" aria-labelledby="compat-title">
     <h2 id="compat-title">С какими модами работает</h2>
-    <dl class="compat-list">
+    <dl class="compat-list"><div><dt>REI 26.3.824</dt><dd>Исправление карточек варки требуется на выделенном сервере. Установка только на клиент отсутствующие карточки не вернёт.</dd></div><div><dt>Farmer’s Delight 26.3-3.6.30+refabricated</dt><dd>Исправляет отображение блюд без посуды. Другие рецепты и правила приготовления сохраняются.</dd></div>
       <div><dt>Adorable Mochi Pets</dt><dd>Исправление рассчитано на версию 0.23.0+26.3. При обновлении Mochi Pets совместимость нужно проверить заново.</dd></div>
       <div><dt>C2ME</dt><dd>Не обязателен. Предупреждение может возникать при генерации с C2ME, но исправление относится к проверке Mochi Pets. Настройки C2ME менять не нужно.</dd></div>
       <div><dt>Wicklen: Chronicles</dt><dd>Устанавливается отдельно и не требуется для работы Compat.</dd></div>
@@ -63,6 +64,6 @@
   </section>
   <p class="compat-source"><a href="https://github.com/Wicklen-MC/wicklen-server/tree/master/pack/compat/wicklen-pack-compat">Исходники и подробности ↗</a> · лицензия MIT</p>
 </main>
-<footer class="site-footer"><div class="wrap footer-inner"><div><a class="brand" href="index.html">Wicklen</a><p>Свой дом. Своя компания. Своя история.</p></div><div class="footer-links"><a href="guides.html">Гайды: алхимия и магия</a><a href="mods.html">Все моды</a><a href="index.html#faq">Помощь с установкой</a><a href="#main">В начало ↑</a></div></div></footer>
+<footer class="site-footer"><div class="wrap footer-inner"><div><a class="brand" href="index.html">Wicklen</a><p>Свой дом. Своя компания. Своя история.</p></div><div class="footer-links"><a href="updates.html">Обновления</a><a href="handbook.html">Справочник</a><a href="guides.html">Гайды: алхимия и магия</a><a href="mods.html">Все моды</a><a href="index.html#faq">Помощь с установкой</a><a href="#main">В начало ↑</a></div></div></footer>
 </body>
 </html>

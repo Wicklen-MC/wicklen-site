@@ -11,8 +11,8 @@ needed to serve the site.
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8765/`. The five pages are `index.html`, `mods.html`,
-`chronicles.html`, `compat.html` and `guides.html`; they also work when opened directly from disk.
+Open `http://127.0.0.1:8765/`. The seven pages are `index.html`, `mods.html`,
+`chronicles.html`, `compat.html`, `guides.html`, `handbook.html` and `updates.html`; they also work when opened directly from disk.
 
 Build the deployable directory with Python 3.11 or later:
 
@@ -32,10 +32,20 @@ runs skip deployment when main already contains a newer commit.
 
 ## Pages and content
 
-- `guides.html` / `guides.css`: four candidate-mod player guides (Herbcraft Core,
-  Alchemy, Cuisine, Arcana Novum) for Fabric 26.3. These mods are not part of
-  released pack 0.4.5. Exact version links, first recipes, local test boundaries
-  and the unresolved REI brewing-display gap are stated explicitly.
+- `updates.html` / `updates-data.js` / `updates.js`: pack history 0.4.2–0.5.0,
+  component releases, exact changed JAR/resource/config/data-pack downloads,
+  full/server/delta ZIPs and their pinned checksums. Pack 0.5.0 is published
+  separately from live-server adoption; 0.4.5 remains the active download.
+- `handbook.html` / `handbook-data.js` / `handbook.js`: searchable reference for
+  all 181 mods of 0.5.0, including Compat as a player-facing entry. The existing
+  0.4.5 catalog is retained and overlaid with the four additions and Compat 0.1.2.
+  Query links use `?q=`; deep links open the selected mod. Shared `reference.css`
+  also provides the visible six-link navigation, including mobile layouts.
+
+
+- `guides.html` / `guides.css`: five player guides (Herbcraft Core,
+  Alchemy, Cuisine, Arcana Novum and Wicklen Pack Compat) for Fabric 26.3. These mods were released in pack 0.5.0; the live server remains on 0.4.5. Exact version links, first recipes, local test boundaries
+  and Arcana language limitations are stated explicitly; Compat 0.1.2 fixes the brewing-display gap.
   `images/guides/` contains genuine English native test captures; provenance JSON
   is excluded from the public build. The main catalog inventory remains unchanged.
 
@@ -43,10 +53,10 @@ runs skip deployment when main already contains a newer commit.
 - `mods.html`: searchable mandatory pack catalog, filters and mod details.
 - `chronicles.html`: the current mod's player guide, settings and screenshot gallery,
   with a small block linking to the separate compatibility adapter.
-- `compat.html` / `compat.css`: Wicklen Pack Compat, its published 0.1.1 download,
-  installation sides and supported mods. The visible shoulder-damage protection
-  section explains why 0.1.1 is needed on both client and server.
-  A visible Compat link appears in every page header, including mobile layouts.
+- `compat.html` / `compat.css`: Wicklen Pack Compat, its published 0.1.2 download,
+  installation sides and supported mods. REI/Farmer’s Delight fixes and shoulder-damage protection
+  explain why the adapter is needed on both client and server.
+  Compat is a guide section and handbook entry; the primary navigation links to Guides rather than the individual adapter.
 - `site.css` / `site.js`: shared styling and catalog behavior.
 - `chronicles.css` / `chronicles.js`: the mod page and keyboard-accessible gallery.
 - `experiences.js`: gameplay examples for the landing page.
