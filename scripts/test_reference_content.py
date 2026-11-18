@@ -44,9 +44,10 @@ class ReferenceContentTests(unittest.TestCase):
         self.assertEqual(data('handbook-data.js')['version'], updates['latestVersion'])
 
     def test_compat_is_a_guide_and_not_a_primary_navigation_link(self):
-        for name in ['index.html', 'mods.html', 'chronicles.html', 'compat.html', 'guides.html', 'handbook.html', 'updates.html']:
+        for name in ['index.html', 'mods.html', 'chronicles.html', 'compat.html', 'guides.html', 'updates.html']:
             nav = Navigation(); nav.feed((ROOT / name).read_text())
-            self.assertIn('guides.html', nav.links, name)
+            self.assertIn('mods.html', nav.links, name)
+            self.assertNotIn('handbook.html', nav.links, name)
             self.assertIn('updates.html', nav.links, name)
             self.assertNotIn('compat.html', nav.links, name)
         self.assertIn('id="compat"', (ROOT / 'guides.html').read_text())

@@ -157,3 +157,18 @@ mods, public configurations, the resource pack and private preferences are
 retained. Public filenames, sizes and hashes come from the immutable publication
 and release lock. Static HTML and both JavaScript metadata sources move together
 after successful server adoption.
+
+## Unified catalog and journal concepts
+
+`mods.html` combines the catalog and player handbook. It defaults to the live pack
+from `data.js`; selecting the published pack applies `handbook-data.js` overlays.
+The download metadata stays aligned with the live server. Old `handbook.html`
+bookmarks redirect to the new catalog, preserving queries and anchors.
+
+`journal-preview.html` contains three interactive design concepts for Chronicles:
+`?layout=journey`, `?layout=journal` and `?layout=companion`. These are explicitly
+labelled HTML prototypes, with illustrative progress/map and scripted dialogue.
+They make no AI requests and do not implement or release native mod features.
+All existing journal sections remain represented, with a new mod guide section.
+The guide lists gameplay mods from the published catalog; four Herbcraft/Arcana
+entries demonstrate short starting paths. Progress remains in page memory.
