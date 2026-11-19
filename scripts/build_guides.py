@@ -60,12 +60,13 @@ def render(data):
         preview=f'<img class="guide-card-preview" src="{e(image["src"])}" width="{image["width"]}" height="{image["height"]}" loading="lazy" alt="">' if image else ''
         cards+=f'<a class="guide-card" href="{href(t)}">{preview}<small>{e(t["group"])}</small><h2>{e(t["title"])}</h2><p>{e(t["short"]["summary"])}</p></a>'
 
-    def figure(item, lead=False):
+    def figure(item, lead=False, compact=False):
         label='Снимок Wicklen' if item['origin']=='wicklen' else ('Иллюстрация автора' if item['kind']=='diagram' else 'Снимок автора')
         note=f'<span class="guide-image-note">{e(item["note"])}</span>' if item.get('note') else ''
-        return f'<figure class="guide-image{" guide-hero" if lead else ""}"><a href="{e(item["src"])}" class="guide-image-open" data-guide-image target="_blank" aria-label="Увеличить: {e(item["alt"])}"><img src="{e(item["src"])}" width="{item["width"]}" height="{item["height"]}" alt="{e(item["alt"])}" loading="lazy" decoding="async"><span class="guide-image-zoom" aria-hidden="true">Увеличить</span></a><figcaption><strong>{e(item["alt"])}</strong> {e(item["caption"])}<small>{label} · <a href="{e(item["sourceUrl"])}" target="_blank" rel="noopener">{e(item["credit"])}</a></small>{note}</figcaption></figure>'
+        title='' if compact else f'<strong>{e(item["alt"])}</strong> '
+        return f'<figure class="guide-image{" guide-hero" if lead else ""}"><a href="{e(item["src"])}" class="guide-image-open" data-guide-image target="_blank" aria-label="Увеличить: {e(item["alt"])}"><img src="{e(item["src"])}" width="{item["width"]}" height="{item["height"]}" alt="{e(item["alt"])}" loading="lazy" decoding="async"><span class="guide-image-zoom" aria-hidden="true">Увеличить</span></a><figcaption>{title}{e(item["caption"])}<small>{label} · <a href="{e(item["sourceUrl"])}" target="_blank" rel="noopener">{e(item["credit"])}</a></small>{"" if compact else note}</figcaption></figure>'
 
-    def section_body(section):
+    def section_body(section, images):
         body=''.join(f'<p>{e(p)}</p>' for p in section['paragraphs'])
         for field,tag in [('steps','ol'),('bullets','ul')]:
             if section.get(field):body+=f'<{tag} class="guide-{field}">'+''.join(f'<li>{e(s)}</li>' for s in section[field])+f'</{tag}>'
@@ -74,6 +75,14 @@ def render(data):
             rows=''.join('<tr>'+''.join(f'<td>{"<code>"+e(cell)+"</code>" if cell.startswith("/") else e(cell)}</td>' for cell in row)+'</tr>' for row in table['rows'])
             body+=f'<div class="guide-table-scroll" role="region" aria-label="{e(section["title"])}" tabindex="0"><table><thead><tr>{headings}</tr></thead><tbody>{rows}</tbody></table></div>'
         if section.get('recipes'):body+=recipe_cards(section['recipes'])
+        if section.get('finds'):
+            cards=[]
+            for find in section['finds']:
+                picture=figure(images[find['image']], compact=True) if 'image' in find else (f'<div class="guide-find-icon"><img src="{e(find["icon"])}" width="{find["width"]}" height="{find["height"]}" alt="{e(find["name"])}" loading="lazy"></div>' if find.get('icon') else '')
+                facts=''.join(f'<dt>{label}</dt><dd>{e(find[key])}</dd>' for key,label in [('biomes','Биом / измерение'),('where','Где смотреть'),('how','Как получить')] if find.get(key))
+                status=f'<p class="guide-find-status">{e(find["availability"])}</p>' if find.get('availability') else ''
+                cards.append(f'<div class="guide-find-card"><h3>{e(find["name"])}</h3>{picture}{status}<dl>{facts}</dl></div>')
+            body+='<div class="guide-finds">'+''.join(cards)+'</div>'
         return body
 
     articles=[]
@@ -84,7 +93,8 @@ def render(data):
         images=t.get('images',[])
         sections='';used_images={0} if images else set()
         for section in t['sections']:
-            content=section_body(section)
+            content=section_body(section, images)
+            used_images.update(find['image'] for find in section.get('finds',[]) if 'image' in find)
             sections+=''.join(f'<span id="section-{e(t["id"])}-{e(alias)}" class="guide-anchor" aria-hidden="true"></span>' for alias in section.get('aliases',[]))
             if section.get('spoiler'):
                 sections+=f'<details class="guide-spoiler" id="{anchor(section)}"><summary>{e(section["title"])}</summary>{content}</details>'
@@ -103,8 +113,9 @@ def render(data):
         related=''.join(f'<a href="mod-guide.html?topic={e(id)}#guide-{e(id)}">{e(next(x["title"] for x in data["topics"] if x["id"]==id))}</a>' for id in t['related'])
         notes=''.join(f'<p>{e(n)}</p>' for n in t['packNotes'])
         intro=''.join(f'<p>{e(p)}</p>' for p in t.get('siteIntro',[t['short']['summary']]))
+        notice=f'<aside class="guide-status"><strong>{e(t["notice"]["title"])}</strong><p>{e(t["notice"]["text"])}</p></aside>' if t.get('notice') else ''
         articles.append(f'''<article id="guide-{e(t['id'])}" data-guide="{e(t['id'])}" class="player-guide">
-<p class="eyebrow">{e(t['group'])} · Wicklen {e(data['packVersion'])}</p><h1>{e(t['title'])}</h1>
+<p class="eyebrow">{e(t['group'])} · Wicklen {e(data['packVersion'])}</p><h1>{e(t['title'])}</h1>{notice}
 {figure(images[0], lead=True) if images else ''}<div class="guide-intro">{intro}</div>
 <details class="guide-toc"><summary>Содержание</summary><nav aria-label="Содержание: {e(t['title'])}"><ol>{toc}</ol></nav></details>
 <div class="guide-start"><h2>Быстрый старт</h2><ol>{first}</ol></div><aside class="guide-tip">{e(t['short']['tip'])}</aside>

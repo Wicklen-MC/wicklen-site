@@ -166,20 +166,20 @@ window.WICKLEN_GUIDE_INDEX = {
     },
     {
       "id": "gateways",
-      "title": "Gateway of Doom: испытания",
+      "title": "Gateway of Doom: ключи и испытания",
       "group": "Приключения",
       "aliases": "gateway ключ портал арена волны испытание босс boss checklist",
-      "summary": "Gateway запускает волновые бои; Boss Checklist помогает следить за побеждёнными боссами.",
+      "summary": "В Wicklen Gateway проводит испытания дворов Chronicles. Обычные ключи не выпадают.",
       "href": "mod-guide.html?topic=gateways#guide-gateways",
       "modIds": [
         "Z7xAH01M",
         "z1Dv56jq"
       ],
       "preview": {
-        "src": "images/guides/mods/gateways-Z7xAH01M-0.webp",
-        "width": 1600,
-        "height": 856,
-        "alt": "Бой Gateway: Reaper"
+        "src": "images/chronicles/en/courtyard-trial.png",
+        "width": 1280,
+        "height": 800,
+        "alt": "Подготовка испытания двора в дневнике"
       }
     },
     {

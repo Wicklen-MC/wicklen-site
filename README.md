@@ -51,8 +51,14 @@ runs skip deployment when main already contains a newer commit.
   ingredient labels and icons. Chapter `recipes` arrays reference its IDs. Schematics
   are HTML, not screenshots. Original item textures and their extraction hashes live
   under `images/guides/items/`; their provenance JSON is not publicly packaged.
-  The 23 guides contain 60 image placements (58 unique assets), at least two per
-  topic. Captions identify native Wicklen screenshots, author screenshots and
+  Guides show screenshots beside instructions and 31 item-finding cards across
+  seven topics, including all 16 End Remastered eyes and four native key captures.
+  Each finding card records a biome/dimension, a specific location and acquisition.
+  `images/guides/finders/provenance.json` records the added original item textures.
+  Gateway explicitly follows the released CUSTOM configuration: chest/mob key
+  drops and automatic events are disabled. Standard keys and their default loot
+  locations are reference-only; player instructions use the Chronicles courtyard.
+  Captions identify native Wicklen screenshots, author screenshots and
   explanatory diagrams. Click an image to enlarge; Escape closes the viewer.
   `images/guides/mods/provenance.json` records origins and checksums; it is excluded
   from public packaging. Six new English native frames were captured on an isolated

@@ -59,7 +59,7 @@ class ModGuideTests(unittest.TestCase):
                         self.assertGreaterEqual(len(table['headers']),2)
                         self.assertTrue(table['rows'])
                         for row in table['rows']:self.assertEqual(len(table['headers']),len(row))
-                    for index in section.get('images',[]):
+                    for index in section.get('images',[])+[f['image'] for f in section.get('finds',[]) if 'image' in f]:
                         self.assertGreater(index,0);self.assertLess(index,len(topic['images']));used.append(index)
                 self.assertEqual(len(used),len(set(used)))
                 self.assertEqual(set(range(1,len(topic['images']))),set(used))
@@ -128,5 +128,41 @@ class ModGuideTests(unittest.TestCase):
             self.assertNotIn('class="guide-toc" open',article)
         for topic in js_data('mod-guide-index.js')['topics']:
             self.assertTrue((ROOT/topic['preview']['src']).is_file())
+
+    def test_search_cards_show_appearance_place_and_acquisition(self):
+        for topic in self.data['topics']:
+            for section in topic['sections']:
+                for card in section.get('finds',[]):
+                    with self.subTest(topic=topic['id'],item=card['name']):
+                        for field in ('name','biomes','where','how'):self.assertTrue(card[field])
+                        self.assertTrue('image' in card or card.get('icon'))
+                        if icon:=card.get('icon'):
+                            self.assertTrue((ROOT/icon).is_file())
+                            self.assertGreater(card['width'],0);self.assertGreater(card['height'],0)
+        end=next(t for t in self.data['topics'] if t['id']=='end-remastered')
+        atlas=next(s for s in end['sections'] if s['id']=='eye-atlas')
+        self.assertEqual(16,len(atlas['finds']))
+
+    def test_gateway_guide_respects_the_published_custom_configuration(self):
+        topic=next(t for t in self.data['topics'] if t['id']=='gateways')
+        settings=topic['packSettings']
+        self.assertEqual('CUSTOM',settings['portalContentMode'])
+        for field in ('mobDropsEnabled','automaticGatewaysEnabled','chestDropsEnabled'):
+            self.assertIs(False,settings[field])
+        self.assertEqual(['wicklen_courtyard_v1','wicklen_courtyard_empowered_v1'],settings['profiles'])
+        self.assertTrue(topic['notice'])
+        self.assertIn('не выпадают',topic['notice']['title'])
+        self.assertNotIn('Найди ключ',' '.join(topic['short']['steps']))
+        keys=next(s for s in topic['sections'] if s['id']=='keys')['finds']
+        self.assertEqual(4,len(keys))
+        for key in keys:self.assertIn('Не выпадает',key['availability'])
+
+    def test_search_icon_provenance(self):
+        folder=ROOT/'images/guides/finders'
+        rows=json.loads((folder/'provenance.json').read_text())
+        files={p.relative_to(ROOT).as_posix() for p in folder.glob('*.png')}
+        self.assertEqual(files,{row['file'] for row in rows})
+        for row in rows:
+            self.assertEqual(hashlib.sha256((ROOT/row['file']).read_bytes()).hexdigest(),row['sha256'])
 
 if __name__=='__main__':unittest.main()

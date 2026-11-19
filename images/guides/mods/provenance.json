@@ -1063,5 +1063,41 @@
     "captureMethod": "Native Minecraft framebuffer via Fabric client game test; screenshots of actual mod screens",
     "processing": "Original PNG screenshot bytes, no edits",
     "result": "GUIDE CAPTURES PASS"
+  },
+  {
+    "publishedFile": "images/guides/mods/gateway-runestone-display-en.png",
+    "publishedSha256": "5a6a39cf79850dc0c5d795f5dda70f96a69334075c7c33eeaa2c7ebc693a1d1f",
+    "sha256": "5a6a39cf79850dc0c5d795f5dda70f96a69334075c7c33eeaa2c7ebc693a1d1f",
+    "sourceFile": "workspace/build/guide-finders-2026-11-19/client/screenshots/0009_gateway-runestone-display-en.png",
+    "origin": "wicklen",
+    "capture": "Native Fabric client gametest, Gateway of Doom 2.3.6, key displayed in item frame; default profiles added only to an isolated screenshot fixture, loot and automatic events disabled.",
+    "sourceUrl": "https://modrinth.com/mod/Z7xAH01M/version/gsbtXlnM"
+  },
+  {
+    "publishedFile": "images/guides/mods/gateway-necromancer-display-en.png",
+    "publishedSha256": "ce58c742150ca1f478282aedbce556985ab4f5599376f39a88cde7241be85033",
+    "sha256": "ce58c742150ca1f478282aedbce556985ab4f5599376f39a88cde7241be85033",
+    "sourceFile": "workspace/build/guide-finders-2026-11-19/client/screenshots/0010_gateway-necromancer-display-en.png",
+    "origin": "wicklen",
+    "capture": "Native Fabric client gametest, Gateway of Doom 2.3.6, key displayed in item frame; default profiles added only to an isolated screenshot fixture, loot and automatic events disabled.",
+    "sourceUrl": "https://modrinth.com/mod/Z7xAH01M/version/gsbtXlnM"
+  },
+  {
+    "publishedFile": "images/guides/mods/gateway-maelstrom-display-en.png",
+    "publishedSha256": "c4a13893d6cb31abfdb6e48ba4500782a9dfaf31bc81328abe1d8d86c78a281e",
+    "sha256": "c4a13893d6cb31abfdb6e48ba4500782a9dfaf31bc81328abe1d8d86c78a281e",
+    "sourceFile": "workspace/build/guide-finders-2026-11-19/client/screenshots/0011_gateway-maelstrom-display-en.png",
+    "origin": "wicklen",
+    "capture": "Native Fabric client gametest, Gateway of Doom 2.3.6, key displayed in item frame; default profiles added only to an isolated screenshot fixture, loot and automatic events disabled.",
+    "sourceUrl": "https://modrinth.com/mod/Z7xAH01M/version/gsbtXlnM"
+  },
+  {
+    "publishedFile": "images/guides/mods/gateway-golden-rune-display-en.png",
+    "publishedSha256": "a4232669fb78466cfab4af81e342c1a1a9c9820236d7243607f554ba3f7d7ad0",
+    "sha256": "a4232669fb78466cfab4af81e342c1a1a9c9820236d7243607f554ba3f7d7ad0",
+    "sourceFile": "workspace/build/guide-finders-2026-11-19/client/screenshots/0012_gateway-golden-rune-display-en.png",
+    "origin": "wicklen",
+    "capture": "Native Fabric client gametest, Gateway of Doom 2.3.6, key displayed in item frame; default profiles added only to an isolated screenshot fixture, loot and automatic events disabled.",
+    "sourceUrl": "https://modrinth.com/mod/Z7xAH01M/version/gsbtXlnM"
   }
 ]

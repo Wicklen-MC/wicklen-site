@@ -1,0 +1,122 @@
+[
+  {
+    "file": "images/guides/finders/techreborn-lead_ore.png",
+    "resource": "assets/techreborn/textures/block/ore/lead_ore.png",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "sha256": "ff5cad067a55d7152de59585468f03d1d64beda601af66a7cbfa099b08220c0d"
+  },
+  {
+    "file": "images/guides/finders/techreborn-tin_ore.png",
+    "resource": "assets/techreborn/textures/block/ore/tin_ore.png",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "sha256": "9dd813e52b70ed167c0dc60d5b3607d6c6ae1136ecad9c19087d086cdfa16f5c"
+  },
+  {
+    "file": "images/guides/finders/minecraft-nether_wart.png",
+    "resource": "assets/minecraft/textures/item/nether_wart.png",
+    "jar": "minecraft-client.jar",
+    "sha256": "61436f1bb905846373f57ea7ada16c4c853295bcc8bb51a8d37126455e28d547"
+  },
+  {
+    "file": "images/guides/finders/farmersdelight-wild_cabbages.png",
+    "resource": "assets/farmersdelight/textures/block/wild_cabbages.png",
+    "jar": "099f724599022ac9-FarmersDelight-26.3-3.6.30+refabricated.jar",
+    "sha256": "1430617cb2fb3b87c21735b22c631e272626390e0506923c20b313a9ac97ddcd"
+  },
+  {
+    "file": "images/guides/finders/farmersdelight-wild_rice.png",
+    "resource": "assets/farmersdelight/textures/block/wild_rice_top.png",
+    "jar": "099f724599022ac9-FarmersDelight-26.3-3.6.30+refabricated.jar",
+    "sha256": "945bfd853ec7a7913429917b9265fe08d89f38071ffdae73ddcd565c51be2aff"
+  },
+  {
+    "file": "images/guides/finders/farmersdelight-wild_tomatoes.png",
+    "resource": "assets/farmersdelight/textures/block/wild_tomatoes.png",
+    "jar": "099f724599022ac9-FarmersDelight-26.3-3.6.30+refabricated.jar",
+    "sha256": "94aed7e2ebfecbb9276c429f2f0cecaee47a7c0a30277fefedeabb2770545721"
+  },
+  {
+    "file": "images/guides/finders/betterarcheology-fossiliferous_dirt.png",
+    "resource": "assets/betterarcheology/textures/block/fossiliferous_dirt_0.png",
+    "jar": "f3a6db197d3eed9d-betterarcheology-fabric-26.3-1.3.9.jar",
+    "sha256": "cf690cc28e55837c09f8d74e6c4f6a6e76f8dfdb7b58f3f8658d34db5af31836"
+  },
+  {
+    "file": "images/guides/finders/endrem-lost_eye.png",
+    "resource": "assets/endrem/textures/item/lost_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "3f87a9cbecc3ac2b2fd3927afecdf4cf9fb86d0216f9640945ba1916c85c5233"
+  },
+  {
+    "file": "images/guides/finders/endrem-old_eye.png",
+    "resource": "assets/endrem/textures/item/old_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "c5726ee27f40b7d97ad865217e1364827204e9fe95b7b1f3d90e92744337a512"
+  },
+  {
+    "file": "images/guides/finders/endrem-rogue_eye.png",
+    "resource": "assets/endrem/textures/item/rogue_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "e9350803986f6823abfbbf946f69fb823c9956b6ce1999b656e4a3c2373a14d8"
+  },
+  {
+    "file": "images/guides/finders/endrem-cold_eye.png",
+    "resource": "assets/endrem/textures/item/cold_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "62f943195d812ced3975f9aa5634d71a9a06d511bee041481586abf5de1820f4"
+  },
+  {
+    "file": "images/guides/finders/endrem-black_eye.png",
+    "resource": "assets/endrem/textures/item/black_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "65ab0aaf5f0ed0351a856325bbc3a00aacc9604d2f87f1c928db6e55c41151c4"
+  },
+  {
+    "file": "images/guides/finders/endrem-corrupted_eye.png",
+    "resource": "assets/endrem/textures/item/corrupted_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "1e41bb771367848e77374cef44abdbe8e8450d48c3d4029557429e05f73ec133"
+  },
+  {
+    "file": "images/guides/finders/endrem-cursed_eye.png",
+    "resource": "assets/endrem/textures/item/cursed_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "8dd8aa9e203d7090ed90695a001474162e299977f5e92c588165220e96569b9a"
+  },
+  {
+    "file": "images/guides/finders/endrem-nether_eye.png",
+    "resource": "assets/endrem/textures/item/nether_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "2fe9c8d57b2db10079d44c4abdbf7efd979bbc4028066b9e2145788d0402ecb5"
+  },
+  {
+    "file": "images/guides/finders/endrem-magical_eye.png",
+    "resource": "assets/endrem/textures/item/magical_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "fca48e8d310e33086cc9101da588a4d42a530857432d72c7e7881de34903dc30"
+  },
+  {
+    "file": "images/guides/finders/endrem-guardian_eye.png",
+    "resource": "assets/endrem/textures/item/guardian_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "612efd4eb10d7967ff7f108418de6b7e3e6e9d10ac9d6704e94c0dbb3f502663"
+  },
+  {
+    "file": "images/guides/finders/endrem-wither_eye.png",
+    "resource": "assets/endrem/textures/item/wither_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "3afedf0c7c96a3d8537bef84290e0e33b8ea5e4434ab2e31b0b3da0bd3f53409"
+  },
+  {
+    "file": "images/guides/finders/endrem-cryptic_eye.png",
+    "resource": "assets/endrem/textures/item/cryptic_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "655d4c24e096839e1b72dc324654683772e8afef3bc43d162544083ca0deda2d"
+  },
+  {
+    "file": "images/guides/finders/endrem-evil_eye.png",
+    "resource": "assets/endrem/textures/item/evil_eye.png",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "sha256": "505d039f00126d3ac9203e5009abf8853f908cf6c1a3ecb31bb4f51839571f4f"
+  }
+]
