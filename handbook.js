@@ -17,10 +17,15 @@
   if (categoryNames[params.get('category')]) category.value = params.get('category');
   libraries.checked = params.get('libraries') === '1' || category.value === 'library';
   const side = mod => mod.side === 'server' ? 'Только сервер' : mod.side === 'client' ? 'Только клиент' : 'Клиент и сервер';
+  const guides = window.WICKLEN_GUIDE_INDEX?.topics || [];
+  const guideByMod = Object.fromEntries(guides.flatMap(guide => guide.modIds.map(id => [id, guide])));
+  const guideGrid = document.querySelector('#mechanics-guides');
+  if (guideGrid) guideGrid.innerHTML = guides.map(guide => `<a href="${escape(guide.href)}" data-guide-search="${escape((guide.title+' '+guide.aliases).toLocaleLowerCase('ru'))}">${escape(guide.title)}</a>`).join('');
   let records = [];
   function filter() {
     const query = search.value.trim().toLocaleLowerCase('ru');
     let count = 0;
+    for (const link of document.querySelectorAll('[data-guide-search]')) link.hidden = Boolean(query) && !link.dataset.guideSearch.includes(query);
     for (const record of records) {
       const visible = (!category.value || record.mod.category === category.value) && (libraries.checked || record.mod.category !== 'library') && (!query || record.text.includes(query));
       record.element.hidden = !visible;
@@ -45,10 +50,10 @@
     records = mods.sort((a,b) => (b.group === 'own') - (a.group === 'own') || a.name.localeCompare(b.name, 'ru')).map(mod => {
       const element = document.createElement('details');
       element.id = `mod-${mod.id}`;
-      const guide = extra.guideLinks[mod.id];
+      const guide = guideByMod[mod.id]?.href || extra.guideLinks[mod.id];
       element.innerHTML = `<summary>${mod.icon ? `<img src="icons/${escape(mod.id)}.webp" alt="" loading="lazy" onerror="this.hidden=true">` : ''}<span><strong>${escape(mod.name)}</strong><small>${escape(mod.version)} · ${side(mod)}${mod.optional ? ' · По желанию' : ''}</small><p class="entry-summary">${escape(mod.description)}</p></span></summary><div class="reference-body">${mod.points?.length ? `<ul>${mod.points.map(point => `<li>${escape(point)}</li>`).join('')}</ul>` : ''}<p class="compat-small">${escape(categoryNames[mod.category] || 'Дополнение')} · Minecraft 26.3 / Fabric</p><div class="reference-links">${guide ? `<a href="${escape(guide)}">Открыть гайд →</a>` : ''}<a href="${escape(mod.url)}" target="_blank" rel="noopener">Страница автора ↗</a></div></div>`;
       grid.append(element);
-      return {mod, element, text: `${mod.name} ${mod.description} ${(mod.points || []).join(' ')} ${mod.aliases || ''}`.toLocaleLowerCase('ru')};
+      return {mod, element, text: `${mod.name} ${mod.description} ${(mod.points || []).join(' ')} ${mod.aliases || ''} ${guideByMod[mod.id]?.aliases || ''}`.toLocaleLowerCase('ru')};
     });
     filter();
     focusAnchor();

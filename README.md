@@ -11,8 +11,8 @@ needed to serve the site.
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8765/`. The seven pages are `index.html`, `mods.html`,
-`chronicles.html`, `compat.html`, `guides.html`, `handbook.html` and `updates.html`; they also work when opened directly from disk.
+Open `http://127.0.0.1:8765/`. The eight pages are `index.html`, `mods.html`,
+`chronicles.html`, `compat.html`, `guides.html`, `handbook.html` `updates.html` and `mod-guide.html`; they also work when opened directly from disk.
 
 Build the deployable directory with Python 3.11 or later:
 
@@ -36,6 +36,11 @@ runs skip deployment when main already contains a newer commit.
 - `mods.html` / `handbook.js`: unified searchable catalog, capabilities and guide links.
   All 181 mandatory mods are described; libraries can be shown separately.
   `handbook.html` retains old bookmarks through a query/anchor-preserving redirect.
+- `mod-guide.html`: 23 mechanic guides covering 44 installed mods; start, progression,
+  troubleshooting, version-specific notes and primary sources.
+  `mod-guides.json` owns the reviewed content. Run `python3 scripts/build_guides.py`
+  after editing it; the build rejects stale HTML or catalog index.
+  `mod-guide-index.js` connects the guides to catalog cards and Russian searches.
 - `guides.html`: five detailed guides for Herbcraft Core, Alchemy, Cuisine,
   Arcana Novum and Compat. The four additions are installed on the server.
 - `updates.html`: pack history 0.4.2–0.5.0, exact changed files and checksums.

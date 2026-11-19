@@ -5,12 +5,13 @@ from pathlib import Path
 import hashlib
 import shutil
 from urllib.parse import unquote, urlsplit
+from build_guides import check_generated
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "dist"
 PUBLIC_FILES = (
     "index.html", "mods.html", "chronicles.html", "compat.html", "guides.html", "handbook.html", "updates.html",
-    "handbook-redirect.js",
+    "handbook-redirect.js", "mod-guide.html", "mod-guide.css", "mod-guide.js", "mod-guide-index.js", "mod-guides.json",
     "reference.css", "handbook.js", "handbook-data.js", "updates.js", "updates-data.js", "guides-nav.js",
     "guides.css", "compat.css", "site.css", "site.js",
     "experiences.js", "data.js", "chronicles.css", "chronicles.js",
@@ -38,6 +39,7 @@ class Page(HTMLParser):
 
 
 def main():
+    check_generated()
     files = {Path(name) for name in PUBLIC_FILES}
     for folder in ("images", "icons"):
         for path in (ROOT / folder).rglob("*"):
