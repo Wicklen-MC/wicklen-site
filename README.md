@@ -12,7 +12,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
 Open `http://127.0.0.1:8765/`. The eight pages are `index.html`, `mods.html`,
-`chronicles.html`, `compat.html`, `guides.html`, `handbook.html` `updates.html` and `mod-guide.html`; they also work when opened directly from disk.
+`chronicles.html`, `compat.html`, `guides.html`, `handbook.html`, `updates.html` and `mod-guide.html`; they also work when opened directly from disk.
 
 Build the deployable directory with Python 3.11 or later:
 
@@ -36,8 +36,12 @@ runs skip deployment when main already contains a newer commit.
 - `mods.html` / `handbook.js`: unified searchable catalog, capabilities and guide links.
   All 181 mandatory mods are described; libraries can be shown separately.
   `handbook.html` retains old bookmarks through a query/anchor-preserving redirect.
-- `mod-guide.html`: 23 mechanic guides covering 44 installed mods; start, progression,
+- `mod-guide.html`: 23 full guides covering 44 installed mods; preparation, walkthroughs, progression,
   troubleshooting, version-specific notes and primary sources.
+  The expanded edition has 680–1086 words per guide, 7–11 chapters,
+  chapter navigation, ordered walkthroughs, reference tables and optional spoilers.
+  Long website content lives in `siteIntro`, `siteGoal`, `sections` and `faq`;
+  the separate `short` cards remain unchanged for the Spirit prototype/export.
   `mod-guides.json` owns the reviewed content. Run `python3 scripts/build_guides.py`
   after editing it; the build rejects stale HTML or catalog index.
   `mod-guide-index.js` connects the guides to catalog cards and Russian searches.

@@ -3,7 +3,7 @@ import hashlib
 from pathlib import Path
 import unittest
 from urllib.parse import urlsplit
-from build_guides import check_generated
+from build_guides import check_generated, guide_word_count
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -45,6 +45,26 @@ class ModGuideTests(unittest.TestCase):
                     self.assertEqual('https',url.scheme);self.assertTrue(url.netloc)
                 self.assertTrue(set(topic['related'])<=ids)
                 self.assertNotIn(topic['id'],topic['related'])
+
+    def test_full_site_guides_have_chapters_walkthroughs_and_valid_tables(self):
+        for topic in self.data['topics']:
+            with self.subTest(topic=topic['id']):
+                self.assertTrue(topic.get('siteIntro'))
+                self.assertGreaterEqual(guide_word_count(topic),500)
+                self.assertGreaterEqual(len(topic['sections']),7)
+                ids=[s['id'] for s in topic['sections']]
+                self.assertEqual(len(ids),len(set(ids)))
+                self.assertTrue(any(s.get('steps') for s in topic['sections']))
+                used=[]
+                for section in topic['sections']:
+                    if table:=section.get('table'):
+                        self.assertGreaterEqual(len(table['headers']),2)
+                        self.assertTrue(table['rows'])
+                        for row in table['rows']:self.assertEqual(len(table['headers']),len(row))
+                    for index in section.get('images',[]):
+                        self.assertGreater(index,0);self.assertLess(index,len(topic['images']));used.append(index)
+                self.assertEqual(len(used),len(set(used)))
+                self.assertEqual(set(range(1,len(topic['images']))),set(used))
 
     def test_every_guide_has_illustrations_with_local_files_and_credits(self):
         for topic in self.data['topics']:
