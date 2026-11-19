@@ -1,5 +1,5 @@
 {
-  "packVersion": "0.5.0",
+  "packVersion": "0.6.0",
   "recipes": {
     "treetap": {
       "jar": "TechReborn-6.2.1.jar",
@@ -1130,6 +1130,73 @@
           "id": "enchantinginfuser:enchanting_infuser"
         }
       }
+    },
+    "portal-ward-1": {
+      "jar": "gatewayofdoom-fabric-26.3-2.3.6.jar",
+      "jarSha256": "e73153eaad829c676aac6994d0bf1bc179d86671dd75cd38c22465bea477b929",
+      "resource": "data/gateway_of_doom/recipe/portal_ward_1.json",
+      "resourceSha256": "af900dd6e6f5ef5ff5e2f7463b80682bd053e80620e3506f4f13bc103944896d",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "A": "minecraft:amethyst_shard",
+          "O": "minecraft:crying_obsidian",
+          "R": "minecraft:redstone"
+        },
+        "pattern": [
+          "ORO",
+          "RAR",
+          "ORO"
+        ],
+        "result": {
+          "id": "gateway_of_doom:portal_ward_1"
+        }
+      }
+    },
+    "council-seat": {
+      "jar": "village-quest-2.6.3-mc26.3.jar",
+      "jarSha256": "f87269e7105fe47330865fac1e1bd241e22f2febe4e7c9f95d9502fcef29a64e",
+      "resource": "data/village-quest/recipe/council_seat.json",
+      "resourceSha256": "0061a80ada080d978cbd540890cf5fc4f3da6443f5a96f3f7e073d707da80a6b",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "group": "village_quest/council_seat",
+        "pattern": [
+          "PBP",
+          "PPP",
+          "S S"
+        ],
+        "key": {
+          "P": "#minecraft:planks",
+          "B": "minecraft:book",
+          "S": "minecraft:stick"
+        },
+        "result": {
+          "id": "village-quest:council_seat",
+          "count": 1
+        }
+      }
+    },
+    "bone-dagger": {
+      "jar": "graveyard-FABRIC-4.0.0+mc26.3.jar",
+      "jarSha256": "9da9acf4745db3c7ff326190b35cc31a3d947a856a442962c2f376d963f3ee3f",
+      "resource": "data/graveyard/recipe/bone_dagger.json",
+      "resourceSha256": "1578e352bdf2589635b35c9f439d928faa24e390f5f9f77cbc506feda2d4820b",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          " # ",
+          " # ",
+          " # "
+        ],
+        "key": {
+          "#": "minecraft:bone"
+        },
+        "result": {
+          "id": "graveyard:bone_dagger"
+        }
+      }
     }
   },
   "items": {
@@ -1924,6 +1991,23 @@
       "english": "Enchanting Infuser",
       "example": "enchantinginfuser:enchanting_infuser",
       "icon": "images/guides/items/enchantinginfuser-enchanting_infuser.png"
+    },
+    "gateway_of_doom:portal_ward_1": {
+      "label": "Hell Ward I — защита от порталов",
+      "english": "Hell Ward I",
+      "example": "gateway_of_doom:portal_ward_1",
+      "icon": "images/guides/items/gateway_of_doom-portal_ward_1.png"
+    },
+    "village-quest:council_seat": {
+      "label": "Стол совета",
+      "english": "Council Seat",
+      "example": "village-quest:council_seat"
+    },
+    "graveyard:bone_dagger": {
+      "label": "Костяной кинжал",
+      "english": "Bone Dagger",
+      "example": "graveyard:bone_dagger",
+      "icon": "images/guides/items/graveyard-bone_dagger.png"
     }
   }
 }

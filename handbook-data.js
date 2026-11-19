@@ -1,7 +1,7 @@
 window.WICKLEN_HANDBOOK = {
-  "version": "0.5.0",
-  "liveVersion": "0.5.0",
-  "sourceLockSha256": "f87d11782b46267e5b41898b254417cfe1acbd6f3afe02913566f4a485d24051",
+  "version": "0.6.0",
+  "liveVersion": "0.6.0",
+  "sourceLockSha256": "978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483",
   "overrides": {},
   "additions": [],
   "guideLinks": {

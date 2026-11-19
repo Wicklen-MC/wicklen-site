@@ -1,5 +1,5 @@
 window.WICKLEN_GUIDE_INDEX = {
-  "packVersion": "0.5.0",
+  "packVersion": "0.6.0",
   "topics": [
     {
       "id": "chronicles",
@@ -169,7 +169,7 @@ window.WICKLEN_GUIDE_INDEX = {
       "title": "Gateway of Doom: ключи и испытания",
       "group": "Приключения",
       "aliases": "gateway ключ портал арена волны испытание босс boss checklist",
-      "summary": "В Wicklen Gateway проводит испытания дворов Chronicles. Обычные ключи не выпадают.",
+      "summary": "Ключи Gateway открывают бои с волнами и боссами. В путешествии портал может появиться сам.",
       "href": "mod-guide.html?topic=gateways#guide-gateways",
       "modIds": [
         "Z7xAH01M",

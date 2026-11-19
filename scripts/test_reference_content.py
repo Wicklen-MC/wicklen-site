@@ -43,6 +43,20 @@ class ReferenceContentTests(unittest.TestCase):
         self.assertEqual(data('chronicles-release.js')['version'], updates['liveVersion'])
         self.assertEqual(data('handbook-data.js')['version'], updates['latestVersion'])
 
+    def test_configuration_release_keeps_compatible_client_clear(self):
+        release=data('updates-data.js')['releases'][0]
+        self.assertEqual('pack-0-6-0',release['id'])
+        self.assertEqual(4,len(release['changes']))
+        self.assertEqual(3,sum(item['side']=='сервер' for item in release['changes']))
+        self.assertIn('достаточно переподключиться',release['notice'])
+        self.assertEqual('0.5.0',data('chronicles-release.js')['updateFrom'])
+        self.assertEqual('0.4.4',data('chronicles-release.js')['chroniclesVersion'])
+        for name in ['index.html','chronicles.html','updates.html']:
+            text=(ROOT/name).read_text()
+            self.assertIn('0.6.0',text)
+            self.assertIn('переподключиться',text)
+            self.assertNotIn('удалите Compat 0.1.1',text)
+
     def test_compat_is_a_guide_and_not_a_primary_navigation_link(self):
         for name in ['index.html', 'mods.html', 'chronicles.html', 'compat.html', 'guides.html', 'updates.html']:
             nav = Navigation(); nav.feed((ROOT / name).read_text())

@@ -47,7 +47,7 @@
     const mods = source.mods.map(mod => ({...mod, ...(latest ? extra.overrides[mod.id] || {} : {}), ...(mod.id === 'wicklen-pack-compat' ? {category:'comfort'} : {})}));
     if (latest) mods.push(...extra.additions);
     grid.replaceChildren();
-    document.querySelector('#version-status').textContent = latest ? 'Выпуск доступен для скачивания. На игровом сервере пока 0.4.5; новые Herbcraft и Arcana появятся там после обновления.' : `Этот состав установлен на игровом сервере. Для входа скачайте совместимую сборку ${source.version}.`;
+    document.querySelector('#version-status').textContent = latest ? `Выпуск ${extra.version} доступен отдельно. Текущая серверная сборка — ${source.version}.` : `Этот состав установлен на игровом сервере. Для новой установки скачайте сборку ${source.version}; с клиентом 0.5.0 достаточно переподключиться.`;
     records = mods.sort((a,b) => (b.group === 'own') - (a.group === 'own') || a.name.localeCompare(b.name, 'ru')).map(mod => {
       const element = document.createElement('details');
       element.id = `mod-${mod.id}`;

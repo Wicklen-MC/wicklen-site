@@ -143,19 +143,27 @@ class ModGuideTests(unittest.TestCase):
         atlas=next(s for s in end['sections'] if s['id']=='eye-atlas')
         self.assertEqual(16,len(atlas['finds']))
 
-    def test_gateway_guide_respects_the_published_custom_configuration(self):
+    def test_gateway_guide_matches_restored_release_configuration(self):
         topic=next(t for t in self.data['topics'] if t['id']=='gateways')
         settings=topic['packSettings']
         self.assertEqual('CUSTOM',settings['portalContentMode'])
         for field in ('mobDropsEnabled','automaticGatewaysEnabled','chestDropsEnabled'):
-            self.assertIs(False,settings[field])
-        self.assertEqual(['wicklen_courtyard_v1','wicklen_courtyard_empowered_v1'],settings['profiles'])
-        self.assertTrue(topic['notice'])
-        self.assertIn('не выпадают',topic['notice']['title'])
-        self.assertNotIn('Найди ключ',' '.join(topic['short']['steps']))
+            self.assertIs(True,settings[field])
+        self.assertEqual({'wicklen_courtyard_v1','wicklen_courtyard_empowered_v1',
+                          'runestone_gate','necromancer_gate','maelstrom_portal',
+                          'golden_rune_gate_overworld','golden_rune_gate_nether','golden_rune_gate_end'},set(settings['profiles']))
+        self.assertEqual({'wicklen_runestone_exploration','golden_event_overworld',
+                          'golden_event_nether','golden_event_end'},set(settings['automaticRules']))
         keys=next(s for s in topic['sections'] if s['id']=='keys')['finds']
         self.assertEqual(4,len(keys))
-        for key in keys:self.assertIn('Не выпадает',key['availability'])
+        for key in keys:self.assertEqual('Доступен в Wicklen 0.6.0',key['availability'])
+        self.assertNotIn('не выпадают',topic['notice']['title'])
+        ward=next(s for s in topic['sections'] if s['id']=='wards')
+        self.assertEqual(['portal-ward-1'],ward['recipes'])
+        recipe=json.loads((ROOT/'guide-recipes.json').read_text())['recipes']['portal-ward-1']['raw']
+        self.assertEqual(['ORO','RAR','ORO'],recipe['pattern'])
+        self.assertEqual({'A':'minecraft:amethyst_shard','O':'minecraft:crying_obsidian','R':'minecraft:redstone'},recipe['key'])
+        self.assertEqual('gateway_of_doom:portal_ward_1',recipe['result']['id'])
 
     def test_search_icon_provenance(self):
         folder=ROOT/'images/guides/finders'

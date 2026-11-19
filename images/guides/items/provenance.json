@@ -772,5 +772,29 @@
     "sha256": "cc350569433eb8f23dda0468f11995d0bc00091ca39cc66d1946429d76d522d8",
     "jar": "e68e6a98a75358a0-enchantinginfuser-v26.3.0-mc26.3.x+fabric.jar",
     "resource": "assets/enchantinginfuser/textures/block/enchanting_infuser_side.png"
+  },
+  {
+    "file": "images/guides/items/gateway_of_doom-portal_ward_1.png",
+    "sha256": "c57522430de20b6c09c8337f158f3507c3ac2efd41784b23b9270b8211c6f955",
+    "jar": "d814f38da6f49000-gatewayofdoom-fabric-26.3-2.3.6.jar",
+    "resource": "assets/gateway_of_doom/textures/block/portal_ward_side_1.png"
+  },
+  {
+    "file": "images/guides/items/graveyard-bone_dagger.png",
+    "sha256": "c1a4f044e55e51f204d544805aa04ffb35bb9cd071d7083e478622cef93f1319",
+    "jar": "2dd4fdf011184380-graveyard-FABRIC-4.0.0+mc26.3.jar",
+    "resource": "assets/graveyard/textures/item/bone_dagger.png"
+  },
+  {
+    "file": "images/guides/items/graveyard-vial_of_blood.png",
+    "sha256": "92b3f3f568ce3c6ceb6c76add0aae263bc9e4d2151237bb9306819abf5786bb3",
+    "jar": "2dd4fdf011184380-graveyard-FABRIC-4.0.0+mc26.3.jar",
+    "resource": "assets/graveyard/textures/item/vial_of_blood_08.png"
+  },
+  {
+    "file": "images/guides/items/graveyard-corruption.png",
+    "sha256": "a0939dbeeecfff2bf73727eddf518e3cbc018f653d842cf8b6f7ca5bde277bdd",
+    "jar": "2dd4fdf011184380-graveyard-FABRIC-4.0.0+mc26.3.jar",
+    "resource": "assets/graveyard/textures/item/corruption.png"
   }
 ]

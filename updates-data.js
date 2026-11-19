@@ -1,21 +1,156 @@
 window.WICKLEN_UPDATES = {
-  "liveVersion": "0.5.0",
-  "latestVersion": "0.5.0",
+  "liveVersion": "0.6.0",
+  "latestVersion": "0.6.0",
   "sourceLocks": {
     "0.4.2": "7cb2c67ada91ce6eaf19dde2cc40e090da851cf6ee4fcbf71ce696f450a18003",
     "0.4.3": "cd499423a7b51636668fa21942aa652cb014d110778fcd9579e7fc8c46c248fe",
     "0.4.4": "786f162a6da9f209601061c7817128a45f199b66004ff6ef3fc244fc80317f69",
     "0.4.5": "3579e2d88e83a2a397f7ea3ea07b4e4a8d6dac7c08e8c1356708d567467a0fde",
-    "0.5.0": "f87d11782b46267e5b41898b254417cfe1acbd6f3afe02913566f4a485d24051"
+    "0.5.0": "f87d11782b46267e5b41898b254417cfe1acbd6f3afe02913566f4a485d24051",
+    "0.6.0": "978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483"
   },
   "releases": [
+    {
+      "id": "pack-0-6-0",
+      "kind": "Сборка",
+      "date": "19.11.2026",
+      "title": "Wicklen 0.6.0",
+      "description": "Minecraft 26.3 · Fabric 0.20.1 · Java 25 · 124 клиентских / 169 серверных JAR. Состав модов прежний.",
+      "notice": "Установлено на игровом сервере. С клиентом 0.5.0 достаточно переподключиться; обязательного обновления файлов нет.",
+      "notes": [
+        "Gateway: ключи снова находятся в сундуках и выпадают с мобов, доступны Runeroot, Reaper, Voidwing и Azure Ronin. Дворы Chronicles сохранены.",
+        "В обычном мире случайно появляются Runestone и более редкие Golden Rune. В Незере и Крае Golden Rune работает по таймеру 30–90 минут; событие не гарантировано.",
+        "В новых чанках возвращены три редких деревни Repurposed Structures. Максимальная волна орды увеличена с 8 до 10; интервал 7 дней, предел 24 и отключённый TNT сохранены.",
+        "JAR, перевод, модели Polymer и Java/Fabric не изменились. Chronicles 0.4.4 и Compat 0.1.2 прежние. Необязательный патч переносит только Gateway-конфиг и сведения о выпуске."
+      ],
+      "primary": [
+        {
+          "file": "wicklen-0.6.0-players.zip",
+          "bytes": 463183154,
+          "sha256": "ebe1f2e8548951707ea942a20616fb3fca17931094fd9e04771db00bcad2c087",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.6.0-players.zip",
+          "label": "Полный клиент 0.6.0"
+        },
+        {
+          "file": "wicklen-0.5.0-to-0.6.0-update.zip",
+          "bytes": 125079,
+          "sha256": "d96fa1e6f857dd577a4d357f1648f75106f2373bd429a4aeb4ebcccd9f9d8757",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.5.0-to-0.6.0-update.zip",
+          "label": "Необязательный патч с 0.5.0"
+        }
+      ],
+      "changes": [
+        {
+          "file": "config/gateway_of_doom.json",
+          "href": "https://github.com/Wicklen-MC/wicklen-releases/releases/download/pack-v0.6.0/gateway_of_doom.json",
+          "sha256": "15672129c10c438b877cd92b2e057f4612c3b8302caf562d6aed84a0fc24eefa",
+          "bytes": 80733,
+          "side": "сервер",
+          "status": "Обновлён",
+          "note": "Возвращены шесть стандартных профилей, ключи, четыре босса и автоматические порталы. Оба двора Chronicles сохранены."
+        },
+        {
+          "file": "config/cristellib/repurposed_structures/structure_toggle_config.json5",
+          "href": "https://github.com/Wicklen-MC/wicklen-releases/releases/download/pack-v0.6.0/structure_toggle_config.json5",
+          "sha256": "9d7ea7ac68ed4c6ce776e4eeebe803ecd40a1639e5347b7bcf77add0511d926f",
+          "bytes": 4725,
+          "side": "сервер",
+          "status": "Обновлён",
+          "note": "Включены редкие деревни в бамбуковых джунглях, гигантской тайге и горах. Появляются только в новых чанках."
+        },
+        {
+          "file": "config/undeadnights_horde_mobs_config.json",
+          "href": "https://github.com/Wicklen-MC/wicklen-releases/releases/download/pack-v0.6.0/undeadnights_horde_mobs_config.json",
+          "sha256": "c8d046c21e6ecae9d3ff9852153229e17d1098934ca7f4fdf9766c02bb056fe3",
+          "bytes": 406,
+          "side": "сервер",
+          "status": "Обновлён",
+          "note": "Максимальная волна 8 → 10. Интервал 7 дней и предел 24 одновременно загруженных мобов сохранены."
+        },
+        {
+          "file": "config/gateway_of_doom.json",
+          "href": "https://github.com/Wicklen-MC/wicklen-releases/releases/download/pack-v0.6.0/gateway_of_doom.json",
+          "sha256": "15672129c10c438b877cd92b2e057f4612c3b8302caf562d6aed84a0fc24eefa",
+          "bytes": 80733,
+          "side": "клиент, необязательно",
+          "status": "Обновлён",
+          "note": "Те же настройки для одиночной игры. Для входа на сервер с клиентом 0.5.0 копировать файл не требуется."
+        }
+      ],
+      "files": [
+        {
+          "file": "PLAYER-INSTRUCTIONS-0.6.0.md",
+          "bytes": 771,
+          "sha256": "b95c19bb3a980e48313bdc706e774d441d60eb441ebfef3ad4af986cf9a6e1ce",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/PLAYER-INSTRUCTIONS-0.6.0.md",
+          "label": "Инструкция установки"
+        },
+        {
+          "file": "UPDATE.json",
+          "bytes": 279,
+          "sha256": "0c649bf5148c2cb8a6a4ff65b2a68fe4b47b107ceb70679a3d3a4ceb57069357",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/UPDATE.json",
+          "label": "Состав необязательного патча"
+        },
+        {
+          "file": "manifest-0.6.0.json",
+          "bytes": 43433,
+          "sha256": "d650b873f456962189e456883266bbe901bdb2292036db30bf52148606e61913",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/manifest-0.6.0.json",
+          "label": "Манифест клиента"
+        },
+        {
+          "file": "server-manifest-0.6.0.json",
+          "bytes": 38744,
+          "sha256": "820553c3ca0724cca0e9afb4a09f036e00968febbfbc1838aa63ccc03bd81acb",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/server-manifest-0.6.0.json",
+          "label": "Манифест сервера"
+        },
+        {
+          "file": "wicklen-0.5.0-to-0.6.0-update.zip",
+          "bytes": 125079,
+          "sha256": "d96fa1e6f857dd577a4d357f1648f75106f2373bd429a4aeb4ebcccd9f9d8757",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.5.0-to-0.6.0-update.zip",
+          "label": "Необязательный патч настроек 0.5.0 → 0.6.0"
+        },
+        {
+          "file": "wicklen-0.6.0-players.zip",
+          "bytes": 463183154,
+          "sha256": "ebe1f2e8548951707ea942a20616fb3fca17931094fd9e04771db00bcad2c087",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.6.0-players.zip",
+          "label": "Полный клиент"
+        },
+        {
+          "file": "wicklen-0.6.0-server.zip",
+          "bytes": 497096431,
+          "sha256": "094f13dae4ea114f3e320cb6812e4696935ac5098e9bda5dad09d46f7f80c24d",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.6.0-server.zip",
+          "label": "Серверный комплект"
+        },
+        {
+          "file": "pack.lock.json",
+          "bytes": 155228,
+          "sha256": "978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/pack.lock.json",
+          "label": "Точный состав и хеши"
+        },
+        {
+          "file": "SHA256SUMS-0.6.0.txt",
+          "bytes": 716,
+          "sha256": "44edd04fdd7f9c951b0a6b1a255a5861c62d475a4802b859f48e93a8ba138d97",
+          "href": "https://downloads.wicklen.link/releases/0.6.0/SHA256SUMS-0.6.0.txt",
+          "label": "Контрольные суммы"
+        }
+      ],
+      "releaseUrl": "https://github.com/Wicklen-MC/wicklen-releases/releases/tag/pack-v0.6.0"
+    },
     {
       "id": "pack-0-5-0",
       "kind": "Сборка",
       "date": "18.11.2026",
       "title": "Wicklen 0.5.0",
       "description": "Minecraft 26.3 · Fabric 0.20.1 · Java 25 · 124 клиентских / 169 серверных JAR.",
-      "notice": "Установлено на игровом сервере. Для входа используйте клиент 0.5.0.",
+      "notice": "Предыдущая сборка. Клиент 0.5.0 подходит для входа на сервер 0.6.0; достаточно переподключиться.",
       "notes": [
         "Добавлены Herbcraft Core 1.1.4, Alchemy 1.1.4, Cuisine 1.1.3 и серверный Arcana Novum 4.0.12+26.3.",
         "Compat 0.1.2 возвращает карточки варки REI, пельмени и голубцы Farmer’s Delight.",
@@ -322,7 +457,7 @@ window.WICKLEN_UPDATES = {
       "date": "18.11.2026",
       "title": "Wicklen 0.4.5",
       "description": "Minecraft 26.3 · Fabric 0.20.1 · Java 25 · 121 клиентских / 165 серверных JAR.",
-      "notice": "Предыдущая сборка. Для текущего сервера используйте 0.5.0.",
+      "notice": "Предыдущая сборка. Для новой установки используйте 0.6.0; клиент 0.5.0 тоже совместим с текущим сервером.",
       "notes": [
         "Compat обновлён до 0.1.1: защита Mochi на плече от урона владельца и перехвата прицела.",
         "Chronicles 0.4.4 сохраняет бесшумность духа с Presence Footsteps."

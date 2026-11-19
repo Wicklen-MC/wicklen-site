@@ -32,13 +32,13 @@ runs skip deployment when main already contains a newer commit.
 
 ## Pages and content
 
-- `index.html`: gameplay directions, Chronicles and installation of the live pack 0.5.0.
+- `index.html`: gameplay directions, Chronicles and installation of the live pack 0.6.0.
 - `mods.html` / `handbook.js`: unified searchable catalog, capabilities and guide links.
   All 181 mandatory mods are described; libraries can be shown separately.
   `handbook.html` retains old bookmarks through a query/anchor-preserving redirect.
 - `mod-guide.html`: 23 full guides covering 44 installed mods; preparation, walkthroughs, progression,
   troubleshooting, version-specific notes and primary sources.
-  The practical edition includes material locations, 54 binary-backed recipe cards,
+  The practical edition includes material locations, 57 binary-backed recipe cards,
   ingredient counts, workstation instructions and optional boss spoilers.
   Website content lives in `siteIntro`, `sections` and `faq`;
   the separate `short` cards remain unchanged for the Spirit prototype/export.
@@ -51,13 +51,14 @@ runs skip deployment when main already contains a newer commit.
   ingredient labels and icons. Chapter `recipes` arrays reference its IDs. Schematics
   are HTML, not screenshots. Original item textures and their extraction hashes live
   under `images/guides/items/`; their provenance JSON is not publicly packaged.
-  Guides show screenshots beside instructions and 31 item-finding cards across
-  seven topics, including all 16 End Remastered eyes and four native key captures.
+  Guides show screenshots beside instructions and 33 item-finding cards across
+  eight topics, including all 16 End Remastered eyes and four native key captures.
   Each finding card records a biome/dimension, a specific location and acquisition.
   `images/guides/finders/provenance.json` records the added original item textures.
-  Gateway explicitly follows the released CUSTOM configuration: chest/mob key
-  drops and automatic events are disabled. Standard keys and their default loot
-  locations are reference-only; player instructions use the Chronicles courtyard.
+  Gateway follows the 0.6.0 CUSTOM configuration: six standard profiles, four bosses,
+  chest/mob key drops and four automatic-event rules are restored alongside the two
+  Chronicles courtyards. The guide includes key finding cards and the binary-backed
+  Hell Ward I recipe for protecting a base from new ordinary portals.
   Captions identify native Wicklen screenshots, author screenshots and
   explanatory diagrams. Click an image to enlarge; Escape closes the viewer.
   `images/guides/mods/provenance.json` records origins and checksums; it is excluded
@@ -66,16 +67,16 @@ runs skip deployment when main already contains a newer commit.
   Author imagery uses local optimized copies with credits and version notes.
 - `guides.html`: five detailed guides for Herbcraft Core, Alchemy, Cuisine,
   Arcana Novum and Compat. The four additions are installed on the server.
-- `updates.html`: pack history 0.4.2–0.5.0, exact changed files and checksums.
+- `updates.html`: pack history 0.4.2–0.6.0, exact changed files and checksums.
 - `chronicles.html`: Chronicles 0.4.4, settings and genuine native screenshot gallery.
 - `compat.html`: Compat 0.1.2, REI fixes, Mochi protection and install instructions.
-- `data.js`: live pack 0.5.0 inventory from its immutable release lock:
+- `data.js`: live pack 0.6.0 inventory from its immutable release lock:
   181 unique mods, 169 server / 124 client JARs. Source IDs, membership, filenames
   and SHA-512 values match the lock. Existing descriptions and local icons persist.
 - `handbook-data.js`: guide links and the source lock digest. Additions/overrides
   are empty because the new release has been adopted into the live catalog.
-- `chronicles-release.js`: pack 0.5.0 downloads; mod version remains 0.4.4.
-  The delta starts from pack 0.4.5. Exact sizes and SHA-256 come from publication.json.
+- `chronicles-release.js`: pack 0.6.0 downloads; mod version remains 0.4.4.
+  The optional delta starts from pack 0.5.0 and only updates the Gateway config and release metadata. Clients 0.5.0 can simply reconnect to the server. Exact sizes and SHA-256 come from the immutable release artifacts.
 - `deployment.js`: public game address without credentials.
 - `images/guides/`, `images/chronicles/en`, `images/wanderer`, `videos/chronicles`:
   genuine native captures with their original provenance, separate from HTML concepts.
@@ -100,7 +101,7 @@ screenshots of **development mod 0.4.3-SNAPSHOT**. The video has ordinary contro
 no autoplay and `preload="none"`; it also works without JavaScript. Existing
 keyboard gallery navigation includes the new frames. The page announces the published
 **Chronicles 0.4.4** release. Recommended live-server downloads use
-**pack 0.4.5 / Chronicles 0.4.4 / Compat 0.1.1** after server adoption; the standalone release is linked separately.
+**pack 0.6.0 / Chronicles 0.4.4 / Compat 0.1.2** after server adoption; the standalone release is linked separately.
 Screenshot WebP conversion is lossless;
 the original MP4 is preserved unchanged.
 
@@ -122,8 +123,8 @@ mutable preview profile.
 
 ## Hosting and downloads
 
-The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.5.0/`, including the full client,
-the patch from 0.4.4, instructions, manifest and checksums. These are the five
+The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.6.0/`, including the full client,
+the optional configuration patch from 0.5.0, instructions, manifest and checksums. These are the five
 published files listed by `data.js`; no optional performance/graphics archive is
 advertised by this catalog. ZIP files belong on the game VPS, outside this
 repository and the site's `dist/`.

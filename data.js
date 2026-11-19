@@ -1,9 +1,9 @@
 // Public catalog pinned to the installed Wicklen pack 0.5.0.
 window.MODS = {
-  "generated": "2026-11-18",
+  "generated": "2026-11-19",
   "name": "Wicklen",
   "nameRu": "Виклен",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "profile": "production",
   "minecraft": "26.3",
   "loader": "Fabric 0.20.1",
@@ -103,11 +103,11 @@ window.MODS = {
       "category": "adventure",
       "group": "difficulty",
       "highlight": true,
-      "description": "Порталы с волнами противников служат основой боевых испытаний у станций Wicklen.",
+      "description": "Ключи и случайные порталы открывают бои с волнами и четырьмя боссами. Дворы Chronicles — отдельные испытания.",
       "points": [
-        "В испытании нужно справиться с последовательными волнами мобов.",
-        "Состав волн и правила задаются настройками сборки.",
-        "В Wicklen испытания связаны с собственными станциями; случайное наблюдение чужого данжа не создаёт там арену."
+        "В 0.6.0 ключи снова доступны в добыче; Runestone, Necromancer, Maelstrom и Golden Rune заканчиваются боссом.",
+        "В путешествии могут появиться Runestone и Golden Rune; Hell Ward защищает выбранные чанки от новых обычных порталов.",
+        "Дворы Chronicles запускаются через дневник G без ключей и сохранены рядом со стандартными встречами."
       ],
       "icon": false,
       "name": "Gateway of Doom",
@@ -900,7 +900,7 @@ window.MODS = {
     {
       "id": "muf0XoRe",
       "name": "Repurposed Structures",
-      "description": "Добавляет варианты знакомых структур для разных биомов. В этой сборке часть дополнительных деревень отключена.",
+      "description": "Варианты знакомых структур в разных биомах. В 0.6.0 возвращены три редких вида деревень.",
       "category": "adventure",
       "highlight": false,
       "side": "server",
@@ -908,9 +908,9 @@ window.MODS = {
       "version": "7.8.4+26.3-fabric",
       "optional": false,
       "points": [
-        "Альтернативные версии ванильных структур.",
-        "Одни и те же биомы дают разные постройки — мир менее предсказуем.",
-        "Лут сбалансирован с остальными структурами сборки."
+        "В новых чанках встречаются дополнительные деревни бамбуковых джунглей, гигантской тайги и гор.",
+        "Уже исследованные участки карты сохраняются; новые постройки там не добавляются.",
+        "Часть остальных вариантов деревень остаётся отключена в настройках Wicklen."
       ],
       "url": "https://modrinth.com/mod/muf0XoRe",
       "icon": true,
@@ -5038,61 +5038,61 @@ window.MODS = {
   ],
   "downloads": [
     {
-      "file": "wicklen-0.5.0-players.zip",
+      "file": "wicklen-0.6.0-players.zip",
       "kind": "main",
       "label": "Основная сборка",
-      "href": "https://downloads.wicklen.link/releases/0.5.0/wicklen-0.5.0-players.zip",
-      "size": 463110806,
-      "sha256": "28c8444b58ee29676b0f71b085339bcac3da45c1e21cef232c24e6dd105db752",
-      "sizeHuman": "463,1 МБ"
+      "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.6.0-players.zip",
+      "size": 463183154,
+      "sha256": "ebe1f2e8548951707ea942a20616fb3fca17931094fd9e04771db00bcad2c087",
+      "sizeHuman": "463,2 МБ"
     },
     {
-      "file": "wicklen-0.4.5-to-0.5.0-update.zip",
+      "file": "wicklen-0.5.0-to-0.6.0-update.zip",
       "kind": "update",
-      "label": "Обновление с 0.4.5",
-      "href": "https://downloads.wicklen.link/releases/0.5.0/wicklen-0.4.5-to-0.5.0-update.zip",
-      "size": 14668501,
-      "sha256": "99a7bbd7f7d93586aed7a740947bd4924c1b01921982efea1309298b1bf5164d",
-      "sizeHuman": "14,7 МБ"
+      "label": "Необязательный патч с 0.5.0",
+      "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.5.0-to-0.6.0-update.zip",
+      "size": 125079,
+      "sha256": "d96fa1e6f857dd577a4d357f1648f75106f2373bd429a4aeb4ebcccd9f9d8757",
+      "sizeHuman": "125,1 КБ"
     },
     {
-      "file": "manifest-0.5.0.json",
+      "file": "manifest-0.6.0.json",
       "kind": "manifest",
       "label": "Точные версии модов",
-      "href": "https://downloads.wicklen.link/releases/0.5.0/manifest-0.5.0.json",
+      "href": "https://downloads.wicklen.link/releases/0.6.0/manifest-0.6.0.json",
       "size": 43433,
-      "sha256": "ed748c96bf9bf6057823354a0a83ff8fde51c87770cc2c76b8b58be88bbf2228",
+      "sha256": "d650b873f456962189e456883266bbe901bdb2292036db30bf52148606e61913",
       "sizeHuman": "43,4 КБ"
     },
     {
-      "file": "PLAYER-INSTRUCTIONS-0.5.0.md",
+      "file": "PLAYER-INSTRUCTIONS-0.6.0.md",
       "kind": "instructions",
       "label": "Инструкция (текст)",
-      "href": "https://downloads.wicklen.link/releases/0.5.0/PLAYER-INSTRUCTIONS-0.5.0.md",
+      "href": "https://downloads.wicklen.link/releases/0.6.0/PLAYER-INSTRUCTIONS-0.6.0.md",
       "size": 771,
-      "sha256": "5bf03dec512508a2ece87e9ca4959c6b6044ff51a68158320467750d7b985324",
+      "sha256": "b95c19bb3a980e48313bdc706e774d441d60eb441ebfef3ad4af986cf9a6e1ce",
       "sizeHuman": "771 Б"
     },
     {
-      "file": "SHA256SUMS-0.5.0.txt",
+      "file": "SHA256SUMS-0.6.0.txt",
       "kind": "checksums",
       "label": "Суммы SHA-256",
-      "href": "https://downloads.wicklen.link/releases/0.5.0/SHA256SUMS-0.5.0.txt",
+      "href": "https://downloads.wicklen.link/releases/0.6.0/SHA256SUMS-0.6.0.txt",
       "size": 716,
-      "sha256": "1e2e25de1954573411aa7d62c84c33e41a58b72cfa2b788c9f37e124c07efc68",
+      "sha256": "44edd04fdd7f9c951b0a6b1a255a5861c62d475a4802b859f48e93a8ba138d97",
       "sizeHuman": "716 Б"
     }
   ],
   "changelog": {
-    "date": "18.11.2026",
+    "date": "19.11.2026",
     "entries": [
-      "На сервер установлена сборка 0.5.0: Herbcraft Core, Alchemy, Cuisine и Arcana Novum.",
-      "Compat 0.1.2 исправляет карточки варки и блюд в REI. Chronicles остаётся 0.4.4.",
-      "Обновлены русский ресурспак и модели Polymer. Лимит трёх точек home сохранён."
+      "Возвращены ключи, четыре босса и случайные порталы Gateway; дворы Chronicles сохранены.",
+      "В новых чанках снова встречаются три редких вида деревень. Волна орды увеличена с 8 до 10 мобов, предел одновременно загруженных врагов — 24.",
+      "С клиентом 0.5.0 достаточно переподключиться. JAR и ресурспаки не менялись; патч настроек нужен только по желанию."
     ]
   },
-  "instructionsText": "# Wicklen pack 0.5.0\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n\nEnable the included Wicklen Polymer resource pack for server item models/textures. For Russian, enable ru-mods above it. Arcana Novum does not need a client JAR.\n",
-  "sumsText": "5bf03dec512508a2ece87e9ca4959c6b6044ff51a68158320467750d7b985324  PLAYER-INSTRUCTIONS-0.5.0.md\n7fc362925ac1006cd2c1792c98216d076d9444729af3f5ce0b0e0982bdcbc3f5  UPDATE.json\ned748c96bf9bf6057823354a0a83ff8fde51c87770cc2c76b8b58be88bbf2228  manifest-0.5.0.json\nf87d11782b46267e5b41898b254417cfe1acbd6f3afe02913566f4a485d24051  pack.lock.json\n54ef958153f0673604c22bc3eba17e89fcf69b3162d038459cee49f7b68b7086  server-manifest-0.5.0.json\n99a7bbd7f7d93586aed7a740947bd4924c1b01921982efea1309298b1bf5164d  wicklen-0.4.5-to-0.5.0-update.zip\n28c8444b58ee29676b0f71b085339bcac3da45c1e21cef232c24e6dd105db752  wicklen-0.5.0-players.zip\n13bef9473efe6307f97001f78655c27cd3dd143d469a4ba68f85760d09b4868f  wicklen-0.5.0-server.zip\n",
+  "instructionsText": "# Wicklen pack 0.6.0\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n\nEnable the included Wicklen Polymer resource pack for server item models/textures. For Russian, enable ru-mods above it. Arcana Novum does not need a client JAR.\n",
+  "sumsText": "b95c19bb3a980e48313bdc706e774d441d60eb441ebfef3ad4af986cf9a6e1ce  PLAYER-INSTRUCTIONS-0.6.0.md\n0c649bf5148c2cb8a6a4ff65b2a68fe4b47b107ceb70679a3d3a4ceb57069357  UPDATE.json\nd650b873f456962189e456883266bbe901bdb2292036db30bf52148606e61913  manifest-0.6.0.json\n978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483  pack.lock.json\n820553c3ca0724cca0e9afb4a09f036e00968febbfbc1838aa63ccc03bd81acb  server-manifest-0.6.0.json\nd96fa1e6f857dd577a4d357f1648f75106f2373bd429a4aeb4ebcccd9f9d8757  wicklen-0.5.0-to-0.6.0-update.zip\nebe1f2e8548951707ea942a20616fb3fca17931094fd9e04771db00bcad2c087  wicklen-0.6.0-players.zip\n094f13dae4ea114f3e320cb6812e4696935ac5098e9bda5dad09d46f7f80c24d  wicklen-0.6.0-server.zip\n",
   "manifestMods": [
     {
       "name": "Accelerated Decay",
@@ -6089,9 +6089,9 @@ window.MODS = {
   ],
   "catalogSource": {
     "repository": "https://github.com/Wicklen-MC/wicklen-server",
-    "path": "pack/releases/0.5.0/pack.lock.json",
-    "sha256": "f87d11782b46267e5b41898b254417cfe1acbd6f3afe02913566f4a485d24051",
-    "packVersion": "0.5.0",
+    "path": "pack/releases/0.6.0/pack.lock.json",
+    "sha256": "978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483",
+    "packVersion": "0.6.0",
     "distribution": "production",
     "mandatoryOnly": true,
     "counts": {
@@ -6101,5 +6101,5 @@ window.MODS = {
     },
     "optionalAddonsIncluded": false
   },
-  "downloadBase": "https://downloads.wicklen.link/releases/0.5.0/"
+  "downloadBase": "https://downloads.wicklen.link/releases/0.6.0/"
 };
