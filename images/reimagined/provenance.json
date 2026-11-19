@@ -1,0 +1,95 @@
+{
+  "runtime": {
+    "minecraft": "26.3",
+    "fabric_loader": "0.20.1",
+    "java": 25
+  },
+  "base_pack": "0.6.0",
+  "optional_release": "1.0.0",
+  "additional_client_mods": [
+    "entity_model_features-3.3.12-26.3-fabric.jar",
+    "entity_texture_features-7.2.7-26.3-fabric.jar",
+    "polytone-26.3-6.8.6-fabric.jar",
+    "continuity-3.0.1+26.3.jar",
+    "sodium-fabric-0.9.2+mc26.3.jar",
+    "modmenu-21.0.1.jar",
+    "placeholder-api-3.2.0+26.3.jar"
+  ],
+  "recipe_sha256": "36e5b2ca38af0205c5cb796ed0e12643402e1798eff7e7cdb9b515e67fad6373",
+  "preset_sha256": "54e896fe9b0c0ea6c0b34ebd870557d919819a8f5f222a2e5762f9bbb48be4c2",
+  "resource_stack": "frozenlib:mod/downloaded/file/ww_serene_sonder.zip,frozenlib:mod/downloaded/file/ww_pressure.zip,frozenlib:mod/downloaded/file/ww_molt.zip,frozenlib:mod/downloaded/file/ww_horizon_afoot.zip,frozenlib:mod/downloaded/file/ww_frozen_blocks.zip,frozenlib:mod/downloaded/file/ww_espial_title_mix.zip,frozenlib:mod/downloaded/file/ww_espial.zip,frozenlib:mod/downloaded/file/ww_dove.zip,frozenlib:mod/downloaded/file/ww_dahlia.zip,frozenlib:mod/downloaded/file/ww_better_days_ahead.zip,frozenlib:mod/downloaded/file/ww_anemone.zip,frozenlib:mod/downloaded/file/ww_amber.zip,vanilla,accelerateddecay,ambientsounds,appleskin,archers,armor_model_api,balm,beautify,betterarcheology,bettercombat,biomesoplenty,boss_checklist,cardinal-components,cardinal-components-base,cardinal-components-block,cardinal-components-chunk,cardinal-components-entity,cardinal-components-item,cardinal-components-level,cardinal-components-leveldata,cardinal-components-scoreboard,carryon,cloth-config,collective,combat_roll,constructionwand,continuity,cookingforblockheads,cosycritters,creativecore,debugify,diggusmaximus,distanthorizons,easy_npc,easy_npc_config_ui,enchantinginfuser,endrem,enhancedcelestials2core,enhancedcelestials2defaultlunarevents,entity_model_features,entity_texture_features,explorerscompass,fabric-advancement-api-v1,fabric-api,fabric-api-base,fabric-api-lookup-api-v1,fabric-biome-api-v1,fabric-block-api-v1,fabric-block-getter-api-v2,fabric-client-gametest-api-v1,fabric-command-api-v2,fabric-content-registries-v0,fabric-convention-tags-v2,fabric-crash-report-info-v1,fabric-creative-tab-api-v1,fabric-data-attachment-api-v1,fabric-data-generation-api-v1,fabric-debug-api-v1,fabric-dimensions-v1,fabric-entity-events-v1,fabric-events-interaction-v0,fabric-game-rule-api-v1,fabric-item-api-v1,fabric-key-mapping-api-v1,fabric-language-kotlin,fabric-lifecycle-events-v1,fabric-loot-api-v3,fabric-menu-api-v1,fabric-message-api-v1,fabric-model-loading-api-v1,fabric-networking-api-v1,fabric-object-builder-api-v1,fabric-particles-v1,fabric-permission-api-v1,fabric-recipe-api-v1,fabric-registry-sync-v0,fabric-renderer-api-v1,fabric-renderer-indigo,fabric-rendering-fluids-v1,fabric-rendering-v1,fabric-resource-conditions-api-v1,fabric-resource-loader-v0,fabric-resource-loader-v1,fabric-screen-api-v1,fabric-serialization-api-v1,fabric-sound-api-v1,fabric-tag-api-v1,fabric-transfer-api-v1,fabric-transitive-access-wideners-v1,fabricloader,fancymenu,farmersdelight,fieldguide,forgeconfigapiport,friendsandfoes,frozenlib,gateway_of_doom,graveyard,growable_ores,herbcraft,herbcraft_alchemy,herbcraft_cuisine,immersiveoverlays,inventoryprofilesnext,item_descriptions,jade,jewelry,kirin,kuma_api,legendarytooltips,libipn,lithium,lootr,mcwbridges,mcwdoors,mcwfurnitures,mcwlights,mcwpaths,mcwroofs,mcwwindows,mobchampions,mochipets,modmenu,mutantmonsters,naturalist,oregrowth,paladins,particlerain,placeholder-api,player_animation_library,polytone,presencefootsteps,prism,puffish_attributes,puffish_skills,ranged_weapon_api,reborncore,relics_artifacts,relics_rpgs,resourcefulconfig,roughlyenoughitems,runes,sereneseasons,shogi,sihywtcamd,sodium,spell_engine,spell_power,storagedelight,suikefoxfriend,supermartijn642corelib,taxfreelevels,team_reborn_energy,techreborn,terrablender,tradingpost,travelersbackpack,trinkets_updated,undeadnights,underground_villages,village-quest,villagertradingplus,visuality,visualworkbench,waddles,waystones,waystonespetsaddon,whitenoise,wicklen_chronicles,wilderwild,wizards,worldedit,xaerolib,xaerominimap,xaeroworldmap,file/reimagined.zip,file/wicklen-reimagined-preset-1.0.0.zip,file/wicklen-polymer-0.5.0.zip,file/ru-mods.zip,wilderwild:wilder_extra_music",
+  "screenshots": [
+    {
+      "file": "courtyard.webp",
+      "source_png": "reimagined--courtyard.png",
+      "source_sha256": "5c48aeb653dc2ffad792956978ad5c01522963bcd9d93c86f6126ac4cd36781c",
+      "sha256": "a18b6c1ad5064972f830340568763770db1993c98c8c81dff51b651b032a1e18",
+      "kind": "native Minecraft 26.3 screenshot",
+      "scene": "purpose-built local comparison world",
+      "shaders": false
+    },
+    {
+      "file": "interior.webp",
+      "source_png": "reimagined--interior.png",
+      "source_sha256": "483694182ae3037d67222e813525caae6fabead01eb3030ea27ab6f428ef6c47",
+      "sha256": "52303831cf0cf77224929202d74cb4a4088f1a1636e76e406145f23f0f953a66",
+      "kind": "native Minecraft 26.3 screenshot",
+      "scene": "purpose-built local comparison world",
+      "shaders": false
+    },
+    {
+      "file": "woodland.webp",
+      "source_png": "reimagined--woodland.png",
+      "source_sha256": "d3b8a091eb56f45d263e589033d645b30a9f629b094676bb8b1759fa4b73a971",
+      "sha256": "65bb6f262eab767ee6946b15e3ccdaa5bc9d2ad08e8044f8b0219024a1c8e02e",
+      "kind": "native Minecraft 26.3 screenshot",
+      "scene": "purpose-built local comparison world",
+      "shaders": false
+    },
+    {
+      "file": "materials.webp",
+      "source_png": "reimagined--materials.png",
+      "source_sha256": "1563f852fccc55ece8107efd8f18b494403cdce879d6b11a2779c7d61e42b50d",
+      "sha256": "952f02376a362efe8d88c714c0f1cae995cd3612cd31c44b3a8b61b082d92b91",
+      "kind": "native Minecraft 26.3 screenshot",
+      "scene": "purpose-built local comparison world",
+      "shaders": false
+    },
+    {
+      "file": "cavern.webp",
+      "source_png": "reimagined--cavern.png",
+      "source_sha256": "d8ad658950886984d8de2f90bd38fb532dec9f17cf64e3a7e0f7acf98168d2db",
+      "sha256": "e17d40e2cae86de5698807dcf4a243e0d710ccec7e94852fcf1ff8e64e1d0fbf",
+      "kind": "native Minecraft 26.3 screenshot",
+      "scene": "purpose-built local comparison world",
+      "shaders": false
+    },
+    {
+      "file": "farm.webp",
+      "source_png": "reimagined--farm.png",
+      "source_sha256": "43ee03d9020df5a713ef74e07aaa6a725e2c97fb95a2ecbccaa8418c96da9fd8",
+      "sha256": "11ea2eeb2cde74d42768424f53e85691229d04e48d5a7ed3aaab0508389e3111",
+      "kind": "native Minecraft 26.3 screenshot",
+      "scene": "purpose-built local comparison world",
+      "shaders": false
+    },
+    {
+      "file": "mobs.webp",
+      "source_png": "reimagined-full--mobs.png",
+      "source_sha256": "d65ef6e594bda7f298a10beb4a69ea3cb89f47b40211db6ed42b29214dff0322",
+      "sha256": "e01f5399c5853956c511b159bd03f900720f1fdedb89b560541748a052bed3cb",
+      "kind": "native Minecraft 26.3 screenshot",
+      "scene": "purpose-built local comparison world",
+      "shaders": false
+    },
+    {
+      "file": "inventory.webp",
+      "source_png": "reimagined-full--inventory-ru.png",
+      "source_sha256": "d49c9422ff6cb627b3d10acfa7e75ef71e2410c05caf0b311e3f05751dc7b41f",
+      "sha256": "c7c49c57a47b391566d79b0b2c61713c2d647b38c90f7f4903c43bdeb5ea3409",
+      "kind": "native Minecraft 26.3 screenshot",
+      "scene": "purpose-built local comparison world",
+      "shaders": false
+    }
+  ]
+}
