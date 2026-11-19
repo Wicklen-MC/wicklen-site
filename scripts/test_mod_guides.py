@@ -1,4 +1,5 @@
 import json
+import hashlib
 from pathlib import Path
 import unittest
 from urllib.parse import urlsplit
@@ -44,6 +45,29 @@ class ModGuideTests(unittest.TestCase):
                     self.assertEqual('https',url.scheme);self.assertTrue(url.netloc)
                 self.assertTrue(set(topic['related'])<=ids)
                 self.assertNotIn(topic['id'],topic['related'])
+
+    def test_every_guide_has_illustrations_with_local_files_and_credits(self):
+        for topic in self.data['topics']:
+            with self.subTest(topic=topic['id']):
+                self.assertGreaterEqual(len(topic.get('images',[])),2)
+                for image in topic['images']:
+                    self.assertTrue(image['src'].startswith('images/'))
+                    self.assertNotIn('..',Path(image['src']).parts)
+                    self.assertTrue((ROOT/image['src']).is_file())
+                    self.assertGreater(image['width'],100)
+                    self.assertGreater(image['height'],100 if image['kind']=='screenshot' else 32)
+                    self.assertTrue(image['alt']);self.assertTrue(image['caption']);self.assertTrue(image['credit'])
+                    self.assertIn(image['origin'],['author','wicklen'])
+                    self.assertEqual('https',urlsplit(image['sourceUrl']).scheme)
+
+    def test_downloaded_and_native_images_match_their_provenance(self):
+        folder=ROOT/'images/guides/mods'
+        evidence=json.loads((folder/'provenance.json').read_text())
+        published={row['publishedFile']:row for row in evidence}
+        files={p.relative_to(ROOT).as_posix() for p in folder.iterdir() if p.suffix in {'.png','.webp','.jpg'}}
+        self.assertEqual(files,set(published))
+        for file,row in published.items():
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),row.get('publishedSha256',row.get('sha256')))
 
     def test_rendered_guides_and_catalog_index_are_current(self):
         check_generated()

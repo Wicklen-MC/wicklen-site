@@ -81,6 +81,44 @@
           "title": "Wicklen: Chronicles: страница автора",
           "url": "https://github.com/Wicklen-MC/wicklen-chronicles"
         }
+      ],
+      "images": [
+        {
+          "src": "images/chronicles/en/spyglass-observation.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Наблюдение через подзорную трубу",
+          "caption": "Дождись завершения наблюдения и подтверждения записи.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen · Chronicles 0.4.3",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельного локального игрового мира."
+        },
+        {
+          "src": "images/chronicles/en/first-light.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Выбор пути в «Первом огне»",
+          "caption": "Дневник показывает условия, прогресс и награду выбранной вылазки.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen · Chronicles 0.4.3",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельного локального игрового мира."
+        },
+        {
+          "src": "images/chronicles/en/field-desk.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Полевой стол",
+          "caption": "Полевой блокнот привязывается к столу картографа.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen · Chronicles 0.4.3",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельного локального игрового мира."
+        }
       ]
     },
     {
@@ -153,6 +191,41 @@
         {
           "title": "Руководство автора",
           "url": "https://moddedmc.wiki/en/project/field-guide/latest/docs"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/field-guide-72RRCWM6-1.webp",
+          "width": 1600,
+          "height": 900,
+          "alt": "Наблюдение через подзорную трубу",
+          "caption": "Удерживай взгляд на цели и дождись завершения сканирования.",
+          "kind": "screenshot",
+          "credit": "Field Guide",
+          "sourceUrl": "https://modrinth.com/mod/72RRCWM6",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/field-guide-72RRCWM6-2.webp",
+          "width": 1600,
+          "height": 1000,
+          "alt": "Категории полевого справочника",
+          "caption": "Здесь видно, какие записи уже открыты, а какие ещё предстоит найти.",
+          "kind": "screenshot",
+          "credit": "Field Guide",
+          "sourceUrl": "https://modrinth.com/mod/72RRCWM6",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/field-guide-72RRCWM6-3.webp",
+          "width": 1600,
+          "height": 1000,
+          "alt": "Запись об изученном существе",
+          "caption": "После наблюдения открывается страница с описанием и свойствами цели.",
+          "kind": "screenshot",
+          "credit": "Field Guide",
+          "sourceUrl": "https://modrinth.com/mod/72RRCWM6",
+          "origin": "author"
         }
       ]
     },
@@ -232,6 +305,30 @@
         {
           "title": "Официальный стартовый гайд",
           "url": "https://wiki.techreborn.ovh/tutorial"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/tech-reborn-3eMENr4V-0.webp",
+          "width": 624,
+          "height": 351,
+          "alt": "Сбор сока каучукового дерева",
+          "caption": "Начало технической цепочки: сок дерева понадобится для резины.",
+          "kind": "screenshot",
+          "credit": "Tech Reborn",
+          "sourceUrl": "https://modrinth.com/mod/3eMENr4V",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/tech-reborn-3eMENr4V-1.webp",
+          "width": 624,
+          "height": 351,
+          "alt": "Машины и электросеть Tech Reborn",
+          "caption": "Пример размещения ранней мастерской и соединений между блоками.",
+          "kind": "screenshot",
+          "credit": "Tech Reborn",
+          "sourceUrl": "https://modrinth.com/mod/3eMENr4V",
+          "origin": "author"
         }
       ]
     },
@@ -320,6 +417,30 @@
         {
           "title": "Wiki Pufferfish’s Skills",
           "url": "https://puffish.net/skillsmod/docs"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/skills-4w7YR25f-0.webp",
+          "width": 1600,
+          "height": 843,
+          "alt": "Боевое дерево навыков",
+          "caption": "Выбирай узлы по связям дерева и проверяй доступные очки.",
+          "kind": "screenshot",
+          "credit": "Default Skill Trees",
+          "sourceUrl": "https://modrinth.com/mod/4w7YR25f",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/skills-4w7YR25f-1.webp",
+          "width": 1600,
+          "height": 843,
+          "alt": "Дерево добычи",
+          "caption": "Добывающая ветка развивается отдельно от боевой.",
+          "kind": "screenshot",
+          "credit": "Default Skill Trees",
+          "sourceUrl": "https://modrinth.com/mod/4w7YR25f",
+          "origin": "author"
         }
       ]
     },
@@ -488,6 +609,41 @@
           "title": "Закреплённый выпуск 1.4.1+26.3-fabric",
           "url": "https://modrinth.com/mod/BDQucwF0/version/EkRmYh54"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/classes-NkGaQMDA-1.webp",
+          "width": 1000,
+          "height": 401,
+          "alt": "Применение магического заклинания",
+          "caption": "Для заклинания нужны совместимые книга, оружие и расходники.",
+          "kind": "screenshot",
+          "credit": "Wizards (RPG Series)",
+          "sourceUrl": "https://modrinth.com/mod/NkGaQMDA",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/classes-lP9Yrr1E-0.webp",
+          "width": 1320,
+          "height": 800,
+          "alt": "Работа Rune Altar",
+          "caption": "Интерфейс создания рун. Точный выход смотри в REI своей сборки.",
+          "kind": "diagram",
+          "credit": "Runes",
+          "sourceUrl": "https://modrinth.com/mod/lP9Yrr1E",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/classes-lP9Yrr1E-1.webp",
+          "width": 1320,
+          "height": 306,
+          "alt": "Рецепт алтаря рун",
+          "caption": "Авторский пример рецепта; перед крафтом проверь его в REI.",
+          "kind": "diagram",
+          "credit": "Runes",
+          "sourceUrl": "https://modrinth.com/mod/lP9Yrr1E",
+          "origin": "author"
+        }
       ]
     },
     {
@@ -573,6 +729,42 @@
         {
           "title": "Wiki Arcana Novum",
           "url": "https://arcanawiki.borisshoes.net"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/arcana-9J7sCd3t-0.webp",
+          "width": 1281,
+          "height": 802,
+          "alt": "Изготовление в Starlight Forge",
+          "caption": "Кузница используется для создания Arcana-предметов.",
+          "kind": "screenshot",
+          "credit": "Arcana Novum",
+          "sourceUrl": "https://modrinth.com/mod/9J7sCd3t",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/arcana-9J7sCd3t-3.webp",
+          "width": 314,
+          "height": 226,
+          "alt": "Compendium Arcana Novum",
+          "caption": "Список артефактов в Томе. Исследования и требования открываются внутри него.",
+          "kind": "screenshot",
+          "credit": "Arcana Novum",
+          "sourceUrl": "https://modrinth.com/mod/9J7sCd3t",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/arcana-guide-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Вводная книга Arcana",
+          "caption": "Команда /arcana guide открывает начало пути. Дальше используй Том.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen · Arcana 4.0.12",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельного локального игрового мира."
         }
       ]
     },
@@ -693,6 +885,44 @@
           "title": "Закреплённый выпуск 1.1.3",
           "url": "https://modrinth.com/mod/59p3worY/version/bR6EURJj"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/herbcraft-codex-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Травник Herbcraft",
+          "caption": "Книга с одуванчиком даёт травник: начни со свойств растения.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen · Herbcraft 1.1.4",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельного локального игрового мира."
+        },
+        {
+          "src": "images/guides/mods/herbcraft-essence-recipe-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Рецепт эссенции одуванчика",
+          "caption": "Восемь одуванчиков окружают бутылочку. Эссенция — ингредиент следующего шага.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen 0.5.0 · Herbcraft Alchemy 1.1.4",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельной локальной сборки. Английский интерфейс."
+        },
+        {
+          "src": "images/guides/mods/herbcraft-dandelion-brewing-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Варка зелья одуванчика",
+          "caption": "Эссенция добавляется к мутному зелью в варочной стойке. Это отдельный этап после крафта эссенции.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen 0.5.0 · Compat 0.1.2 / REI",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельной локальной сборки. Английский интерфейс."
+        }
       ]
     },
     {
@@ -793,6 +1023,41 @@
           "title": "Cooking for Blockheads",
           "url": "https://mods.twelveiterations.com/minecraft/cooking-for-blockheads"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/cooking-7vxePowz-0.webp",
+          "width": 1600,
+          "height": 920,
+          "alt": "Кухня Farmer’s Delight",
+          "caption": "Кастрюля работает с нагревом; разные рабочие места выполняют разные операции.",
+          "kind": "screenshot",
+          "credit": "Farmer's Delight Refabricated",
+          "sourceUrl": "https://modrinth.com/mod/7vxePowz",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/cooking-7vxePowz-1.webp",
+          "width": 1600,
+          "height": 920,
+          "alt": "Компост и Rich Soil",
+          "caption": "Фермерская часть мода позволяет готовить улучшенную почву для посадок.",
+          "kind": "screenshot",
+          "credit": "Farmer's Delight Refabricated",
+          "sourceUrl": "https://modrinth.com/mod/7vxePowz",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/cooking-vJnhuDde-2.webp",
+          "width": 854,
+          "height": 480,
+          "alt": "Подбор блюд в Cooking for Blockheads",
+          "caption": "Стол показывает варианты по доступным кухне ингредиентам.",
+          "kind": "screenshot",
+          "credit": "Cooking for Blockheads",
+          "sourceUrl": "https://modrinth.com/mod/vJnhuDde",
+          "origin": "author"
+        }
       ]
     },
     {
@@ -871,6 +1136,44 @@
         {
           "title": "Руководство автора — учитывай более новую версию",
           "url": "https://github.com/topasmusic/village-quest/blob/main/26.3/docs/wiki/README.md"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/village-quest-eJsPPGy9-0.webp",
+          "width": 1600,
+          "height": 905,
+          "alt": "Журнал Village Quest",
+          "caption": "Активные задания и следующий шаг собраны в журнале.",
+          "kind": "screenshot",
+          "credit": "Village Quest",
+          "sourceUrl": "https://modrinth.com/mod/eJsPPGy9",
+          "origin": "author",
+          "note": "Кадр из актуальной галереи автора. В установленной 2.6.3 расположение элементов и доступные предложения могут отличаться."
+        },
+        {
+          "src": "images/guides/mods/village-quest-eJsPPGy9-1.webp",
+          "width": 1600,
+          "height": 885,
+          "alt": "Доска заданий",
+          "caption": "Перед принятием прочитай цель и способ получения награды.",
+          "kind": "screenshot",
+          "credit": "Village Quest",
+          "sourceUrl": "https://modrinth.com/mod/eJsPPGy9",
+          "origin": "author",
+          "note": "Кадр из актуальной галереи автора. В установленной 2.6.3 расположение элементов и доступные предложения могут отличаться."
+        },
+        {
+          "src": "images/guides/mods/village-quest-eJsPPGy9-3.webp",
+          "width": 1374,
+          "height": 1079,
+          "alt": "Проверка поселения через Council Seat",
+          "caption": "Интерфейс показывает требования к поселению и его обстановке.",
+          "kind": "screenshot",
+          "credit": "Village Quest",
+          "sourceUrl": "https://modrinth.com/mod/eJsPPGy9",
+          "origin": "author",
+          "note": "Кадр из актуальной галереи автора. В установленной 2.6.3 расположение элементов и доступные предложения могут отличаться."
         }
       ]
     },
@@ -967,6 +1270,30 @@
           "title": "Boss Checklist: руководство",
           "url": "https://github.com/yori3o/BossChecklist/wiki"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/gateways-Z7xAH01M-0.webp",
+          "width": 1600,
+          "height": 856,
+          "alt": "Бой Gateway: Reaper",
+          "caption": "Пример встречи из авторской галереи; подготовь просторную площадку и путь отхода.",
+          "kind": "screenshot",
+          "credit": "Gateway of Doom",
+          "sourceUrl": "https://modrinth.com/mod/Z7xAH01M",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/gateways-Z7xAH01M-1.webp",
+          "width": 1600,
+          "height": 856,
+          "alt": "Бой Gateway: Azure Ronin",
+          "caption": "У разных встреч отличаются противники и атаки.",
+          "kind": "screenshot",
+          "credit": "Gateway of Doom",
+          "sourceUrl": "https://modrinth.com/mod/Z7xAH01M",
+          "origin": "author"
+        }
       ]
     },
     {
@@ -1046,6 +1373,32 @@
           "title": "README автора для ветки 26.3",
           "url": "https://github.com/Jack-Bagel/End-Remastered/tree/26.3"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/end-remastered-eyes-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Особые глаза End Remastered",
+          "caption": "Предметы в инвентаре отличаются: для портала собери двенадцать разных видов, а не двенадцать одинаковых глаз.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen 0.5.0 · End Remastered 6.2.2",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельной локальной сборки. Английский интерфейс."
+        },
+        {
+          "src": "images/guides/mods/end-remastered-body-4.webp",
+          "width": 487,
+          "height": 229,
+          "alt": "Пример особого глаза End Remastered",
+          "caption": "Авторская иллюстрация рецепта. Остальные глаза связаны с разными занятиями.",
+          "kind": "screenshot",
+          "credit": "End Remastered",
+          "sourceUrl": "https://modrinth.com/mod/ZJTGwAND",
+          "origin": "author",
+          "note": "Иллюстрация из руководства автора. Актуальный рецепт выбранного глаза смотри в REI установленной сборки."
+        }
       ]
     },
     {
@@ -1120,6 +1473,41 @@
         {
           "title": "Закреплённый выпуск 26.3.x-1.3.9",
           "url": "https://modrinth.com/mod/zCh7omyG/version/WY4acAvi"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/archeology-zCh7omyG-5.webp",
+          "width": 1339,
+          "height": 857,
+          "alt": "Место раскопок ископаемых",
+          "caption": "Ищи специальную землю и используй кисть, чтобы раскрыть находку.",
+          "kind": "screenshot",
+          "credit": "Better Archeology",
+          "sourceUrl": "https://modrinth.com/mod/zCh7omyG",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/archeology-zCh7omyG-6.webp",
+          "width": 1553,
+          "height": 385,
+          "alt": "Собранные ископаемые",
+          "caption": "Части находок можно собирать в комплекты.",
+          "kind": "diagram",
+          "credit": "Better Archeology",
+          "sourceUrl": "https://modrinth.com/mod/zCh7omyG",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/archeology-zCh7omyG-7.webp",
+          "width": 310,
+          "height": 88,
+          "alt": "Рабочие блоки Better Archeology",
+          "caption": "Слева направо: сосуды, стол археолога и специальные блоки для раскопок.",
+          "kind": "diagram",
+          "credit": "Better Archeology",
+          "sourceUrl": "https://modrinth.com/mod/zCh7omyG",
+          "origin": "author"
         }
       ]
     },
@@ -1196,6 +1584,41 @@
         {
           "title": "Закреплённый выпуск 4.0.0+mc26.3-fabric",
           "url": "https://modrinth.com/mod/QivVPB8W/version/yeFv1Dnk"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/graveyard-QivVPB8W-1.webp",
+          "width": 1600,
+          "height": 834,
+          "alt": "Заброшенный дом The Graveyard",
+          "caption": "Необычные структуры стоит осматривать с запасом еды и маршрутом отхода.",
+          "kind": "screenshot",
+          "credit": "The Graveyard (Fabric/Neoforge)",
+          "sourceUrl": "https://modrinth.com/mod/QivVPB8W",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/graveyard-QivVPB8W-2.webp",
+          "width": 1600,
+          "height": 834,
+          "alt": "Большое кладбище",
+          "caption": "Пример крупной структуры мода. Осмотр окружения помогает подготовить вход.",
+          "kind": "screenshot",
+          "credit": "The Graveyard (Fabric/Neoforge)",
+          "sourceUrl": "https://modrinth.com/mod/QivVPB8W",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/graveyard-QivVPB8W-7.webp",
+          "width": 1600,
+          "height": 834,
+          "alt": "Нежить The Graveyard",
+          "caption": "В моде есть собственные противники, отличающиеся от обычных зомби.",
+          "kind": "screenshot",
+          "credit": "The Graveyard (Fabric/Neoforge)",
+          "sourceUrl": "https://modrinth.com/mod/QivVPB8W",
+          "origin": "author"
         }
       ]
     },
@@ -1281,6 +1704,32 @@
           "title": "Закреплённый выпуск 0.23.0+26.3",
           "url": "https://modrinth.com/mod/s9yDUMze/version/kiUjHVtz"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/mochi-0.23-menu-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Меню Mochi 0.23",
+          "caption": "Здесь видны здоровье, связь с владельцем, снаряжение и режим поведения. Следующее открытие рюкзака показано для пятого уровня.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen 0.5.0 · Mochi 0.23.0",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельной локальной сборки. Английский интерфейс."
+        },
+        {
+          "src": "images/guides/mods/mochi-0.23-guide-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Встроенное руководство Mochi",
+          "caption": "В книге есть состояние, способности, журнал и подсказки управления.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen 0.5.0 · Mochi 0.23.0",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельной локальной сборки. Английский интерфейс."
+        }
       ]
     },
     {
@@ -1360,6 +1809,30 @@
         {
           "title": "Wiki Traveler’s Backpack",
           "url": "https://github.com/Tiviacz1337/Travelers-Backpack/wiki"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/backpack-rlloIFEV-0.webp",
+          "width": 1600,
+          "height": 592,
+          "alt": "Рюкзак в путешествии",
+          "caption": "Рюкзак можно носить и ставить как блок.",
+          "kind": "screenshot",
+          "credit": "Traveler's Backpack",
+          "sourceUrl": "https://modrinth.com/mod/rlloIFEV",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/backpack-rlloIFEV-5.webp",
+          "width": 1600,
+          "height": 589,
+          "alt": "Интерфейс и улучшения рюкзака",
+          "caption": "Сравнение интерфейса из авторской галереи: проверь слоты улучшений и фильтры.",
+          "kind": "screenshot",
+          "credit": "Traveler's Backpack",
+          "sourceUrl": "https://modrinth.com/mod/rlloIFEV",
+          "origin": "author"
         }
       ]
     },
@@ -1457,6 +1930,30 @@
           "title": "Waystones: руководство",
           "url": "https://mods.twelveiterations.com/minecraft/waystones"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/waystones-LOpKHB2A-0.webp",
+          "width": 854,
+          "height": 480,
+          "alt": "Выбор назначения Waystone",
+          "caption": "В списке показаны известные точки. Условия перехода проверяй в интерфейсе.",
+          "kind": "screenshot",
+          "credit": "Waystones",
+          "sourceUrl": "https://modrinth.com/mod/LOpKHB2A",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/waystones-LOpKHB2A-2.webp",
+          "width": 854,
+          "height": 480,
+          "alt": "Камень перемещения в мире",
+          "caption": "Сначала активируй найденную точку, чтобы использовать её дальше.",
+          "kind": "screenshot",
+          "credit": "Waystones",
+          "sourceUrl": "https://modrinth.com/mod/LOpKHB2A",
+          "origin": "author"
+        }
       ]
     },
     {
@@ -1535,6 +2032,41 @@
         {
           "title": "Плодородие культур — wiki автора",
           "url": "https://github.com/Glitchfiend/SereneSeasons/wiki/Crop-Fertility"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/seasons-e0bNACJD-1.webp",
+          "width": 1600,
+          "height": 900,
+          "alt": "Весенний пейзаж",
+          "caption": "Сезон влияет на мир и подходящие культуры, а не только на цвет травы.",
+          "kind": "screenshot",
+          "credit": "Serene Seasons",
+          "sourceUrl": "https://modrinth.com/mod/e0bNACJD",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/seasons-e0bNACJD-7.webp",
+          "width": 1600,
+          "height": 900,
+          "alt": "Осенний пейзаж",
+          "caption": "Тот же участок в другом сезоне. Проверяй плодородные сезоны в подсказках семян.",
+          "kind": "screenshot",
+          "credit": "Serene Seasons",
+          "sourceUrl": "https://modrinth.com/mod/e0bNACJD",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/seasons-e0bNACJD-10.webp",
+          "width": 1600,
+          "height": 900,
+          "alt": "Зимний пейзаж",
+          "caption": "Заранее подготовь запас еды и проверь условия зимних посадок.",
+          "kind": "screenshot",
+          "credit": "Serene Seasons",
+          "sourceUrl": "https://modrinth.com/mod/e0bNACJD",
+          "origin": "author"
         }
       ]
     },
@@ -1630,6 +2162,30 @@
           "title": "Wiki Growable Ores",
           "url": "https://wiki.skniro.org/players/GrowableOres/01%20Introducing%20the%20Growable%20Ores.html"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/ores-psKAO98W-0.webp",
+          "width": 908,
+          "height": 908,
+          "alt": "Кристаллы на лазуритовой руде",
+          "caption": "Ore Growth выращивает кристаллы на рудном блоке; дождись зрелой стадии.",
+          "kind": "screenshot",
+          "credit": "Ore Growth",
+          "sourceUrl": "https://modrinth.com/mod/psKAO98W",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/ores-psKAO98W-1.webp",
+          "width": 908,
+          "height": 908,
+          "alt": "Кристаллы на красной руде",
+          "caption": "Это другая механика, чем рудный тростник Growable Ores.",
+          "kind": "screenshot",
+          "credit": "Ore Growth",
+          "sourceUrl": "https://modrinth.com/mod/psKAO98W",
+          "origin": "author"
+        }
       ]
     },
     {
@@ -1715,6 +2271,41 @@
         {
           "title": "Публичные настройки Wicklen",
           "url": "https://github.com/Wicklen-MC/wicklen-server/tree/master/pack/profiles/wicklen-production/config"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/undead-nights-body-0.webp",
+          "width": 1006,
+          "height": 649,
+          "alt": "Противники ночи орды",
+          "caption": "Подготовь снаряжение и запасы до начала события.",
+          "kind": "screenshot",
+          "credit": "Undead Nights - Zombie Horde Nights / Hordes",
+          "sourceUrl": "https://modrinth.com/mod/g0mmcQV2",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/undead-nights-body-1.webp",
+          "width": 634,
+          "height": 800,
+          "alt": "Особый противник Undead Nights",
+          "caption": "Состав угроз отличается от обычной ночи.",
+          "kind": "screenshot",
+          "credit": "Undead Nights - Zombie Horde Nights / Hordes",
+          "sourceUrl": "https://modrinth.com/mod/g0mmcQV2",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/undead-nights-body-3.webp",
+          "width": 850,
+          "height": 470,
+          "alt": "Орда в ночном мире",
+          "caption": "Свет помогает ориентироваться, но по настройкам Wicklen не блокирует появление орды.",
+          "kind": "screenshot",
+          "credit": "Undead Nights - Zombie Horde Nights / Hordes",
+          "sourceUrl": "https://modrinth.com/mod/g0mmcQV2",
+          "origin": "author"
         }
       ]
     },
@@ -1816,6 +2407,32 @@
         {
           "title": "README REI",
           "url": "https://www.craft.do/s/qj8mHyTVd7qkOZ"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/herbcraft-essence-recipe-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Поиск получения предмета через R",
+          "caption": "REI показывает сетку верстака, ингредиенты и результат — здесь рецепт эссенции.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen 0.5.0 · REI 26.3.824",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельной локальной сборки. Английский интерфейс."
+        },
+        {
+          "src": "images/guides/mods/herbcraft-dandelion-brewing-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Категория варки в REI",
+          "caption": "Для зелья нужна категория Brewing. Не переноси этот рецепт в обычный верстак.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen 0.5.0 · Compat 0.1.2 / REI",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельной локальной сборки. Английский интерфейс."
         }
       ]
     },
@@ -1939,6 +2556,42 @@
         {
           "title": "Закреплённый выпуск 1.0.6+mc26.3",
           "url": "https://modrinth.com/mod/Ny4hiPCS/version/AAVo1STc"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/enchanting-infuser-en.png",
+          "width": 1280,
+          "height": 800,
+          "alt": "Выбор зачарования в инфузоре",
+          "caption": "Вставь снаряжение и выбери подходящие чары. Перед применением проверь требуемый уровень.",
+          "kind": "screenshot",
+          "origin": "wicklen",
+          "credit": "Wicklen 0.5.0 · Enchanting Infuser 26.3.0",
+          "sourceUrl": "https://github.com/Wicklen-MC/wicklen-site",
+          "note": "Настоящий кадр из отдельной локальной сборки. Английский интерфейс."
+        },
+        {
+          "src": "images/guides/mods/equipment-lBHH38D3-1.webp",
+          "width": 708,
+          "height": 345,
+          "alt": "Достижения Trims Overhaul",
+          "caption": "Внутриигровые страницы помогают разобраться в отделках и их возможностях.",
+          "kind": "screenshot",
+          "credit": "Trims Overhaul",
+          "sourceUrl": "https://modrinth.com/mod/lBHH38D3",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/equipment-Ny4hiPCS-2.webp",
+          "width": 1366,
+          "height": 697,
+          "alt": "Структура Relics & Artifacts",
+          "caption": "Исследуй структуры и сохраняй необычные находки; читай условия их применения.",
+          "kind": "screenshot",
+          "credit": "Relics & Artifacts",
+          "sourceUrl": "https://modrinth.com/mod/Ny4hiPCS",
+          "origin": "author"
         }
       ]
     },
@@ -2083,6 +2736,30 @@
           "title": "Закреплённый выпуск 26.3.1",
           "url": "https://modrinth.com/mod/derP0ten/version/XNliGY5t"
         }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/combat-zrbKKaSr-7.webp",
+          "width": 350,
+          "height": 600,
+          "alt": "Усиленный разбойник Mob Champions",
+          "caption": "Привычная модель врага не гарантирует привычную сложность.",
+          "kind": "screenshot",
+          "credit": "Mob Champions",
+          "sourceUrl": "https://modrinth.com/mod/zrbKKaSr",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/combat-zrbKKaSr-8.webp",
+          "width": 350,
+          "height": 600,
+          "alt": "Усиленный зомби Mob Champions",
+          "caption": "Эффекты и характеристики чемпиона могут отличаться от обычного моба.",
+          "kind": "screenshot",
+          "credit": "Mob Champions",
+          "sourceUrl": "https://modrinth.com/mod/zrbKKaSr",
+          "origin": "author"
+        }
       ]
     },
     {
@@ -2159,6 +2836,52 @@
         {
           "title": "Закреплённый выпуск 5.0.0.0-fabric",
           "url": "https://modrinth.com/mod/19P0GlZk/version/JnJI3qdc"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/guides/mods/lunar-events-body-0.webp",
+          "width": 531,
+          "height": 850,
+          "alt": "Blood Moon",
+          "caption": "Авторская карточка кровавой луны: опасная ночь, которую нельзя просто проспать.",
+          "kind": "diagram",
+          "credit": "Enhanced Celestials 2: Default Lunar Events",
+          "sourceUrl": "https://modrinth.com/mod/19P0GlZk",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/lunar-events-body-1.webp",
+          "width": 531,
+          "height": 850,
+          "alt": "Blue Moon",
+          "caption": "Авторская карточка синей луны: событие связано с удачей.",
+          "kind": "diagram",
+          "credit": "Enhanced Celestials 2: Default Lunar Events",
+          "sourceUrl": "https://modrinth.com/mod/19P0GlZk",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/lunar-events-body-2.webp",
+          "width": 531,
+          "height": 850,
+          "alt": "Harvest Moon",
+          "caption": "Авторская карточка урожайной луны: полезный момент для готовой фермы.",
+          "kind": "diagram",
+          "credit": "Enhanced Celestials 2: Default Lunar Events",
+          "sourceUrl": "https://modrinth.com/mod/19P0GlZk",
+          "origin": "author"
+        },
+        {
+          "src": "images/guides/mods/lunar-events-body-3.webp",
+          "width": 531,
+          "height": 850,
+          "alt": "Super Moon",
+          "caption": "Авторская карточка суперлуны в Enhanced Celestials 2: событие связано со слизнями.",
+          "kind": "diagram",
+          "credit": "Enhanced Celestials 2: Default Lunar Events",
+          "sourceUrl": "https://modrinth.com/mod/19P0GlZk",
+          "origin": "author"
         }
       ]
     }

@@ -41,6 +41,13 @@ runs skip deployment when main already contains a newer commit.
   `mod-guides.json` owns the reviewed content. Run `python3 scripts/build_guides.py`
   after editing it; the build rejects stale HTML or catalog index.
   `mod-guide-index.js` connects the guides to catalog cards and Russian searches.
+  The 23 guides contain 60 image placements (58 unique assets), at least two per
+  topic. Captions identify native Wicklen screenshots, author screenshots and
+  explanatory diagrams. Click an image to enlarge; Escape closes the viewer.
+  `images/guides/mods/provenance.json` records origins and checksums; it is excluded
+  from public packaging. Six new English native frames were captured on an isolated
+  0.5.0 fixture, including Mochi 0.23, REI, End Remastered and Enchanting Infuser.
+  Author imagery uses local optimized copies with credits and version notes.
 - `guides.html`: five detailed guides for Herbcraft Core, Alchemy, Cuisine,
   Arcana Novum and Compat. The four additions are installed on the server.
 - `updates.html`: pack history 0.4.2–0.5.0, exact changed files and checksums.
