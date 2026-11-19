@@ -1,200 +1,97 @@
 # Wicklen website
 
-The standalone player website for **Wicklen** and **Wicklen: Chronicles**.
-Static HTML, CSS, JavaScript, local icons and genuine native game screenshots.
-No application server, Node.js runtime, package installation or external CDN is
-needed to serve the site.
+Static player website for Wicklen and Wicklen: Chronicles: mod catalog, guides,
+native game screenshots, release history and downloads. Published at
+[wicklen.link](https://wicklen.link).
 
-## Preview and build
+## Build and preview
 
-```sh
-python3 -m http.server 8765 --bind 127.0.0.1
-```
-
-Open `http://127.0.0.1:8765/`. The nine pages are `index.html`, `mods.html`,
-`chronicles.html`, `compat.html`, `guides.html`, `handbook.html`, `updates.html`, `mod-guide.html` and `reimagined.html`; they also work when opened directly from disk.
-
-Build the deployable directory with Python 3.11 or later:
+Python 3.11 or later, standard library only. No frontend packages or application
+server are required.
 
 ```sh
 python3 scripts/build.py
+python3 -m unittest discover -s tests -p 'test_*.py'
 python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 ```
 
-The build checks local assets, IDs and page anchors, then copies an explicit
-public allowlist into `dist/` and writes its SHA-256 manifest. It excludes
-repository documentation, CI, Python tools, provenance records and private files.
-The `Website` workflow validates pull requests and automatically deploys checked
-`main` commits to the VPS. Deployments use an immutable artifact, a dedicated
-restricted SSH identity, atomic site switching and HTTPS checks with rollback.
-Manual runs can select an earlier reviewed main-branch commit. Delayed automatic
-runs skip deployment when main already contains a newer commit.
+Open http://127.0.0.1:8765/. Serve `dist/`, rather than the repository root.
+The same build command renders guides, expands shared templates, generates public
+JS data, versions CSS/JS URLs by content hash, checks local assets and anchors,
+and writes `dist/SHA256SUMS.txt`. It never rewrites authoring files. A failed build
+keeps the previous successful `dist/`.
 
-## Pages and content
+## Repository layout
 
-- `index.html`: gameplay directions, Chronicles and installation of the live pack 0.6.0.
-- `mods.html` / `handbook.js`: unified searchable catalog, capabilities and guide links.
-  All 181 mandatory mods are described; libraries can be shown separately.
-  `handbook.html` retains old bookmarks through a query/anchor-preserving redirect.
-- `mod-guide.html`: 23 full guides covering 44 installed mods; preparation, walkthroughs, progression,
-  troubleshooting, version-specific notes and primary sources.
-  The practical edition includes material locations, 57 binary-backed recipe cards,
-  ingredient counts, workstation instructions and optional boss spoilers.
-  Website content lives in `siteIntro`, `sections` and `faq`;
-  the separate `short` cards remain unchanged for the Spirit prototype/export.
-  `mod-guides.json` owns the reviewed content. Run `python3 scripts/build_guides.py`
-  after editing it; the build rejects stale HTML or catalog index. It also versions
-  CSS/JS URLs on all full pages by content hash to avoid stale browser assets.
-  `mod-guide-index.js` connects the guides to catalog screenshot previews and Russian searches.
-  The first screenshot appears directly under each guide title; contents start collapsed.
-  `guide-recipes.json` stores the original recipe JSON, pinned JAR/resource hashes,
-  ingredient labels and icons. Chapter `recipes` arrays reference its IDs. Schematics
-  are HTML, not screenshots. Original item textures and their extraction hashes live
-  under `images/guides/items/`; their provenance JSON is not publicly packaged.
-  Guides show screenshots beside instructions and 33 item-finding cards across
-  eight topics, including all 16 End Remastered eyes and four native key captures.
-  Each finding card records a biome/dimension, a specific location and acquisition.
-  `images/guides/finders/provenance.json` records the added original item textures.
-  Gateway follows the 0.6.0 CUSTOM configuration: six standard profiles, four bosses,
-  chest/mob key drops and four automatic-event rules are restored alongside the two
-  Chronicles courtyards. The guide includes key finding cards and the binary-backed
-  Hell Ward I recipe for protecting a base from new ordinary portals.
-  Captions identify native Wicklen screenshots, author screenshots and
-  explanatory diagrams. Click an image to enlarge; Escape closes the viewer.
-  `images/guides/mods/provenance.json` records origins and checksums; it is excluded
-  from public packaging. Six new English native frames were captured on an isolated
-  0.5.0 fixture, including Mochi 0.23, REI, End Remastered and Enchanting Infuser.
-  Author imagery uses local optimized copies with credits and version notes.
-- `guides.html`: five detailed guides for Herbcraft Core, Alchemy, Cuisine,
-  Arcana Novum and Compat. The four additions are installed on the server.
-- `updates.html`: pack history 0.4.2–0.6.0, exact changed files and checksums.
-- `chronicles.html`: Chronicles 0.4.4, settings and genuine native screenshot gallery.
-- `compat.html`: Compat 0.1.2, REI fixes, Mochi protection and install instructions.
-- `data.js`: live pack 0.6.0 inventory from its immutable release lock:
-  181 unique mods, 169 server / 124 client JARs. Source IDs, membership, filenames
-  and SHA-512 values match the lock. Existing descriptions and local icons persist.
-- `handbook-data.js`: guide links and the source lock digest. Additions/overrides
-  are empty because the new release has been adopted into the live catalog.
-- `chronicles-release.js`: pack 0.6.0 downloads; mod version remains 0.4.4.
-  The optional delta starts from pack 0.5.0 and only updates the Gateway config and release metadata. Clients 0.5.0 can simply reconnect to the server. Exact sizes and SHA-256 come from the immutable release artifacts.
-- `deployment.js`: public game address without credentials.
-- `images/guides/`, `images/chronicles/en`, `images/wanderer`, `videos/chronicles`:
-  genuine native captures with their original provenance, separate from HTML concepts.
-- `theme.css`: shared colors, typography, navigation, buttons, footer and image viewer.
-- `templates/` and `scripts/site_layout.py`: common static header/footer/viewer.
-  Run `python3 scripts/build_guides.py` after editing templates, CSS or JavaScript;
-  the build rejects stale shared markup and asset hashes. Templates and build tools stay in the source repository and are excluded from dist/.
-- `site-common.js`: shared image zoom, keyboard gallery navigation, section tracking,
-  printing and text/size formatting. Page scripts contain their own behavior.
-- `site.css`, `reference.css` and other page styles: page-specific components;
-  `experiences.js` owns the homepage gameplay descriptions.
+| Directory | Responsibility |
+| --- | --- |
+| `src/pages/` | Handwritten HTML pages; shared components use `{{site_header}}`, `{{site_viewer}}`, `{{site_footer}}`. |
+| `src/styles/` | `theme.css` owns shared tokens/components; other styles belong to individual pages. |
+| `src/scripts/` | Browser behavior. `site-common.js` owns shared gallery, section navigation, print and formatting helpers. |
+| `content/` | JSON catalog, release metadata, guides, recipes, homepage descriptions and ZIP manifest. |
+| `content/provenance/` | Original image records, checksums and credits; excluded from publication. |
+| `templates/` | Shared header, footer and image viewer. |
+| `public/` | Original images, icons, video, favicon and social preview images. |
+| `wicklen_site/` | Python generators, asset registry, validation and output assembly. |
+| `scripts/` | Build entry point, verified artifact packaging and restricted website deployment. |
+| `tests/` | Content, rendering, deterministic build, failure recovery and packaging checks. |
+| `dist/` | Ignored complete public build. |
 
-Primary navigation has one combined “Моды и гайды” destination. The game update
-was separately authorized and verified through the restricted updater; website
-publication does not itself update Minecraft.
+`wicklen_site/paths.py` maps sources to public names. Existing URLs such as
+`mods.html`, `site.css`, `data.js`, `images/...` stay stable. Adding a page, stylesheet
+or script requires registering it explicitly. Media extensions are restricted;
+JSON exports are explicit; templates, tools, provenance and local prototypes are
+excluded from publication. Existing `mod-guides.json` and `guide-recipes.json`
+exports retain their URLs and original bytes.
 
-## Spirit illustration and native footage
+## Editing content
 
-The homepage hero uses an inline SVG in `index.html#hero-spirit-art`: a cloth hood,
-warm eyes, teal patches and two ribbons. CSS animates hovering, cloth, blinking and
-small background sparks. It needs no video, canvas, renderer library or CDN.
-The static SVG is already meaningful without JavaScript. Enhancement starts motion
-only while visible, pauses it outside the viewport or in a hidden tab, provides a
-manual pause, and respects `prefers-reduced-motion`. Data-saving mode starts static
-until the visitor explicitly chooses animation.
+- `content/catalog.json`: installed pack 0.6.0, 181 unique mods, 124 client / 169
+  server JARs. Keep filenames, membership and hashes aligned with the immutable
+  published release lock. Preserve descriptions and local icons.
+- `content/handbook.json`: guide links and optional overlays for a different
+  published release. The selector is hidden when only the live release exists.
+- `content/updates.json` and `content/chronicles-release.json`: public release
+  downloads. Pack 0.6.0 and Chronicles 0.4.4 are independent versions. Client 0.5.0
+  can reconnect; the configuration patch is optional.
+- `content/mod-guides.json`: 23 full guides covering 44 installed mods. `siteIntro`,
+  `sections` and `faq` own the articles; separate `short` cards are exported for
+  the Spirit prototype. Generated `mod-guide.html` and `mod-guide-index.js` exist
+  only in `dist/`.
+- `content/guide-recipes.json`: original recipe JSON, pinned JAR/resource hashes,
+  ingredient labels and icons. Recipe cards are diagrams; screenshots remain
+  genuine game captures. Image records and attribution live in
+  `content/provenance/`, with public file names relative to `public/`.
+- `content/experiences.json`: homepage gameplay descriptions.
+- `content/deployment.json`: public game address, without credentials. The separate
+  deployment marker `dist/deployment.json` is added by release packaging.
+- `content/reimagined-download.json`: pinned optional Reimagined inputs and our
+  preset. The browser verifies hashes and assembles the existing-profile ZIP.
+  Original third-party files are fetched directly by the visitor. The new-profile
+  `.mrpack` is linked from the public `reimagined-v1.0.0` GitHub release.
 
-`chronicles.html#spirit-preview` has a separate native video and four zoomable
-screenshots of **development mod 0.4.3-SNAPSHOT**. The video has ordinary controls,
-no autoplay and `preload="none"`; it also works without JavaScript. Existing
-keyboard gallery navigation includes the new frames. The page announces the published
-**Chronicles 0.4.4** release. Recommended live-server downloads use
-**pack 0.6.0 / Chronicles 0.4.4 / Compat 0.1.2** after server adoption; the standalone release is linked separately.
-Screenshot WebP conversion is lossless;
-the original MP4 is preserved unchanged.
+After any content, template, style or script change, run the single build command.
+The parent workspace's Spirit exporter reads `content/mod-guides.json` directly.
+A standalone site checkout requires no parent pack or mod checkout.
 
-The public build checks video sources and posters and explicitly permits MP4/WebM
-media under `videos/`. Provenance and repository documentation remain excluded.
-Browser QA covers 1440, 390 and 320-pixel widths, SVG motion/pause/offscreen pause,
-reduced-motion changes, native video playback, gallery keyboard controls and
-JavaScript-disabled presentation. Local QA captures stay under ignored `preview/`.
+## Publication and boundaries
 
-The standalone checkout does not require the modpack or mod source repositories.
-Update public catalog/release metadata from a reviewed pack release; do not copy
-server configuration, player data or API keys into this repository. Preserve
-existing descriptions, categories and local icons when an upstream project ID is
-unchanged. New entries without a local icon use the catalog's built-in placeholder;
-local custom mods link to their source repository instead of a fabricated Modrinth
-page. A future catalog refresh must compare both client/server membership and
-artifact hashes against its release lock, not infer production contents from a
-mutable preview profile.
+The `Website` workflow tests the selected revision, builds it, checks all emitted
+JavaScript and packages only manifest-listed public files. Pushes to `main`
+automatically publish the verified artifact through the restricted website
+receiver. HTTPS checks verify the revision, manifest and pages; a failed health
+check restores the previous website revision. Old verified main revisions remain
+available for rollback, including the earlier repository layout.
 
-## Hosting and downloads
+`deployment.json` and `SHA256SUMS.txt` identify the published website. Pack archives
+are separate immutable files at `https://downloads.wicklen.link/releases/0.6.0/`.
+Never put ZIPs, JARs, worlds, player data or private configuration in `public/`.
+Do not fabricate download URLs or describe unreleased features as published.
+Website publication does not update Minecraft or restart the game server.
 
-The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.6.0/`, including the full client,
-the optional configuration patch from 0.5.0, instructions, manifest and checksums. These are the five
-published files listed by `data.js`. The separate optional Reimagined client at
-`reimagined.html` links the public website repository’s `reimagined-v1.0.0` GitHub release: a complete `.mrpack`
-profile. The ordinary existing-profile ZIP is assembled in the browser from pinned
-Modrinth CDN files by reimagined-download.js; the visitor receives ready mods/
-and resourcepacks/ folders without Python. SHA-512 checks every input and SHA-256
-checks the final archive. The manifest embeds only our preset and instructions;
-original third-party files are fetched directly by the visitor. Its seven additional JARs
-are optional and do not alter the live catalog or server. Original third-party
-files download from pinned Modrinth URLs; the bundled Wicklen preset contains
-independent model references, not Reijvi artwork. ZIP files belong outside this
-repository and the site's `dist/`.
-
-Production HTTPS was verified on 2026-11-06: public Let’s Encrypt certificates,
-HTTP redirects, all three pages, five release files and full-ZIP byte-range
-downloads. The first deployment used revision `92a3725`; the active revision is
-now exposed by `deployment.json`. Certificates are managed by the existing shared Caddy. Host configuration is maintained separately
-in the infrastructure repository. Deploy only `dist/`. Keep absolute download URLs in HTML, `data.js` and
-`chronicles-release.js` aligned; static links must also work with JavaScript
-disabled. The gallery accepts only the configured HTTPS download origin for
-release link enhancement.
-
-The workflow needs repository secrets `WICKLEN_SITE_DEPLOY_HOST`,
-`WICKLEN_SITE_DEPLOY_KEY` and `WICKLEN_SITE_KNOWN_HOSTS`. They are provisioned
-separately; no root key or game credentials enter this repository.
-The host receiver and its bootstrap are maintained in
-[wicklen-deployments](https://github.com/redz-projects/wicklen-deployments/blob/master/docs/SITE_DEPLOY.md).
-`deployment.json` and the published checksum manifest identify the active site
-revision. Site deployment does not publish pack archives or update Minecraft.
-The pack and its technical documents live in
-[wicklen-server](https://github.com/Wicklen-MC/wicklen-server);
-the mod source lives in
-[wicklen-chronicles](https://github.com/Wicklen-MC/wicklen-chronicles).
-
-## Origin
-
-Extracted from `Wicklen-MC/wicklen-server` revision
-`eb16e4b` (`website/`) on 2026-11-06. The parent repository keeps that history.
-Archived design templates, server documentation, local deployment overrides and
-downloaded archives were intentionally excluded from this standalone source.
-Screenshot PNGs were copied without image editing; their original capture records
-remain under `images/chronicles/`.
-
-## Historical pack 0.4.5 metadata
-
-Pack **0.4.5** includes Chronicles **0.4.4** and Compat **0.1.1**. The
-0.4.4 → 0.4.5 client delta replaces exactly these two JARs and updates release
-metadata. UPDATE.json lists Chronicles 0.4.3 and Compat 0.1.0 for removal. Other
-mods, public configurations, the resource pack and private preferences are
-retained. Public filenames, sizes and hashes come from the immutable publication
-and release lock. Static HTML and both JavaScript metadata sources move together
-after successful server adoption.
-
-## Unified catalog and journal concepts
-
-`mods.html` combines the catalog and player handbook. It defaults to the live pack
-from `data.js`. The version selector appears only when `handbook-data.js` describes
-a different published release. Guide previews live in a collapsible section so
-the catalog search remains easy to reach.
-The download metadata stays aligned with the live server. Old `handbook.html`
-bookmarks redirect to the new catalog, preserving queries and anchors.
-
-Journal interface prototypes are local-only. They are preserved in the common
-workspace under `workspace/prototypes/chronicles-journal/`, outside this public
-repository and the build allowlist. Serve that directory on 127.0.0.1 for review.
-Do not publish prototype pages or add them to site navigation without an explicit
-request to publish them. Website changes and prototype review are separate tasks.
+CI uses `WICKLEN_SITE_DEPLOY_HOST`, `WICKLEN_SITE_DEPLOY_KEY` and
+`WICKLEN_SITE_KNOWN_HOSTS`; never print or commit them. Host configuration belongs
+to the separate [infrastructure repository](https://github.com/redz-projects/wicklen-deployments).
+The [workspace](https://github.com/Wicklen-MC/wicklen-server) owns pack releases;
+[Chronicles](https://github.com/Wicklen-MC/wicklen-chronicles) owns the mod.
+Local prototypes belong in ignored workspace storage, outside this public build.

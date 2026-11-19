@@ -9,3 +9,6 @@ __pycache__/
 .env
 .env.*
 deployment.local.js
+
+.site-build-*/
+.ruff_cache/

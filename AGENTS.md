@@ -1,7 +1,11 @@
 # Wicklen website
 
 Work here for the static website. Read README.md; build with python3 scripts/build.py
-and check packaging with python3 -m unittest discover -s scripts -p 'test_*.py'.
+and check packaging with python3 -m unittest discover -s tests -p 'test_*.py'.
+Sources live in src/, data in content/, media in public/, shared HTML in templates/,
+and Python generators in wicklen_site/. Build outputs belong only in ignored dist/.
+Build with one command; do not check in generated pages or JS data wrappers.
+Public URLs stay flat for compatibility; paths.py owns the explicit output registry.
 Pushes to main automatically publish the checked static site. Show unreleased mod features
 as previews; download metadata must describe published artifacts.
 Interface mockups and prototypes are local-only unless the user explicitly asks to

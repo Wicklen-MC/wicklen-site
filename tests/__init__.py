@@ -1,0 +1,1 @@
+"""Wicklen website checks."""

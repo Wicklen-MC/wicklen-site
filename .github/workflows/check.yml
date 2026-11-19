@@ -37,11 +37,18 @@ jobs:
         if: github.event_name != 'pull_request'
         working-directory: site
         run: git merge-base --is-ancestor HEAD origin/main
-      - run: python -m unittest discover -s automation/scripts -p 'test_*.py'
+      - name: Test the selected website revision
+        working-directory: site
+        run: |
+          if [ -d tests ]; then
+            python -m unittest discover -s tests -p 'test_*.py'
+          else
+            python -m unittest discover -s scripts -p 'test_*.py'
+          fi
       - run: python site/scripts/build.py
       - name: Validate JavaScript syntax
         run: |
-          for script in site/*.js; do
+          for script in site/dist/*.js; do
             node --check "$script"
           done
       - name: Package the checked public files
