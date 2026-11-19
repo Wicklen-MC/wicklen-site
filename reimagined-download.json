@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "filename": "wicklen-reimagined-1.0.0-ready.zip",
+  "files": [
+    {
+      "path": "mods/entity_model_features-3.3.12-26.3-fabric.jar",
+      "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/vF6qLXsA/entity_model_features-3.3.12-26.3-fabric.jar",
+      "sha512": "4572fc065e757264947aff35a96d17d5e45d4b43e8e385b9a207f5380a8f43da5dbf8e10f30a7bc7cc4c0c8f7999717b4dd22d325667bdf8a0de6e839ad81efc",
+      "bytes": 665386
+    },
+    {
+      "path": "mods/entity_texture_features-7.2.7-26.3-fabric.jar",
+      "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/svwZ2o4d/entity_texture_features-7.2.7-26.3-fabric.jar",
+      "sha512": "69193c58d4d05e08fea9afa34cc47563e9b9e95aa2da276441085ade44ed36f8123b9cc1a2938f9ecac9aea6fd9ceb51120dd20f7284337a3bb592bc3b904336",
+      "bytes": 798322
+    },
+    {
+      "path": "mods/polytone-26.3-6.8.6-fabric.jar",
+      "url": "https://cdn.modrinth.com/data/3qAYkBMB/versions/qM0zPlR5/polytone-26.3-6.8.6-fabric.jar",
+      "sha512": "f50370557e24f5404f17b6c055d35a3e4540f6d0dc9b9b406afc4d0f1f8a14a33b7993b747bb9e7d92f7c83d818493b1082858cf2f85b06d476107577af9a087",
+      "bytes": 1681327
+    },
+    {
+      "path": "mods/continuity-3.0.1+26.3.jar",
+      "url": "https://cdn.modrinth.com/data/1IjD5062/versions/Jt2sCWTQ/continuity-3.0.1%2B26.3.jar",
+      "sha512": "1ec1e3b2f73c26b19445d664822a8936e9076f4d8855a2ed5fac19786daa8da42da8fdc9526c4a53c227a82819a87ad8e73d5b4fc003f6519c50454c33014f04",
+      "bytes": 1002033
+    },
+    {
+      "path": "mods/sodium-fabric-0.9.2+mc26.3.jar",
+      "url": "https://cdn.modrinth.com/data/AANobbMI/versions/bAZQdGpg/sodium-fabric-0.9.2%2Bmc26.3.jar",
+      "sha512": "f3f260f204b8ce5e8777c2c73f537956755ec61f3817b0b78b5e5568e8aa40f14891f146475075109747665c7c88a45ca0ca9a8df3c68d79c58ecdaa8d8c4b93",
+      "bytes": 1908068
+    },
+    {
+      "path": "mods/modmenu-21.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/xckkBHD5/modmenu-21.0.1.jar",
+      "sha512": "d00d52d5342728da13a6237f76c50fc5fd1c62d8112ae4e07726bbc64d2019a76130d6b2968765df81c6499225588eacee6681eebc13c0ada3cad91fc8ab2984",
+      "bytes": 862761
+    },
+    {
+      "path": "mods/placeholder-api-3.2.0+26.3.jar",
+      "url": "https://cdn.modrinth.com/data/eXts2L7r/versions/lXytLqWj/placeholder-api-3.2.0%2B26.3.jar",
+      "sha512": "eb2bb31e51068aad2581b7864ea7b11b1209ba1c2b27551cd5837d9b312b818b73bb47c06374b46b99b73401c62c6b6c115f702c55aed6afd467ad8ad6448de4",
+      "bytes": 254959
+    },
+    {
+      "path": "resourcepacks/reimagined.zip",
+      "url": "https://cdn.modrinth.com/data/ta5dy0aA/versions/3tFrhmJ5/%C2%A7aReimagined%C2%A70_%C2%A78%5Bv1.63.7%5D%C2%A70.zip",
+      "sha512": "2bd746f3c2f6c2f804ba69d5238e0effee1425b1d03b90631b2c8cda19a5f470cea9161f228b084b2368e147a4618f8b6e4cec56c5971590e727828958e42f8b",
+      "bytes": 36255954
+    }
+  ],
+  "embedded": [
+    {
+      "path": "resourcepacks/wicklen-reimagined-preset-1.0.0.zip",
+      "base64": "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",
+      "sha512": "acb7ce0e2b899ee20c6f419c38ee16adc261e92eb06bfaf164ecd22b774969887fe60a17a63e23aae2c41e625b94dbd93cf4cc1bf0ea86fe9dffd0d05e96ad61"
+    },
+    {
+      "path": "README.txt",
+      "text": "Wicklen Reimagined 1.0.0 — обычное ZIP-дополнение\nДля установленного Wicklen 0.5.0 или 0.6.0 / Minecraft 26.3 Fabric / Java 25\n\n1. Закройте игру.\n2. Скопируйте папки mods и resourcepacks из этого архива в папку профиля Wicklen.\n3. Запустите игру и включите наборы ресурсов. Порядок сверху вниз:\n   ru-mods, Wicklen Polymer, Wicklen Reimagined preset, Reimagined, обычные ресурсы Minecraft.\n\nPython и установка скриптами не требуются. Архив содержит 7 дополнительных JAR,\nоригинальный Reimagined и пресет Wicklen. Миры и options.txt в архив не входят.\nЕсли ранее ставили другие версии этих визуальных модов, сохраните их отдельно,\nчтобы не оставлять два JAR одного мода в папке mods.\n\nPolytone 6.8.6 для 26.3 пока alpha; набор прошёл локальную игровую проверку.\nRespackOpts не нужен: трава и листва включены пресетом Wicklen.\nДля более лёгкой картинки можно выключить только пресет Wicklen.\n\nReimagined: Reijvi — https://modrinth.com/resourcepack/reimagined\nОригинальные файлы скачаны с официального CDN Modrinth и проверены по SHA-512.\nСайт и инструкция: https://wicklen.link/reimagined.html\n",
+      "sha512": "02cd9ad73c6bee28801f645a66d777944b120a27570480c1ce9a221b7c4d9fadff1d006d41410cd3f71a2fa38ced87bee3453a9faff43f3ecc4c51912d920d1b"
+    }
+  ],
+  "zip_sha256": "e36b0e71f8f153c54ed976d9a3e0f5fdf0a81c215dc1b6bbcc2a145efb11ccad",
+  "zip_bytes": 43434768
+}

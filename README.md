@@ -127,7 +127,11 @@ The public website is live at [wicklen.link](https://wicklen.link). Archive file
 the optional configuration patch from 0.5.0, instructions, manifest and checksums. These are the five
 published files listed by `data.js`. The separate optional Reimagined client at
 `reimagined.html` links the public website repository’s `reimagined-v1.0.0` GitHub release: a complete `.mrpack`
-profile and an additive existing-profile downloader. Its seven additional JARs
+profile. The ordinary existing-profile ZIP is assembled in the browser from pinned
+Modrinth CDN files by reimagined-download.js; the visitor receives ready mods/
+and resourcepacks/ folders without Python. SHA-512 checks every input and SHA-256
+checks the final archive. The manifest embeds only our preset and instructions;
+original third-party files are fetched directly by the visitor. Its seven additional JARs
 are optional and do not alter the live catalog or server. Original third-party
 files download from pinned Modrinth URLs; the bundled Wicklen preset contains
 independent model references, not Reijvi artwork. ZIP files belong outside this

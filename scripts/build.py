@@ -10,7 +10,7 @@ from build_guides import check_generated
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "dist"
 PUBLIC_FILES = (
-    "index.html", "mods.html", "chronicles.html", "compat.html", "guides.html", "handbook.html", "updates.html", "reimagined.html", "reimagined.css",
+    "index.html", "mods.html", "chronicles.html", "compat.html", "guides.html", "handbook.html", "updates.html", "reimagined.html", "reimagined.css", "reimagined-download.js", "reimagined-download.json",
     "handbook-redirect.js", "mod-guide.html", "mod-guide.css", "mod-guide.js", "mod-guide-index.js", "mod-guides.json", "guide-recipes.json",
     "reference.css", "handbook.js", "handbook-data.js", "updates.js", "updates-data.js", "guides-nav.js",
     "guides.css", "compat.css", "site.css", "site.js",
