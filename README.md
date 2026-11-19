@@ -38,13 +38,19 @@ runs skip deployment when main already contains a newer commit.
   `handbook.html` retains old bookmarks through a query/anchor-preserving redirect.
 - `mod-guide.html`: 23 full guides covering 44 installed mods; preparation, walkthroughs, progression,
   troubleshooting, version-specific notes and primary sources.
-  The expanded edition has 680–1086 words per guide, 7–11 chapters,
-  chapter navigation, ordered walkthroughs, reference tables and optional spoilers.
-  Long website content lives in `siteIntro`, `siteGoal`, `sections` and `faq`;
+  The practical edition includes material locations, 54 binary-backed recipe cards,
+  ingredient counts, workstation instructions and optional boss spoilers.
+  Website content lives in `siteIntro`, `sections` and `faq`;
   the separate `short` cards remain unchanged for the Spirit prototype/export.
   `mod-guides.json` owns the reviewed content. Run `python3 scripts/build_guides.py`
-  after editing it; the build rejects stale HTML or catalog index.
-  `mod-guide-index.js` connects the guides to catalog cards and Russian searches.
+  after editing it; the build rejects stale HTML or catalog index. It also versions
+  CSS/JS URLs in the guide and catalog by content hash to avoid stale browser assets.
+  `mod-guide-index.js` connects the guides to catalog screenshot previews and Russian searches.
+  The first screenshot appears directly under each guide title; contents start collapsed.
+  `guide-recipes.json` stores the original recipe JSON, pinned JAR/resource hashes,
+  ingredient labels and icons. Chapter `recipes` arrays reference its IDs. Schematics
+  are HTML, not screenshots. Original item textures and their extraction hashes live
+  under `images/guides/items/`; their provenance JSON is not publicly packaged.
   The 23 guides contain 60 image placements (58 unique assets), at least two per
   topic. Captions identify native Wicklen screenshots, author screenshots and
   explanatory diagrams. Click an image to enlarge; Escape closes the viewer.

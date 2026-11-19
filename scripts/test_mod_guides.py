@@ -3,7 +3,7 @@ import hashlib
 from pathlib import Path
 import unittest
 from urllib.parse import urlsplit
-from build_guides import check_generated, guide_word_count
+from build_guides import check_generated
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -50,11 +50,9 @@ class ModGuideTests(unittest.TestCase):
         for topic in self.data['topics']:
             with self.subTest(topic=topic['id']):
                 self.assertTrue(topic.get('siteIntro'))
-                self.assertGreaterEqual(guide_word_count(topic),500)
-                self.assertGreaterEqual(len(topic['sections']),7)
                 ids=[s['id'] for s in topic['sections']]
                 self.assertEqual(len(ids),len(set(ids)))
-                self.assertTrue(any(s.get('steps') for s in topic['sections']))
+                self.assertTrue(any(s.get('table') or s.get('recipes') or s.get('steps') for s in topic['sections']))
                 used=[]
                 for section in topic['sections']:
                     if table:=section.get('table'):
@@ -94,5 +92,41 @@ class ModGuideTests(unittest.TestCase):
         index=js_data('mod-guide-index.js')
         self.assertEqual({t['id'] for t in self.data['topics']},{t['id'] for t in index['topics']})
         self.assertNotIn('journal-',(ROOT/'mod-guide.html').read_text())
+
+    def test_recipe_sources_and_ingredient_assets_are_complete(self):
+        data=json.loads((ROOT/'guide-recipes.json').read_text())
+        self.assertEqual(self.data['packVersion'],data['packVersion'])
+        used=[id for t in self.data['topics'] for s in t['sections'] for id in s.get('recipes',[])]
+        self.assertEqual(set(data['recipes']),set(used))
+        self.assertEqual(len(used),len(set(used)))
+        for recipe in data['recipes'].values():
+            self.assertEqual(64,len(recipe['jarSha256']))
+            self.assertEqual(64,len(recipe['resourceSha256']))
+            self.assertTrue(recipe['resource'].startswith('data/'))
+            raw=recipe['raw']
+            self.assertIn(raw['type'],['minecraft:crafting_shaped','minecraft:crafting_shapeless','minecraft:smelting','travelersbackpack:backpack_shaped','farmersdelight:cooking'])
+            refs=list(raw.get('key',{}).values())+raw.get('ingredients',[])+([raw['ingredient']] if 'ingredient' in raw else [])+[raw['result']['id']]
+            for ref in refs:
+                self.assertIn(ref,data['items'])
+                self.assertTrue(data['items'][ref]['label'])
+                if icon:=data['items'][ref].get('icon'):self.assertTrue((ROOT/icon).is_file())
+
+    def test_recipe_icons_are_original_binary_assets(self):
+        rows=json.loads((ROOT/'images/guides/items/provenance.json').read_text())
+        for row in rows:
+            self.assertEqual(hashlib.sha256((ROOT/row['file']).read_bytes()).hexdigest(),row['sha256'])
+            self.assertTrue(row['resource'].startswith('assets/'))
+        icons={row['file'] for row in rows}
+        self.assertEqual(icons,{p.relative_to(ROOT).as_posix() for p in (ROOT/'images/guides/items').glob('*.png')})
+
+    def test_screenshot_precedes_intro_and_collapsed_contents(self):
+        html=(ROOT/'mod-guide.html').read_text()
+        for topic in self.data['topics']:
+            article=html.split(f'<article id="guide-{topic["id"]}"',1)[1].split('</article>',1)[0]
+            self.assertLess(article.index('guide-hero'),article.index('guide-intro'))
+            self.assertLess(article.index('guide-hero'),article.index('guide-toc'))
+            self.assertNotIn('class="guide-toc" open',article)
+        for topic in js_data('mod-guide-index.js')['topics']:
+            self.assertTrue((ROOT/topic['preview']['src']).is_file())
 
 if __name__=='__main__':unittest.main()

@@ -22,6 +22,8 @@
   document.querySelector('#guide-index').hidden = Boolean(selected);
   document.querySelector('#guide-not-found').hidden = !id || Boolean(selected);
   if (selected) {
+    const hero = selected.querySelector('.guide-hero img');
+    if (hero) { hero.loading = 'eager'; hero.fetchPriority = 'high'; }
     document.title = `${selected.querySelector('h1').textContent} — Wicklen`;
     document.querySelector(`[data-guide-link="${selected.dataset.guide}"]`).setAttribute('aria-current', 'page');
   }

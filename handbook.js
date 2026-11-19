@@ -20,7 +20,8 @@
   const guides = window.WICKLEN_GUIDE_INDEX?.topics || [];
   const guideByMod = Object.fromEntries(guides.flatMap(guide => guide.modIds.map(id => [id, guide])));
   const guideGrid = document.querySelector('#mechanics-guides');
-  if (guideGrid) guideGrid.innerHTML = guides.map(guide => `<a href="${escape(guide.href)}" data-guide-search="${escape((guide.title+' '+guide.aliases).toLocaleLowerCase('ru'))}">${escape(guide.title)}</a>`).join('');
+  const preview = guide => guide?.preview ? `<img src="${escape(guide.preview.src)}" width="${guide.preview.width}" height="${guide.preview.height}" alt="${escape(guide.preview.alt)}" loading="lazy">` : '';
+  if (guideGrid) guideGrid.innerHTML = guides.map(guide => `<a href="${escape(guide.href)}" data-guide-search="${escape((guide.title+' '+guide.aliases).toLocaleLowerCase('ru'))}">${preview(guide)}<span>${escape(guide.title)}</span></a>`).join('');
   let records = [];
   function filter() {
     const query = search.value.trim().toLocaleLowerCase('ru');
@@ -51,7 +52,7 @@
       const element = document.createElement('details');
       element.id = `mod-${mod.id}`;
       const guide = guideByMod[mod.id]?.href || extra.guideLinks[mod.id];
-      element.innerHTML = `<summary>${mod.icon ? `<img src="icons/${escape(mod.id)}.webp" alt="" loading="lazy" onerror="this.hidden=true">` : ''}<span><strong>${escape(mod.name)}</strong><small>${escape(mod.version)} · ${side(mod)}${mod.optional ? ' · По желанию' : ''}</small><p class="entry-summary">${escape(mod.description)}</p></span></summary><div class="reference-body">${mod.points?.length ? `<ul>${mod.points.map(point => `<li>${escape(point)}</li>`).join('')}</ul>` : ''}<p class="compat-small">${escape(categoryNames[mod.category] || 'Дополнение')} · Minecraft 26.3 / Fabric</p><div class="reference-links">${guide ? `<a href="${escape(guide)}">Открыть гайд →</a>` : ''}<a href="${escape(mod.url)}" target="_blank" rel="noopener">Страница автора ↗</a></div></div>`;
+      element.innerHTML = `<summary>${mod.icon ? `<img src="icons/${escape(mod.id)}.webp" alt="" loading="lazy" onerror="this.hidden=true">` : ''}<span><strong>${escape(mod.name)}</strong><small>${escape(mod.version)} · ${side(mod)}${mod.optional ? ' · По желанию' : ''}</small><p class="entry-summary">${escape(mod.description)}</p></span></summary><div class="reference-body">${guideByMod[mod.id] ? `<a class="reference-guide-preview" href="${escape(guide)}">${preview(guideByMod[mod.id])}<span>Ресурсы, рецепты и скриншоты →</span></a>` : ''}${mod.points?.length ? `<ul>${mod.points.map(point => `<li>${escape(point)}</li>`).join('')}</ul>` : ''}<p class="compat-small">${escape(categoryNames[mod.category] || 'Дополнение')} · Minecraft 26.3 / Fabric</p><div class="reference-links">${guide ? `<a href="${escape(guide)}">Открыть гайд →</a>` : ''}<a href="${escape(mod.url)}" target="_blank" rel="noopener">Страница автора ↗</a></div></div>`;
       grid.append(element);
       return {mod, element, text: `${mod.name} ${mod.description} ${(mod.points || []).join(' ')} ${mod.aliases || ''} ${guideByMod[mod.id]?.aliases || ''}`.toLocaleLowerCase('ru')};
     });

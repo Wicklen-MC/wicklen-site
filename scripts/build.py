@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "dist"
 PUBLIC_FILES = (
     "index.html", "mods.html", "chronicles.html", "compat.html", "guides.html", "handbook.html", "updates.html",
-    "handbook-redirect.js", "mod-guide.html", "mod-guide.css", "mod-guide.js", "mod-guide-index.js", "mod-guides.json",
+    "handbook-redirect.js", "mod-guide.html", "mod-guide.css", "mod-guide.js", "mod-guide-index.js", "mod-guides.json", "guide-recipes.json",
     "reference.css", "handbook.js", "handbook-data.js", "updates.js", "updates-data.js", "guides-nav.js",
     "guides.css", "compat.css", "site.css", "site.js",
     "experiences.js", "data.js", "chronicles.css", "chronicles.js",

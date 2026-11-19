@@ -1,0 +1,776 @@
+[
+  {
+    "file": "images/guides/items/minecraft-oak_planks.png",
+    "sha256": "65665943ef9c8bcf63fc67d2083ed0c50243f724106d0e4bb1abea5d921b16d3",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/oak_planks.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-stick.png",
+    "sha256": "da5ede0e54715247de78567df5212a114d0b8a1af183e286fa69cc6af5993711",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/stick.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-treetap.png",
+    "sha256": "f9ce56c82ba94dd77a9c19d4cc8b749cf35ffdaf64a593a56e2dcb543545d150",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/tool/treetap.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-iron_ingot.png",
+    "sha256": "ca67b14f685bfe1972addf6b44692dab601fe8d27464a30aa8e65f16f716cab2",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/iron_ingot.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-refined_iron_ingot.png",
+    "sha256": "44d1cf9a0b872a8209eca89daf80e7b86d24ff05d7b09c211bfae772312ef27b",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/ingot/refined_iron_ingot.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-sap.png",
+    "sha256": "40f3318efffadcd3a2efa4d3494d70f892034a8c1661046898c2252057c181bc",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/part/sap.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-rubber.png",
+    "sha256": "bcce07f0cde01c35950e170647b4cbb7e3c953b3b0c86430c6b234042b948900",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/part/rubber.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-copper_ingot.png",
+    "sha256": "209e43de9b82ba4d5320c2c7c71fbc91fafee7efbc80c75aca48dbcf0c963227",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/copper_ingot.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-copper_cable.png",
+    "sha256": "b96e471585a41939f44f74e167a9e45b1fba596eaf19d785c9d3925a75172cf6",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/cables/copper_cable.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-rubber.png",
+    "sha256": "bcce07f0cde01c35950e170647b4cbb7e3c953b3b0c86430c6b234042b948900",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/part/rubber.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-insulated_copper_cable.png",
+    "sha256": "65c8a5a42eee05e2d25a0a3948124e05b5fe4c4f8dab41611763931e66452782",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/cables/insulated_copper_cable.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-redstone.png",
+    "sha256": "6d0e6a1fd54142cd3de649e1100c428733512b322a0b0a530f62eae9f86881ec",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/redstone.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-lead_ingot.png",
+    "sha256": "286ce743d42b464598324a6aa3d9b896a4474286d058bfdad54718bf441d56a5",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/ingot/lead_ingot.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-red_cell_battery.png",
+    "sha256": "5cc79e2e6843f3db0886a0c8ed2cc1aecb5cc1395cd6dd7844cb3df032afed62",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/battery/red_cell_battery_active.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-refined_iron_ingot.png",
+    "sha256": "44d1cf9a0b872a8209eca89daf80e7b86d24ff05d7b09c211bfae772312ef27b",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/ingot/refined_iron_ingot.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-basic_machine_frame.png",
+    "sha256": "fd35f4dcffb9f57fbc20bf56e90a4832759bb7e94bd26ab23420f3025ede9707",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/block/machines/structure/basic_machine_frame.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-electronic_circuit.png",
+    "sha256": "6bb306343f555a74dff8ca90e14aa5e1bcc58383e0465c2981fd198f25002f95",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/item/part/electronic_circuit.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-furnace.png",
+    "sha256": "aae808f71f1bddf4a25592f7dd3d7f6e9b3adaa739502170766424f4eb6bf9c5",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/furnace_front.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-solid_fuel_generator.png",
+    "sha256": "4185fe6f96bf4a4eb8287d1db923fa7260dc4846103ac18822f5dd0694fe293b",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/block/machines/generators/generator_side_off.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-iron_furnace.png",
+    "sha256": "c994b60356041c6735b6edbebd19c5df2c1bd80c70bcdc60301da901c5633913",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/block/machines/tier0_machines/iron_furnace_front_off.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-electric_furnace.png",
+    "sha256": "40c88f2665d4b6695a7425dc298e72c42d139d5dd7d9246615f46394dc7060f8",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/block/machines/tier1_machines/electric_furnace_front_off.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-flint.png",
+    "sha256": "6a37210c4ec517b2274f3a3bbdd6862fc0fa7b08c5c1d001e835b110408ff414",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/flint.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-cobblestone.png",
+    "sha256": "bcda95fdf5afa91747657aa198fc0b69ebf44141de30a718075f74045e9a5def",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/cobblestone.png"
+  },
+  {
+    "file": "images/guides/items/techreborn-grinder.png",
+    "sha256": "dd66c36944436fdc7a6ff341b0cde473aee799c31b45631692dcc1f34dedd5cc",
+    "jar": "e75737557d87e800-TechReborn-6.2.1.jar",
+    "resource": "assets/techreborn/textures/block/machines/tier1_machines/grinder_front_off.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-amethyst_shard.png",
+    "sha256": "dc64feb12d553ec59b819534ae57b46e99ac95a3ab61cb71de317a5d7b857584",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/amethyst_shard.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-gold_ingot.png",
+    "sha256": "e4c1e2ea6d1fa70299163ebff573b4bfda1ef09099bedc4b5789c598f0a65738",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/gold_ingot.png"
+  },
+  {
+    "file": "images/guides/items/wizards-wand_arcane.png",
+    "sha256": "85883a36558a0666bb2fdb6b87d916cd56b3d3925180ca149ec876392f24ce6e",
+    "jar": "c93d1034a348c9ec-wizards-fabric-3.1.4+26.3.jar",
+    "resource": "assets/wizards/textures/item/wand_arcane.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-gunpowder.png",
+    "sha256": "9551e2f663c9d7291991f9c922daf68ed26adb99de9c8ef5173f24f0c8693585",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/gunpowder.png"
+  },
+  {
+    "file": "images/guides/items/wizards-wand_fire.png",
+    "sha256": "41343f6c076589881b867262bd600bb65da13aa39daf129924b531a70e76e2f7",
+    "jar": "c93d1034a348c9ec-wizards-fabric-3.1.4+26.3.jar",
+    "resource": "assets/wizards/textures/item/wand_fire.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-string.png",
+    "sha256": "c7dac2dd79ae85bd35b2c933b17ac22256ec4cd79c1916b8ef0fc20642247957",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/string.png"
+  },
+  {
+    "file": "images/guides/items/paladins-acolyte_wand.png",
+    "sha256": "66ac5be39a3319db3a7b0a6cd6e3798b93de9e32c2e1e2c278c9af4f81f2f29b",
+    "jar": "89e326d1d3782334-paladins-fabric-3.1.4.1+26.3.jar",
+    "resource": "assets/paladins/textures/item/acolyte_wand.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-bone.png",
+    "sha256": "acc1fb127f3f1139e51e748ee8b259eebac8f1ad369b33bd9643246ee96ae62d",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/bone.png"
+  },
+  {
+    "file": "images/guides/items/archers-composite_longbow.png",
+    "sha256": "96409e6f87e9909a24c5ae392770167fa4e56a62dfb6e0c37403f6cc48125c2d",
+    "jar": "afda3614fe6391d1-archers-fabric-3.1.4+26.3.jar",
+    "resource": "assets/archers/textures/item/composite_longbow.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-book.png",
+    "sha256": "8b851a52e2a5d81fa925774f0df30040bc86411c8c86d3d69495486adcd2a046",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/book.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-polished_diorite.png",
+    "sha256": "dfe6b1ae9ecfc263f031d15f53b5775eb519217a2b0c6f2f887fbebf522558d5",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/polished_diorite.png"
+  },
+  {
+    "file": "images/guides/items/spell_engine-spell_binding.png",
+    "sha256": "b252828aa5d528ff23be07902bc9b10c816fec47c385fd1e2e17ea08afbd0d73",
+    "jar": "b6e9e1b0e6b5e2b5-spell_engine-fabric-1.10.9+26.3.jar",
+    "resource": "assets/spell_engine/textures/block/spell_binding_table_side.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-cobblestone.png",
+    "sha256": "bcda95fdf5afa91747657aa198fc0b69ebf44141de30a718075f74045e9a5def",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/cobblestone.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-amethyst_shard.png",
+    "sha256": "dc64feb12d553ec59b819534ae57b46e99ac95a3ab61cb71de317a5d7b857584",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/amethyst_shard.png"
+  },
+  {
+    "file": "images/guides/items/runes-arcane_stone.png",
+    "sha256": "ee833d53a4a6eed53a77064cab72be85c946c219f0cde3e08c2bb79250d32f4c",
+    "jar": "a2b3d1af9a2eaf91-runes-fabric-1.3.2+26.3.jar",
+    "resource": "assets/runes/textures/item/arcane_stone.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-coal.png",
+    "sha256": "31a5bf332d28c65e0e83368d4008b31c471023ae391e4533f80cd80ad13f54e0",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/coal.png"
+  },
+  {
+    "file": "images/guides/items/runes-fire_stone.png",
+    "sha256": "44fdfad0d0e382575f84913019ae453c8cd00c66aecc8c8c71aeea3364b9d38f",
+    "jar": "a2b3d1af9a2eaf91-runes-fabric-1.3.2+26.3.jar",
+    "resource": "assets/runes/textures/item/fire_stone.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-snowball.png",
+    "sha256": "4174e71270f6565b8a86483986c570dabe14227312d6bb4222082350b150bdb6",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/snowball.png"
+  },
+  {
+    "file": "images/guides/items/runes-frost_stone.png",
+    "sha256": "0240a2564bf9c536cc202ba1460e7dd82c1e7dcc996f6160fdffcd6e8c78467d",
+    "jar": "a2b3d1af9a2eaf91-runes-fabric-1.3.2+26.3.jar",
+    "resource": "assets/runes/textures/item/frost_stone.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-gold_nugget.png",
+    "sha256": "73c9c64b35e15a47366802fa899b115fce6380d1f19bda38dd7ef196182029ca",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/gold_nugget.png"
+  },
+  {
+    "file": "images/guides/items/runes-healing_stone.png",
+    "sha256": "9a7b7fed3d2c7b4baa690199aa3855951caeeac306a64f3d45770d13a6ff71c9",
+    "jar": "a2b3d1af9a2eaf91-runes-fabric-1.3.2+26.3.jar",
+    "resource": "assets/runes/textures/item/healing_stone.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-stone.png",
+    "sha256": "b5e10adc72442bfb257ce7ba0b9bbe36475a0c8cdfec89b80dc9517203ff3e9f",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/stone.png"
+  },
+  {
+    "file": "images/guides/items/runes-crafting_altar.png",
+    "sha256": "0bab359aeffb8993f36d864274c4da339cf27308d183e940e0ba4b53a7eeb3a6",
+    "jar": "a2b3d1af9a2eaf91-runes-fabric-1.3.2+26.3.jar",
+    "resource": "assets/runes/textures/block/crafting_altar.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-paper.png",
+    "sha256": "046228bbea6334f90e915ea62c6b4050016a6b1aa575734d630a10688d9b11e7",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/paper.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-enchanted_book.png",
+    "sha256": "f96da147fcf6f373df00ab5181043ea0c76af4ba7025f43f377f678ac466fb43",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/enchanted_book.png"
+  },
+  {
+    "file": "images/guides/items/arcananovum-mundane_arcane_paper.png",
+    "sha256": "c4b6f5cc763e542a3c6118cdddb569c3afdb7e2d124d785d00d38c55f2252268",
+    "jar": "f6061c140cf676a1-arcananovum-4.0.12+26.3.jar",
+    "resource": "assets/arcananovum/textures/item/mundane_arcane_paper.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-dandelion.png",
+    "sha256": "eb0cdf11d96f9b0aef8201c05c51f2c6cf1fc00d8a09d26c50530aff2b05ae33",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/dandelion.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft-herbal_codex.png",
+    "sha256": "e52174ffc31b9e261b993b4731d24ae9248dc65318f304cd1cc13d861c9be329",
+    "jar": "32d048d4bb89f68a-herbcraft-1.1.4.jar",
+    "resource": "assets/herbcraft/textures/item/herbal_codex.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-glass_bottle.png",
+    "sha256": "6a09a39bb6c41bc92bd5eca1f51caf5b582a85f68206b164476c8e14a4669416",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/glass_bottle.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft-essence_dandelion.png",
+    "sha256": "0cad3766469ce8e86f3b0bddff8c6d9b852677a5f971221af17cc4c1ab5eb61b",
+    "jar": "eea57efb7044deef-herbcraft-alchemy-1.1.4.jar",
+    "resource": "assets/herbcraft/textures/item/essence_dandelion.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-bowl.png",
+    "sha256": "4510b6adbf2e162d5af6330e7faa3f162b82b89cacfd36ec5b90f3d29e0513e5",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/bowl.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft_cuisine-dandelion_salad.png",
+    "sha256": "181e5e32e528cbf368085012b5139ee1f4bc365a17fb00bb40d64098c93c0ef5",
+    "jar": "b7731c1f803382ba-herbcraft-cuisine-1.1.3.jar",
+    "resource": "assets/herbcraft_cuisine/textures/item/dandelion_salad.png"
+  },
+  {
+    "file": "images/guides/items/farmersdelight-flint_knife.png",
+    "sha256": "97a17e202f33a2334e30ee475d1158b14d1c4cb8940744bf657fda7b342d063d",
+    "jar": "099f724599022ac9-FarmersDelight-26.3-3.6.30+refabricated.jar",
+    "resource": "assets/farmersdelight/textures/item/flint_knife.png"
+  },
+  {
+    "file": "images/guides/items/farmersdelight-cutting_board.png",
+    "sha256": "5f9a2c283c603ef2a015a6259422c270226a9d137d6b6dc1e9a7e3dd8eaffad1",
+    "jar": "099f724599022ac9-FarmersDelight-26.3-3.6.30+refabricated.jar",
+    "resource": "assets/farmersdelight/textures/block/cutting_board.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-wooden_shovel.png",
+    "sha256": "fcdb26e1d22b166d8837771707a064a8144b54684ac43974bbf6d6c981d13908",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/wooden_shovel.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-water_bucket.png",
+    "sha256": "7da2d23c69392bda3c9dd617b7942035bbd03ea348a0ff05ad461a51854f68af",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/water_bucket.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-brick.png",
+    "sha256": "e99b08880e41cc4e0de8f29b3f9332b7e498aefe67dc540e06ec77990c2b1fee",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/brick.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-iron_ingot.png",
+    "sha256": "ca67b14f685bfe1972addf6b44692dab601fe8d27464a30aa8e65f16f716cab2",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/iron_ingot.png"
+  },
+  {
+    "file": "images/guides/items/farmersdelight-cooking_pot.png",
+    "sha256": "0df5b94407abca5f64afbb2ca5c467200cc18432f49058d265c7161295508587",
+    "jar": "099f724599022ac9-FarmersDelight-26.3-3.6.30+refabricated.jar",
+    "resource": "assets/farmersdelight/textures/block/cooking_pot_side.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-carrot.png",
+    "sha256": "a433ecc4dbc28cf1751299ea518df0a5dd4b34e714d3015c77b9d193ec4c8a24",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/carrot.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-potato.png",
+    "sha256": "d230597b0d91c857936370089ef7da12a8f0b4b3e84207b92c9b48e92798507f",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/potato.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-beetroot.png",
+    "sha256": "51e6ca1d5d360a1dd8fecb15cc757ee87a3e159ae23248c3785b3d0cb22063e2",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/beetroot.png"
+  },
+  {
+    "file": "images/guides/items/farmersdelight-cabbage_leaf.png",
+    "sha256": "ee6bf279ac6a877a78257105c799ad29a3dac359345bc0663f739333ed2afedc",
+    "jar": "099f724599022ac9-FarmersDelight-26.3-3.6.30+refabricated.jar",
+    "resource": "assets/farmersdelight/textures/item/cabbage_leaf.png"
+  },
+  {
+    "file": "images/guides/items/farmersdelight-vegetable_soup.png",
+    "sha256": "65dd7765aaa96cabfddbde6f65d71cff26d27ac1e30f6b7590a1c16f5b35a354",
+    "jar": "099f724599022ac9-FarmersDelight-26.3-3.6.30+refabricated.jar",
+    "resource": "assets/farmersdelight/textures/item/vegetable_soup.png"
+  },
+  {
+    "file": "images/guides/items/cookingforblockheads-recipe_book.png",
+    "sha256": "2aeff2a93ebc13612ef116375c1ae52d313f905e89f6e119e0275006a4e887b0",
+    "jar": "427935a13093a05e-cookingforblockheads-fabric-26.3-26.3.0.2.jar",
+    "resource": "assets/cookingforblockheads/textures/item/recipe_book.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-crafting_table.png",
+    "sha256": "1659c76a33039640e8bd5584af8db04bf626486432a389bcaf1567e1a45c6464",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/crafting_table_front.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-diamond.png",
+    "sha256": "fd11635ec666c3febb9e6dd6d3ec49cdfb4d16a2a1d595ebd10e56b302417d08",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/diamond.png"
+  },
+  {
+    "file": "images/guides/items/cookingforblockheads-crafting_book.png",
+    "sha256": "5e5cac51e56b747e5a748fa9d18a53bb389aabab45a32f8724f9ce9132822a89",
+    "jar": "427935a13093a05e-cookingforblockheads-fabric-26.3-26.3.0.2.jar",
+    "resource": "assets/cookingforblockheads/textures/item/crafting_book.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-terracotta.png",
+    "sha256": "b2458267eac6b6f35d02990ee3244edf1f43fbe258bd6dfe15189cf2eaf42ae8",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/terracotta.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-stone.png",
+    "sha256": "b5e10adc72442bfb257ce7ba0b9bbe36475a0c8cdfec89b80dc9517203ff3e9f",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/stone.png"
+  },
+  {
+    "file": "images/guides/items/cookingforblockheads-cooking_table.png",
+    "sha256": "5db1652e0269eabe9941a38209001b40d9e6311836327946228940bdc6883025",
+    "jar": "427935a13093a05e-cookingforblockheads-fabric-26.3-26.3.0.2.jar",
+    "resource": "assets/cookingforblockheads/textures/block/cooking_table_front.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-water_bucket.png",
+    "sha256": "7da2d23c69392bda3c9dd617b7942035bbd03ea348a0ff05ad461a51854f68af",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/water_bucket.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-ender_eye.png",
+    "sha256": "95843c3a2fc9bf92359f304617cc9a3905d955796c53dd3c8f6958a04dff3c82",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/ender_eye.png"
+  },
+  {
+    "file": "images/guides/items/endrem-witch_pupil.png",
+    "sha256": "3ded395fdb825866f1a62238208c4aaf706b009242e0e37c62a6b90f3f766d2f",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "resource": "assets/endrem/textures/item/witch_pupil.png"
+  },
+  {
+    "file": "images/guides/items/endrem-witch_eye.png",
+    "sha256": "97810c35b8007af19427327b792a72d33d8ff5a5844015a6acd9a4ff70c1be28",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "resource": "assets/endrem/textures/item/witch_eye.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-ghast_tear.png",
+    "sha256": "6f13587b4de52bb1d27d2b7e52ee0787984e30af86fb301615006395b934db06",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/ghast_tear.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-rotten_flesh.png",
+    "sha256": "9168edab9a9063ee23340fedd2bbf31f85aed2bd42c3fedf527dba24629d48e8",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/rotten_flesh.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-phantom_membrane.png",
+    "sha256": "278576989e6e9ab11a001355db7a7b15959cbff193120dee1288e86e417157d7",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/phantom_membrane.png"
+  },
+  {
+    "file": "images/guides/items/endrem-undead_soul.png",
+    "sha256": "549f9fcdf7d232e7e8021d0d051885c44d9b5626b46470378980d584926950d9",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "resource": "assets/endrem/textures/item/undead_soul.png"
+  },
+  {
+    "file": "images/guides/items/endrem-undead_eye.png",
+    "sha256": "24c43d03b1c50a28bbf0f252034e1adefc5fe9643250cd47ab25a6aa2735dae7",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "resource": "assets/endrem/textures/item/undead_eye.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-fire_coral.png",
+    "sha256": "a4d5c1c0643f89853cd584aa1f0fdf766e9c8a119e46d2845582a8a0d742a7b3",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/fire_coral.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-tube_coral.png",
+    "sha256": "74ab77e9461cebe623972b98c1f92d45f31396b8258b41741f2e00dc82c26a40",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/tube_coral.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-horn_coral.png",
+    "sha256": "0a40e26fa2dcdc79bba10e721bba11fe4e42e3b7c41ef2219afd851daee5398d",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/horn_coral.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-bubble_coral.png",
+    "sha256": "d0dcac588c87409fef51c5e37e998cbe16aa689325c960de59b701bafeb33d4a",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/bubble_coral.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-glow_ink_sac.png",
+    "sha256": "cfa8f698ead3aa09aa720bf7a292f84d4a374269a461a72153df9deeee8577fb",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/glow_ink_sac.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-conduit.png",
+    "sha256": "53587c945f4d94c5196753efb18e3e5c9ffb7bc19a4d9329a96fa811b6565221",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/conduit.png"
+  },
+  {
+    "file": "images/guides/items/endrem-exotic_eye.png",
+    "sha256": "26361db0583271ac109efb8897883eedfd930bf0c2dc992eb79f7da18f03c1eb",
+    "jar": "a6f8f57a27f34541-endrem-fabric-26.3-6.2.2.jar",
+    "resource": "assets/endrem/textures/item/exotic_eye.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-brush.png",
+    "sha256": "5142d5d3ce600efe359a1b3f2f80f3bd9505e7dc7b31cda4157ed69a0b01adc2",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/brush.png"
+  },
+  {
+    "file": "images/guides/items/betterarcheology-artifact_shards.png",
+    "sha256": "b44c9a38d0290af7570f8be33fbd87c0235c2bbd4ebd6b1aa8baeda76964bc39",
+    "jar": "f3a6db197d3eed9d-betterarcheology-fabric-26.3-1.3.9.jar",
+    "resource": "assets/betterarcheology/textures/item/artifact_shards.png"
+  },
+  {
+    "file": "images/guides/items/betterarcheology-archeology_table.png",
+    "sha256": "ba47248cf01420ca3f8fdda2a52aecbefd21e6b960b52dba434f858157eae997",
+    "jar": "f3a6db197d3eed9d-betterarcheology-fabric-26.3-1.3.9.jar",
+    "resource": "assets/betterarcheology/textures/block/archeology_table/archeology_table_front.png"
+  },
+  {
+    "file": "images/guides/items/betterarcheology-unidentified_artifact.png",
+    "sha256": "ea9b00ef7a57d35eb36ab4e648014d7e62c76cdf6129f0ed134ca49c75ee0ba5",
+    "jar": "f3a6db197d3eed9d-betterarcheology-fabric-26.3-1.3.9.jar",
+    "resource": "assets/betterarcheology/textures/item/unidentified_artifact.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-bamboo.png",
+    "sha256": "83252d1d0dbe5ac3912cd8be5add648dd0fa8ecddfb666f094dbf7fd03b8d055",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/bamboo.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-sugar.png",
+    "sha256": "8fd584956fcf4b3252706051f7f0c93e808cdb0e391b42dff130c6ae4e5d18ae",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/sugar.png"
+  },
+  {
+    "file": "images/guides/items/mochipets-bamboo_treat.png",
+    "sha256": "e97306b905aaa456a047b1d3263420b6a7df33233b5221e3cdbeaae68e148708",
+    "jar": "b2e69e252ac679b9-mochipets-0.23.0+26.3.jar",
+    "resource": "assets/mochipets/textures/item/bamboo_treat.png"
+  },
+  {
+    "file": "images/guides/items/mochipets-acorn_shard.png",
+    "sha256": "ae4563e040ea6cf4dbb633c18fad5c55d722c7e5c1e4b8f7ecdf541ea4d30475",
+    "jar": "b2e69e252ac679b9-mochipets-0.23.0+26.3.jar",
+    "resource": "assets/mochipets/textures/item/acorn_shard.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-wheat.png",
+    "sha256": "4bede9ae2a07763c8c0bbd8f80008fc2fa8908b1fe703cb912782a91656fffdd",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/wheat.png"
+  },
+  {
+    "file": "images/guides/items/mochipets-mochi_treat.png",
+    "sha256": "7821defa42871bae9f301c91f81b8dcb0125257d48c3da70cbe38726c0735ba5",
+    "jar": "b2e69e252ac679b9-mochipets-0.23.0+26.3.jar",
+    "resource": "assets/mochipets/textures/item/mochi_treat.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-white_wool.png",
+    "sha256": "70c9c9a9901d71ef9a5a89ea2cc4bc0d99ff5e65f733d1467da8b92f746107a5",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/white_wool.png"
+  },
+  {
+    "file": "images/guides/items/mochipets-mochi_bed.png",
+    "sha256": "a333415bcfed271e5809e04068b134d1a9a612d1c4b4f492369c1bdae057e320",
+    "jar": "b2e69e252ac679b9-mochipets-0.23.0+26.3.jar",
+    "resource": "assets/mochipets/textures/item/mochi_bed.png"
+  },
+  {
+    "file": "images/guides/items/mochipets-acorn.png",
+    "sha256": "7e60777a601c0bf15cdff180b5024565e3706bb4ca655de5b1c5b7c644c0da00",
+    "jar": "b2e69e252ac679b9-mochipets-0.23.0+26.3.jar",
+    "resource": "assets/mochipets/textures/item/acorn.png"
+  },
+  {
+    "file": "images/guides/items/mochipets-mochi_whistle.png",
+    "sha256": "506104a8ab39d063b0e44d7654701e235151b61c90996e84ef0aa4e60d54dd50",
+    "jar": "b2e69e252ac679b9-mochipets-0.23.0+26.3.jar",
+    "resource": "assets/mochipets/textures/item/mochi_whistle.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-string.png",
+    "sha256": "c7dac2dd79ae85bd35b2c933b17ac22256ec4cd79c1916b8ef0fc20642247957",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/string.png"
+  },
+  {
+    "file": "images/guides/items/travelersbackpack-backpack_tank.png",
+    "sha256": "f585c43b164c43773e7853bb12833c3b9002701bdbe72a973d630a3c133b3826",
+    "jar": "caa7065e2821a765-travelersbackpack-fabric-26.3-11.4.2.jar",
+    "resource": "assets/travelersbackpack/textures/item/backpack_tank.png"
+  },
+  {
+    "file": "images/guides/items/travelersbackpack-white_sleeping_bag.png",
+    "sha256": "d9a8046702e01e8b738b851ea8e8b53fa25b14d6a5fdbf1b6089aa576665a921",
+    "jar": "caa7065e2821a765-travelersbackpack-fabric-26.3-11.4.2.jar",
+    "resource": "assets/travelersbackpack/textures/item/white_sleeping_bag.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-leather.png",
+    "sha256": "0b1b32a23061afbd4771ececb9d1c1a1ba255b7591ffc3e55a2b3c5affc05577",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/leather.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-glass.png",
+    "sha256": "cb89c706dce86eac3123cef087d359b5f23098b658a468fb91662b4a9922bcd0",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/glass.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-white_wool.png",
+    "sha256": "70c9c9a9901d71ef9a5a89ea2cc4bc0d99ff5e65f733d1467da8b92f746107a5",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/white_wool.png"
+  },
+  {
+    "file": "images/guides/items/travelersbackpack-white_sleeping_bag.png",
+    "sha256": "d9a8046702e01e8b738b851ea8e8b53fa25b14d6a5fdbf1b6089aa576665a921",
+    "jar": "caa7065e2821a765-travelersbackpack-fabric-26.3-11.4.2.jar",
+    "resource": "assets/travelersbackpack/textures/item/white_sleeping_bag.png"
+  },
+  {
+    "file": "images/guides/items/travelersbackpack-blank_upgrade.png",
+    "sha256": "9e7837a9df452cfd122b57ce36b76ce1c4ae02ac56260e416907751b60dfeb15",
+    "jar": "caa7065e2821a765-travelersbackpack-fabric-26.3-11.4.2.jar",
+    "resource": "assets/travelersbackpack/textures/item/blank_upgrade.png"
+  },
+  {
+    "file": "images/guides/items/travelersbackpack-iron_tier_upgrade.png",
+    "sha256": "df067a7b886fcf6b465dae5ae5ea8e9297626d5327eb2b43d3750cc0c3ca88ab",
+    "jar": "caa7065e2821a765-travelersbackpack-fabric-26.3-11.4.2.jar",
+    "resource": "assets/travelersbackpack/textures/item/iron_tier_upgrade.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-ender_pearl.png",
+    "sha256": "ff40529856c82317ce24cec4ba384971f56aec0f8ce3756e059d2eb17f3b310a",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/ender_pearl.png"
+  },
+  {
+    "file": "images/guides/items/waystones-warp_stone.png",
+    "sha256": "ca0ffe22947489b05de794745cdcb41e88d375a11a0c44a9793595042429c8b1",
+    "jar": "b9c09872b60f78dd-waystones-fabric-26.3-26.3.0.1.jar",
+    "resource": "assets/waystones/textures/item/warp_stone.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-stone_bricks.png",
+    "sha256": "24415444c9e4815aad4a3a349ecbfc0e027b96be25ac5b7c273c06f16c4fdd2f",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/stone_bricks.png"
+  },
+  {
+    "file": "images/guides/items/waystones-andesite_waystone.png",
+    "sha256": "6c5b1dd53224628d8b6ed628562fd06c35dfa0d5406fa1f3e4fb7cc8e8da6cb2",
+    "jar": "b9c09872b60f78dd-waystones-fabric-26.3-26.3.0.1.jar",
+    "resource": "assets/waystones/textures/block/andesite_waystone.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-gold_nugget.png",
+    "sha256": "73c9c64b35e15a47366802fa899b115fce6380d1f19bda38dd7ef196182029ca",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/gold_nugget.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-ink_sac.png",
+    "sha256": "0b6afc3bedf39949e7a59821e8d0e4bbf1a9617d8e751fc23ddd9b05fe16756d",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/ink_sac.png"
+  },
+  {
+    "file": "images/guides/items/waystones-warp_scroll.png",
+    "sha256": "5380df9689978bf5889950c30d1cc530e5e29fb0a238dcd114ea6bbe5b7082b6",
+    "jar": "b9c09872b60f78dd-waystones-fabric-26.3-26.3.0.1.jar",
+    "resource": "assets/waystones/textures/item/warp_scroll.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-clock.png",
+    "sha256": "b79cde84fe80cd376f3848efe3f98b5c187ae0c5e78cb222fd21207e11447fd3",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/clock_00.png"
+  },
+  {
+    "file": "images/guides/items/sereneseasons-calendar.png",
+    "sha256": "4adeb2f92a3ba93919f4752f026437b59384a737bd6d0faab6f6ed24f26a21a6",
+    "jar": "f0ef802ab4a7d95d-SereneSeasons-fabric-26.3-26.1.2.0.7.jar",
+    "resource": "assets/sereneseasons/textures/item/calendar_00.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-sugar_cane.png",
+    "sha256": "c4d268c910568b900e8fb961041dce056e6f9fe1d2e4fab99764579c38a1f966",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/sugar_cane.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-diamond.png",
+    "sha256": "fd11635ec666c3febb9e6dd6d3ec49cdfb4d16a2a1d595ebd10e56b302417d08",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/diamond.png"
+  },
+  {
+    "file": "images/guides/items/growable_ores-diamond_cane.png",
+    "sha256": "a036e92249727eef347223805e8b774647f4ef1f79facb3ea56893c501ef6a13",
+    "jar": "7a2aca93fe6ad7db-GrowableOres-3.8.0-26.3-Fabric.jar",
+    "resource": "assets/growable_ores/textures/block/diamond_cane.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-crying_obsidian.png",
+    "sha256": "11946c37514ae6b6d9c7a8a49220ff8fbd3a378caa9a23f627a3c7aa67c3c98c",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/crying_obsidian.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-enchanting_table.png",
+    "sha256": "fed6f599ec71ce4307f6e9d08985dc40bedec60d50033e32c6a3c80496939a6a",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/enchanting_table_side.png"
+  },
+  {
+    "file": "images/guides/items/enchantinginfuser-enchanting_infuser.png",
+    "sha256": "cc350569433eb8f23dda0468f11995d0bc00091ca39cc66d1946429d76d522d8",
+    "jar": "e68e6a98a75358a0-enchantinginfuser-v26.3.0-mc26.3.x+fabric.jar",
+    "resource": "assets/enchantinginfuser/textures/block/enchanting_infuser_side.png"
+  }
+]

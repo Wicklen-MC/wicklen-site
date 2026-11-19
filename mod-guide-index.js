@@ -10,7 +10,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=chronicles#guide-chronicles",
       "modIds": [
         "wicklen-chronicles"
-      ]
+      ],
+      "preview": {
+        "src": "images/chronicles/en/spyglass-observation.png",
+        "width": 1280,
+        "height": 800,
+        "alt": "Наблюдение через подзорную трубу"
+      }
     },
     {
       "id": "field-guide",
@@ -21,7 +27,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=field-guide#guide-field-guide",
       "modIds": [
         "72RRCWM6"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/field-guide-72RRCWM6-1.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Наблюдение через подзорную трубу"
+      }
     },
     {
       "id": "tech-reborn",
@@ -32,7 +44,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=tech-reborn#guide-tech-reborn",
       "modIds": [
         "3eMENr4V"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/tech-reborn-3eMENr4V-0.webp",
+        "width": 624,
+        "height": 351,
+        "alt": "Сбор сока каучукового дерева"
+      }
     },
     {
       "id": "skills",
@@ -44,7 +62,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "modIds": [
         "hqQqvaa4",
         "4w7YR25f"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/skills-4w7YR25f-0.webp",
+        "width": 1600,
+        "height": 843,
+        "alt": "Боевое дерево навыков"
+      }
     },
     {
       "id": "classes",
@@ -61,7 +85,13 @@ window.WICKLEN_GUIDE_INDEX = {
         "lP9Yrr1E",
         "sNJAIjUm",
         "BDQucwF0"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/classes-NkGaQMDA-1.webp",
+        "width": 1000,
+        "height": 401,
+        "alt": "Применение магического заклинания"
+      }
     },
     {
       "id": "arcana",
@@ -72,7 +102,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=arcana#guide-arcana",
       "modIds": [
         "9J7sCd3t"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/arcana-9J7sCd3t-0.webp",
+        "width": 1281,
+        "height": 802,
+        "alt": "Изготовление в Starlight Forge"
+      }
     },
     {
       "id": "herbcraft",
@@ -85,7 +121,13 @@ window.WICKLEN_GUIDE_INDEX = {
         "5cNyEJH1",
         "xDJt8YY2",
         "59p3worY"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/herbcraft-codex-en.png",
+        "width": 1280,
+        "height": 800,
+        "alt": "Травник Herbcraft"
+      }
     },
     {
       "id": "cooking",
@@ -97,7 +139,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "modIds": [
         "7vxePowz",
         "vJnhuDde"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/cooking-7vxePowz-0.webp",
+        "width": 1600,
+        "height": 920,
+        "alt": "Кухня Farmer’s Delight"
+      }
     },
     {
       "id": "village-quest",
@@ -108,7 +156,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=village-quest#guide-village-quest",
       "modIds": [
         "eJsPPGy9"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/village-quest-eJsPPGy9-0.webp",
+        "width": 1600,
+        "height": 905,
+        "alt": "Журнал Village Quest"
+      }
     },
     {
       "id": "gateways",
@@ -120,7 +174,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "modIds": [
         "Z7xAH01M",
         "z1Dv56jq"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/gateways-Z7xAH01M-0.webp",
+        "width": 1600,
+        "height": 856,
+        "alt": "Бой Gateway: Reaper"
+      }
     },
     {
       "id": "end-remastered",
@@ -131,7 +191,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=end-remastered#guide-end-remastered",
       "modIds": [
         "ZJTGwAND"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/end-remastered-eyes-en.png",
+        "width": 1280,
+        "height": 800,
+        "alt": "Особые глаза End Remastered"
+      }
     },
     {
       "id": "archeology",
@@ -142,7 +208,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=archeology#guide-archeology",
       "modIds": [
         "zCh7omyG"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/archeology-zCh7omyG-5.webp",
+        "width": 1339,
+        "height": 857,
+        "alt": "Место раскопок ископаемых"
+      }
     },
     {
       "id": "graveyard",
@@ -153,7 +225,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=graveyard#guide-graveyard",
       "modIds": [
         "QivVPB8W"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/graveyard-QivVPB8W-1.webp",
+        "width": 1600,
+        "height": 834,
+        "alt": "Заброшенный дом The Graveyard"
+      }
     },
     {
       "id": "mochi",
@@ -164,7 +242,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=mochi#guide-mochi",
       "modIds": [
         "s9yDUMze"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/mochi-0.23-menu-en.png",
+        "width": 1280,
+        "height": 800,
+        "alt": "Меню Mochi 0.23"
+      }
     },
     {
       "id": "backpack",
@@ -175,7 +259,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=backpack#guide-backpack",
       "modIds": [
         "rlloIFEV"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/backpack-rlloIFEV-0.webp",
+        "width": 1600,
+        "height": 592,
+        "alt": "Рюкзак в путешествии"
+      }
     },
     {
       "id": "waystones",
@@ -187,7 +277,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "modIds": [
         "LOpKHB2A",
         "BflseuG2"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/waystones-LOpKHB2A-0.webp",
+        "width": 854,
+        "height": 480,
+        "alt": "Выбор назначения Waystone"
+      }
     },
     {
       "id": "seasons",
@@ -198,7 +294,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=seasons#guide-seasons",
       "modIds": [
         "e0bNACJD"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/seasons-e0bNACJD-1.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Весенний пейзаж"
+      }
     },
     {
       "id": "ores",
@@ -210,7 +312,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "modIds": [
         "XGvP5TBn",
         "psKAO98W"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/ores-psKAO98W-0.webp",
+        "width": 908,
+        "height": 908,
+        "alt": "Кристаллы на лазуритовой руде"
+      }
     },
     {
       "id": "undead-nights",
@@ -221,7 +329,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=undead-nights#guide-undead-nights",
       "modIds": [
         "g0mmcQV2"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/undead-nights-body-0.webp",
+        "width": 1006,
+        "height": 649,
+        "alt": "Противники ночи орды"
+      }
     },
     {
       "id": "rei",
@@ -233,7 +347,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "modIds": [
         "nfn13YXA",
         "wicklen-pack-compat"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/herbcraft-essence-recipe-en.png",
+        "width": 1280,
+        "height": 800,
+        "alt": "Поиск получения предмета через R"
+      }
     },
     {
       "id": "equipment",
@@ -247,7 +367,13 @@ window.WICKLEN_GUIDE_INDEX = {
         "YHdR6hMt",
         "lBHH38D3",
         "Ny4hiPCS"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/enchanting-infuser-en.png",
+        "width": 1280,
+        "height": 800,
+        "alt": "Выбор зачарования в инфузоре"
+      }
     },
     {
       "id": "combat",
@@ -262,7 +388,13 @@ window.WICKLEN_GUIDE_INDEX = {
         "EutyxFnb",
         "zrbKKaSr",
         "derP0ten"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/combat-zrbKKaSr-7.webp",
+        "width": 350,
+        "height": 600,
+        "alt": "Усиленный разбойник Mob Champions"
+      }
     },
     {
       "id": "lunar-events",
@@ -273,7 +405,13 @@ window.WICKLEN_GUIDE_INDEX = {
       "href": "mod-guide.html?topic=lunar-events#guide-lunar-events",
       "modIds": [
         "19P0GlZk"
-      ]
+      ],
+      "preview": {
+        "src": "images/guides/mods/lunar-events-body-0.webp",
+        "width": 531,
+        "height": 850,
+        "alt": "Blood Moon"
+      }
     }
   ]
 };

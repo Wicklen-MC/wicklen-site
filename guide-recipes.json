@@ -1,0 +1,1929 @@
+{
+  "packVersion": "0.5.0",
+  "recipes": {
+    "treetap": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/treetap_from_planks_and_stick.json",
+      "resourceSha256": "4c37d92634f01122aeb757957566ab83be0aca64528518d13a466820027f32dd",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "P": "#minecraft:planks",
+          "S": "minecraft:stick"
+        },
+        "pattern": [
+          " S ",
+          "PPP",
+          "P  "
+        ],
+        "result": {
+          "id": "techreborn:treetap"
+        }
+      }
+    },
+    "refined-iron": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/smelting/refined_iron_ingot_from_iron_ingot.json",
+      "resourceSha256": "cacd86718c4ad4533b04feae8536d5e693baa3b124903c3ba0da9bb2777958c8",
+      "raw": {
+        "type": "minecraft:smelting",
+        "cookingtime": 200,
+        "experience": 0.5,
+        "ingredient": "minecraft:iron_ingot",
+        "result": {
+          "id": "techreborn:refined_iron_ingot"
+        }
+      }
+    },
+    "rubber": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/smelting/rubber_from_sap.json",
+      "resourceSha256": "5f19df9f318a3e87c6d7f7dc8dab65945c80de4e8ba600f9c98edb7d2b97c533",
+      "raw": {
+        "type": "minecraft:smelting",
+        "cookingtime": 200,
+        "experience": 0.5,
+        "ingredient": "techreborn:sap",
+        "result": {
+          "id": "techreborn:rubber"
+        }
+      }
+    },
+    "copper-cable": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/copper_cable_from_copper_ingot.json",
+      "resourceSha256": "1371857afc389762ba3f45d94d85abab705b1d126c3c2f75a474a843477c3e0d",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "I": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "III"
+        ],
+        "result": {
+          "count": 6,
+          "id": "techreborn:copper_cable"
+        }
+      }
+    },
+    "insulated-cable": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/insulated_copper_cable_from_copper_cable_and_ingots_rubber.json",
+      "resourceSha256": "b55f25679c2f729052c91f9ebd31befc360b3ac9e92f835cfa6a357e339e7ef2",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "insulated_copper_cable",
+        "ingredients": [
+          "#c:ingots/rubber",
+          "techreborn:copper_cable"
+        ],
+        "result": {
+          "id": "techreborn:insulated_copper_cable"
+        }
+      }
+    },
+    "battery": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/red_cell_battery_from_ingots_lead_and_insulated_copper_cable_and_redstone.json",
+      "resourceSha256": "93c44eec2e0a6d6fb2eee77b34c8877cde4e0f2f175c269caf53bd4d4924dc32",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "R": "minecraft:redstone",
+          "T": "#c:ingots/lead",
+          "W": "techreborn:insulated_copper_cable"
+        },
+        "pattern": [
+          " W ",
+          "TRT",
+          "TRT"
+        ],
+        "result": {
+          "id": "techreborn:red_cell_battery"
+        }
+      }
+    },
+    "machine-frame": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/basic_machine_frame_from_ingots_refined_iron.json",
+      "resourceSha256": "7aba057d0a7f42ea80617f418e9812fa180da25512f3cdb1149d972f1c3de08a",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "group": "basic_machine_frame",
+        "key": {
+          "A": "#c:ingots/refined_iron"
+        },
+        "pattern": [
+          "AAA",
+          "A A",
+          "AAA"
+        ],
+        "result": {
+          "id": "techreborn:basic_machine_frame"
+        }
+      }
+    },
+    "circuit": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/electronic_circuit_from_insulated_copper_cable_and_redstone_and_refined_iron_ingot.json",
+      "resourceSha256": "530a50cbd49066165f63cbefcec376b3de2738f90dee1dd28758544f28b3aaf6",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "R": "techreborn:refined_iron_ingot",
+          "S": "minecraft:redstone",
+          "W": "techreborn:insulated_copper_cable"
+        },
+        "pattern": [
+          "WWW",
+          "SRS",
+          "WWW"
+        ],
+        "result": {
+          "id": "techreborn:electronic_circuit"
+        }
+      }
+    },
+    "generator": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/solid_fuel_generator_from_basic_machine_frame_and_furnace_and_red_cell_battery.json",
+      "resourceSha256": "6453d493ee018cf209143bed63e1ce0b216e2748b2a17d6051957733da772fbe",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          "techreborn:red_cell_battery",
+          "techreborn:basic_machine_frame",
+          "minecraft:furnace"
+        ],
+        "result": {
+          "id": "techreborn:solid_fuel_generator"
+        }
+      }
+    },
+    "iron-furnace": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/iron_furnace_from_furnace_and_iron_ingot.json",
+      "resourceSha256": "aeda7d9b4efaef2fc41490200a624db9e304b91ccb279eb93e779c4a1ef9a285",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "group": "iron_furnace",
+        "key": {
+          "F": "minecraft:furnace",
+          "I": "minecraft:iron_ingot"
+        },
+        "pattern": [
+          " I ",
+          "I I",
+          "IFI"
+        ],
+        "result": {
+          "id": "techreborn:iron_furnace"
+        }
+      }
+    },
+    "electric-furnace": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/electric_furnace_from_electronic_circuit_and_iron_furnace_and_redstone.json",
+      "resourceSha256": "8d5ab29ec4f4cb745a3bdbc5a98a69cc54c7921fc3604912d9232bc18af36d83",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "C": "techreborn:electronic_circuit",
+          "F": "techreborn:iron_furnace",
+          "R": "minecraft:redstone"
+        },
+        "pattern": [
+          " C ",
+          "RFR",
+          "   "
+        ],
+        "result": {
+          "id": "techreborn:electric_furnace"
+        }
+      }
+    },
+    "grinder": {
+      "jar": "TechReborn-6.2.1.jar",
+      "jarSha256": "e1ffdb206e3386f93c556d65254d344c0cec1f480ebdef876390e87501c20cbc",
+      "resource": "data/techreborn/recipe/crafting_table/grinder_from_basic_machine_frame_and_cobblestone_and_electronic_circuit_and_flint.json",
+      "resourceSha256": "85c9e444a9e4ef8642a439c65195ff82ed698ce612d0cc7a15fc1a8ba4017929",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "C": "techreborn:electronic_circuit",
+          "F": "minecraft:flint",
+          "M": "techreborn:basic_machine_frame",
+          "S": "minecraft:cobblestone"
+        },
+        "pattern": [
+          "FFF",
+          "SMS",
+          " C "
+        ],
+        "result": {
+          "id": "techreborn:grinder"
+        }
+      }
+    },
+    "arcane-wand": {
+      "jar": "wizards-fabric-3.1.4+26.3.jar",
+      "jarSha256": "2e0aec81a558100543ec9e6500285101a9d61ec68daec32fded61fd31b884721",
+      "resource": "data/wizards/recipe/wand_arcane.json",
+      "resourceSha256": "48148d293685fdf697d00c4cc41d69440bf2b9fb4ee5fda16b89a38c83876407",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "A": "minecraft:amethyst_shard",
+          "G": "minecraft:gold_ingot"
+        },
+        "pattern": [
+          " A",
+          "G "
+        ],
+        "result": {
+          "id": "wizards:wand_arcane"
+        }
+      }
+    },
+    "fire-wand": {
+      "jar": "wizards-fabric-3.1.4+26.3.jar",
+      "jarSha256": "2e0aec81a558100543ec9e6500285101a9d61ec68daec32fded61fd31b884721",
+      "resource": "data/wizards/recipe/wand_fire.json",
+      "resourceSha256": "74b61f64755be6b5eb83ba42f164ef157c73e7d20886bd6e520af5ec11ee5d2b",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "A": "minecraft:gunpowder",
+          "G": "minecraft:gold_ingot"
+        },
+        "pattern": [
+          " A",
+          "G "
+        ],
+        "result": {
+          "id": "wizards:wand_fire"
+        }
+      }
+    },
+    "healer-wand": {
+      "jar": "paladins-fabric-3.1.4.1+26.3.jar",
+      "jarSha256": "45f76b46493cdbc34010ba70eb2a98814b47c8422e8e2f6d356a50a9b692bc5d",
+      "resource": "data/paladins/recipe/acolyte_wand.json",
+      "resourceSha256": "e1fa5ce720a0df3cbcf66b73db5ab4c702f3f46e625c70fb3275e0ddc121d55c",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "S": "minecraft:string"
+        },
+        "pattern": [
+          " HH",
+          " SH",
+          "H  "
+        ],
+        "result": {
+          "id": "paladins:acolyte_wand"
+        }
+      }
+    },
+    "longbow": {
+      "jar": "archers-fabric-3.1.4+26.3.jar",
+      "jarSha256": "b5fe34835f593c7d7fc0682e1b7f1f1e4c2048f388419d8ebc14480d4fd9add7",
+      "resource": "data/archers/recipe/composite_longbow.json",
+      "resourceSha256": "1bb8dc27c7c2ea3b348f806b53551f3573b0e8803bac0afa4b356c4679460c8c",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:stick",
+          "B": "minecraft:bone",
+          "X": "minecraft:string"
+        },
+        "pattern": [
+          " #X",
+          "B X",
+          " #X"
+        ],
+        "result": {
+          "id": "archers:composite_longbow"
+        }
+      }
+    },
+    "binding-table": {
+      "jar": "spell_engine-fabric-1.10.9+26.3.jar",
+      "jarSha256": "44cee78c011ef322313650dc9c2b9d1d2a3d6b4755adf1d9e83aced4d412cfa3",
+      "resource": "data/spell_engine/recipe/spell_binding_table.json",
+      "resourceSha256": "7084a6b6193fb7c6b9d6c2f28931e08d7fbb7ae5c4bb8de2c9e65e97c879cba9",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "B": "minecraft:book",
+          "A": "minecraft:amethyst_shard",
+          "G": "minecraft:gold_ingot",
+          "D": "minecraft:polished_diorite"
+        },
+        "pattern": [
+          " B ",
+          "AGA",
+          "DDD"
+        ],
+        "result": {
+          "id": "spell_engine:spell_binding"
+        }
+      }
+    },
+    "arcane-rune": {
+      "jar": "runes-fabric-1.3.2+26.3.jar",
+      "jarSha256": "8515d3c5eb4d691655fa1663538cbfb6fbcc42001a0c9a73e28df7e990aea6bb",
+      "resource": "data/runes/recipe/arcane_rune_small_hand.json",
+      "resourceSha256": "875032413258edb10aabb1864f0f0ec27105d5a31ba26c1b64bdb72c6074cb56",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          "#runes:rune_crafting/base/stone",
+          "#runes:rune_crafting/reagent/arcane_small"
+        ],
+        "result": {
+          "count": 2,
+          "id": "runes:arcane_stone"
+        }
+      }
+    },
+    "fire-rune": {
+      "jar": "runes-fabric-1.3.2+26.3.jar",
+      "jarSha256": "8515d3c5eb4d691655fa1663538cbfb6fbcc42001a0c9a73e28df7e990aea6bb",
+      "resource": "data/runes/recipe/fire_rune_small_hand.json",
+      "resourceSha256": "fb1d4ac406e680bb7a70b7ec598ded2a9bdb88bfbabbf13639ad38b02cd81bd0",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          "#runes:rune_crafting/base/stone",
+          "#runes:rune_crafting/reagent/fire_small"
+        ],
+        "result": {
+          "count": 2,
+          "id": "runes:fire_stone"
+        }
+      }
+    },
+    "frost-rune": {
+      "jar": "runes-fabric-1.3.2+26.3.jar",
+      "jarSha256": "8515d3c5eb4d691655fa1663538cbfb6fbcc42001a0c9a73e28df7e990aea6bb",
+      "resource": "data/runes/recipe/frost_rune_small_hand.json",
+      "resourceSha256": "590a7a668bc5b1015265db752acc5196ccce0d5ae18534dd4074f5a75de6fe76",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          "#runes:rune_crafting/base/stone",
+          "#runes:rune_crafting/reagent/frost_small"
+        ],
+        "result": {
+          "count": 2,
+          "id": "runes:frost_stone"
+        }
+      }
+    },
+    "healing-rune": {
+      "jar": "runes-fabric-1.3.2+26.3.jar",
+      "jarSha256": "8515d3c5eb4d691655fa1663538cbfb6fbcc42001a0c9a73e28df7e990aea6bb",
+      "resource": "data/runes/recipe/healing_rune_small_hand.json",
+      "resourceSha256": "dc908baa93f8ed90fe9a4741e11da08dca97dc9425675119a91aa7ac1addabb3",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          "#runes:rune_crafting/base/stone",
+          "#runes:rune_crafting/reagent/healing_small"
+        ],
+        "result": {
+          "count": 2,
+          "id": "runes:healing_stone"
+        }
+      }
+    },
+    "rune-altar": {
+      "jar": "runes-fabric-1.3.2+26.3.jar",
+      "jarSha256": "8515d3c5eb4d691655fa1663538cbfb6fbcc42001a0c9a73e28df7e990aea6bb",
+      "resource": "data/runes/recipe/rune_crafting_altar.json",
+      "resourceSha256": "61642730b81e3a4843f1d86b3918c7094ce2cdf39b68e9bb9fe3dd72c755d414",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "#": "#runes:fancy_stone_materials",
+          "G": "minecraft:gold_ingot"
+        },
+        "pattern": [
+          "G#G",
+          " # ",
+          "###"
+        ],
+        "result": {
+          "id": "runes:crafting_altar"
+        }
+      }
+    },
+    "arcane-paper": {
+      "jar": "arcananovum-4.0.12+26.3.jar",
+      "jarSha256": "88f51b11c1e77efa794957a0e8eb5fc4bdce5a2c1f6b18d460dd97261043a2ee",
+      "resource": "data/arcananovum/recipe/mundane_arcane_paper.json",
+      "resourceSha256": "059fcfe7fddddbcff255b17159577e85e136fef0cb0c581b5c15c4248652960b",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "#": "minecraft:paper",
+          "X": "minecraft:enchanted_book"
+        },
+        "pattern": [
+          " # ",
+          "#X#",
+          " # "
+        ],
+        "result": {
+          "count": 4,
+          "id": "arcananovum:mundane_arcane_paper"
+        }
+      }
+    },
+    "herbal-codex": {
+      "jar": "herbcraft-1.1.4.jar",
+      "jarSha256": "659c25d021aae2dbc90b0560ef32ac56340d552112b968a5ab4a6d2d5ec1e142",
+      "resource": "data/herbcraft/recipe/herbal_codex.json",
+      "resourceSha256": "d980c0cb8df2497a686767c34cbfea8ee8695d967caffa8dee55d8f4196b1964",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "minecraft:book",
+          "minecraft:dandelion"
+        ],
+        "result": {
+          "id": "herbcraft:herbal_codex",
+          "count": 1
+        }
+      }
+    },
+    "dandelion-essence": {
+      "jar": "herbcraft-alchemy-1.1.4.jar",
+      "jarSha256": "251bb5851e1f5186cb09e1a270558be660b9a312786b0103752ddc0705fc1ba4",
+      "resource": "data/herbcraft/recipe/essence_dandelion.json",
+      "resourceSha256": "7633718b0c071cfa5516e46ccea58e2d5594e938461060a6726dd52f237cfcc4",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "minecraft:dandelion",
+          "minecraft:dandelion",
+          "minecraft:dandelion",
+          "minecraft:dandelion",
+          "minecraft:dandelion",
+          "minecraft:dandelion",
+          "minecraft:dandelion",
+          "minecraft:dandelion",
+          "minecraft:glass_bottle"
+        ],
+        "result": {
+          "id": "herbcraft:essence_dandelion",
+          "count": 1
+        }
+      }
+    },
+    "dandelion-salad": {
+      "jar": "herbcraft-cuisine-1.1.3.jar",
+      "jarSha256": "58242d8d83d013a0befa6f886237015d6a6f9eb0ce96311e92351023310ed6af",
+      "resource": "data/herbcraft_cuisine/recipe/dandelion_salad.json",
+      "resourceSha256": "b7176160e71c351aec8aa816a8f0b07500b1f328e61e5aa0dc96411f2cdc0ca0",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "minecraft:bowl",
+          "minecraft:dandelion",
+          "minecraft:dandelion"
+        ],
+        "result": {
+          "id": "herbcraft_cuisine:dandelion_salad",
+          "count": 1
+        }
+      }
+    },
+    "flint-knife": {
+      "jar": "FarmersDelight-26.3-3.6.30+refabricated.jar",
+      "jarSha256": "930dcbc51aa2435d4345955aee7b2bbb5bc43c94c8d0859da703c645e9587269",
+      "resource": "data/farmersdelight/recipe/flint_knife.json",
+      "resourceSha256": "20b9a258ce9c01cba196b8f7c0c455fd34dda9866e76b077d12f87764082cac2",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "m": "minecraft:flint",
+          "s": "minecraft:stick"
+        },
+        "pattern": [
+          "m",
+          "s"
+        ],
+        "result": {
+          "id": "farmersdelight:flint_knife"
+        }
+      }
+    },
+    "cutting-board": {
+      "jar": "FarmersDelight-26.3-3.6.30+refabricated.jar",
+      "jarSha256": "930dcbc51aa2435d4345955aee7b2bbb5bc43c94c8d0859da703c645e9587269",
+      "resource": "data/farmersdelight/recipe/cutting_board.json",
+      "resourceSha256": "1c13188daad1c16738f2de68fdf7ae54941fbaa7725b382a922b12464304902c",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "#": "#minecraft:planks",
+          "/": "minecraft:stick"
+        },
+        "pattern": [
+          "/##",
+          "/##"
+        ],
+        "result": {
+          "id": "farmersdelight:cutting_board"
+        }
+      }
+    },
+    "cooking-pot": {
+      "jar": "FarmersDelight-26.3-3.6.30+refabricated.jar",
+      "jarSha256": "930dcbc51aa2435d4345955aee7b2bbb5bc43c94c8d0859da703c645e9587269",
+      "resource": "data/farmersdelight/recipe/cooking_pot.json",
+      "resourceSha256": "3862947921badbb200669e9c6390054452310ef50c1480c98bfac23766f3576d",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "S": "minecraft:wooden_shovel",
+          "W": "#c:buckets/water",
+          "b": "minecraft:brick",
+          "i": "#c:ingots/iron"
+        },
+        "pattern": [
+          "bSb",
+          "iWi",
+          "iii"
+        ],
+        "result": {
+          "id": "farmersdelight:cooking_pot"
+        }
+      }
+    },
+    "soup": {
+      "jar": "FarmersDelight-26.3-3.6.30+refabricated.jar",
+      "jarSha256": "930dcbc51aa2435d4345955aee7b2bbb5bc43c94c8d0859da703c645e9587269",
+      "resource": "data/farmersdelight/recipe/cooking/vegetable_soup.json",
+      "resourceSha256": "80f3d00722d7c907e89674139ddaa9914cf49bd966877fbd8e08120cadaf1b0e",
+      "raw": {
+        "type": "farmersdelight:cooking",
+        "experience": 1.0,
+        "ingredients": [
+          "#c:crops/carrot",
+          "#c:crops/potato",
+          "#c:crops/beetroot",
+          "#c:foods/leafy_green"
+        ],
+        "recipe_book_tab": "meals",
+        "result": {
+          "id": "farmersdelight:vegetable_soup"
+        }
+      }
+    },
+    "recipe-book": {
+      "jar": "cookingforblockheads-fabric-26.3-26.3.0.2.jar",
+      "jarSha256": "7f1ce03e554cbfccaa31f17ea9bf6539cca2937eb8ef5309d1d4deeb102e31c3",
+      "resource": "data/cookingforblockheads/recipe/recipe_book.json",
+      "resourceSha256": "14d7880cb9dbf016b08d1390ee2c777bec09078ae8b7fa288766b351893cbbf4",
+      "raw": {
+        "type": "minecraft:smelting",
+        "cookingtime": 200,
+        "experience": 0.15,
+        "ingredient": "minecraft:book",
+        "result": {
+          "id": "cookingforblockheads:recipe_book"
+        }
+      }
+    },
+    "crafting-book": {
+      "jar": "cookingforblockheads-fabric-26.3-26.3.0.2.jar",
+      "jarSha256": "7f1ce03e554cbfccaa31f17ea9bf6539cca2937eb8ef5309d1d4deeb102e31c3",
+      "resource": "data/cookingforblockheads/recipe/crafting_book.json",
+      "resourceSha256": "8da89fa533bacfe98dbc69d8b40e5ff406621d36d7f746b7ab0632b231f72294",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "B": "cookingforblockheads:recipe_book",
+          "C": "minecraft:crafting_table",
+          "D": "#c:gems/diamond"
+        },
+        "pattern": [
+          " D ",
+          "CBC",
+          " D "
+        ],
+        "result": {
+          "id": "cookingforblockheads:crafting_book"
+        }
+      }
+    },
+    "cooking-table": {
+      "jar": "cookingforblockheads-fabric-26.3-26.3.0.2.jar",
+      "jarSha256": "7f1ce03e554cbfccaa31f17ea9bf6539cca2937eb8ef5309d1d4deeb102e31c3",
+      "resource": "data/cookingforblockheads/recipe/cooking_table.json",
+      "resourceSha256": "0e1712eb3d901d7b7b7f55fc99916dac30b7efb4ff556733df2218019ed104fe",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "B": "cookingforblockheads:crafting_book",
+          "C": "minecraft:terracotta",
+          "S": "#c:stones"
+        },
+        "pattern": [
+          "SSS",
+          "CBC",
+          "CCC"
+        ],
+        "result": {
+          "id": "cookingforblockheads:cooking_table"
+        }
+      }
+    },
+    "sink": {
+      "jar": "cookingforblockheads-fabric-26.3-26.3.0.2.jar",
+      "jarSha256": "7f1ce03e554cbfccaa31f17ea9bf6539cca2937eb8ef5309d1d4deeb102e31c3",
+      "resource": "data/cookingforblockheads/recipe/sink.json",
+      "resourceSha256": "d5ff13a023ea03a6232cbed9321d4366cd5152c0cc3947e4652e0aa0247a0b6e",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "B": "minecraft:water_bucket",
+          "C": "minecraft:terracotta",
+          "I": "#c:ingots/iron"
+        },
+        "pattern": [
+          "III",
+          "CBC",
+          "CCC"
+        ],
+        "result": {
+          "id": "cookingforblockheads:sink"
+        }
+      }
+    },
+    "witch-eye": {
+      "jar": "endrem-fabric-26.3-6.2.2.jar",
+      "jarSha256": "2f2bb57a150b418ad125d5ec694fa2455fc74b93ea512393d732f3b6c2939fbf",
+      "resource": "data/endrem/recipe/witch_eye.json",
+      "resourceSha256": "ebf90fd9c59de7d399144019a23517e2c466bb268eaa6ade3e8f32d459ddd7fc",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "minecraft:ender_eye",
+          "endrem:witch_pupil"
+        ],
+        "result": {
+          "count": 1,
+          "id": "endrem:witch_eye"
+        }
+      }
+    },
+    "undead-eye": {
+      "jar": "endrem-fabric-26.3-6.2.2.jar",
+      "jarSha256": "2f2bb57a150b418ad125d5ec694fa2455fc74b93ea512393d732f3b6c2939fbf",
+      "resource": "data/endrem/recipe/undead_eye.json",
+      "resourceSha256": "750d5564636497613037dbe10e4e39526b3952e5497fe0acd6d74d25c1ee1bf5",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "G": "minecraft:ghast_tear",
+          "R": "minecraft:rotten_flesh",
+          "B": "minecraft:bone",
+          "M": "minecraft:phantom_membrane",
+          "S": "endrem:undead_soul"
+        },
+        "pattern": [
+          " M ",
+          "BSR",
+          " G "
+        ],
+        "result": {
+          "count": 1,
+          "id": "endrem:undead_eye"
+        }
+      }
+    },
+    "exotic-eye": {
+      "jar": "endrem-fabric-26.3-6.2.2.jar",
+      "jarSha256": "2f2bb57a150b418ad125d5ec694fa2455fc74b93ea512393d732f3b6c2939fbf",
+      "resource": "data/endrem/recipe/exotic_eye.json",
+      "resourceSha256": "0802fb7889168c8b2b480d1369f46ebd7ec1550ac7a534f0067e3cea73bb5d4d",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "F": "minecraft:fire_coral",
+          "T": "minecraft:tube_coral",
+          "H": "minecraft:horn_coral",
+          "B": "minecraft:bubble_coral",
+          "E": "minecraft:ender_eye",
+          "G": "minecraft:glow_ink_sac",
+          "C": "minecraft:conduit"
+        },
+        "pattern": [
+          "BCF",
+          "GEG",
+          "HCT"
+        ],
+        "result": {
+          "count": 1,
+          "id": "endrem:exotic_eye"
+        }
+      }
+    },
+    "archeology-table": {
+      "jar": "betterarcheology-fabric-26.3-1.3.9.jar",
+      "jarSha256": "fa6ad484d0a578eb2ee19693a4c5f5a40e831fcbe7f08c7596b407876c2f559a",
+      "resource": "data/betterarcheology/recipe/archeology_table.json",
+      "resourceSha256": "87a4b196d5f3cc9cc32f0191082229d8c1d8a0633d9e5b5ce563666aed6a1a39",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "B": "#c:brushes",
+          "S": "betterarcheology:artifact_shards",
+          "W": "#minecraft:planks"
+        },
+        "pattern": [
+          "BS",
+          "WW",
+          "WW"
+        ],
+        "result": {
+          "id": "betterarcheology:archeology_table"
+        }
+      }
+    },
+    "artifact": {
+      "jar": "betterarcheology-fabric-26.3-1.3.9.jar",
+      "jarSha256": "fa6ad484d0a578eb2ee19693a4c5f5a40e831fcbe7f08c7596b407876c2f559a",
+      "resource": "data/betterarcheology/recipe/unidentified_artifact.json",
+      "resourceSha256": "95f65962a6bcff2e813c8b9387b8c9f08698a644f69b2f24d23c8871011569e8",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "#": "betterarcheology:artifact_shards"
+        },
+        "pattern": [
+          "###",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "betterarcheology:unidentified_artifact"
+        }
+      }
+    },
+    "bamboo-treat": {
+      "jar": "mochipets-0.23.0+26.3.jar",
+      "jarSha256": "01a82d79c43926ca0200f6a28592e6a8f47cb0875bc21715adb4271ef8537426",
+      "resource": "data/mochipets/recipe/bamboo_treat.json",
+      "resourceSha256": "bf46ce8af1851870f19d38b620d6ab183194623fb3310e91ea3c14a7f7cb310c",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "minecraft:bamboo",
+          "minecraft:bamboo",
+          "minecraft:sugar"
+        ],
+        "result": {
+          "id": "mochipets:bamboo_treat",
+          "count": 2
+        }
+      }
+    },
+    "mochi-treat": {
+      "jar": "mochipets-0.23.0+26.3.jar",
+      "jarSha256": "01a82d79c43926ca0200f6a28592e6a8f47cb0875bc21715adb4271ef8537426",
+      "resource": "data/mochipets/recipe/mochi_treat.json",
+      "resourceSha256": "167997a4e61c78faf961fefee6d5c8abd75a7780f250e5e14a9715b3b58c36bf",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "mochipets:acorn_shard",
+          "mochipets:acorn_shard",
+          "minecraft:wheat",
+          "minecraft:sugar"
+        ],
+        "result": {
+          "id": "mochipets:mochi_treat",
+          "count": 2
+        }
+      }
+    },
+    "mochi-bed": {
+      "jar": "mochipets-0.23.0+26.3.jar",
+      "jarSha256": "01a82d79c43926ca0200f6a28592e6a8f47cb0875bc21715adb4271ef8537426",
+      "resource": "data/mochipets/recipe/mochi_bed.json",
+      "resourceSha256": "253801792bdceeee7e32de315d7eb1b5efaa7191192f2301bf73dc4c995e6346",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "P P",
+          " W ",
+          "P P"
+        ],
+        "key": {
+          "P": "#minecraft:planks",
+          "W": "#minecraft:wool"
+        },
+        "result": {
+          "id": "mochipets:mochi_bed",
+          "count": 1
+        }
+      }
+    },
+    "mochi-whistle": {
+      "jar": "mochipets-0.23.0+26.3.jar",
+      "jarSha256": "01a82d79c43926ca0200f6a28592e6a8f47cb0875bc21715adb4271ef8537426",
+      "resource": "data/mochipets/recipe/mochi_whistle.json",
+      "resourceSha256": "0ff1b408d1f7b1216c86a996c55c23cd9057130e99b5dfbfaee5bcdea337cf4c",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " S ",
+          "GAG",
+          " G "
+        ],
+        "key": {
+          "S": "minecraft:string",
+          "G": "minecraft:gold_ingot",
+          "A": "mochipets:acorn"
+        },
+        "result": {
+          "id": "mochipets:mochi_whistle",
+          "count": 1
+        }
+      }
+    },
+    "backpack": {
+      "jar": "travelersbackpack-fabric-26.3-11.4.2.jar",
+      "jarSha256": "edd8947f6c143dfbcb8b0a6aaab50e2435d784ca4dc33a087849ff3fca2b689c",
+      "resource": "data/travelersbackpack/recipe/standard.json",
+      "resourceSha256": "4f94c89f29b93b2482c5c3b8a279eb06cd5836fc50f91fa8188e8758a08bdbf7",
+      "raw": {
+        "type": "travelersbackpack:backpack_shaped",
+        "group": "standard_travelers_backpack",
+        "key": {
+          "B": "#c:strings",
+          "C": "travelersbackpack:backpack_tank",
+          "D": "#c:chests/wooden",
+          "S": "#travelersbackpack:sleeping_bags",
+          "X": "#c:leathers"
+        },
+        "pattern": [
+          "XBX",
+          "CDC",
+          "XSX"
+        ],
+        "result": {
+          "id": "travelersbackpack:standard"
+        }
+      }
+    },
+    "backpack-tank": {
+      "jar": "travelersbackpack-fabric-26.3-11.4.2.jar",
+      "jarSha256": "edd8947f6c143dfbcb8b0a6aaab50e2435d784ca4dc33a087849ff3fca2b689c",
+      "resource": "data/travelersbackpack/recipe/backpack_tank.json",
+      "resourceSha256": "34ba01633335bfa02916358c55e877a105de1c65e826068d0cb223b39ecb876a",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "A": "#c:ingots/iron",
+          "B": "#c:glass_blocks/colorless"
+        },
+        "pattern": [
+          "BAB",
+          "B B",
+          "BAB"
+        ],
+        "result": {
+          "id": "travelersbackpack:backpack_tank"
+        }
+      }
+    },
+    "sleeping-bag": {
+      "jar": "travelersbackpack-fabric-26.3-11.4.2.jar",
+      "jarSha256": "edd8947f6c143dfbcb8b0a6aaab50e2435d784ca4dc33a087849ff3fca2b689c",
+      "resource": "data/travelersbackpack/recipe/white_sleeping_bag.json",
+      "resourceSha256": "0b80923ad09b37e6e17d33d6025aceff42f0462993dbff37c4f9591524b7acc9",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "group": "sleeping_bag",
+        "key": {
+          "#": "minecraft:white_wool",
+          "X": "minecraft:white_wool"
+        },
+        "pattern": [
+          " X ",
+          " # ",
+          " # "
+        ],
+        "result": {
+          "id": "travelersbackpack:white_sleeping_bag"
+        }
+      }
+    },
+    "blank-upgrade": {
+      "jar": "travelersbackpack-fabric-26.3-11.4.2.jar",
+      "jarSha256": "edd8947f6c143dfbcb8b0a6aaab50e2435d784ca4dc33a087849ff3fca2b689c",
+      "resource": "data/travelersbackpack/recipe/blank_upgrade.json",
+      "resourceSha256": "e41b611bdac837d111c7a3081b5e679d4800f5c9e9c132d5af689c4d34b42bbb",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "A": "#c:leathers",
+          "B": "#c:strings"
+        },
+        "pattern": [
+          " B ",
+          "BAB",
+          " B "
+        ],
+        "result": {
+          "count": 4,
+          "id": "travelersbackpack:blank_upgrade"
+        }
+      }
+    },
+    "iron-upgrade": {
+      "jar": "travelersbackpack-fabric-26.3-11.4.2.jar",
+      "jarSha256": "edd8947f6c143dfbcb8b0a6aaab50e2435d784ca4dc33a087849ff3fca2b689c",
+      "resource": "data/travelersbackpack/recipe/iron_tier_upgrade.json",
+      "resourceSha256": "eb5a62d544c090f58436fda3a7dc788d0c42b14b598501823ff63c0462bfbe1e",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "A": "#c:ingots/iron",
+          "B": "travelersbackpack:blank_upgrade"
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "id": "travelersbackpack:iron_tier_upgrade"
+        }
+      }
+    },
+    "warp-stone": {
+      "jar": "waystones-fabric-26.3-26.3.0.1.jar",
+      "jarSha256": "4f690214955083a21c4f60bee52a6902326e0bb3f15cd411e1d4250495a3f597",
+      "resource": "data/waystones/recipe/warp_stone.json",
+      "resourceSha256": "c35edcac45f1ca711a519c081929a0a6a27f8fd7ec266858f463fdb2b8fa2883",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "A": "minecraft:amethyst_shard",
+          "E": "minecraft:ender_pearl",
+          "G": "minecraft:gold_ingot"
+        },
+        "pattern": [
+          "AEA",
+          "EGE",
+          "AEA"
+        ],
+        "result": {
+          "id": "waystones:warp_stone"
+        }
+      }
+    },
+    "waystone": {
+      "jar": "waystones-fabric-26.3-26.3.0.1.jar",
+      "jarSha256": "4f690214955083a21c4f60bee52a6902326e0bb3f15cd411e1d4250495a3f597",
+      "resource": "data/waystones/recipe/andesite_waystone.json",
+      "resourceSha256": "dd3f8816a4c52fe33a858e2256dd1af8bdd8dff57dce557d3f63fc65364ab0ec",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "S": "minecraft:stone_bricks",
+          "W": "waystones:warp_stone"
+        },
+        "pattern": [
+          " S ",
+          "SWS",
+          "SSS"
+        ],
+        "result": {
+          "id": "waystones:andesite_waystone"
+        }
+      }
+    },
+    "warp-scroll": {
+      "jar": "waystones-fabric-26.3-26.3.0.1.jar",
+      "jarSha256": "4f690214955083a21c4f60bee52a6902326e0bb3f15cd411e1d4250495a3f597",
+      "resource": "data/waystones/recipe/warp_scroll.json",
+      "resourceSha256": "7e43582bf5dc6b7d8411609d168a27ec5c324e7f0beb2885880ea1ebfcca9e16",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "A": "minecraft:amethyst_shard",
+          "G": "#c:nuggets/gold",
+          "I": "minecraft:ink_sac",
+          "P": "minecraft:paper"
+        },
+        "pattern": [
+          "GIG",
+          "GAG",
+          "PPP"
+        ],
+        "result": {
+          "count": 3,
+          "id": "waystones:warp_scroll"
+        }
+      }
+    },
+    "calendar": {
+      "jar": "SereneSeasons-fabric-26.3-26.1.2.0.7.jar",
+      "jarSha256": "b4068f8d8b7bdb3db4ed43400d3720e3c82ac25c8b15371cde4fdf97b71b71b5",
+      "resource": "data/sereneseasons/recipe/calendar.json",
+      "resourceSha256": "0dff988741d7dcb5d63c5c4d00fabb0687f9f041e7a8033621ce907e0d75461b",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "C": "minecraft:clock",
+          "P": "minecraft:paper"
+        },
+        "pattern": [
+          "PPP",
+          "PCP",
+          "PPP"
+        ],
+        "result": {
+          "id": "sereneseasons:calendar"
+        }
+      }
+    },
+    "diamond-cane": {
+      "jar": "GrowableOres-3.8.0-26.3-Fabric.jar",
+      "jarSha256": "595e9e5e85112daad7f9892bdbbe02324b13459ac50432e742f67831ba63fdc0",
+      "resource": "data/growable_ores/recipe/vanilla/diamond_cane.json",
+      "resourceSha256": "eede6e4328992d81ee5608c48fe834d51e42e5c671e054503b6ead6c980308c7",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "###",
+          "#G#",
+          "###"
+        ],
+        "key": {
+          "#": "minecraft:sugar_cane",
+          "G": "minecraft:diamond"
+        },
+        "result": {
+          "id": "growable_ores:diamond_cane",
+          "count": 1
+        }
+      }
+    },
+    "infuser": {
+      "jar": "enchantinginfuser-v26.3.0-mc26.3.x+fabric.jar",
+      "jarSha256": "7b05822b07b75f9efbf4588b48c1ab331811e8fe55b51829e4ac73cb924ac567",
+      "resource": "data/enchantinginfuser/recipe/enchanting_infuser.json",
+      "resourceSha256": "a7fe199a17277e7304e39e0cdbf606f62775ce929a38cae13252c64c5a37569b",
+      "raw": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "#": "minecraft:crying_obsidian",
+          "A": "minecraft:amethyst_shard",
+          "B": "minecraft:book",
+          "T": "minecraft:enchanting_table"
+        },
+        "pattern": [
+          " B ",
+          "A#A",
+          "#T#"
+        ],
+        "result": {
+          "id": "enchantinginfuser:enchanting_infuser"
+        }
+      }
+    }
+  },
+  "items": {
+    "#minecraft:planks": {
+      "label": "Любые доски",
+      "english": "Oak Planks",
+      "example": "minecraft:oak_planks",
+      "icon": "images/guides/items/minecraft-oak_planks.png"
+    },
+    "minecraft:stick": {
+      "label": "Палка",
+      "english": "Stick",
+      "example": "minecraft:stick",
+      "icon": "images/guides/items/minecraft-stick.png"
+    },
+    "techreborn:treetap": {
+      "label": "Краник (Treetap)",
+      "english": "Treetap",
+      "example": "techreborn:treetap",
+      "icon": "images/guides/items/techreborn-treetap.png"
+    },
+    "minecraft:iron_ingot": {
+      "label": "Железный слиток",
+      "english": "Iron Ingot",
+      "example": "minecraft:iron_ingot",
+      "icon": "images/guides/items/minecraft-iron_ingot.png"
+    },
+    "techreborn:refined_iron_ingot": {
+      "label": "Слиток очищенного железа",
+      "english": "Refined Iron Ingot",
+      "example": "techreborn:refined_iron_ingot",
+      "icon": "images/guides/items/techreborn-refined_iron_ingot.png"
+    },
+    "techreborn:sap": {
+      "label": "Каучук",
+      "english": "Sap",
+      "example": "techreborn:sap",
+      "icon": "images/guides/items/techreborn-sap.png"
+    },
+    "techreborn:rubber": {
+      "label": "Резина",
+      "english": "Rubber",
+      "example": "techreborn:rubber",
+      "icon": "images/guides/items/techreborn-rubber.png"
+    },
+    "minecraft:copper_ingot": {
+      "label": "Медный слиток",
+      "english": "Copper Ingot",
+      "example": "minecraft:copper_ingot",
+      "icon": "images/guides/items/minecraft-copper_ingot.png"
+    },
+    "techreborn:copper_cable": {
+      "label": "Медный кабель",
+      "english": "Copper Cable",
+      "example": "techreborn:copper_cable",
+      "icon": "images/guides/items/techreborn-copper_cable.png"
+    },
+    "#c:ingots/rubber": {
+      "label": "Резина",
+      "english": "Rubber",
+      "example": "techreborn:rubber",
+      "icon": "images/guides/items/techreborn-rubber.png"
+    },
+    "techreborn:insulated_copper_cable": {
+      "label": "Изолированный медный кабель",
+      "english": "Insulated Copper Cable",
+      "example": "techreborn:insulated_copper_cable",
+      "icon": "images/guides/items/techreborn-insulated_copper_cable.png"
+    },
+    "minecraft:redstone": {
+      "label": "Редстоуновая пыль",
+      "english": "Redstone Dust",
+      "example": "minecraft:redstone",
+      "icon": "images/guides/items/minecraft-redstone.png"
+    },
+    "#c:ingots/lead": {
+      "label": "Слиток свинца",
+      "english": "Lead Ingot",
+      "example": "techreborn:lead_ingot",
+      "icon": "images/guides/items/techreborn-lead_ingot.png"
+    },
+    "techreborn:red_cell_battery": {
+      "label": "Красная батарея (Red Cell Battery)",
+      "english": "Red Cell Battery",
+      "example": "techreborn:red_cell_battery",
+      "icon": "images/guides/items/techreborn-red_cell_battery.png"
+    },
+    "#c:ingots/refined_iron": {
+      "label": "Слиток очищенного железа",
+      "english": "Refined Iron Ingot",
+      "example": "techreborn:refined_iron_ingot",
+      "icon": "images/guides/items/techreborn-refined_iron_ingot.png"
+    },
+    "techreborn:basic_machine_frame": {
+      "label": "Базовый корпус машины",
+      "english": "Basic Machine Frame",
+      "example": "techreborn:basic_machine_frame",
+      "icon": "images/guides/items/techreborn-basic_machine_frame.png"
+    },
+    "techreborn:electronic_circuit": {
+      "label": "Электронная схема",
+      "english": "Electronic Circuit",
+      "example": "techreborn:electronic_circuit",
+      "icon": "images/guides/items/techreborn-electronic_circuit.png"
+    },
+    "minecraft:furnace": {
+      "label": "Печь",
+      "english": "Furnace",
+      "example": "minecraft:furnace",
+      "icon": "images/guides/items/minecraft-furnace.png"
+    },
+    "techreborn:solid_fuel_generator": {
+      "label": "Твердотопливный генератор",
+      "english": "Generator",
+      "example": "techreborn:solid_fuel_generator",
+      "icon": "images/guides/items/techreborn-solid_fuel_generator.png"
+    },
+    "techreborn:iron_furnace": {
+      "label": "Железная печь",
+      "english": "Iron Furnace",
+      "example": "techreborn:iron_furnace",
+      "icon": "images/guides/items/techreborn-iron_furnace.png"
+    },
+    "techreborn:electric_furnace": {
+      "label": "Электрическая печь",
+      "english": "Electric Furnace",
+      "example": "techreborn:electric_furnace",
+      "icon": "images/guides/items/techreborn-electric_furnace.png"
+    },
+    "minecraft:flint": {
+      "label": "Кремень",
+      "english": "Flint",
+      "example": "minecraft:flint",
+      "icon": "images/guides/items/minecraft-flint.png"
+    },
+    "minecraft:cobblestone": {
+      "label": "Булыжник",
+      "english": "Cobblestone",
+      "example": "minecraft:cobblestone",
+      "icon": "images/guides/items/minecraft-cobblestone.png"
+    },
+    "techreborn:grinder": {
+      "label": "Дробитель",
+      "english": "Grinder",
+      "example": "techreborn:grinder",
+      "icon": "images/guides/items/techreborn-grinder.png"
+    },
+    "minecraft:amethyst_shard": {
+      "label": "Осколок аметиста",
+      "english": "Amethyst Shard",
+      "example": "minecraft:amethyst_shard",
+      "icon": "images/guides/items/minecraft-amethyst_shard.png"
+    },
+    "minecraft:gold_ingot": {
+      "label": "Золотой слиток",
+      "english": "Gold Ingot",
+      "example": "minecraft:gold_ingot",
+      "icon": "images/guides/items/minecraft-gold_ingot.png"
+    },
+    "wizards:wand_arcane": {
+      "label": "Жезл арканы",
+      "english": "Arcane Wand",
+      "example": "wizards:wand_arcane",
+      "icon": "images/guides/items/wizards-wand_arcane.png"
+    },
+    "minecraft:gunpowder": {
+      "label": "Порох",
+      "english": "Gunpowder",
+      "example": "minecraft:gunpowder",
+      "icon": "images/guides/items/minecraft-gunpowder.png"
+    },
+    "wizards:wand_fire": {
+      "label": "Жезл огня",
+      "english": "Fire Wand",
+      "example": "wizards:wand_fire",
+      "icon": "images/guides/items/wizards-wand_fire.png"
+    },
+    "minecraft:string": {
+      "label": "Нить",
+      "english": "String",
+      "example": "minecraft:string",
+      "icon": "images/guides/items/minecraft-string.png"
+    },
+    "paladins:acolyte_wand": {
+      "label": "Жезл прислужника",
+      "english": "Acolyte Wand",
+      "example": "paladins:acolyte_wand",
+      "icon": "images/guides/items/paladins-acolyte_wand.png"
+    },
+    "minecraft:bone": {
+      "label": "Кость",
+      "english": "Bone",
+      "example": "minecraft:bone",
+      "icon": "images/guides/items/minecraft-bone.png"
+    },
+    "archers:composite_longbow": {
+      "label": "Составной длинный лук",
+      "english": "Composite Longbow",
+      "example": "archers:composite_longbow",
+      "icon": "images/guides/items/archers-composite_longbow.png"
+    },
+    "minecraft:book": {
+      "label": "Книга",
+      "english": "Book",
+      "example": "minecraft:book",
+      "icon": "images/guides/items/minecraft-book.png"
+    },
+    "minecraft:polished_diorite": {
+      "label": "Полированный диорит",
+      "english": "Polished Diorite",
+      "example": "minecraft:polished_diorite",
+      "icon": "images/guides/items/minecraft-polished_diorite.png"
+    },
+    "spell_engine:spell_binding": {
+      "label": "Стол привязки заклинаний",
+      "english": "Spell Binding Table",
+      "example": "spell_engine:spell_binding",
+      "icon": "images/guides/items/spell_engine-spell_binding.png"
+    },
+    "#runes:rune_crafting/base/stone": {
+      "label": "Камень для каменных инструментов, например булыжник",
+      "english": "Cobblestone",
+      "example": "minecraft:cobblestone",
+      "icon": "images/guides/items/minecraft-cobblestone.png"
+    },
+    "#runes:rune_crafting/reagent/arcane_small": {
+      "label": "Осколок аметиста",
+      "english": "Amethyst Shard",
+      "example": "minecraft:amethyst_shard",
+      "icon": "images/guides/items/minecraft-amethyst_shard.png"
+    },
+    "runes:arcane_stone": {
+      "label": "Руна тайнства",
+      "english": "Arcane Rune",
+      "example": "runes:arcane_stone",
+      "icon": "images/guides/items/runes-arcane_stone.png"
+    },
+    "#runes:rune_crafting/reagent/fire_small": {
+      "label": "Уголь, древесный уголь или порох",
+      "english": "Coal",
+      "example": "minecraft:coal",
+      "icon": "images/guides/items/minecraft-coal.png"
+    },
+    "runes:fire_stone": {
+      "label": "Руна огня",
+      "english": "Fire Rune",
+      "example": "runes:fire_stone",
+      "icon": "images/guides/items/runes-fire_stone.png"
+    },
+    "#runes:rune_crafting/reagent/frost_small": {
+      "label": "Снежок",
+      "english": "Snowball",
+      "example": "minecraft:snowball",
+      "icon": "images/guides/items/minecraft-snowball.png"
+    },
+    "runes:frost_stone": {
+      "label": "Руна льда",
+      "english": "Frost Rune",
+      "example": "runes:frost_stone",
+      "icon": "images/guides/items/runes-frost_stone.png"
+    },
+    "#runes:rune_crafting/reagent/healing_small": {
+      "label": "Кусочек золота",
+      "english": "Gold Nugget",
+      "example": "minecraft:gold_nugget",
+      "icon": "images/guides/items/minecraft-gold_nugget.png"
+    },
+    "runes:healing_stone": {
+      "label": "Руна исцеления",
+      "english": "Healing Rune",
+      "example": "runes:healing_stone",
+      "icon": "images/guides/items/runes-healing_stone.png"
+    },
+    "#runes:fancy_stone_materials": {
+      "label": "Камень, гладкий камень, полированный диорит или андезит",
+      "english": "Stone",
+      "example": "minecraft:stone",
+      "icon": "images/guides/items/minecraft-stone.png"
+    },
+    "runes:crafting_altar": {
+      "label": "Алтарь создания рун",
+      "english": "Rune Crafting Altar",
+      "example": "runes:crafting_altar",
+      "icon": "images/guides/items/runes-crafting_altar.png"
+    },
+    "minecraft:paper": {
+      "label": "Бумага",
+      "english": "Paper",
+      "example": "minecraft:paper",
+      "icon": "images/guides/items/minecraft-paper.png"
+    },
+    "minecraft:enchanted_book": {
+      "label": "Чародейская книга",
+      "english": "Enchanted Book",
+      "example": "minecraft:enchanted_book",
+      "icon": "images/guides/items/minecraft-enchanted_book.png"
+    },
+    "arcananovum:mundane_arcane_paper": {
+      "label": "Обычная магическая бумага",
+      "english": "Mundane Arcane Paper",
+      "example": "arcananovum:mundane_arcane_paper",
+      "icon": "images/guides/items/arcananovum-mundane_arcane_paper.png"
+    },
+    "minecraft:dandelion": {
+      "label": "Одуванчик",
+      "english": "Dandelion",
+      "example": "minecraft:dandelion",
+      "icon": "images/guides/items/minecraft-dandelion.png"
+    },
+    "herbcraft:herbal_codex": {
+      "label": "Травник",
+      "english": "Herbal Codex",
+      "example": "herbcraft:herbal_codex",
+      "icon": "images/guides/items/herbcraft-herbal_codex.png"
+    },
+    "minecraft:glass_bottle": {
+      "label": "Бутылочка",
+      "english": "Glass Bottle",
+      "example": "minecraft:glass_bottle",
+      "icon": "images/guides/items/minecraft-glass_bottle.png"
+    },
+    "herbcraft:essence_dandelion": {
+      "label": "Эссенция одуванчика",
+      "english": "Dandelion Essence",
+      "example": "herbcraft:essence_dandelion",
+      "icon": "images/guides/items/herbcraft-essence_dandelion.png"
+    },
+    "minecraft:bowl": {
+      "label": "Миска",
+      "english": "Bowl",
+      "example": "minecraft:bowl",
+      "icon": "images/guides/items/minecraft-bowl.png"
+    },
+    "herbcraft_cuisine:dandelion_salad": {
+      "label": "Салат из одуванчиков",
+      "english": "Dandelion Salad",
+      "example": "herbcraft_cuisine:dandelion_salad",
+      "icon": "images/guides/items/herbcraft_cuisine-dandelion_salad.png"
+    },
+    "farmersdelight:flint_knife": {
+      "label": "Кремневый нож",
+      "english": "Flint Knife",
+      "example": "farmersdelight:flint_knife",
+      "icon": "images/guides/items/farmersdelight-flint_knife.png"
+    },
+    "farmersdelight:cutting_board": {
+      "label": "Разделочная доска",
+      "english": "Cutting Board",
+      "example": "farmersdelight:cutting_board",
+      "icon": "images/guides/items/farmersdelight-cutting_board.png"
+    },
+    "minecraft:wooden_shovel": {
+      "label": "Деревянная лопата",
+      "english": "Wooden Shovel",
+      "example": "minecraft:wooden_shovel",
+      "icon": "images/guides/items/minecraft-wooden_shovel.png"
+    },
+    "#c:buckets/water": {
+      "label": "Ведро воды",
+      "english": "Water Bucket",
+      "example": "minecraft:water_bucket",
+      "icon": "images/guides/items/minecraft-water_bucket.png"
+    },
+    "minecraft:brick": {
+      "label": "Кирпич",
+      "english": "Brick",
+      "example": "minecraft:brick",
+      "icon": "images/guides/items/minecraft-brick.png"
+    },
+    "#c:ingots/iron": {
+      "label": "Железный слиток",
+      "english": "Iron Ingot",
+      "example": "minecraft:iron_ingot",
+      "icon": "images/guides/items/minecraft-iron_ingot.png"
+    },
+    "farmersdelight:cooking_pot": {
+      "label": "Кухонный котёл",
+      "english": "Cooking Pot",
+      "example": "farmersdelight:cooking_pot",
+      "icon": "images/guides/items/farmersdelight-cooking_pot.png"
+    },
+    "#c:crops/carrot": {
+      "label": "Морковь",
+      "english": "Carrot",
+      "example": "minecraft:carrot",
+      "icon": "images/guides/items/minecraft-carrot.png"
+    },
+    "#c:crops/potato": {
+      "label": "Картофель",
+      "english": "Potato",
+      "example": "minecraft:potato",
+      "icon": "images/guides/items/minecraft-potato.png"
+    },
+    "#c:crops/beetroot": {
+      "label": "Свёкла",
+      "english": "Beetroot",
+      "example": "minecraft:beetroot",
+      "icon": "images/guides/items/minecraft-beetroot.png"
+    },
+    "#c:foods/leafy_green": {
+      "label": "Листовая зелень, например капуста",
+      "english": "Cabbage Leaf",
+      "example": "farmersdelight:cabbage_leaf",
+      "icon": "images/guides/items/farmersdelight-cabbage_leaf.png"
+    },
+    "farmersdelight:vegetable_soup": {
+      "label": "Овощной суп",
+      "english": "Vegetable Soup",
+      "example": "farmersdelight:vegetable_soup",
+      "icon": "images/guides/items/farmersdelight-vegetable_soup.png"
+    },
+    "cookingforblockheads:recipe_book": {
+      "label": "Готовка для чайников I",
+      "english": "Cooking for Blockheads I",
+      "example": "cookingforblockheads:recipe_book",
+      "icon": "images/guides/items/cookingforblockheads-recipe_book.png"
+    },
+    "minecraft:crafting_table": {
+      "label": "Верстак",
+      "english": "Crafting Table",
+      "example": "minecraft:crafting_table",
+      "icon": "images/guides/items/minecraft-crafting_table.png"
+    },
+    "#c:gems/diamond": {
+      "label": "Алмаз",
+      "english": "Diamond",
+      "example": "minecraft:diamond",
+      "icon": "images/guides/items/minecraft-diamond.png"
+    },
+    "cookingforblockheads:crafting_book": {
+      "label": "Готовка для чайников II",
+      "english": "Cooking for Blockheads II",
+      "example": "cookingforblockheads:crafting_book",
+      "icon": "images/guides/items/cookingforblockheads-crafting_book.png"
+    },
+    "minecraft:terracotta": {
+      "label": "Терракота",
+      "english": "Terracotta",
+      "example": "minecraft:terracotta",
+      "icon": "images/guides/items/minecraft-terracotta.png"
+    },
+    "#c:stones": {
+      "label": "Камень",
+      "english": "Stone",
+      "example": "minecraft:stone",
+      "icon": "images/guides/items/minecraft-stone.png"
+    },
+    "cookingforblockheads:cooking_table": {
+      "label": "Кухонный стол",
+      "english": "Cooking Table",
+      "example": "cookingforblockheads:cooking_table",
+      "icon": "images/guides/items/cookingforblockheads-cooking_table.png"
+    },
+    "minecraft:water_bucket": {
+      "label": "Ведро воды",
+      "english": "Water Bucket",
+      "example": "minecraft:water_bucket",
+      "icon": "images/guides/items/minecraft-water_bucket.png"
+    },
+    "cookingforblockheads:sink": {
+      "label": "Раковина",
+      "english": "Sink",
+      "example": "cookingforblockheads:sink",
+      "icon": null
+    },
+    "minecraft:ender_eye": {
+      "label": "Око Эндера",
+      "english": "Eye of Ender",
+      "example": "minecraft:ender_eye",
+      "icon": "images/guides/items/minecraft-ender_eye.png"
+    },
+    "endrem:witch_pupil": {
+      "label": "Глаз ведьмы",
+      "english": "Witch Pupil",
+      "example": "endrem:witch_pupil",
+      "icon": "images/guides/items/endrem-witch_pupil.png"
+    },
+    "endrem:witch_eye": {
+      "label": "Око Ведьмы",
+      "english": "Witch Eye",
+      "example": "endrem:witch_eye",
+      "icon": "images/guides/items/endrem-witch_eye.png"
+    },
+    "minecraft:ghast_tear": {
+      "label": "Слеза гаста",
+      "english": "Ghast Tear",
+      "example": "minecraft:ghast_tear",
+      "icon": "images/guides/items/minecraft-ghast_tear.png"
+    },
+    "minecraft:rotten_flesh": {
+      "label": "Гнилая плоть",
+      "english": "Rotten Flesh",
+      "example": "minecraft:rotten_flesh",
+      "icon": "images/guides/items/minecraft-rotten_flesh.png"
+    },
+    "minecraft:phantom_membrane": {
+      "label": "Мембрана фантома",
+      "english": "Phantom Membrane",
+      "example": "minecraft:phantom_membrane",
+      "icon": "images/guides/items/minecraft-phantom_membrane.png"
+    },
+    "endrem:undead_soul": {
+      "label": "Душа Нежити",
+      "english": "Undead Soul",
+      "example": "endrem:undead_soul",
+      "icon": "images/guides/items/endrem-undead_soul.png"
+    },
+    "endrem:undead_eye": {
+      "label": "Око Нежити",
+      "english": "Undead Eye",
+      "example": "endrem:undead_eye",
+      "icon": "images/guides/items/endrem-undead_eye.png"
+    },
+    "minecraft:fire_coral": {
+      "label": "Огненный коралл",
+      "english": "Fire Coral",
+      "example": "minecraft:fire_coral",
+      "icon": "images/guides/items/minecraft-fire_coral.png"
+    },
+    "minecraft:tube_coral": {
+      "label": "Трубчатый коралл",
+      "english": "Tube Coral",
+      "example": "minecraft:tube_coral",
+      "icon": "images/guides/items/minecraft-tube_coral.png"
+    },
+    "minecraft:horn_coral": {
+      "label": "Роговый коралл",
+      "english": "Horn Coral",
+      "example": "minecraft:horn_coral",
+      "icon": "images/guides/items/minecraft-horn_coral.png"
+    },
+    "minecraft:bubble_coral": {
+      "label": "Пузырчатый коралл",
+      "english": "Bubble Coral",
+      "example": "minecraft:bubble_coral",
+      "icon": "images/guides/items/minecraft-bubble_coral.png"
+    },
+    "minecraft:glow_ink_sac": {
+      "label": "Светящийся чернильный мешок",
+      "english": "Glow Ink Sac",
+      "example": "minecraft:glow_ink_sac",
+      "icon": "images/guides/items/minecraft-glow_ink_sac.png"
+    },
+    "minecraft:conduit": {
+      "label": "Морской источник",
+      "english": "Conduit",
+      "example": "minecraft:conduit",
+      "icon": "images/guides/items/minecraft-conduit.png"
+    },
+    "endrem:exotic_eye": {
+      "label": "Экзотическое Око",
+      "english": "Exotic Eye",
+      "example": "endrem:exotic_eye",
+      "icon": "images/guides/items/endrem-exotic_eye.png"
+    },
+    "#c:brushes": {
+      "label": "Кисть",
+      "english": "Brush",
+      "example": "minecraft:brush",
+      "icon": "images/guides/items/minecraft-brush.png"
+    },
+    "betterarcheology:artifact_shards": {
+      "label": "Осколки артефакта",
+      "english": "Artifact Shards",
+      "example": "betterarcheology:artifact_shards",
+      "icon": "images/guides/items/betterarcheology-artifact_shards.png"
+    },
+    "betterarcheology:archeology_table": {
+      "label": "Стол археолога",
+      "english": "Archeology Table",
+      "example": "betterarcheology:archeology_table",
+      "icon": "images/guides/items/betterarcheology-archeology_table.png"
+    },
+    "betterarcheology:unidentified_artifact": {
+      "label": "Неопознанный артефакт",
+      "english": "Unidentified Artifact",
+      "example": "betterarcheology:unidentified_artifact",
+      "icon": "images/guides/items/betterarcheology-unidentified_artifact.png"
+    },
+    "minecraft:bamboo": {
+      "label": "Бамбук",
+      "english": "Bamboo",
+      "example": "minecraft:bamboo",
+      "icon": "images/guides/items/minecraft-bamboo.png"
+    },
+    "minecraft:sugar": {
+      "label": "Сахар",
+      "english": "Sugar",
+      "example": "minecraft:sugar",
+      "icon": "images/guides/items/minecraft-sugar.png"
+    },
+    "mochipets:bamboo_treat": {
+      "label": "Бамбуковое лакомство",
+      "english": "Bamboo Treat",
+      "example": "mochipets:bamboo_treat",
+      "icon": "images/guides/items/mochipets-bamboo_treat.png"
+    },
+    "mochipets:acorn_shard": {
+      "label": "Осколок жёлудя",
+      "english": "Acorn Shard",
+      "example": "mochipets:acorn_shard",
+      "icon": "images/guides/items/mochipets-acorn_shard.png"
+    },
+    "minecraft:wheat": {
+      "label": "Пшеница",
+      "english": "Wheat",
+      "example": "minecraft:wheat",
+      "icon": "images/guides/items/minecraft-wheat.png"
+    },
+    "mochipets:mochi_treat": {
+      "label": "Лакомство Мочи",
+      "english": "Mochi Treat",
+      "example": "mochipets:mochi_treat",
+      "icon": "images/guides/items/mochipets-mochi_treat.png"
+    },
+    "#minecraft:wool": {
+      "label": "Любая шерсть",
+      "english": "White Wool",
+      "example": "minecraft:white_wool",
+      "icon": "images/guides/items/minecraft-white_wool.png"
+    },
+    "mochipets:mochi_bed": {
+      "label": "Кроватка Мочи",
+      "english": "Mochi Bed",
+      "example": "mochipets:mochi_bed",
+      "icon": "images/guides/items/mochipets-mochi_bed.png"
+    },
+    "mochipets:acorn": {
+      "label": "Жёлудь",
+      "english": "Acorn",
+      "example": "mochipets:acorn",
+      "icon": "images/guides/items/mochipets-acorn.png"
+    },
+    "mochipets:mochi_whistle": {
+      "label": "Свисток Мочи",
+      "english": "Mochi Whistle",
+      "example": "mochipets:mochi_whistle",
+      "icon": "images/guides/items/mochipets-mochi_whistle.png"
+    },
+    "#c:strings": {
+      "label": "Нить",
+      "english": "String",
+      "example": "minecraft:string",
+      "icon": "images/guides/items/minecraft-string.png"
+    },
+    "travelersbackpack:backpack_tank": {
+      "label": "Бак Рюкзака",
+      "english": "Backpack Tank",
+      "example": "travelersbackpack:backpack_tank",
+      "icon": "images/guides/items/travelersbackpack-backpack_tank.png"
+    },
+    "#c:chests/wooden": {
+      "label": "Деревянный сундук",
+      "english": "Chest",
+      "example": "minecraft:chest",
+      "icon": null
+    },
+    "#travelersbackpack:sleeping_bags": {
+      "label": "Спальный мешок любого цвета",
+      "english": "White Sleeping bag",
+      "example": "travelersbackpack:white_sleeping_bag",
+      "icon": "images/guides/items/travelersbackpack-white_sleeping_bag.png"
+    },
+    "#c:leathers": {
+      "label": "Кожа",
+      "english": "Leather",
+      "example": "minecraft:leather",
+      "icon": "images/guides/items/minecraft-leather.png"
+    },
+    "travelersbackpack:standard": {
+      "label": "Стандартный Рюкзак Путешественника",
+      "english": "Standard Traveler's Backpack",
+      "example": "travelersbackpack:standard",
+      "icon": null
+    },
+    "#c:glass_blocks/colorless": {
+      "label": "Бесцветное стекло",
+      "english": "Glass",
+      "example": "minecraft:glass",
+      "icon": "images/guides/items/minecraft-glass.png"
+    },
+    "minecraft:white_wool": {
+      "label": "Белая шерсть",
+      "english": "White Wool",
+      "example": "minecraft:white_wool",
+      "icon": "images/guides/items/minecraft-white_wool.png"
+    },
+    "travelersbackpack:white_sleeping_bag": {
+      "label": "Белый спальный мешок",
+      "english": "White Sleeping bag",
+      "example": "travelersbackpack:white_sleeping_bag",
+      "icon": "images/guides/items/travelersbackpack-white_sleeping_bag.png"
+    },
+    "travelersbackpack:blank_upgrade": {
+      "label": "Пустое Улучшение",
+      "english": "Blank Upgrade",
+      "example": "travelersbackpack:blank_upgrade",
+      "icon": "images/guides/items/travelersbackpack-blank_upgrade.png"
+    },
+    "travelersbackpack:iron_tier_upgrade": {
+      "label": "§7Улучшение до Железного Уровня",
+      "english": "§7Iron Tier Upgrade",
+      "example": "travelersbackpack:iron_tier_upgrade",
+      "icon": "images/guides/items/travelersbackpack-iron_tier_upgrade.png"
+    },
+    "minecraft:ender_pearl": {
+      "label": "Эндер-жемчуг",
+      "english": "Ender Pearl",
+      "example": "minecraft:ender_pearl",
+      "icon": "images/guides/items/minecraft-ender_pearl.png"
+    },
+    "waystones:warp_stone": {
+      "label": "Камень перемещения",
+      "english": "Warp Stone",
+      "example": "waystones:warp_stone",
+      "icon": "images/guides/items/waystones-warp_stone.png"
+    },
+    "minecraft:stone_bricks": {
+      "label": "Каменные кирпичи",
+      "english": "Stone Bricks",
+      "example": "minecraft:stone_bricks",
+      "icon": "images/guides/items/minecraft-stone_bricks.png"
+    },
+    "waystones:andesite_waystone": {
+      "label": "Путеводный обелиск",
+      "english": "Waystone",
+      "example": "waystones:andesite_waystone",
+      "icon": "images/guides/items/waystones-andesite_waystone.png"
+    },
+    "#c:nuggets/gold": {
+      "label": "Кусочек золота",
+      "english": "Gold Nugget",
+      "example": "minecraft:gold_nugget",
+      "icon": "images/guides/items/minecraft-gold_nugget.png"
+    },
+    "minecraft:ink_sac": {
+      "label": "Чернильный мешок",
+      "english": "Ink Sac",
+      "example": "minecraft:ink_sac",
+      "icon": "images/guides/items/minecraft-ink_sac.png"
+    },
+    "waystones:warp_scroll": {
+      "label": "Свиток перемещения",
+      "english": "Warp Scroll",
+      "example": "waystones:warp_scroll",
+      "icon": "images/guides/items/waystones-warp_scroll.png"
+    },
+    "minecraft:clock": {
+      "label": "Часы",
+      "english": "Clock",
+      "example": "minecraft:clock",
+      "icon": "images/guides/items/minecraft-clock.png"
+    },
+    "sereneseasons:calendar": {
+      "label": "Календарь",
+      "english": "Calendar",
+      "example": "sereneseasons:calendar",
+      "icon": "images/guides/items/sereneseasons-calendar.png"
+    },
+    "minecraft:sugar_cane": {
+      "label": "Сахарный тростник",
+      "english": "Sugar Cane",
+      "example": "minecraft:sugar_cane",
+      "icon": "images/guides/items/minecraft-sugar_cane.png"
+    },
+    "minecraft:diamond": {
+      "label": "Алмаз",
+      "english": "Diamond",
+      "example": "minecraft:diamond",
+      "icon": "images/guides/items/minecraft-diamond.png"
+    },
+    "growable_ores:diamond_cane": {
+      "label": "Алмазный тростник",
+      "english": "Diamond Reed",
+      "example": "growable_ores:diamond_cane",
+      "icon": "images/guides/items/growable_ores-diamond_cane.png"
+    },
+    "minecraft:crying_obsidian": {
+      "label": "Плачущий обсидиан",
+      "english": "Crying Obsidian",
+      "example": "minecraft:crying_obsidian",
+      "icon": "images/guides/items/minecraft-crying_obsidian.png"
+    },
+    "minecraft:enchanting_table": {
+      "label": "Чародейский стол",
+      "english": "Enchanting Table",
+      "example": "minecraft:enchanting_table",
+      "icon": "images/guides/items/minecraft-enchanting_table.png"
+    },
+    "enchantinginfuser:enchanting_infuser": {
+      "label": "Зачаровывающий наполнитель",
+      "english": "Enchanting Infuser",
+      "example": "enchantinginfuser:enchanting_infuser",
+      "icon": "images/guides/items/enchantinginfuser-enchanting_infuser.png"
+    }
+  }
+}
