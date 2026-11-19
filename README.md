@@ -11,8 +11,8 @@ needed to serve the site.
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8765/`. The eight pages are `index.html`, `mods.html`,
-`chronicles.html`, `compat.html`, `guides.html`, `handbook.html`, `updates.html` and `mod-guide.html`; they also work when opened directly from disk.
+Open `http://127.0.0.1:8765/`. The nine pages are `index.html`, `mods.html`,
+`chronicles.html`, `compat.html`, `guides.html`, `handbook.html`, `updates.html`, `mod-guide.html` and `reimagined.html`; they also work when opened directly from disk.
 
 Build the deployable directory with Python 3.11 or later:
 
@@ -44,7 +44,7 @@ runs skip deployment when main already contains a newer commit.
   the separate `short` cards remain unchanged for the Spirit prototype/export.
   `mod-guides.json` owns the reviewed content. Run `python3 scripts/build_guides.py`
   after editing it; the build rejects stale HTML or catalog index. It also versions
-  CSS/JS URLs in the guide and catalog by content hash to avoid stale browser assets.
+  CSS/JS URLs on all full pages by content hash to avoid stale browser assets.
   `mod-guide-index.js` connects the guides to catalog screenshot previews and Russian searches.
   The first screenshot appears directly under each guide title; contents start collapsed.
   `guide-recipes.json` stores the original recipe JSON, pinned JAR/resource hashes,
@@ -80,7 +80,14 @@ runs skip deployment when main already contains a newer commit.
 - `deployment.js`: public game address without credentials.
 - `images/guides/`, `images/chronicles/en`, `images/wanderer`, `videos/chronicles`:
   genuine native captures with their original provenance, separate from HTML concepts.
-- `site.css`, `reference.css`, `site.js`, `experiences.js`: shared styling and content.
+- `theme.css`: shared colors, typography, navigation, buttons, footer and image viewer.
+- `templates/` and `scripts/site_layout.py`: common static header/footer/viewer.
+  Run `python3 scripts/build_guides.py` after editing templates, CSS or JavaScript;
+  the build rejects stale shared markup and asset hashes. Templates and build tools stay in the source repository and are excluded from dist/.
+- `site-common.js`: shared image zoom, keyboard gallery navigation, section tracking,
+  printing and text/size formatting. Page scripts contain their own behavior.
+- `site.css`, `reference.css` and other page styles: page-specific components;
+  `experiences.js` owns the homepage gameplay descriptions.
 
 Primary navigation has one combined “Моды и гайды” destination. The game update
 was separately authorized and verified through the restricted updater; website
@@ -180,7 +187,9 @@ after successful server adoption.
 ## Unified catalog and journal concepts
 
 `mods.html` combines the catalog and player handbook. It defaults to the live pack
-from `data.js`; selecting the published pack applies `handbook-data.js` overlays.
+from `data.js`. The version selector appears only when `handbook-data.js` describes
+a different published release. Guide previews live in a collapsible section so
+the catalog search remains easy to reach.
 The download metadata stays aligned with the live server. Old `handbook.html`
 bookmarks redirect to the new catalog, preserving queries and anchors.
 

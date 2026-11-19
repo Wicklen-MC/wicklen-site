@@ -8,16 +8,25 @@
   <meta name="theme-color" content="#fff7f0">
   <link rel="canonical" href="https://wicklen.link/compat.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="site.css">
-  <link rel="stylesheet" href="compat.css">
-<link rel="stylesheet" href="reference.css">
+  <link rel="stylesheet" href="theme.css?v=d120ab1f918f">
+<link rel="stylesheet" href="site.css?v=fc31371267ee">
+  <link rel="stylesheet" href="compat.css?v=6c8fc712a629">
+<link rel="stylesheet" href="reference.css?v=4c2943993820">
+<script src="site-common.js?v=b68faa1eaeed" defer></script>
 </head>
 <body class="compat-page">
-<a class="skip" href="#main">К содержимому</a>
-<header class="site-header"><div class="wrap header-inner">
-  <a class="brand" href="index.html" aria-label="Wicklen — на главную"><svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="#f4d6b8"/><path d="M1 18h5v-5h6v6h6v-3h9v6H1z" fill="#b990b9"/><path d="M1 23h6v-4h7v4h7v-3h6v7H1z" fill="#846b91"/><path d="M18 5h5v5h-5z" fill="#e88461"/></svg>Wicklen<small>Minecraft для своих</small></a>
-  <nav class="nav section-tabs" aria-label="Разделы сайта"><a href="mods.html">Моды и гайды</a><a href="updates.html">Обновления</a><a href="chronicles.html">Наш мод</a><a href="index.html#download" class="nav-download">Скачать ↓</a></nav>
-</div></header>
+<!-- site:header -->
+<a class="skip-link" href="#main">К содержимому</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Wicklen — на главную">
+      <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="#f4d6b8"/><path d="M1 18h5v-5h6v6h6v-3h9v6H1z" fill="#b990b9"/><path d="M1 23h6v-4h7v4h7v-3h6v7H1z" fill="#846b91"/><path d="M18 5h5v5h-5z" fill="#e88461"/></svg>
+      <span>Wicklen</span><small>Minecraft для своих</small>
+    </a>
+    <nav class="site-nav" aria-label="Разделы сайта"><a href="mods.html" aria-current="location">Моды и гайды</a><a href="updates.html">Обновления</a><a href="chronicles.html">Наш мод</a><a href="index.html#download" class="site-nav-download">Скачать сборку</a></nav>
+  </div>
+</header>
+<!-- /site:header -->
 <main id="main" class="wrap compat-sheet">
   <a class="compat-back" href="chronicles.html">← К Wicklen: Chronicles</a>
   <div class="eyebrow">Наш небольшой мод совместимости</div>
@@ -64,6 +73,24 @@
   </section>
   <p class="compat-source"><a href="https://github.com/Wicklen-MC/wicklen-server/tree/master/pack/compat/wicklen-pack-compat">Исходники и подробности ↗</a> · лицензия MIT</p>
 </main>
-<footer class="site-footer"><div class="wrap footer-inner"><div><a class="brand" href="index.html">Wicklen</a><p>Свой дом. Своя компания. Своя история.</p></div><div class="footer-links"><a href="updates.html">Обновления</a><a href="mods.html">Моды и гайды</a><a href="guides.html">Гайды: алхимия и магия</a><a href="index.html#faq">Помощь с установкой</a><a href="#main">В начало ↑</a></div></div></footer>
+<!-- site:viewer -->
+<dialog class="image-viewer" id="image-viewer" aria-labelledby="image-viewer-title" aria-describedby="image-viewer-caption">
+  <div class="image-viewer-toolbar"><h2 id="image-viewer-title">Игровой скриншот</h2><span id="image-viewer-count" aria-live="polite"></span><button type="button" data-image-close autofocus>Закрыть</button></div>
+  <figure><img id="image-viewer-image" alt=""><figcaption id="image-viewer-caption"></figcaption></figure>
+  <div class="image-viewer-controls"><button type="button" data-image-prev>Предыдущий</button><a id="image-viewer-original" target="_blank" rel="noopener noreferrer">Открыть оригинал</a><button type="button" data-image-next>Следующий</button></div>
+</dialog>
+<!-- /site:viewer -->
+<!-- site:footer -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><a class="brand" href="index.html">Wicklen</a><p>Свой дом. Своя компания. Своя история.</p></div>
+    <nav class="footer-links" aria-label="Полезные ссылки">
+      <a href="mods.html">Моды и гайды</a><a href="chronicles.html">Наш мод</a>
+      <a href="updates.html">Обновления</a><a href="reimagined.html">Оформление</a>
+      <a href="index.html#install">Установка</a><a href="index.html#download">Скачать сборку</a>
+    </nav>
+  </div>
+</footer>
+<!-- /site:footer -->
 </body>
 </html>

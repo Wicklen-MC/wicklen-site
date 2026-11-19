@@ -12,8 +12,8 @@ OUTPUT = ROOT / "dist"
 PUBLIC_FILES = (
     "index.html", "mods.html", "chronicles.html", "compat.html", "guides.html", "handbook.html", "updates.html", "reimagined.html", "reimagined.css", "reimagined-download.js", "reimagined-download.json",
     "handbook-redirect.js", "mod-guide.html", "mod-guide.css", "mod-guide.js", "mod-guide-index.js", "mod-guides.json", "guide-recipes.json",
-    "reference.css", "handbook.js", "handbook-data.js", "updates.js", "updates-data.js", "guides-nav.js",
-    "guides.css", "compat.css", "site.css", "site.js",
+    "reference.css", "handbook.js", "handbook-data.js", "updates.js", "updates-data.js",
+    "guides.css", "compat.css", "site.css", "site.js", "theme.css", "site-common.js",
     "experiences.js", "data.js", "chronicles.css", "chronicles.js",
     "chronicles-release.js", "deployment.js", "spirit-media.js", "favicon.svg", "landscape.svg",
     "og-image.png", "og-image.svg",

@@ -1,8 +1,8 @@
 (() => {
   const data = window.WICKLEN_UPDATES;
   if (!data) return;
-  const escape = text => String(text ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const size = bytes => bytes >= 1000 ** 2 ? `${(bytes / 1000 ** 2).toFixed(1).replace('.', ',')} МБ` : `${(bytes / 1000).toFixed(1).replace('.', ',')} КБ`;
+  const escape = window.WicklenUI.escapeHtml;
+  const size = window.WicklenUI.formatBytes;
   const file = item => `<li><div><a href="${escape(item.href)}">${escape(item.label || item.file)} ↓</a><small>${escape(item.file)}${item.bytes ? ` · ${size(item.bytes)}` : ''}${item.side ? ` · ${escape(item.side)}` : ''}</small></div>${item.status ? `<span class="file-status">${escape(item.status)}</span>` : ''}${item.note ? `<small class="file-note">${escape(item.note)}</small>` : ''}${item.sha256 || item.sha512 ? `<details><summary>Контрольная сумма ${item.sha256 ? 'SHA-256' : 'SHA-512'}</summary><code>${escape(item.sha256 || item.sha512)}</code></details>` : ''}</li>`;
   const list = document.querySelector('#release-list');
   for (const release of data.releases) {

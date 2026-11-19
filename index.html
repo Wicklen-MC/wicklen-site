@@ -15,17 +15,29 @@
 <meta property="og:image:alt" content="Wicklen — свой маленький большой мир. Днём обживаемся, ночью держимся вместе.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="site.css">
-<script src="data.js" defer></script>
-<script src="deployment.js" defer></script>
-<script src="experiences.js" defer></script>
-<script src="site.js" defer></script>
-<script src="spirit-media.js" defer></script>
-<link rel="stylesheet" href="reference.css">
+<link rel="stylesheet" href="theme.css?v=d120ab1f918f">
+<link rel="stylesheet" href="site.css?v=fc31371267ee">
+<script src="site-common.js?v=b68faa1eaeed" defer></script>
+<script src="data.js?v=fdfad3e9ec4c" defer></script>
+<script src="deployment.js?v=e7d54d5039e1" defer></script>
+<script src="experiences.js?v=7c068c248520" defer></script>
+<script src="site.js?v=69bf2d0b1ccc" defer></script>
+<script src="spirit-media.js?v=4d14a4d40e95" defer></script>
+<link rel="stylesheet" href="reference.css?v=4c2943993820">
 </head>
 <body>
-<a class="skip" href="#main">К содержимому</a>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="Wicklen — на главную"><svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="#f4d6b8"/><path d="M1 18h5v-5h6v6h6v-3h9v6H1z" fill="#b990b9"/><path d="M1 23h6v-4h7v4h7v-3h6v7H1z" fill="#846b91"/><path d="M18 5h5v5h-5z" fill="#e88461"/></svg>Wicklen<small>Minecraft для своих</small></a><nav class="nav section-tabs" aria-label="Разделы сайта"><a href="mods.html">Моды и гайды</a><a href="updates.html">Обновления</a><a href="chronicles.html">Наш мод</a><a href="index.html#download" class="nav-download">Скачать ↓</a></nav></div></header>
+<!-- site:header -->
+<a class="skip-link" href="#main">К содержимому</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Wicklen — на главную">
+      <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="#f4d6b8"/><path d="M1 18h5v-5h6v6h6v-3h9v6H1z" fill="#b990b9"/><path d="M1 23h6v-4h7v4h7v-3h6v7H1z" fill="#846b91"/><path d="M18 5h5v5h-5z" fill="#e88461"/></svg>
+      <span>Wicklen</span><small>Minecraft для своих</small>
+    </a>
+    <nav class="site-nav" aria-label="Разделы сайта"><a href="mods.html">Моды и гайды</a><a href="updates.html">Обновления</a><a href="chronicles.html">Наш мод</a><a href="index.html#download" class="site-nav-download">Скачать сборку</a></nav>
+  </div>
+</header>
+<!-- /site:header -->
 <main id="main"><aside class="wrap reference-banner"><p><strong>Вышла сборка 0.6.0.</strong> Вернулись ключи, боссы и случайные порталы Gateway. С клиентом 0.5.0 достаточно переподключиться.</p><a href="updates.html">Файлы и изменения →</a></aside>
 <section class="hero"><div class="wrap hero-grid">
 <div class="hero-copy"><div class="eyebrow">Свой маленький большой мир</div><h1>Wicklen</h1><p class="hero-tagline">Днём — обживаемся.<br>Ночью — держимся вместе.</p>
@@ -73,7 +85,7 @@
         </g>
       </g>
     </svg>
-    <span class="hero-spirit-badge">Новый облик · в разработке</span>
+    <span class="hero-spirit-badge">Дух Wicklen</span>
     <button class="hero-spirit-toggle" type="button" data-spirit-toggle="hero-spirit-art" aria-controls="hero-spirit-art" aria-pressed="false" hidden>▷ Анимация</button>
   </div>
   <div class="art-caption" id="hero-spirit-caption"><span>Маленький спутник большого пути</span><a href="chronicles.html#spirit-preview">Познакомиться ↗</a></div>
@@ -119,7 +131,24 @@
 <details><summary>Забыл пароль от сервера</summary><p>Пароль можно сбросить через администратора сервера. Сообщите свой игровой ник владельцу сборки тем способом, которым получили приглашение. Старый пароль восстанавливать или пересылать не нужно.</p></details>
 </div></div></section>
 </main>
-<footer class="site-footer"><div class="wrap footer-inner"><div><a class="brand" href="index.html">Wicklen</a><p>Свой дом. Своя компания. Своя история.</p></div><div class="footer-links"><a href="updates.html">Обновления</a><a href="mods.html">Моды и гайды</a><a href="guides.html">Гайды: алхимия и магия</a><a href="chronicles.html">Наш мод</a><a href="mods.html">Каталог модов</a><a href="index.html#faq">Помощь с установкой</a><a href="index.html#download">Скачать сборку</a></div></div></footer>
-<dialog id="detail-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-subtitle"><div class="dialog-head"><img id="dialog-image" class="dialog-icon" alt="" hidden><div class="dialog-heading"><h2 id="dialog-title"></h2><p id="dialog-subtitle"></p></div><button class="dialog-close" type="button" aria-label="Закрыть">×</button></div><div class="dialog-body" id="dialog-body"></div><div class="dialog-foot" id="dialog-foot"></div></dialog>
+<!-- site:viewer -->
+<dialog class="image-viewer" id="image-viewer" aria-labelledby="image-viewer-title" aria-describedby="image-viewer-caption">
+  <div class="image-viewer-toolbar"><h2 id="image-viewer-title">Игровой скриншот</h2><span id="image-viewer-count" aria-live="polite"></span><button type="button" data-image-close autofocus>Закрыть</button></div>
+  <figure><img id="image-viewer-image" alt=""><figcaption id="image-viewer-caption"></figcaption></figure>
+  <div class="image-viewer-controls"><button type="button" data-image-prev>Предыдущий</button><a id="image-viewer-original" target="_blank" rel="noopener noreferrer">Открыть оригинал</a><button type="button" data-image-next>Следующий</button></div>
+</dialog>
+<!-- /site:viewer -->
+<!-- site:footer -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><a class="brand" href="index.html">Wicklen</a><p>Свой дом. Своя компания. Своя история.</p></div>
+    <nav class="footer-links" aria-label="Полезные ссылки">
+      <a href="mods.html">Моды и гайды</a><a href="chronicles.html">Наш мод</a>
+      <a href="updates.html">Обновления</a><a href="reimagined.html">Оформление</a>
+      <a href="index.html#install">Установка</a><a href="index.html#download">Скачать сборку</a>
+    </nav>
+  </div>
+</footer>
+<!-- /site:footer -->
 </body>
 </html>

@@ -1,20 +1,4 @@
 (() => {
-  const viewer = document.querySelector('#guide-image-viewer');
-  let imageTrigger;
-  document.addEventListener('click', event => {
-    const link = event.target.closest('[data-guide-image]');
-    if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    if (typeof viewer?.showModal !== 'function') return;
-    event.preventDefault();imageTrigger = link;
-    const image = link.querySelector('img');
-    const full = document.querySelector('#guide-image-full');
-    full.src = link.href;full.alt = image.alt;
-    document.querySelector('#guide-image-caption').textContent = link.closest('figure').querySelector('figcaption').innerText;
-    document.querySelector('#guide-image-original').href = link.href;
-    viewer.showModal();
-  });
-  document.querySelector('#guide-image-close')?.addEventListener('click', () => viewer.close());
-  viewer?.addEventListener('close', () => imageTrigger?.focus());
   const id = new URLSearchParams(location.search).get('topic');
   const articles = [...document.querySelectorAll('[data-guide]')];
   const selected = articles.find(article => article.dataset.guide === id);

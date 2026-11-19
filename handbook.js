@@ -2,7 +2,7 @@
   const source = window.MODS;
   const extra = window.WICKLEN_HANDBOOK;
   if (!source || !extra) return;
-  const escape = text => String(text ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const escape = window.WicklenUI.escapeHtml;
   const categoryNames = Object.fromEntries(source.categories.map(category => [category.key, category.label]));
   const grid = document.querySelector('#handbook-grid');
   const search = document.querySelector('#handbook-search');
@@ -11,6 +11,11 @@
   const version = document.querySelector('#handbook-version');
   const counter = document.querySelector('#handbook-count');
   const params = new URLSearchParams(location.search);
+  version.replaceChildren(new Option(`${source.version} · На игровом сервере`, source.version));
+  if (extra.version !== source.version) version.add(new Option(`${extra.version} · Отдельный выпуск`, extra.version));
+  version.closest('.catalog-version').hidden = version.options.length < 2;
+  version.hidden = version.options.length < 2;
+  document.querySelector('label[for="handbook-version"]').hidden = version.hidden;
   version.value = params.get('version') === extra.version ? extra.version : source.version;
   search.value = params.get('q') || '';
   for (const item of source.categories) category.add(new Option(item.label, item.key));

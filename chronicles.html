@@ -11,18 +11,27 @@
   <meta property="og:description" content="Записывайте находки, давайте местам свои имена и выбирайте, куда отправиться вместе с духом.">
   <meta property="og:image" content="og-image.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="site.css">
-  <link rel="stylesheet" href="chronicles.css">
-  <script src="chronicles-release.js" defer></script>
-  <script src="chronicles.js" defer></script>
-<link rel="stylesheet" href="reference.css">
+  <link rel="stylesheet" href="theme.css?v=d120ab1f918f">
+<link rel="stylesheet" href="site.css?v=fc31371267ee">
+  <link rel="stylesheet" href="chronicles.css?v=38d728fce264">
+  <script src="site-common.js?v=b68faa1eaeed" defer></script>
+<script src="chronicles-release.js?v=08362d6505b4" defer></script>
+  <script src="chronicles.js?v=a894ad818205" defer></script>
+<link rel="stylesheet" href="reference.css?v=4c2943993820">
 </head>
 <body class="chronicles-page">
-<a class="skip" href="#main">К содержимому</a>
-<header class="site-header"><div class="wrap header-inner">
-  <a class="brand" href="index.html" aria-label="Wicklen — на главную"><svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="#f4d6b8"/><path d="M1 18h5v-5h6v6h6v-3h9v6H1z" fill="#b990b9"/><path d="M1 23h6v-4h7v4h7v-3h6v7H1z" fill="#846b91"/><path d="M18 5h5v5h-5z" fill="#e88461"/></svg>Wicklen<small>Minecraft для своих</small></a>
-  <nav class="nav section-tabs" aria-label="Разделы сайта"><a href="mods.html">Моды и гайды</a><a href="updates.html">Обновления</a><a href="chronicles.html" aria-current="page">Наш мод</a><a href="index.html#download" class="nav-download">Скачать ↓</a></nav>
-</div></header>
+<!-- site:header -->
+<a class="skip-link" href="#main">К содержимому</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Wicklen — на главную">
+      <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="#f4d6b8"/><path d="M1 18h5v-5h6v6h6v-3h9v6H1z" fill="#b990b9"/><path d="M1 23h6v-4h7v4h7v-3h6v7H1z" fill="#846b91"/><path d="M18 5h5v5h-5z" fill="#e88461"/></svg>
+      <span>Wicklen</span><small>Minecraft для своих</small>
+    </a>
+    <nav class="site-nav" aria-label="Разделы сайта"><a href="mods.html">Моды и гайды</a><a href="updates.html">Обновления</a><a href="chronicles.html" aria-current="page">Наш мод</a><a href="index.html#download" class="site-nav-download">Скачать сборку</a></nav>
+  </div>
+</header>
+<!-- /site:header -->
 <main id="main">
   <section class="chron-hero"><div class="wrap chron-hero-grid">
     <div>
@@ -38,7 +47,7 @@
   </div></section>
 
   <div class="wrap chron-trail" aria-label="Как складывается приключение"><span>Замечай</span><i aria-hidden="true">→</i><span>Записывай</span><i aria-hidden="true">→</i><span>Выбирай путь</span><i aria-hidden="true">→</i><span>Возвращайся с находками</span></div>
-  <nav class="wrap chron-contents" aria-label="На этой странице"><span>Страницы дневника</span><a href="#start">С чего начать</a><a href="#spirit">Дух</a><a href="#spirit-preview">Новый облик и видео</a><a href="#observe">Наблюдения</a><a href="#atlas">Записи и карта</a><a href="#first-light">Первый огонь</a><a href="#trials">Испытания</a><a href="#items">Предметы</a><a href="#home">Возвращение</a><a href="#settings">Настройки</a><a href="#gallery">Скриншоты</a></nav>
+  <nav class="wrap chron-contents" data-section-nav aria-label="На этой странице"><span>Страницы дневника</span><a href="#start">С чего начать</a><a href="#spirit">Дух</a><a href="#spirit-preview">Новый облик и видео</a><a href="#observe">Наблюдения</a><a href="#atlas">Записи и карта</a><a href="#first-light">Первый огонь</a><a href="#trials">Испытания</a><a href="#items">Предметы</a><a href="#home">Возвращение</a><a href="#settings">Настройки</a><a href="#gallery">Скриншоты</a></nav>
 
   <aside class="wrap chron-margin-note" id="release" aria-label="Релиз Chronicles 0.4.4">
     <strong>Вышла Chronicles 0.4.4</strong>
@@ -138,7 +147,25 @@
 
   <section class="chron-section chron-download-section" id="downloads"><div class="wrap chron-download-layout"><div><div class="eyebrow">Берём дневник с собой</div><h2>Готовы выйти<br><em>за знакомый поворот?</em></h2><p>Chronicles 0.4.4 и Compat 0.1.2 уже входят в сборку Wicklen 0.6.0. Для новой установки берите полный комплект. С клиентом 0.5.0 достаточно переподключиться. Необязательный патч обновляет настройки Gateway для одиночной игры.</p><div class="chron-actions"><a class="button" data-chron-release="full" href="https://downloads.wicklen.link/releases/0.6.0/wicklen-0.6.0-players.zip" download>Wicklen 0.6.0 · 463,2 МБ</a><a class="button light" data-chron-release="update" href="https://downloads.wicklen.link/releases/0.6.0/wicklen-0.5.0-to-0.6.0-update.zip" download>Необязательный патч с 0.5.0 · 125 КБ</a></div><p class="chron-small-note" data-chron-release-note>В полной сборке — 124 клиентских мода, публичные настройки, перевод и модели Polymer. Включите Wicklen Polymer и ru-mods выше него. JAR и ресурспаки с 0.5.0 не менялись. Необязательный патч содержит только Gateway-настройки и сведения о выпуске. API-ключ игрокам не нужен.</p><div class="chron-release-links"><a data-chron-release="manifest" href="https://downloads.wicklen.link/releases/0.6.0/manifest-0.6.0.json" download>Состав набора</a><a data-chron-release="checksums" href="https://downloads.wicklen.link/releases/0.6.0/SHA256SUMS-0.6.0.txt" download>Проверить SHA256</a><a href="https://downloads.wicklen.link/releases/0.6.0/PLAYER-INSTRUCTIONS-0.6.0.md" download>Памятка игрока ↓</a><a href="index.html#install">Установка с нуля ↗</a></div></div><aside class="chron-last-page"><h3>На первой странице</h3><p><kbd>G</kbd> — открыть дневник.<br><code>@spirit сообщение</code> — обратиться к духу.<br><code>/spirit persona</code> — характеры духа.</p><p>Команды на английском. Интерфейс доступен на русском и английском.</p><details><summary>Что уже есть, а что ещё впереди?</summary><p>Сейчас готовы наблюдения, личные записи, карта поверхности и ориентиры, одна история «Первый огонь», обычные поручения, добровольные испытания, фонарь и полевой стол. Длинные цепочки историй, новые семейства станций, планы комнат и новые артефакты ещё не входят в эту версию.</p></details><details><summary>О духе, AI и личных записях</summary><p>Разговоры генерирует настроенный на сервере AI-провайдер. Для ответа ему могут передаваться ваше игровое имя, сообщение, недавний разговор и небольшой контекст игры, включая подходящие личные заметки. Можно использовать локальный провайдер. Задания, карта, прогресс и награды определяются правилами мода.</p></details></aside></div></section>
 </main>
-<footer class="site-footer"><div class="wrap footer-inner"><div><a class="brand" href="index.html">Wicklen</a><p>Свой дом. Своя компания. Своя история.</p></div><div class="footer-links"><a href="updates.html">Обновления</a><a href="mods.html">Моды и гайды</a><a href="guides.html">Гайды: алхимия и магия</a><a href="index.html#faq">Помощь с установкой</a><a href="#main">В начало ↑</a></div></div></footer>
-<dialog id="chron-gallery-dialog" class="chron-lightbox" aria-labelledby="chron-gallery-title" aria-describedby="chron-gallery-caption"><div class="chron-lightbox-top"><h2 id="chron-gallery-title">Страницы Wicklen</h2><span id="chron-gallery-count" aria-live="polite"></span><button type="button" class="dialog-close" data-gallery-close aria-label="Закрыть просмотр">×</button></div><img id="chron-gallery-image" alt=""><p id="chron-gallery-caption" aria-live="polite"></p><div class="chron-lightbox-bottom"><button class="button light" type="button" data-gallery-prev aria-label="Предыдущий скриншот">← Назад</button><span>← → · Escape</span><button class="button light" type="button" data-gallery-next aria-label="Следующий скриншот">Дальше →</button></div></dialog>
+<!-- site:viewer -->
+<dialog class="image-viewer" id="image-viewer" aria-labelledby="image-viewer-title" aria-describedby="image-viewer-caption">
+  <div class="image-viewer-toolbar"><h2 id="image-viewer-title">Игровой скриншот</h2><span id="image-viewer-count" aria-live="polite"></span><button type="button" data-image-close autofocus>Закрыть</button></div>
+  <figure><img id="image-viewer-image" alt=""><figcaption id="image-viewer-caption"></figcaption></figure>
+  <div class="image-viewer-controls"><button type="button" data-image-prev>Предыдущий</button><a id="image-viewer-original" target="_blank" rel="noopener noreferrer">Открыть оригинал</a><button type="button" data-image-next>Следующий</button></div>
+</dialog>
+<!-- /site:viewer -->
+<!-- site:footer -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><a class="brand" href="index.html">Wicklen</a><p>Свой дом. Своя компания. Своя история.</p></div>
+    <nav class="footer-links" aria-label="Полезные ссылки">
+      <a href="mods.html">Моды и гайды</a><a href="chronicles.html">Наш мод</a>
+      <a href="updates.html">Обновления</a><a href="reimagined.html">Оформление</a>
+      <a href="index.html#install">Установка</a><a href="index.html#download">Скачать сборку</a>
+    </nav>
+  </div>
+</footer>
+<!-- /site:footer -->
+
 </body>
 </html>

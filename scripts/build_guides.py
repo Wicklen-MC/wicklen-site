@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Render full player manuals while preserving the separate compact Spirit cards."""
 import json
-import hashlib
-import re
 from collections import Counter
 from html import escape
 from pathlib import Path
+import site_layout
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -23,8 +22,8 @@ def guide_word_count(topic):
 def render(data):
     recipe_data=json.loads((ROOT/'guide-recipes.json').read_text())
     catalog=(ROOT/'mods.html').read_text()
-    header=catalog[catalog.index('<body'):catalog.index('<main')]
-    footer=catalog[catalog.index('<footer'):]
+    header='<body class="reference-page">'+site_layout.header('mod-guide.html')
+    footer=site_layout.image_viewer()+site_layout.footer()+'</body></html>'
     e=lambda s:escape(str(s),quote=True)
     href=lambda t:f'mod-guide.html?topic={t["id"]}#guide-{t["id"]}'
 
@@ -126,27 +125,23 @@ def render(data):
 <details class="guide-sources"><summary>Версии и источники · проверено {e(data['checkedAt'])}</summary><ul class="guide-members">{members}</ul><ul>{sources}</ul><p>Руководство рассчитано на указанные версии сборки. Более новая wiki может описывать другие рецепты и интерфейсы; при расхождении проверь требования в игре.</p></details>
 </article>''')
     html=f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Гайды по модам — Wicklen</title><meta name="description" content="Подробные руководства по модам Wicklen: подготовка, рецепты, развитие, примеры и решение проблем. Для сборки {e(data["packVersion"])}."><link rel="canonical" href="https://wicklen.link/mod-guide.html"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="reference.css"><link rel="stylesheet" href="mod-guide.css"><script src="mod-guide.js" defer></script></head>{header}
-<main id="main" class="wrap guide-layout"><aside class="guide-navigation"><a href="mods.html">Все моды и гайды</a><h2>Гайды по модам</h2><label for="guide-search">Найти гайд</label><input id="guide-search" type="search" placeholder="Магия, питомец, руда…"><p id="guide-search-empty" hidden role="status">Нет подходящих гайдов.</p><nav aria-label="Гайды по модам">{links}</nav></aside><div class="guide-content"><section id="guide-index"><p class="eyebrow">Wicklen {e(data['packVersion'])} · {len(data['topics'])} темы</p><h1>Гайды по модам</h1><p>Где искать материалы, как делать предметы и пользоваться ими. Рецепты и правила нашей сборки, со скриншотами.</p><div class="guide-cards">{cards}</div></section><p id="guide-not-found" hidden role="status">Такого гайда нет. Выбери тему из списка.</p>{''.join(articles)}<noscript><p>Без JavaScript доступны все руководства. Для перехода к нужному используй ссылки разделов и оглавления.</p></noscript></div></main><dialog id="guide-image-viewer" aria-label="Игровой снимок крупным планом"><button type="button" id="guide-image-close" autofocus>Закрыть</button><figure><img id="guide-image-full" alt=""><figcaption id="guide-image-caption"></figcaption></figure><a id="guide-image-original" target="_blank" rel="noopener">Открыть изображение отдельно</a></dialog>{footer}'''
+<main id="main" class="wrap guide-layout"><aside class="guide-navigation"><a href="mods.html">Все моды и гайды</a><h2>Гайды по модам</h2><label for="guide-search">Найти гайд</label><input id="guide-search" type="search" placeholder="Магия, питомец, руда…"><p id="guide-search-empty" hidden role="status">Нет подходящих гайдов.</p><nav aria-label="Гайды по модам">{links}</nav></aside><div class="guide-content"><section id="guide-index"><p class="eyebrow">Wicklen {e(data['packVersion'])} · {len(data['topics'])} темы</p><h1>Гайды по модам</h1><p>Где искать материалы, как делать предметы и пользоваться ими. Рецепты и правила нашей сборки, со скриншотами.</p><div class="guide-cards">{cards}</div></section><p id="guide-not-found" hidden role="status">Такого гайда нет. Выбери тему из списка.</p>{''.join(articles)}<noscript><p>Без JavaScript доступны все руководства. Для перехода к нужному используй ссылки разделов и оглавления.</p></noscript></div></main>{footer}'''
     index={'packVersion':data['packVersion'],'topics':[{'id':t['id'],'title':t['title'],'group':t['group'],'aliases':t['aliases'],'summary':t['short']['summary'],'href':href(t),'modIds':t['modIds'],'preview':{k:t['images'][0][k] for k in ('src','width','height','alt')}} for t in data['topics']]}
     outputs={'mod-guide.html':html+'\n','mod-guide-index.js':'window.WICKLEN_GUIDE_INDEX = '+json.dumps(index,ensure_ascii=False,indent=2)+';\n'}
-    def version_assets(page):
-        def replace(match):
-            name=match[2]
-            content=outputs[name].encode() if name in outputs else (ROOT/name).read_bytes()
-            digest=hashlib.sha256(content).hexdigest()[:12]
-            return f'{match[1]}{name}?v={digest}"'
-        return re.sub(r'((?:src|href)=")([a-z0-9-]+\.(?:css|js))(?:\?[^"\s]*)?"',replace,page)
-    outputs['mod-guide.html']=version_assets(outputs['mod-guide.html'])
-    outputs['mods.html']=version_assets(catalog)
+    outputs['mod-guide.html']=site_layout.version_assets(site_layout.shared_assets(outputs['mod-guide.html']), outputs)
+    outputs['mods.html']=site_layout.version_assets(site_layout.render_page(catalog, 'mods.html'), outputs)
     return outputs
 
 def check_generated():
-    for name,content in render(read_data()).items():
+    outputs = site_layout.render_pages()
+    outputs.update(render(read_data()))
+    for name,content in outputs.items():
         if not (ROOT/name).is_file() or (ROOT/name).read_text()!=content:
             raise ValueError(f'{name} is stale; run python3 scripts/build_guides.py')
 
 def main():
     data=read_data()
+    for name,content in site_layout.render_pages().items():(ROOT/name).write_text(content)
     for name,content in render(data).items():(ROOT/name).write_text(content)
     print(f'Rendered {len(data["topics"])} full player guides and catalog links')
 
