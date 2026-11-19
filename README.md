@@ -126,7 +126,7 @@ mutable preview profile.
 The public website is live at [wicklen.link](https://wicklen.link). Archive files are served at `https://downloads.wicklen.link/releases/0.6.0/`, including the full client,
 the optional configuration patch from 0.5.0, instructions, manifest and checksums. These are the five
 published files listed by `data.js`. The separate optional Reimagined client at
-`reimagined.html` links the `reimagined-v1.0.0` GitHub release: a complete `.mrpack`
+`reimagined.html` links the public website repository’s `reimagined-v1.0.0` GitHub release: a complete `.mrpack`
 profile and an additive existing-profile downloader. Its seven additional JARs
 are optional and do not alter the live catalog or server. Original third-party
 files download from pinned Modrinth URLs; the bundled Wicklen preset contains
