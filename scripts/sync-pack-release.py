@@ -73,7 +73,7 @@ def main():
                    'Активен один бонус блюда; зелья действуют отдельно. Нужен на клиенте и сервере.'],
         'projectId': None, 'versionId': None, 'sourceKind': 'build',
         'sourceCommit': addon['source']['commit'],
-        'url': 'https://wicklen.link/mod-guide.html?topic=herbcraft#section-herbcraft-simple-meals',
+        'url': 'https://wicklen.link/mod-guide.html?topic=herbcraft-simple-meals#guide-herbcraft-simple-meals',
         'artifactUrl': addon['source']['download_url']})
     distant = next(m for m in catalog['mods'] if m['name'] == 'Distant Horizons')
     distant['points'] = [
@@ -103,7 +103,7 @@ def main():
     save('catalog', catalog)
     handbook = load('handbook')
     handbook.update(version=version, liveVersion=version, sourceLockSha256=lock_hash)
-    handbook['guideLinks']['herbcraft-simple-meals'] = 'mod-guide.html?topic=herbcraft#section-herbcraft-simple-meals'
+    handbook['guideLinks']['herbcraft-simple-meals'] = 'mod-guide.html?topic=herbcraft-simple-meals#guide-herbcraft-simple-meals'
     save('handbook', handbook)
     guides = load('mod-guides')
     guides.update(packVersion=version, checkedAt=args.date, sourceLockSha256=lock_hash,

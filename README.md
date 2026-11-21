@@ -54,7 +54,7 @@ exports retain their URLs and original bytes.
 - `content/updates.json` and `content/chronicles-release.json`: public release
   downloads. Pack 0.7.0 and Chronicles 0.4.4 are independent versions. Client 0.6.0
   requires the update patch; other versions should use the full client.
-- `content/mod-guides.json`: 23 full guides covering 45 installed mods. `siteIntro`,
+- `content/mod-guides.json`: 24 full guides covering 45 installed mods. `siteIntro`,
   `sections` and `faq` own the articles; separate `short` cards are exported for
   the Spirit prototype. Generated `mod-guide.html` and `mod-guide-index.js` exist
   only in `dist/`.

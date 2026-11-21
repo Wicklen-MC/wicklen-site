@@ -6,7 +6,7 @@ from html import escape
 def render_figure(item, lead=False, compact=False):
     e = lambda value: escape(str(value), quote=True)
     label = (
-        "Снимок Wicklen"
+        ("Схема Wicklen" if item["kind"] == "diagram" else "Снимок Wicklen")
         if item["origin"] == "wicklen"
         else ("Иллюстрация автора" if item["kind"] == "diagram" else "Снимок автора")
     )

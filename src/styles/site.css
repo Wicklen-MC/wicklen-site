@@ -352,3 +352,5 @@ code {font:.875rem/1.7 ui-monospace,SFMono-Regular,monospace;background:#fbebe5;
 @media(max-width:440px) {
 }
 /* Guides to candidate mods stay separate from the published pack catalog. */
+
+.own-addons {margin-top:26px;padding-top:0;border-top:0}

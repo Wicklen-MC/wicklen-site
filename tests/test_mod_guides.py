@@ -35,7 +35,7 @@ class ModGuideTests(unittest.TestCase):
     def test_short_cards_and_source_links_are_usable(self):
         topics = self.data["topics"]
         ids = {t["id"] for t in topics}
-        self.assertEqual(23, len(topics))
+        self.assertEqual(24, len(topics))
         self.assertEqual(len(topics), len(ids))
         for topic in topics:
             with self.subTest(topic=topic["id"]):

@@ -88,6 +88,11 @@ def render(data, root=ROOT):
                     f'<div class="guide-find-card"><h3>{e(find["name"])}</h3>{picture}{status}<dl>{facts}</dl></div>'
                 )
             body += '<div class="guide-finds">' + "".join(cards) + "</div>"
+        if section.get("links"):
+            body += '<div class="guide-more">' + "".join(
+                f'<a href="{e(link["href"])}">{e(link["title"])}</a>'
+                for link in section["links"]
+            ) + "</div>"
         return body
 
     articles = []
