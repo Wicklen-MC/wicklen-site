@@ -1,5 +1,5 @@
 {
-  "packVersion": "0.6.0",
+  "packVersion": "0.7.0",
   "recipes": {
     "treetap": {
       "jar": "TechReborn-6.2.1.jar",
@@ -1197,6 +1197,114 @@
           "id": "graveyard:bone_dagger"
         }
       }
+    },
+    "raw-pumpkin-porridge": {
+      "jar": "herbcraft-cuisine-1.1.3.jar",
+      "jarSha256": "58242d8d83d013a0befa6f886237015d6a6f9eb0ce96311e92351023310ed6af",
+      "resource": "data/herbcraft_cuisine/recipe/raw_pumpkin_porridge.json",
+      "resourceSha256": "2a4b4e5f44a7fa95bf32bfedc022689a785a9c244e8ef5fb45642bed3e93571f",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "herbcraft_cuisine:water_bowl",
+          "minecraft:pumpkin",
+          "minecraft:wheat_seeds",
+          "minecraft:sugar"
+        ],
+        "result": {
+          "id": "herbcraft_cuisine:raw_pumpkin_porridge",
+          "count": 1
+        }
+      }
+    },
+    "pumpkin-porridge": {
+      "jar": "herbcraft-cuisine-1.1.3.jar",
+      "jarSha256": "58242d8d83d013a0befa6f886237015d6a6f9eb0ce96311e92351023310ed6af",
+      "resource": "data/herbcraft_cuisine/recipe/pumpkin_porridge_from_smelting.json",
+      "resourceSha256": "c1239925ecda20baf1b9843411caf3fd0f5b963db65f010a56278ce14d13e4fb",
+      "raw": {
+        "type": "minecraft:smelting",
+        "category": "food",
+        "cookingtime": 200,
+        "experience": 0.35,
+        "ingredient": "herbcraft_cuisine:raw_pumpkin_porridge",
+        "result": {
+          "id": "herbcraft_cuisine:pumpkin_porridge"
+        }
+      }
+    },
+    "raw-fatigue-breaking-stew": {
+      "jar": "herbcraft-cuisine-1.1.3.jar",
+      "jarSha256": "58242d8d83d013a0befa6f886237015d6a6f9eb0ce96311e92351023310ed6af",
+      "resource": "data/herbcraft_cuisine/recipe/raw_fatigue_breaking_stew.json",
+      "resourceSha256": "3451a8674c01f353ccede978107bb92d2c41a2a36db7c5aaa7f391698edc3dd9",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "herbcraft_cuisine:water_bowl",
+          "minecraft:poppy",
+          "minecraft:dandelion",
+          "minecraft:sugar"
+        ],
+        "result": {
+          "id": "herbcraft_cuisine:raw_fatigue_breaking_stew",
+          "count": 1
+        }
+      }
+    },
+    "fatigue-breaking-stew": {
+      "jar": "herbcraft-cuisine-1.1.3.jar",
+      "jarSha256": "58242d8d83d013a0befa6f886237015d6a6f9eb0ce96311e92351023310ed6af",
+      "resource": "data/herbcraft_cuisine/recipe/fatigue_breaking_stew_from_smelting.json",
+      "resourceSha256": "d06ddf663de6c48dbb7261335a075159c97f932a75a293dd1dab8d919bcea687",
+      "raw": {
+        "type": "minecraft:smelting",
+        "category": "food",
+        "cookingtime": 200,
+        "experience": 0.35,
+        "ingredient": "herbcraft_cuisine:raw_fatigue_breaking_stew",
+        "result": {
+          "id": "herbcraft_cuisine:fatigue_breaking_stew"
+        }
+      }
+    },
+    "raw-honey-leaf-soup": {
+      "jar": "herbcraft-cuisine-1.1.3.jar",
+      "jarSha256": "58242d8d83d013a0befa6f886237015d6a6f9eb0ce96311e92351023310ed6af",
+      "resource": "data/herbcraft_cuisine/recipe/raw_honey_leaf_soup.json",
+      "resourceSha256": "3584e295f2dfb8903fcd8fbdc1945fd29531ec00a5527fcd8bb26abac247cda3",
+      "raw": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "herbcraft_cuisine:water_bowl",
+          "minecraft:allium",
+          "minecraft:honeycomb",
+          "#minecraft:leaves"
+        ],
+        "result": {
+          "id": "herbcraft_cuisine:raw_honey_leaf_soup",
+          "count": 1
+        }
+      }
+    },
+    "honey-leaf-soup": {
+      "jar": "herbcraft-cuisine-1.1.3.jar",
+      "jarSha256": "58242d8d83d013a0befa6f886237015d6a6f9eb0ce96311e92351023310ed6af",
+      "resource": "data/herbcraft_cuisine/recipe/honey_leaf_soup_from_smelting.json",
+      "resourceSha256": "460f21579f84f7a10860fb98013c6a15969cfa100e5c93fc9b43a818c55c5c09",
+      "raw": {
+        "type": "minecraft:smelting",
+        "category": "food",
+        "cookingtime": 200,
+        "experience": 0.35,
+        "ingredient": "herbcraft_cuisine:raw_honey_leaf_soup",
+        "result": {
+          "id": "herbcraft_cuisine:honey_leaf_soup"
+        }
+      }
     }
   },
   "items": {
@@ -2008,6 +2116,84 @@
       "english": "Bone Dagger",
       "example": "graveyard:bone_dagger",
       "icon": "images/guides/items/graveyard-bone_dagger.png"
+    },
+    "herbcraft_cuisine:water_bowl": {
+      "label": "Миска с водой",
+      "english": "Bowl of Water",
+      "example": "herbcraft_cuisine:water_bowl",
+      "icon": "images/guides/items/herbcraft_cuisine-water_bowl.png"
+    },
+    "herbcraft_cuisine:pumpkin_porridge": {
+      "label": "Сытная тыквенная каша",
+      "english": "Hearty Pumpkin Porridge",
+      "example": "herbcraft_cuisine:pumpkin_porridge",
+      "icon": "images/guides/items/herbcraft_cuisine-pumpkin_porridge.png"
+    },
+    "herbcraft_cuisine:raw_pumpkin_porridge": {
+      "label": "Сырая заготовка сытной тыквенной каши",
+      "english": "Raw Hearty Pumpkin Porridge",
+      "example": "herbcraft_cuisine:raw_pumpkin_porridge",
+      "icon": "images/guides/items/herbcraft_cuisine-raw_pumpkin_porridge.png"
+    },
+    "herbcraft_cuisine:fatigue_breaking_stew": {
+      "label": "Бодрящая похлёбка",
+      "english": "Fatigue-Breaking Stew",
+      "example": "herbcraft_cuisine:fatigue_breaking_stew",
+      "icon": "images/guides/items/herbcraft_cuisine-fatigue_breaking_stew.png"
+    },
+    "herbcraft_cuisine:raw_fatigue_breaking_stew": {
+      "label": "Сырая заготовка бодрящей похлёбки",
+      "english": "Raw Fatigue-Breaking Stew",
+      "example": "herbcraft_cuisine:raw_fatigue_breaking_stew",
+      "icon": "images/guides/items/herbcraft_cuisine-raw_fatigue_breaking_stew.png"
+    },
+    "herbcraft_cuisine:honey_leaf_soup": {
+      "label": "Медово-лиственный суп от ядов",
+      "english": "Honey-Leaf Detox Soup",
+      "example": "herbcraft_cuisine:honey_leaf_soup",
+      "icon": "images/guides/items/herbcraft_cuisine-honey_leaf_soup.png"
+    },
+    "herbcraft_cuisine:raw_honey_leaf_soup": {
+      "label": "Сырая заготовка медово-лиственного супа от ядов",
+      "english": "Raw Honey-Leaf Detox Soup",
+      "example": "herbcraft_cuisine:raw_honey_leaf_soup",
+      "icon": "images/guides/items/herbcraft_cuisine-raw_honey_leaf_soup.png"
+    },
+    "minecraft:pumpkin": {
+      "label": "Тыква",
+      "english": "Pumpkin",
+      "example": "minecraft:pumpkin",
+      "icon": "images/guides/items/minecraft-pumpkin.png"
+    },
+    "minecraft:wheat_seeds": {
+      "label": "Семена пшеницы",
+      "english": "Wheat Seeds",
+      "example": "minecraft:wheat_seeds",
+      "icon": "images/guides/items/minecraft-wheat_seeds.png"
+    },
+    "minecraft:poppy": {
+      "label": "Мак",
+      "english": "Poppy",
+      "example": "minecraft:poppy",
+      "icon": "images/guides/items/minecraft-poppy.png"
+    },
+    "minecraft:allium": {
+      "label": "Лук-аллиум",
+      "english": "Allium",
+      "example": "minecraft:allium",
+      "icon": "images/guides/items/minecraft-allium.png"
+    },
+    "minecraft:honeycomb": {
+      "label": "Пчелиные соты",
+      "english": "Honeycomb",
+      "example": "minecraft:honeycomb",
+      "icon": "images/guides/items/minecraft-honeycomb.png"
+    },
+    "#minecraft:leaves": {
+      "label": "Любые листья",
+      "english": "Oak Leaves",
+      "example": "minecraft:oak_leaves",
+      "icon": "images/guides/items/minecraft-oak_leaves.png"
     }
   }
 }

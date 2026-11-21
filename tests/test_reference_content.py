@@ -47,20 +47,28 @@ class ReferenceContentTests(unittest.TestCase):
         self.assertEqual(data("handbook-data.js")["version"], updates["latestVersion"])
 
     def test_configuration_release_keeps_compatible_client_clear(self):
-        release = data("updates-data.js")["releases"][0]
+        release = next(r for r in data("updates-data.js")["releases"] if r["id"] == "pack-0-6-0")
         self.assertEqual("pack-0-6-0", release["id"])
         self.assertEqual(4, len(release["changes"]))
         self.assertEqual(
             3, sum(item["side"] == "сервер" for item in release["changes"])
         )
         self.assertIn("достаточно переподключиться", release["notice"])
-        self.assertEqual("0.5.0", data("chronicles-release.js")["updateFrom"])
+        self.assertEqual("0.6.0", data("chronicles-release.js")["updateFrom"])
         self.assertEqual("0.4.4", data("chronicles-release.js")["chroniclesVersion"])
         for name in ["index.html", "chronicles.html", "updates.html"]:
             page = text(name)
-            self.assertIn("0.6.0", page)
-            self.assertIn("переподключиться", page)
+            self.assertIn("0.7.0", page)
+            self.assertIn("патч", page)
             self.assertNotIn("удалите Compat 0.1.1", page)
+
+    def test_simple_meals_release_requires_client_update(self):
+        release = data("updates-data.js")["releases"][0]
+        self.assertEqual("pack-0-7-0", release["id"])
+        self.assertIn("обновите клиент", release["notice"])
+        self.assertIn("herbcraft-simple-meals-0.1.0.jar", [f["file"] for f in release["changes"]])
+        self.assertEqual("wicklen-0.6.0-to-0.7.0-update.zip", release["primary"][1]["file"])
+        self.assertIn("mods целиком не заменяйте", text("updates.html"))
 
     def test_compat_is_a_guide_and_not_a_primary_navigation_link(self):
         for name in [

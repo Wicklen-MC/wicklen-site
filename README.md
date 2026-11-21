@@ -46,15 +46,15 @@ exports retain their URLs and original bytes.
 
 ## Editing content
 
-- `content/catalog.json`: installed pack 0.6.0, 181 unique mods, 124 client / 169
+- `content/catalog.json`: installed pack 0.7.0, 182 unique mods, 125 client / 170
   server JARs. Keep filenames, membership and hashes aligned with the immutable
   published release lock. Preserve descriptions and local icons.
 - `content/handbook.json`: guide links and optional overlays for a different
   published release. The selector is hidden when only the live release exists.
 - `content/updates.json` and `content/chronicles-release.json`: public release
-  downloads. Pack 0.6.0 and Chronicles 0.4.4 are independent versions. Client 0.5.0
-  can reconnect; the configuration patch is optional.
-- `content/mod-guides.json`: 23 full guides covering 44 installed mods. `siteIntro`,
+  downloads. Pack 0.7.0 and Chronicles 0.4.4 are independent versions. Client 0.6.0
+  requires the update patch; other versions should use the full client.
+- `content/mod-guides.json`: 23 full guides covering 45 installed mods. `siteIntro`,
   `sections` and `faq` own the articles; separate `short` cards are exported for
   the Spirit prototype. Generated `mod-guide.html` and `mod-guide-index.js` exist
   only in `dist/`.
@@ -70,6 +70,17 @@ exports retain their URLs and original bytes.
   Original third-party files are fetched directly by the visitor. The new-profile
   `.mrpack` is linked from the public `reimagined-v1.0.0` GitHub release.
 
+Prepare exact release metadata from the final immutable pack directory with the
+command below. Publish the website only after publishing those files and adopting
+the pack on the game server. The optional `--live` records that operator confirmation.
+
+```sh
+python3 scripts/sync-pack-release.py --release-dir /path/to/0.7.0 --date 2026-11-22 --live
+```
+
+ The script checks the release checksum list and updates
+download sizes, hashes, catalog inventory and guide provenance.
+
 After any content, template, style or script change, run the single build command.
 The parent workspace's Spirit exporter reads `content/mod-guides.json` directly.
 A standalone site checkout requires no parent pack or mod checkout.
@@ -84,7 +95,7 @@ check restores the previous website revision. Old verified main revisions remain
 available for rollback, including the earlier repository layout.
 
 `deployment.json` and `SHA256SUMS.txt` identify the published website. Pack archives
-are separate immutable files at `https://downloads.wicklen.link/releases/0.6.0/`.
+are separate immutable files at `https://downloads.wicklen.link/releases/0.7.0/`.
 Never put ZIPs, JARs, worlds, player data or private configuration in `public/`.
 Do not fabricate download URLs or describe unreleased features as published.
 Website publication does not update Minecraft or restart the game server.

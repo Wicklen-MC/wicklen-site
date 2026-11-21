@@ -1,30 +1,30 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "chroniclesVersion": "0.4.4",
-  "updateFrom": "0.5.0",
+  "updateFrom": "0.6.0",
   "full": {
-    "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.6.0-players.zip",
-    "sha256": "ebe1f2e8548951707ea942a20616fb3fca17931094fd9e04771db00bcad2c087",
-    "size": 463183154
+    "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.7.0-players.zip",
+    "sha256": "926c3165964be4bfdce315cb1d5e10d505b8f69628052a5987c191f15674ab07",
+    "size": 463222198
   },
   "update": {
-    "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.5.0-to-0.6.0-update.zip",
-    "sha256": "d96fa1e6f857dd577a4d357f1648f75106f2373bd429a4aeb4ebcccd9f9d8757",
-    "size": 125079
+    "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.6.0-to-0.7.0-update.zip",
+    "sha256": "e6be4d8e58b8607586e3b05e45b78d947c67a7987205b2f368536cd692056e94",
+    "size": 82306
   },
   "manifest": {
-    "href": "https://downloads.wicklen.link/releases/0.6.0/manifest-0.6.0.json",
-    "sha256": "d650b873f456962189e456883266bbe901bdb2292036db30bf52148606e61913",
-    "size": 43433
+    "href": "https://downloads.wicklen.link/releases/0.7.0/manifest-0.7.0.json",
+    "sha256": "d054ee2158e2f2dd85c8928569dcf07821dbab33abd0188268548348f2d16435",
+    "size": 43898
   },
   "instructions": {
-    "href": "https://downloads.wicklen.link/releases/0.6.0/PLAYER-INSTRUCTIONS-0.6.0.md",
-    "sha256": "b95c19bb3a980e48313bdc706e774d441d60eb441ebfef3ad4af986cf9a6e1ce",
-    "size": 771
+    "href": "https://downloads.wicklen.link/releases/0.7.0/PLAYER-INSTRUCTIONS-0.7.0.md",
+    "sha256": "67c199d16870679c0a6381c6de71271c63ecee99a8d4871fb1307ba9c882679e",
+    "size": 1998
   },
   "checksums": {
-    "href": "https://downloads.wicklen.link/releases/0.6.0/SHA256SUMS-0.6.0.txt",
-    "sha256": "44edd04fdd7f9c951b0a6b1a255a5861c62d475a4802b859f48e93a8ba138d97",
+    "href": "https://downloads.wicklen.link/releases/0.7.0/SHA256SUMS-0.7.0.txt",
+    "sha256": "a7d3a20d45abe8d53d98e9045dc3c0cb17b9fdd82fcda8ec86a12733e389e524",
     "size": 716
   }
 }

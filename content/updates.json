@@ -1,15 +1,132 @@
 {
-  "liveVersion": "0.6.0",
-  "latestVersion": "0.6.0",
+  "liveVersion": "0.7.0",
+  "latestVersion": "0.7.0",
   "sourceLocks": {
     "0.4.2": "7cb2c67ada91ce6eaf19dde2cc40e090da851cf6ee4fcbf71ce696f450a18003",
     "0.4.3": "cd499423a7b51636668fa21942aa652cb014d110778fcd9579e7fc8c46c248fe",
     "0.4.4": "786f162a6da9f209601061c7817128a45f199b66004ff6ef3fc244fc80317f69",
     "0.4.5": "3579e2d88e83a2a397f7ea3ea07b4e4a8d6dac7c08e8c1356708d567467a0fde",
     "0.5.0": "f87d11782b46267e5b41898b254417cfe1acbd6f3afe02913566f4a485d24051",
-    "0.6.0": "978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483"
+    "0.6.0": "978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483",
+    "0.7.0": "c5af8a53caff2c66a1b7fddfd00ce3e709d9ab2bcd8cb5d4cdb2a4f02a133183"
   },
   "releases": [
+    {
+      "id": "pack-0-7-0",
+      "kind": "Сборка",
+      "date": "22.11.2026",
+      "title": "Wicklen 0.7.0",
+      "description": "Minecraft 26.3 · Fabric 0.20.1 · Java 25 · 125 клиентских / 170 серверных JAR. Herbcraft: Simple Meals 0.1.0.",
+      "notice": "Установлено на игровом сервере. Перед входом обновите клиент: нужен патч с 0.6.0 или полный комплект 0.7.0.",
+      "notes": [
+        "Herbcraft: Simple Meals отключает дополнительные шкалы питания и их штрафы. Обычный голод, травы, алхимия и открытия сохранены.",
+        "Три готовых блюда дают один из бонусов: меньше расход сытости, быстрее добыча или дополнительная броня.",
+        "Клиент нужно обновить: закройте игру и установите патч 0.6.0 → 0.7.0 либо полный комплект.",
+        "Distant Horizons: радиус LOD на клиенте и сервере — 192 чанка, примерно 3 км. Дальний рельеф появляется постепенно, когда сервер подготовит LOD из уже созданных чанков. Обычная дальность активных чанков не меняется.",
+        "Версии остальных JAR, Chronicles 0.4.4 и Compat 0.1.2 прежние. Настройки Gateway сохранены."
+      ],
+      "primary": [
+        {
+          "file": "wicklen-0.7.0-players.zip",
+          "bytes": 463222198,
+          "sha256": "926c3165964be4bfdce315cb1d5e10d505b8f69628052a5987c191f15674ab07",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.7.0-players.zip",
+          "label": "Полный клиент 0.7.0"
+        },
+        {
+          "file": "wicklen-0.6.0-to-0.7.0-update.zip",
+          "bytes": 82306,
+          "sha256": "e6be4d8e58b8607586e3b05e45b78d947c67a7987205b2f368536cd692056e94",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.6.0-to-0.7.0-update.zip",
+          "label": "Обязательный патч с 0.6.0"
+        }
+      ],
+      "changes": [
+        {
+          "file": "herbcraft-simple-meals-0.1.0.jar",
+          "href": "https://downloads.wicklen.link/releases/components/herbcraft-simple-meals/0.1.0/herbcraft-simple-meals-0.1.0.jar",
+          "sha512": "bddbaeb820518dfba382e24a7da697866de8a414b57adf50cfa4e3763d36694ae404ac893bfc43c8026cee27fe6dfb42e77b33b0ca8c03b3d72a1b5e0c74c50a",
+          "label": "Herbcraft: Simple Meals 0.1.0",
+          "side": "клиент и сервер",
+          "status": "Добавлен",
+          "note": "Обязателен для входа. Включён в полный клиент и патч с 0.6.0; отдельно скачивать не нужно."
+        },
+        {
+          "file": "config/DistantHorizons.toml",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.6.0-to-0.7.0-update.zip",
+          "label": "config/DistantHorizons.toml — внутри патча",
+          "side": "клиент",
+          "status": "Обновлён",
+          "note": "Distant Horizons: радиус дальнего рельефа 192 чанка. Если уже настраивали DH, сохраните свой config/DistantHorizons.toml вместо замены и выставьте дальность 192 чанка вручную в игре. Иначе скопируйте папку config из патча. Аддон Simple Meals нужен в любом случае."
+        }
+      ],
+      "files": [
+        {
+          "file": "PLAYER-INSTRUCTIONS-0.7.0.md",
+          "bytes": 1998,
+          "sha256": "67c199d16870679c0a6381c6de71271c63ecee99a8d4871fb1307ba9c882679e",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/PLAYER-INSTRUCTIONS-0.7.0.md",
+          "label": "Инструкция установки"
+        },
+        {
+          "file": "UPDATE.json",
+          "bytes": 324,
+          "sha256": "738145417c7f12da6b58306835642fb01542d7968eb25a768ec6ead72266be3e",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/UPDATE.json",
+          "label": "Состав патча"
+        },
+        {
+          "file": "manifest-0.7.0.json",
+          "bytes": 43898,
+          "sha256": "d054ee2158e2f2dd85c8928569dcf07821dbab33abd0188268548348f2d16435",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/manifest-0.7.0.json",
+          "label": "Манифест клиента"
+        },
+        {
+          "file": "server-manifest-0.7.0.json",
+          "bytes": 38938,
+          "sha256": "626a402789e07fbe4cf935dcee873699ddf958e0997bfe100185bbb63304c8ff",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/server-manifest-0.7.0.json",
+          "label": "Манифест сервера"
+        },
+        {
+          "file": "wicklen-0.7.0-players.zip",
+          "bytes": 463222198,
+          "sha256": "926c3165964be4bfdce315cb1d5e10d505b8f69628052a5987c191f15674ab07",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.7.0-players.zip",
+          "label": "Полный клиент"
+        },
+        {
+          "file": "wicklen-0.6.0-to-0.7.0-update.zip",
+          "bytes": 82306,
+          "sha256": "e6be4d8e58b8607586e3b05e45b78d947c67a7987205b2f368536cd692056e94",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.6.0-to-0.7.0-update.zip",
+          "label": "Патч 0.6.0 → 0.7.0"
+        },
+        {
+          "file": "wicklen-0.7.0-server.zip",
+          "bytes": 497133390,
+          "sha256": "64cfac4eb13f5be5fdd7add780fc4b0dfae2b560c655bf01f2dadb6349c18b81",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.7.0-server.zip",
+          "label": "Серверный комплект"
+        },
+        {
+          "file": "pack.lock.json",
+          "bytes": 156657,
+          "sha256": "c5af8a53caff2c66a1b7fddfd00ce3e709d9ab2bcd8cb5d4cdb2a4f02a133183",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/pack.lock.json",
+          "label": "Точный состав и хеши"
+        },
+        {
+          "file": "SHA256SUMS-0.7.0.txt",
+          "bytes": 716,
+          "sha256": "a7d3a20d45abe8d53d98e9045dc3c0cb17b9fdd82fcda8ec86a12733e389e524",
+          "href": "https://downloads.wicklen.link/releases/0.7.0/SHA256SUMS-0.7.0.txt",
+          "label": "Контрольные суммы"
+        }
+      ],
+      "releaseUrl": "https://downloads.wicklen.link/releases/0.7.0/PLAYER-INSTRUCTIONS-0.7.0.md"
+    },
     {
       "id": "pack-0-6-0",
       "kind": "Сборка",

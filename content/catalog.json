@@ -1,14 +1,14 @@
 {
-  "generated": "2026-11-19",
+  "generated": "2026-11-22",
   "name": "Wicklen",
   "nameRu": "Виклен",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "profile": "production",
   "minecraft": "26.3",
   "loader": "Fabric 0.20.1",
   "java": 25,
   "server": "",
-  "total": 181,
+  "total": 182,
   "categories": [
     {
       "key": "adventure",
@@ -1235,9 +1235,9 @@
       "version": "3.3.4-26.3",
       "optional": false,
       "points": [
-        "LOD-рендер: дальние чанки на расстоянии до сотен блоков.",
-        "Виды с гор и планирование маршрутов на карте мира.",
-        "Настраивается под слабые машины."
+        "Дальний рельеф до 192 чанков — примерно 3 км, когда сервер подготовит LOD.",
+        "Упрощённый рельеф появляется постепенно из уже созданных чанков; дополнительная генерация мира не запускается.",
+        "Обычная дальность активных чанков не увеличивается. При низком FPS уменьшите дальность Distant Horizons."
       ],
       "url": "https://modrinth.com/mod/uCdwusMi",
       "icon": true,
@@ -5033,65 +5033,95 @@
       "projectId": "9J7sCd3t",
       "versionId": "ytSaQglZ",
       "sourceKind": "modrinth"
+    },
+    {
+      "id": "herbcraft-simple-meals",
+      "category": "farming",
+      "group": "own",
+      "highlight": true,
+      "name": "Herbcraft: Simple Meals",
+      "version": "0.1.0",
+      "side": "both",
+      "optional": false,
+      "file": "herbcraft-simple-meals-0.1.0.jar",
+      "sha512": "bddbaeb820518dfba382e24a7da697866de8a414b57adf50cfa4e3763d36694ae404ac893bfc43c8026cee27fe6dfb42e77b33b0ca8c03b3d72a1b5e0c74c50a",
+      "install": [
+        "client",
+        "server"
+      ],
+      "icon": false,
+      "description": "Убирает дополнительные шкалы питания Herbcraft и даёт трём готовым блюдам понятные бонусы для вылазок.",
+      "points": [
+        "Обычный голод остаётся; дополнительные шкалы КБЖУ и их штрафы отключены.",
+        "Тыквенная каша снижает расход сытости, рагу ускоряет добычу, суп добавляет броню.",
+        "Активен один бонус блюда; зелья действуют отдельно. Нужен на клиенте и сервере."
+      ],
+      "projectId": null,
+      "versionId": null,
+      "sourceKind": "build",
+      "sourceCommit": "46b88831fa81ca80e91355e13ca70fbc0453f460",
+      "url": "https://wicklen.link/mod-guide.html?topic=herbcraft#section-herbcraft-simple-meals",
+      "artifactUrl": "https://downloads.wicklen.link/releases/components/herbcraft-simple-meals/0.1.0/herbcraft-simple-meals-0.1.0.jar"
     }
   ],
   "downloads": [
     {
-      "file": "wicklen-0.6.0-players.zip",
+      "file": "wicklen-0.7.0-players.zip",
+      "sha256": "926c3165964be4bfdce315cb1d5e10d505b8f69628052a5987c191f15674ab07",
+      "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.7.0-players.zip",
       "kind": "main",
       "label": "Основная сборка",
-      "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.6.0-players.zip",
-      "size": 463183154,
-      "sha256": "ebe1f2e8548951707ea942a20616fb3fca17931094fd9e04771db00bcad2c087",
+      "size": 463222198,
       "sizeHuman": "463,2 МБ"
     },
     {
-      "file": "wicklen-0.5.0-to-0.6.0-update.zip",
+      "file": "wicklen-0.6.0-to-0.7.0-update.zip",
+      "sha256": "e6be4d8e58b8607586e3b05e45b78d947c67a7987205b2f368536cd692056e94",
+      "href": "https://downloads.wicklen.link/releases/0.7.0/wicklen-0.6.0-to-0.7.0-update.zip",
       "kind": "update",
-      "label": "Необязательный патч с 0.5.0",
-      "href": "https://downloads.wicklen.link/releases/0.6.0/wicklen-0.5.0-to-0.6.0-update.zip",
-      "size": 125079,
-      "sha256": "d96fa1e6f857dd577a4d357f1648f75106f2373bd429a4aeb4ebcccd9f9d8757",
-      "sizeHuman": "125,1 КБ"
+      "label": "Обязательный патч с 0.6.0",
+      "size": 82306,
+      "sizeHuman": "82,3 КБ"
     },
     {
-      "file": "manifest-0.6.0.json",
+      "file": "manifest-0.7.0.json",
+      "sha256": "d054ee2158e2f2dd85c8928569dcf07821dbab33abd0188268548348f2d16435",
+      "href": "https://downloads.wicklen.link/releases/0.7.0/manifest-0.7.0.json",
       "kind": "manifest",
       "label": "Точные версии модов",
-      "href": "https://downloads.wicklen.link/releases/0.6.0/manifest-0.6.0.json",
-      "size": 43433,
-      "sha256": "d650b873f456962189e456883266bbe901bdb2292036db30bf52148606e61913",
-      "sizeHuman": "43,4 КБ"
+      "size": 43898,
+      "sizeHuman": "43,9 КБ"
     },
     {
-      "file": "PLAYER-INSTRUCTIONS-0.6.0.md",
+      "file": "PLAYER-INSTRUCTIONS-0.7.0.md",
+      "sha256": "67c199d16870679c0a6381c6de71271c63ecee99a8d4871fb1307ba9c882679e",
+      "href": "https://downloads.wicklen.link/releases/0.7.0/PLAYER-INSTRUCTIONS-0.7.0.md",
       "kind": "instructions",
       "label": "Инструкция (текст)",
-      "href": "https://downloads.wicklen.link/releases/0.6.0/PLAYER-INSTRUCTIONS-0.6.0.md",
-      "size": 771,
-      "sha256": "b95c19bb3a980e48313bdc706e774d441d60eb441ebfef3ad4af986cf9a6e1ce",
-      "sizeHuman": "771 Б"
+      "size": 1998,
+      "sizeHuman": "2,0 КБ"
     },
     {
-      "file": "SHA256SUMS-0.6.0.txt",
+      "file": "SHA256SUMS-0.7.0.txt",
+      "sha256": "a7d3a20d45abe8d53d98e9045dc3c0cb17b9fdd82fcda8ec86a12733e389e524",
+      "href": "https://downloads.wicklen.link/releases/0.7.0/SHA256SUMS-0.7.0.txt",
       "kind": "checksums",
       "label": "Суммы SHA-256",
-      "href": "https://downloads.wicklen.link/releases/0.6.0/SHA256SUMS-0.6.0.txt",
       "size": 716,
-      "sha256": "44edd04fdd7f9c951b0a6b1a255a5861c62d475a4802b859f48e93a8ba138d97",
       "sizeHuman": "716 Б"
     }
   ],
   "changelog": {
-    "date": "19.11.2026",
+    "date": "22.11.2026",
     "entries": [
-      "Возвращены ключи, четыре босса и случайные порталы Gateway; дворы Chronicles сохранены.",
-      "В новых чанках снова встречаются три редких вида деревень. Волна орды увеличена с 8 до 10 мобов, предел одновременно загруженных врагов — 24.",
-      "С клиентом 0.5.0 достаточно переподключиться. JAR и ресурспаки не менялись; патч настроек нужен только по желанию."
+      "Herbcraft: Simple Meals отключает дополнительные шкалы питания и их штрафы. Обычный голод, травы, алхимия и открытия сохранены.",
+      "Три готовых блюда дают один из бонусов: меньше расход сытости, быстрее добыча или дополнительная броня.",
+      "Клиент нужно обновить: закройте игру и установите патч 0.6.0 → 0.7.0 либо полный комплект.",
+      "Distant Horizons: радиус LOD на клиенте и сервере — 192 чанка, примерно 3 км. Дальний рельеф появляется постепенно, когда сервер подготовит LOD из уже созданных чанков. Обычная дальность активных чанков не меняется."
     ]
   },
-  "instructionsText": "# Wicklen pack 0.6.0\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n\nEnable the included Wicklen Polymer resource pack for server item models/textures. For Russian, enable ru-mods above it. Arcana Novum does not need a client JAR.\n",
-  "sumsText": "b95c19bb3a980e48313bdc706e774d441d60eb441ebfef3ad4af986cf9a6e1ce  PLAYER-INSTRUCTIONS-0.6.0.md\n0c649bf5148c2cb8a6a4ff65b2a68fe4b47b107ceb70679a3d3a4ceb57069357  UPDATE.json\nd650b873f456962189e456883266bbe901bdb2292036db30bf52148606e61913  manifest-0.6.0.json\n978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483  pack.lock.json\n820553c3ca0724cca0e9afb4a09f036e00968febbfbc1838aa63ccc03bd81acb  server-manifest-0.6.0.json\nd96fa1e6f857dd577a4d357f1648f75106f2373bd429a4aeb4ebcccd9f9d8757  wicklen-0.5.0-to-0.6.0-update.zip\nebe1f2e8548951707ea942a20616fb3fca17931094fd9e04771db00bcad2c087  wicklen-0.6.0-players.zip\n094f13dae4ea114f3e320cb6812e4696935ac5098e9bda5dad09d46f7f80c24d  wicklen-0.6.0-server.zip\n",
+  "instructionsText": "# Wicklen pack 0.7.0\n\nMinecraft 26.3, Fabric Loader 0.20.1, Java 25.\n\nCreate a separate launcher profile. Replace its mods directory with the complete mods directory from this archive; do not mix old JARs. Copy config and resourcepacks. Preserve your saves, options.txt and personal UI settings. Enable ru-mods in resource-pack settings if you want Russian translations. Server-side AI requires no client API key.\n\nG opens the journal. Use the vanilla spyglass to observe creatures and visible registered structures. Name findings, add notes and select a discovered place on the map to follow its direction.\n\nEnable the included Wicklen Polymer resource pack for server item models/textures. For Russian, enable ru-mods above it. Arcana Novum does not need a client JAR.\n\nHerbcraft: Simple Meals is required on both server and clients. A profile without this addon must install it before joining; reconnecting alone is not enough. To update an existing Wicklen 0.6.0 profile, use the 0.6.0-to-0.7.0 patch or this full client. Close Minecraft before applying the patch, merge its folders into the existing profile and keep all other mods, saves and personal settings. For any other source version, use a separate profile with the full client.\n\nSimple Meals disables extra nutrition meters, not ordinary hunger. Pumpkin porridge reduces hunger exhaustion by 40% for 20 minutes; fatigue-breaking stew gives +10% block-breaking speed for 10 minutes; honey-leaf soup gives +2 armor points for 10 minutes. Only one meal bonus is active at a time; another meal replaces it and milk removes it. Potions remain independent.\n\nThe included DistantHorizons.toml is a distant-terrain preset, separate from Minecraft's ordinary view distance. Back up your existing DH config before replacing it if you have personal graphics settings. To keep those settings, retain your file and adjust only the LOD radius to match the included preset. Distant terrain loads gradually as the server prepares and sends LOD data.\n",
+  "sumsText": "67c199d16870679c0a6381c6de71271c63ecee99a8d4871fb1307ba9c882679e  PLAYER-INSTRUCTIONS-0.7.0.md\n738145417c7f12da6b58306835642fb01542d7968eb25a768ec6ead72266be3e  UPDATE.json\nd054ee2158e2f2dd85c8928569dcf07821dbab33abd0188268548348f2d16435  manifest-0.7.0.json\nc5af8a53caff2c66a1b7fddfd00ce3e709d9ab2bcd8cb5d4cdb2a4f02a133183  pack.lock.json\n626a402789e07fbe4cf935dcee873699ddf958e0997bfe100185bbb63304c8ff  server-manifest-0.7.0.json\ne6be4d8e58b8607586e3b05e45b78d947c67a7987205b2f368536cd692056e94  wicklen-0.6.0-to-0.7.0-update.zip\n926c3165964be4bfdce315cb1d5e10d505b8f69628052a5987c191f15674ab07  wicklen-0.7.0-players.zip\n64cfac4eb13f5be5fdd7add780fc4b0dfae2b560c655bf01f2dadb6349c18b81  wicklen-0.7.0-server.zip\n",
   "manifestMods": [
     {
       "name": "Accelerated Decay",
@@ -6084,21 +6114,29 @@
       "side": "both",
       "sha512": "b7731c1f803382ba91ddb4c2db12cf12565d6c1dc3c6321228212cec6b4e394f532a9b65505e021bfc5117574c0077ff3062fd5de64a426981f80ac6d7993410",
       "optional": false
+    },
+    {
+      "name": "Herbcraft: Simple Meals",
+      "file": "herbcraft-simple-meals-0.1.0.jar",
+      "version": "0.1.0",
+      "side": "both",
+      "sha512": "bddbaeb820518dfba382e24a7da697866de8a414b57adf50cfa4e3763d36694ae404ac893bfc43c8026cee27fe6dfb42e77b33b0ca8c03b3d72a1b5e0c74c50a",
+      "optional": false
     }
   ],
   "catalogSource": {
     "repository": "https://github.com/Wicklen-MC/wicklen-server",
-    "path": "pack/releases/0.6.0/pack.lock.json",
-    "sha256": "978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483",
-    "packVersion": "0.6.0",
+    "path": "pack/releases/0.7.0/pack.lock.json",
+    "sha256": "c5af8a53caff2c66a1b7fddfd00ce3e709d9ab2bcd8cb5d4cdb2a4f02a133183",
+    "packVersion": "0.7.0",
     "distribution": "production",
     "mandatoryOnly": true,
     "counts": {
-      "client": 124,
-      "server": 169,
-      "unique_mod_files": 181
+      "client": 125,
+      "server": 170,
+      "unique_mod_files": 182
     },
     "optionalAddonsIncluded": false
   },
-  "downloadBase": "https://downloads.wicklen.link/releases/0.6.0/"
+  "downloadBase": "https://downloads.wicklen.link/releases/0.7.0/"
 }

@@ -796,5 +796,83 @@
     "sha256": "a0939dbeeecfff2bf73727eddf518e3cbc018f653d842cf8b6f7ca5bde277bdd",
     "jar": "2dd4fdf011184380-graveyard-FABRIC-4.0.0+mc26.3.jar",
     "resource": "assets/graveyard/textures/item/corruption.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft_cuisine-water_bowl.png",
+    "sha256": "aa4ddf817315b6bdb12090ea812c4928e14361a3a57f4c724dbacdb8753bbf49",
+    "jar": "herbcraft-cuisine-1.1.3.jar",
+    "resource": "assets/herbcraft_cuisine/textures/item/water_bowl.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft_cuisine-pumpkin_porridge.png",
+    "sha256": "931a6c1115e7cbc1db278802d80d88fbd63c3fdc412caab786d6113176dc856b",
+    "jar": "herbcraft-cuisine-1.1.3.jar",
+    "resource": "assets/herbcraft_cuisine/textures/item/pumpkin_porridge.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft_cuisine-raw_pumpkin_porridge.png",
+    "sha256": "71cb84e2805ab6edd3d7d23fb0f33e449e1c16596d09f5f859465bc7a427fbe0",
+    "jar": "herbcraft-cuisine-1.1.3.jar",
+    "resource": "assets/herbcraft_cuisine/textures/item/raw_pumpkin_porridge.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft_cuisine-fatigue_breaking_stew.png",
+    "sha256": "dd533ca888ba19e3f128b6e1966025dc026e634c466b0b4de3a8dbab1dbf816e",
+    "jar": "herbcraft-cuisine-1.1.3.jar",
+    "resource": "assets/herbcraft_cuisine/textures/item/fatigue_breaking_stew.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft_cuisine-raw_fatigue_breaking_stew.png",
+    "sha256": "16324980f65afd5c4aedc9efc2ec5df906a2974adcc44fe560c14efe3fa201b0",
+    "jar": "herbcraft-cuisine-1.1.3.jar",
+    "resource": "assets/herbcraft_cuisine/textures/item/raw_fatigue_breaking_stew.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft_cuisine-honey_leaf_soup.png",
+    "sha256": "a51cb240138e1053f76852631d2f80aa8bc04d8cc28c3f1b5bdb8b7501e54f78",
+    "jar": "herbcraft-cuisine-1.1.3.jar",
+    "resource": "assets/herbcraft_cuisine/textures/item/honey_leaf_soup.png"
+  },
+  {
+    "file": "images/guides/items/herbcraft_cuisine-raw_honey_leaf_soup.png",
+    "sha256": "f6a08d0c25ce36d256d04cf414c4055ae18ccd350f322f0820b803d1ccee84ab",
+    "jar": "herbcraft-cuisine-1.1.3.jar",
+    "resource": "assets/herbcraft_cuisine/textures/item/raw_honey_leaf_soup.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-pumpkin.png",
+    "sha256": "8f67ee060dd5c1ecc66913caed4294937e3cda8a11d0e0866ec8f558c157c30d",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/pumpkin_side.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-wheat_seeds.png",
+    "sha256": "20f699b7280e39f5d8d58315a5d2659ad67dcf90e4dbdd91aa479fa2dd0e1786",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/wheat_seeds.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-poppy.png",
+    "sha256": "9678d89814d640f88305add21ee6d157f52007aac60bbc363b30054bb3388561",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/poppy.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-allium.png",
+    "sha256": "b14b430af7e6dd487356a9a7d060d8e880fd7ae6f9cb91a570c2a7bce1536dbe",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/allium.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-honeycomb.png",
+    "sha256": "7269673c9fcd376a74f37aaa1dd68820ed424944873506464690ec86cee40ffe",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/item/honeycomb.png"
+  },
+  {
+    "file": "images/guides/items/minecraft-oak_leaves.png",
+    "sha256": "69c9c7048695e014aee6b8a2c4cb080607bd7a2a5291c06218b8134cbfcdc04f",
+    "jar": "minecraft-client.jar",
+    "resource": "assets/minecraft/textures/block/oak_leaves.png"
   }
 ]

@@ -30,7 +30,7 @@ class ModGuideTests(unittest.TestCase):
                 self.assertEqual(member["version"], expected["version"])
                 self.assertEqual(member["side"], expected["side"])
                 covered.append(member["id"])
-        self.assertEqual(44, len(set(covered)))
+        self.assertEqual(45, len(set(covered)))
 
     def test_short_cards_and_source_links_are_usable(self):
         topics = self.data["topics"]

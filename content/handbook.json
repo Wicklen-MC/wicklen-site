@@ -1,7 +1,7 @@
 {
-  "version": "0.6.0",
-  "liveVersion": "0.6.0",
-  "sourceLockSha256": "978f9a019efceccd08745f9355e61ed8d0734d856ad43fac1f1d5f9e0bb98483",
+  "version": "0.7.0",
+  "liveVersion": "0.7.0",
+  "sourceLockSha256": "c5af8a53caff2c66a1b7fddfd00ce3e709d9ab2bcd8cb5d4cdb2a4f02a133183",
   "overrides": {},
   "additions": [],
   "guideLinks": {
@@ -10,6 +10,7 @@
     "5cNyEJH1": "guides.html#herbcraft",
     "xDJt8YY2": "guides.html#alchemy",
     "59p3worY": "guides.html#cuisine",
-    "9J7sCd3t": "guides.html#arcana"
+    "9J7sCd3t": "guides.html#arcana",
+    "herbcraft-simple-meals": "mod-guide.html?topic=herbcraft#section-herbcraft-simple-meals"
   }
 }
