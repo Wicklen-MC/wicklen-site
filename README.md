@@ -46,7 +46,7 @@ exports retain their URLs and original bytes.
 
 ## Editing content
 
-- `content/catalog.json`: installed pack 0.7.0, 182 unique mods, 125 client / 170
+- `content/catalog.json`: published pack 0.7.0 (server installation in progress), 182 unique mods, 125 client / 170
   server JARs. Keep filenames, membership and hashes aligned with the immutable
   published release lock. Preserve descriptions and local icons.
 - `content/handbook.json`: guide links and optional overlays for a different

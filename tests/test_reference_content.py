@@ -40,9 +40,10 @@ class ReferenceContentTests(unittest.TestCase):
 
     def test_current_server_download_and_new_release_are_distinguished(self):
         updates = data("updates-data.js")
-        self.assertEqual(data("data.js")["version"], updates["liveVersion"])
+        self.assertEqual(data("data.js")["version"], updates["latestVersion"])
+        self.assertEqual(data("handbook-data.js")["liveVersion"], updates["liveVersion"])
         self.assertEqual(
-            data("chronicles-release.js")["version"], updates["liveVersion"]
+            data("chronicles-release.js")["version"], updates["latestVersion"]
         )
         self.assertEqual(data("handbook-data.js")["version"], updates["latestVersion"])
 

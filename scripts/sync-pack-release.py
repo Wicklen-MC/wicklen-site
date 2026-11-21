@@ -55,7 +55,7 @@ def main():
     patch = file('wicklen-0.6.0-to-0.7.0-update.zip', 'Обязательный патч с 0.6.0')
     manifest = json.loads((directory / f'manifest-{version}.json').read_text())
     catalog = load('catalog')
-    catalog.update(generated=args.date, version=version, total=lock['counts']['unique_mod_files'], downloadBase=base)
+    catalog.update(generated=args.date, version=version, liveVersion=version, total=lock['counts']['unique_mod_files'], downloadBase=base)
     catalog['manifestMods'] = manifest['mods']
     catalog['instructionsText'] = (directory / f'PLAYER-INSTRUCTIONS-{version}.md').read_text()
     catalog['sumsText'] = sums.read_text()
@@ -112,7 +112,7 @@ def main():
     save('mod-guides', guides)
     recipes = load('guide-recipes'); recipes['packVersion'] = version; save('guide-recipes', recipes)
     updates = load('updates')
-    updates.update(liveVersion=version, latestVersion=version)
+    updates.update(liveVersion=version, latestVersion=version, installationInProgress=False)
     updates['sourceLocks'][version] = lock_hash
     component_path = next((directory.parent / 'components').glob(addon['file']), None) if (directory.parent / 'components').exists() else None
     component = {'file': addon['file'], 'href': addon['source']['download_url'], 'sha512': addon['sha512'],

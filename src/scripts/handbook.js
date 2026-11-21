@@ -3,6 +3,8 @@
   const extra = window.WICKLEN_HANDBOOK;
   if (!source || !extra) return;
   const escape = window.WicklenUI.escapeHtml;
+  const liveVersion = extra.liveVersion || source.version;
+  const preparing = source.version !== liveVersion;
   const categoryNames = Object.fromEntries(source.categories.map(category => [category.key, category.label]));
   const grid = document.querySelector('#handbook-grid');
   const search = document.querySelector('#handbook-search');
@@ -11,7 +13,7 @@
   const version = document.querySelector('#handbook-version');
   const counter = document.querySelector('#handbook-count');
   const params = new URLSearchParams(location.search);
-  version.replaceChildren(new Option(`${source.version} · На игровом сервере`, source.version));
+  version.replaceChildren(new Option(`${source.version} · ${preparing ? "Устанавливается" : "На игровом сервере"}`, source.version));
   if (extra.version !== source.version) version.add(new Option(`${extra.version} · Отдельный выпуск`, extra.version));
   version.closest('.catalog-version').hidden = version.options.length < 2;
   version.hidden = version.options.length < 2;
@@ -52,7 +54,7 @@
     const mods = source.mods.map(mod => ({...mod, ...(latest ? extra.overrides[mod.id] || {} : {}), ...(mod.id === 'wicklen-pack-compat' ? {category:'comfort'} : {})}));
     if (latest) mods.push(...extra.additions);
     grid.replaceChildren();
-    document.querySelector('#version-status').textContent = latest ? `Выпуск ${extra.version} доступен отдельно. Текущая серверная сборка — ${source.version}.` : `Этот состав установлен на игровом сервере. Для новой установки скачайте сборку ${source.version}; с клиентом 0.5.0 достаточно переподключиться.`;
+    document.querySelector('#version-status').textContent = preparing ? `Каталог описывает выпуск ${source.version}, который устанавливается на сервер. Предыдущая сборка — ${liveVersion}. Дождитесь подтверждения готовности перед входом с обновлённым клиентом.` : latest ? `Выпуск ${extra.version} доступен отдельно. Текущая серверная сборка — ${liveVersion}.` : `Этот состав установлен на игровом сервере. Для новой установки скачайте сборку ${source.version}; для существующего профиля используйте точный патч со страницы обновлений.`;
     records = mods.sort((a,b) => (b.group === 'own') - (a.group === 'own') || a.name.localeCompare(b.name, 'ru')).map(mod => {
       const element = document.createElement('details');
       element.id = `mod-${mod.id}`;
